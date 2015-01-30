@@ -1,0 +1,25 @@
+.tabBorderLight
+{
+	background-color:#31569C;
+	border-bottom:3px solid #AACCE8;
+	color:#31569C;
+	
+	padding: 0px;
+}
+
+.tabText
+{
+	color:#000066;
+	font-size:x-small;
+	font-family:Arial;
+	
+	border: 0px;
+	padding: 0px;
+}
+
+.tabArea
+{
+	text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}

@@ -1,0 +1,269 @@
+.oddRows
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.oddRows TR
+{
+    bgcolor: #EEEEEE
+}
+.evenRows
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.evenRows TR
+{
+    bgcolor: #FFFFFF
+}
+.RequiredFlag
+{
+    COLOR: red;
+    FONT-FAMILY: Arial
+}
+.message
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial
+}
+.Body
+{
+    COLOR: #003363;
+    FONT-FAMILY: Verdana, Arial
+}
+.normal
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.normalBold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial;
+    color: black
+}
+.normalBold A
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial;
+    color: black
+}
+
+.normalBold A
+{
+    COLOR: black;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.normalBold-Big
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    FONT-FAMILY: Arial
+}
+.normalBold-Big A
+{
+    COLOR: black;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    FONT-FAMILY: Arial
+}
+.normalBold-Large
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15pt;
+    FONT-FAMILY: Arial
+}
+.heading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16pt;
+    COLOR: black;
+    FONT-FAMILY: Arial
+}
+.menuoptions
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial
+}
+.tableHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial
+}
+.tableHeader A
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial
+}
+.tableHeader TR
+{
+    COLOR: black;
+    bgcolor: #000000
+}
+.normalSmall
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Arial
+}
+
+.itemTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    FONT-FAMILY: Arial
+}
+.condition-text {
+	Color: #77776F;
+	font-size: 11px;
+	font-family: Arial, Helvetica;
+}
+.condition-text-bold{
+	Color: #77776F;
+	font-size: 11px;
+	font-family: Arial, Helvetica;
+	font-weight: bold
+}
+.breadcrumb
+{
+	FONT-SIZE: 12px;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-WEIGHT: bold;
+    color: #999999
+}
+.breadcrumb A
+{
+	FONT-SIZE: 12px;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-WEIGHT: bold;
+    color: #999999
+}
+
+.pagetitle {
+	Color: #000000;
+	font-size: 20px;
+	font-family: Arial, Helvetica;
+	font-weight: bold
+}
+.usernametext{
+	Color: #990000;
+	font-size: 11px;
+	font-family: Arial, Helvetica;
+	font-weight: bold
+}
+.usernametext A{
+	Color: #990000;
+	font-size: 11px;
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	text-decoration: underline
+}
+.surveyTitle {
+	font-size: 18px;
+	font-family: Arial, Helvetica;
+	font-weight: Bold
+}
+.surveyTitle A{
+	color: black;
+	font-size: 18px;
+	font-family: Arial, Helvetica;
+	font-weight: Bold
+}
+.footerText
+{
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none
+}
+.text-white{
+	Color: #FFFFFF;
+	font-size: 12px;
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+}
+.greyedText{
+	Color: #999999;
+	font-size: 9pt;
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+}
+.navLinks{
+	font-size: 11px;
+	font-family: Arial, Helvetica;
+	font-weight: bold
+}
+.navLinks A{
+	Color: BLACK;	
+	font-size: 11px;
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	text-decoration: none
+}
+.navLinks a:hover{
+	Color: BLACK;	
+	font-size: 11px;
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	text-decoration: underline
+}
+.separator{
+	font-size: 13px;
+	font-family: Arial, Helvetica;
+	font-weight: bold
+}
+.gridtable 
+{
+	border-color: #CCCCCC;
+	border-style:solid;
+	
+}
+.gridheader
+{
+	border-color: Black;
+	border-bottom: 1px;
+	border-bottom-color: Black;
+	border-top: 1px;
+	border-top-color: Black;
+	border-left: 1px;
+	border-left-color: Black;
+	border-right: 1px;
+	border-right-color: Black
+}
+.griddata
+{
+	Color: BLACK;	
+	font-size: 10px;
+	font-family: Arial, Helvetica;
+}
+.griddata A
+{
+	Color: Blue;	
+	font-size: 10px;
+	font-family: Arial, Helvetica;
+	text-decoration: Underline
+}
+
+
+.inactive
+{
+	font-style:italic;
+	color: #ABABAB; 
+}

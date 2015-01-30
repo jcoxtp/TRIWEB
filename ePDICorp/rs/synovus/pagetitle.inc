@@ -1,0 +1,1 @@
+<img width="139" height="32" src="rs/synovus/focus3_logo_small.jpg" />

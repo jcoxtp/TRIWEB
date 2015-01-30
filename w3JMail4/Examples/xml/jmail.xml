@@ -1,0 +1,22 @@
+<jmail:Message xmlns:jmail="http://xml.dimac.net/namespace/jmail">
+
+	<jmail:Servers>mail.mydomain.com</jmail:Servers>
+	<jmail:Headers>
+		<jmail:Subject>Hej hopp</jmail:Subject>
+		<jmail:From>
+			<jmail:name>From</jmail:name>
+			<jmail:email>from@mydomain.com</jmail:email>
+		</jmail:From>
+		<jmail:Recipients>
+			<jmail:Recipient>
+				<jmail:name>Recipient</jmail:name>
+				<jmail:email>qwerty@domain.com</jmail:email>
+				<jmail:type>To</jmail:type>
+			</jmail:Recipient>
+		</jmail:Recipients>
+	</jmail:Headers>
+	<jmail:Body>
+Hello world from JMail's XML Mailer!!!!!! (JEAH!)
+	</jmail:Body>
+
+</jmail:Message>

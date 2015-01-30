@@ -1,0 +1,130 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="dimnet_connectcdsc_rdbdsc2">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Connecting
+to a Relational MR Database Using RDB DSC 2</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('dimnet_connectcdsc_rdbdsc2.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N2007B')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="dimnet_connectcdsc_version_expressions.htm">Previous<img alt="(P)revious: dimnet_connectcdsc_version_expressions" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="datalinkproperties_advanced.htm"><img alt="(N)ext: datalinkproperties_advanced" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="pe_about.htm">Edit Project</A> &gt; <A HREF="pe_connprops.htm">Changing Connection Properties</A> &gt; <A HREF="datalinkproperties_overview.htm">Data Link Properties Dialog Box</A> &gt; <A HREF="datalinkproperties_connection.htm">Data Link Properties Dialog Box: Connection Tab</A> &gt; </DIV>
+<h1>Connecting
+to a Relational MR Database Using RDB DSC 2</h1>
+<p class="body">
+<span class="runinhead">Location connection
+property</span>
+</p>
+<p class="body">When connecting to a relational MR database using
+RDB DSC 2, you need to specify the Location connection property using
+an OLE DB connection string. This should specify the parameters shown in the
+following table.</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Parameter</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Provider</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">This must be set to <span class="input">SQLOLEDB.1</span>.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Integrated Security</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">This         should be set to <span class="input">SSPI</span>.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Persist Security</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">This         should be set to <span class="input">False</span>.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Initial Catalog</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The name         of the database.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Data Source</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The name         of the server.</td>
+</tr>
+</tbody>
+</table>
+<p class="body">Here is an example of an OLE DB connection string that connects
+to the Short Drinks sample database:</p>
+<pre class="codeblock">Provider=SQLOLEDB.1;
+Integrated Security=SSPI;
+Persist Security Info=False;
+Initial Catalog=short_drinks;
+Data Source=LocalHost</pre>
+<p class="body">
+<span class="runinhead">MR Init Custom
+connection property</span>
+</p>
+<p class="body">The <span class="name">MR Init Custom</span> connection
+property can be used to specify whether the connection should favor memory
+use or speed. The valid settings are:</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">FavorMemory. </span>Uses
+server-side cursors so that a single SQL Server connection can be re-used
+across multiple commands.  This mode is slower, but uses less memory (and
+fewer SQL Server connections) as the number of concurrent commands increases. </p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">FavorSpeed. </span>Uses default
+cursors, requiring a new connection for each command. This mode is considerably
+faster than the FavorMemory mode, but does use more memory. The FavorSpeed
+option also optimizes binding look-up by creating a look-up vector. This is
+the default setting.</p>
+<p class="body">To set this property in the Data Link Properties
+dialog box, select the <A href="datalinkproperties_all.htm">All tab</A>, and then double-click the <span class="screen">MR Init Custom</span> property. Type the required setting
+into the Property Value text box and then click <span class="screen">OK</span>. </p>
+<p class="body">
+<span class="runinhead">Complete example</span>
+</p>
+<p class="body">The following is a complete
+connection string for the Short Drinks sample database. Notice that the <span class="name">Data Source</span> property is set to mrRdbDsc2 and the <span class="name">MR Init Custom</span> property is set to favor memory:  </p>
+<pre class="codeblock">Provider=mrOleDB.Provider.2;
+Data Source=mrRdbDsc2;
+Location="Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=short_drinks;Data Source=LocalHost";
+Initial Catalog=[INSTALL_FOLDER]\SPSS Dimensions\DDL\Data\Mdd\short_drinks.mdd;
+MR Init Project=short_drinks;
+MR Init Custom=FavorMemory</pre>
+<p class="body">Note that in these examples, each
+connection property is presented on a separate line for clarity. In practice
+you should specify the connection string without line breaks.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="datalinkproperties_connection.htm">Data Link Properties Dialog Box: Connection Tab</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

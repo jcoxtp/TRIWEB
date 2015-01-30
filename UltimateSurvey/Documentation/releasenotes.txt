@@ -1,0 +1,211 @@
+ULTIMATE SURVEY ASP ADVANCED
+Version Release Notes
+©Ultimate Software Designs, Inc.
+http://www.ultimatesoftwaredesigns.com
+
+
+In This File
+============
+Release notes from versions 5.4 and above.
+
+Release 6.7.4
+============================
+Issues Fixed
+• Fixed issue where editing matrix sets and matrix categories on live surveys adversely
+affected reporting
+• Fixed broken paging link when choosing a library to add items from
+• Fixed issues when copying items
+• Uses new versions of flash files for 3D charts.  Supports UTF-8 characters.
+• Fixed issues with certain characters in searching reports
+• Fixed invalid join operation in reports with MS Access
+• Fixed issue with incorrect numbering of matrix categories
+• Fixed issue where ">" and "<" made graphs not work
+
+Release 6.7.3
+============================
+Issues Fixed
+• Fixed issue where invitations and reminders were including users who were explicitly denied
+permission to take the survey
+
+
+
+Release 6.7.2
+============================
+Issues Fixed
+• Fixed various issues when copying items, pages, and entire surveys
+
+Release 6.7.1
+============================
+Issues Fixed
+• Fixed SQL error when moving items up and down in a page
+• Fixed VBScript error when certain matrix answer sets are required
+• Fixed VBScript error when certain matrix sets must have unique answers 
+• Fixed VBScript error when using "Same Answers As" option
+• Fixed issue where answers were sometimes output in wrong order
+• Rearranged help to not use parent paths when calling includes
+
+Release 6.7
+============================
+New Features:
+• Added Sorting to grids throughout
+• Added "Check All/Uncheck All" buttons to grids with multiple checkboxes
+• Domain name no longer a requirement for logging in network users
+• Improved security of system
+• Hidden fields allow you to pass information to a survey without asking the user
+• Answer piping
+• Ability to name cookie used throughout.  Allows for multiple secure installations on one domain
+• Administrator can view and edit user passwords
+• Length of single line text fields in surveys is configurable
+• Rows and columns of textareas in surveys is configurable
+• Ability to specify number of columns for checkbox type questions
+• Ability to reorder answers in Dropdown, Radio Button, and Checkbox items
+
+
+
+
+Issues Fixed:
+• Tab characters removed when bulk registering users
+• If you delete the last item on a page, the application redirects to the previous page
+• Fixed display issue when matrix question not set up completely
+• Fixed issue where renaming a user group deleted users from that group
+• All matrix sets and answers get properly removed from database when deleting a survey
+
+
+Release 6.6.1
+============================
+Issues Fixed:
+• Fixed mistake in Upgrade instructions
+• Fixed undefined variable error when a radio button is displayed with "other" option
+• Fixed issue in displaying an item after a page was copied
+• Removed some extraneous code
+• Fixed issue when converting an item to a matrix question
+• Fixed various "page cannot be displayed" errors when moving an item to a different page
+• Eliminated javascript error that occurred when editing the details of a user when no user groups exist
+• Fixed error when moving an item up and down within a page
+
+
+Release 6.6
+============================
+New Features:
+• Complies with US Government Section 508 Standards For Web-based Intranet and Internet Information and Applications (1194.22)
+• Performance improvement for taking surveys
+• Create ranking scales in Matrix Questions
+• Enforce that each answer in a Matrix Answer set be unique
+• Email Settings test script for easier email configuration
+• Support for Microsoft CDOSYS email object
+• Ability to hide or show user information on reports
+
+
+Issues Fixed:
+• Added error handling if no library name specified when adding a new library
+• Fixed permissions issues within Question Libraries functionality
+• Removed some extraneous code
+• Removed depricated .ASP pages
+• Fixed paging/search issue when adding users to groups
+• Fixed inconsistent permissions when searching reports
+• Fixed issue when Question Numbering didn't work when continuing a survey started at an earlier time
+• Messages show up correctly on Edit Survey page
+• Conditional questions and branching accounted for in data export
+• If surveyID is passed into login page, it is retained even if the user enters invalid login information
+• Validation added to Manage Page Conditions and Manage Item Conditions
+• "Manage Surveys" page does not lose its page after any actions
+• Fixed problem where null userIDs in the response table affected invitation lists
+• Fixed problem where lists of people to remind were being pulled from multiple surveys
+• Anti-caching code re-added to page that you take survey from
+• No longer uses flash graphs for matrix reporting 
+• "Other" is now counted when validating "Minimum to Choose" and "Maximum to Choose" for checkboxes
+• Response count for survey properly updated when a response is deleted
+
+
+
+Release 6.5.1
+============================
+Issues Fixed:
+• Removed javascript error when administrator registers a single user and no groups exist in the database
+• Fixed permission problems for "Take and Create" users adding questions to libraries
+• Fixed permission problems for "Take and Create" users editing questions in libraries
+• Fixed issue where users were not getting added to groups when doing bulk registration
+• Fixed reporting problem when there is no "Set Text" specified in a matrix question
+
+
+Release 6.5
+============================
+New Features:
+• Question libraries allow you to store items for use in any survey
+• User groups allow you to categorize users for quick management
+• User invitations revamped to be easier and more powerful
+• Email reminders can be sent to people who have not taken a survey
+• General User Interface Enhancements
+• Ability to have display summary results to non-logged in users without navigation links
+• Email lists allow for inviting lists of addresses to take a survey
+• Ability to use "Bulk Registration" to register NT-authenticated users
+• Ability to print surveys
+• Ability to automatically add user's login information to invitations/reminders
+
+Issues Fixed:
+• Exporting results in Access takes conditions and branching into consideration
+• Disconnected record sets used in many places to improve performance
+• No longer need to have index.asp be a default document
+• Enhanced error handling explains common errors
+
+
+Release 6.0.2
+============================
+Issues Fixed:
+• Fixed syntax errors when copying pages using Access database
+• Fixed problem where server froze when adding more than 10 matrix categories
+• Fixed problematic column alignment when exporting response details in surveys 
+that are scored or that Log the NT User
+• When exporting aliases, responses to Single Line Text Field and Multiple Line Text Area items
+are now shown
+• Fixed "wrong number of arguments" error when adding Network Users
+• Added missing fields in usd_surveyUser table to the UltimateSurveyTables.sql table
+
+Release 6.0.1
+============================
+Issues Fixed:
+• Fixed problem with deleting responses involving matrix questions
+• Fixed "wrong number of arguments" error when moving a matrix question to a different page
+• Fixed a few issues with uploading images
+• Fixed problem showing styles in matrix questions
+
+
+Release 6.0
+============================
+
+New Features:
+• Matrix functionality rebuilt 
+• Multi-scale-Matrix functionality added
+• Table formatting options added
+• Email validation option for questions
+• Option to choose between cookie or IIS session security
+• Export to CSV dramatically improved 
+• Bulk user registration section
+• Ability to customize up to 3 information fields for users
+• Administrators can view the owner of each survey
+
+Issues Fixed:
+• Added Link to survey from survey properties page
+• Fixed issues with copying items, pages, and surveys
+• Paging not lost after taking actions on "Manage Surveys" page
+• Can no longer delete a template currently used in a survey
+
+Release 5.4.1
+============================
+Issues Fixed:
+• Fixed error in Database/UltimateSurveyData.sql
+• Fixed getDate() issue that was introduced in 5.4 when taking a survey on an Access database
+• Fixed "object required" issue when exporting checkboxes in a single row
+• Conditions for a page are moved when a page is moved
+
+Release 5.4
+============================
+
+New Features:
+• Table type reports
+• Option to have checkbox results in single column when exporting 
+
+Issues Fixed:
+• Missing style on edit template page 
+• Fixed missing HTML tag on manage users table
+

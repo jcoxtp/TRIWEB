@@ -1,0 +1,57 @@
+/* ======================================== 
+	Reseller StyleSheet
+	- this file extends the _system stylesheet and is to be used for reseller specific styles
+	- styles defined in this sheet will override those with the same name/scope in the _system stylesheet
+	- do not put global style changes in this file
+=========================================*//* Set default font and size */
+h2
+{
+	/*might need a color def to override the #000000 in the _system */
+}
+#login_form
+{
+	top: 79px;
+}
+a:link.loginform_link, a:visited.loginform_link, a:active.loginform_link, a:hover.loginform_link
+{
+	color:#000000;
+	text-decoration:underline;
+}
+#login_section01
+{
+	top: 139px;
+	left: 25px;
+	width: 710px;
+}
+#login_section02
+{
+	top: 405px;
+	left: 290px;
+}
+a:link.login_section02_link, a:visited.login_section02_link, a:active.login_section02_link, a:hover.login_section02_link
+{
+	color:#000000;
+	text-decoration:underline
+}
+.logintext
+{
+	color: #000000;
+	font-weight: bold;
+}
+.login_learnmore
+{
+	font-family: Arial, Helvetica;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 1px;
+	color: #000000;
+}
+.big_learnmore
+{
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+	margin: 0px;
+}

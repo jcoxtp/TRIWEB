@@ -1,0 +1,114 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DimNet_newproj_displayinfo">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Defining Display Settings for Mobile Projects</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('dimnet_newproj_displayinfo.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N201C3')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="dimnet_newproj_mobile.htm">Previous<img alt="(P)revious: dimnet_newproj_mobile" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="dimnet_newproj_web.htm"><img alt="(N)ext: dimnet_newproj_web" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; <A HREF="dimnet_newproj_mobile.htm">Setting Up a Mobile Interviewing Project</A> &gt; </DIV>
+<h1>Defining Display Settings for Mobile Projects</h1>
+<p class="body">You can define how a project is displayed on a remote device by
+providing a <span class="name">displayinfo.xml</span> file
+with the project. The <span class="name">displayinfo.xml</span> file should be in the same directory as the <span class="name">.mdd</span> file when the project is activated. The following
+is an example file:</p>
+<pre class="codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt; 
+&lt;Project&gt;
+&lt;Description&gt;Test Survey&lt;/Description&gt; 
+  	&lt;ExpiryDate&gt;2008-05-04&lt;/ExpiryDate&gt; 
+  	&lt;Interview Datasource="mrDataFileDsc" Routing="Paper" Renderer="CATIPlayer"/&gt; 
+ 	&lt;CaselistView&gt;
+ 		&lt;Fields&gt;
+  			&lt;Field Name="Respondent.Serial"/&gt; 
+  			&lt;Field Name="Respondent.ID"/&gt; 
+				&lt;Field Name="DataCollection.Status"/&gt; 
+  		&lt;/Fields&gt;
+  &lt;/CaselistView&gt;
+&lt;/Project&gt;
+</pre>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col width="33.5%">
+<col width="66.5%">
+</colgroup>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Entry</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Description</span></td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Description</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Displayed in the project list on the remote device</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ExpiryDate</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Not implemented</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Interview Datasource</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Only <span class="input">mrDataFileDsc</span> is valid
+at this time</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Routing</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Indicates which Routing context to use on the remote device</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Rendered</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Indicates which player to use. Valid values are <span class="input">CATIPlayer</span> and <span class="input">HTMLPlayer</span>.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Fields</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">List of the VDATA names of the fields you want listed in the
+remote device&rsquo;s case list. This must include the following
+fields:<p class="bullet">&bull;&nbsp;Respondent.Serial</p>
+<p class="bullet">&bull;&nbsp;Respondent.ID</p>
+<p class="bullet">&bull;&nbsp;DataCollection.Status</p>
+<p class="body">
+<span class="italic">Note:</span> It is recommended that the fields have short labels
+in the Analysis context.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<a href="dimnet_newproj_mobile.htm">Setting Up a Mobile Interviewing Project</a>
+</div>
+<div class="link">
+<a href="dimnet_newproj_web.htm">Modifying Web Service Settings</a>
+</div>
+<div class="link">
+<a href="dimnet_newproj_custom.htm">Custom Project Setup for Mobile Projects</a>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

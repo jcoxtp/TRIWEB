@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<projects>
+	<project name="*">
+		<property name="name"/>
+		<properties>
+			<property name="DESCRIPTION"/>
+			<property name="LABEL"/>
+			<property name="STATUS"/>
+			<property name="GROUPNAME"/>
+		</properties>
+	</project>
+</projects>

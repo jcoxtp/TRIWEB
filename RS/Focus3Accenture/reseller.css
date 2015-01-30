@@ -1,0 +1,71 @@
+/* ======================================== 
+	Reseller StyleSheet
+	- this file extends the _system stylesheet and is to be used for reseller specific styles
+	- styles defined in this sheet will override those with the same name/scope in the _system stylesheet
+	- do not put global style changes in this file
+=========================================*/
+body {
+	font-family: Arial, Helvetica;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	margin: 5px 5px 5px 5px;
+	padding: 0px;
+	text-decoration: none;
+}
+a:link, a:visited, a:active {
+	color:#396669; 
+	background-color:transparent; 
+	text-decoration:none
+}
+li {
+	padding-bottom: 2px;
+}
+.bodytext_white {
+	color: #333333
+}
+#login_form
+{
+	top: 410px;
+	left: 50px;
+}
+a:link.loginform_link, a:visited.loginform_link, a:active.loginform_link, a:hover.loginform_link
+{
+	color:#344493; 
+	text-decoration:underline
+}
+#login_section01
+{
+	position: absolute;
+	top: 75px;
+	left: 40px;
+	width: 680px;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+#login_section02
+{
+	top: 265px;
+	left: 170px;
+}
+a:link.login_section02_link, a:visited.login_section02_link, a:active.login_section02_link, a:hover.login_section02_link	 	
+{
+	color:#344493; 
+	text-decoration:underline
+}
+.logintext
+{
+	font-family: Arial, Helvetica;
+	font-size: 11px;
+	color: #000066;
+}
+.textsmallgap
+{
+	font-family: Arial, Helvetica;
+	font-size: 2px;
+}
+.big_learnmore
+{
+	color: #344493;
+}

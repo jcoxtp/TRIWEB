@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application name="managelogs">
+	<ApplicationSettings>
+		<Property name="ShowInLauncher" datatype="boolean">1</Property>
+		<Property name="ShowAsTool" datatype="boolean">1</Property>
+		<Property name="ShowForProject" datatype="boolean">0</Property>
+		<Property name="DPMAccessType"  datatype="string">None</Property>
+		<Property name="FileAccessType" datatype="string">None</Property>	
+		<Property name="DisplayName" datatype="string">
+			<![CDATA[Manage Logs]]>
+		</Property>
+		<Property name="ApplicationType" datatype="string">
+			<![CDATA[general]]>
+		</Property>
+		<Property name="StartURL" datatype="8">
+			<![CDATA[../ManageLogs/ApplicationInit.aspx]]>
+		</Property>
+		<Property name="PublicResourceFolder" datatype="string">
+			<![CDATA[../ManageLogs/bin]]>
+		</Property>
+		<Property name="PublicResourceFileName" datatype="8">
+			<![CDATA[PublicResources.resx]]>
+		</Property>
+	</ApplicationSettings>
+	<UserSettings>
+		<Default/>
+	</UserSettings>
+	<MustMatch>
+		<Project/>
+	</MustMatch>
+	<Features/>
+</Application>
+

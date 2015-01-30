@@ -1,0 +1,1947 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicPDF.Merger</name>
+    </assembly>
+    <members>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeButtonField">
+            <summary>
+            Representing a merged button field.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeButtonField.DrawDictionary(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the merged button field's dictionary entries to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the output.</param>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeCheckBoxField">
+            <summary>
+            Representing a merged check box field.
+            </summary>
+            <remarks>This class can be used to either check or uncheck a check box field.</remarks>
+            <example>The following example shows how to set an existing check box field.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Forms
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            		
+            		' Create a MergeOptions object to import the AcroForm
+            		Dim options As MergeOptions = New MergeOptions(True)
+            
+            		' Create a merge document with your PDF containing form fields
+            		Dim MyDocument As MergeDocument = New MergeDocument( _
+            			"C:\ImportPDF.pdf", options)
+            
+            		' Set your check box's value equal to the export value, this will cause the 
+            		' check box to appear checked
+            		Dim checkBox As CheckBoxField = MyDocument.Form.Fields("CB1")
+            		checkBox.Value = "Yes"
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Forms;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a MergeOptions object to import the AcroForm
+            		MergeOptions options = new MergeOptions( true );
+            
+            		// Create a merge document with your PDF containing form fields
+            		MergeDocument document = new MergeDocument( 
+            			@"C:\ImportPDF.pdf", options );
+            
+            		// Set your check box's value equal to the export value, this will cause the 
+            		// check box to appear checked
+            		CheckBoxField checkBox = (CheckBoxField)document.Form.Fields["CB1"];
+            		checkBox.Value = "Yes";
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeCheckBoxField.DrawDictionary(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the merged check box field's dictionary entries to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the output.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.MergeCheckBoxField.Value">
+            <summary>
+            Overridden. Gets or sets the value of the merged check box field.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeComboBoxField">
+            <summary>
+            Representing a merged combo box field.
+            </summary>
+            <remarks>This class can be used to select or add the value that will appear first in the combo box field.</remarks>
+            <example>The following example shows how to specify the value to be selected in the combo box field.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Forms
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a MergeOptions object to import the AcroForm
+            		Dim options As MergeOptions = New MergeOptions(True)
+            
+            		' Create a merge document with your PDF containing form fields
+            		Dim MyDocument As MergeDocument = New MergeDocument( _
+            			"C:\ImportPDF.pdf", options)
+            
+            		' Set your combo box's value equal to the item you want selected
+            		Dim comboBox As ComboBoxField = MyDocument.Form.Fields("Combo Box1")
+            		comboBox.Value = "Item4"
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Forms;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a MergeOptions object to import the AcroForm
+            		MergeOptions options = new MergeOptions( true );
+            
+            		// Create a merge document with your PDF containing form fields
+            		MergeDocument document = new MergeDocument( 
+            			@"C:\ImportPDF.pdf", options );
+            
+            		// Set your combo box's value equal to the item you want selected 
+            		ComboBoxField comboBox = (ComboBoxField)document.Form.Fields["Combo Box1"];
+            		comboBox.Value = "Item4";
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeComboBoxField.DrawDictionary(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the combo box field's dictionary entries to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the output.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.MergeComboBoxField.Value">
+            <summary>
+            Overridden. Gets or sets the value of the merged combo box field.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeForm">
+            <summary>
+            Representing a merged PDF form.
+            </summary>
+            <remarks></remarks>
+            <example>The following example shows how to set several different form field's values.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Forms
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a MergeOptions object to import the AcroForm
+            		Dim options As MergeOptions = New MergeOptions(True)
+            
+            		' Create a merge document with your PDF containing form fields
+            		Dim MyDocument As MergeDocument = New MergeDocument( _
+            			"C:\ImportPDF.pdf", options)
+            
+            		' Set your check box's value equal to the export value, this  
+            		' will cause the check box to appear checked
+            		Dim checkBox As CheckBoxField = MyDocument.Form.Fields("CB1")
+            		checkBox.Value = "Yes"
+            
+            		' Set your combo box's value equal to the item you want selected
+            		Dim comboBox As ComboBoxField = MyDocument.Form.Fields("Combo Box1")
+            		comboBox.Value = "Item4"
+            
+            		' You may highlight multiple items in the list box
+            		Dim listBox As ListBoxField = MyDocument.Form.Fields("List Box2")
+            		listBox.SetValues(New String() {"Item1", "Item3", "Item5"})
+            
+            		' Set the radio button's value equal to the value of the radio 
+            		' button you want selected
+            		Dim radioButton As RadioButtonField = MyDocument.Form.Fields("RB1")
+            		radioButton.Value = "Option2"
+            
+            		' Set the value of the text field equal to the string you want to appear
+            		Dim text As TextField = MyDocument.Form.Fields("Text3")
+            		text.Value = "This is my text field"
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            			
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Forms;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a MergeOptions object to import the AcroForm
+            		MergeOptions options = new MergeOptions( true );
+            
+            		// Create a merge document with your PDF containing form fields
+            		MergeDocument document = new MergeDocument( 
+            			@"C:\ImportPDF.pdf", options );
+            
+            		// Set your check box's value equal to the export value, this 
+            		// will cause the check box to appear checked
+            		CheckBoxField checkBox = (CheckBoxField)document.Form.Fields["CB1"];
+            		checkBox.Value = "Yes";
+            
+            		// Set your combo box's value equal to the item you want selected 
+            		ComboBoxField comboBox = (ComboBoxField)document.Form.Fields["Combo Box1"];
+            		comboBox.Value = "Item4";
+            
+            		// You may highlight multiple items in the list box
+            		ListBoxField listBox = (ListBoxField)document.Form.Fields["List Box2"];
+            		listBox.SetValues( new string[] { "Item1", "Item3", "Item5" } );
+            
+            		// Set the radio button's value equal to the value of the radio 
+            		// button you want selected
+            		RadioButtonField radioButton = (RadioButtonField)document.Form.Fields["RB1"];
+            		radioButton.Value = "Option2";
+            
+            		// Set the value of the text field equal to the string you want to appear
+            		TextField text = (TextField)document.Form.Fields["Text3"];
+            		text.Value = "This is my text field";
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeForm.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.Forms.MergeForm"/> class.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeForm.DrawDictionary(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the merged form's dictionary entries to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the output.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.MergeForm.DefaultResources">
+            <summary>
+            Gets or sets the default appearance for the form.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.MergeForm.DefaultAppearance">
+            <summary>
+            Gets or sets the default appearance for the form.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeFormException">
+            <summary>
+            The exception that is thrown for a DynamicPDF Merger form filling error.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.MergerException">
+            <summary>
+            The exception that is thrown for a DynamicPDF Merger error.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergerException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergerException"/> class.
+            </summary>
+            <param name="message">A <see cref="T:System.String"/> that describes the error.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeFormException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.Forms.MergeFormException"/> class.
+            </summary>
+            <param name="message">A <see cref="T:System.String"/> that describes the error.</param>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeFormField">
+            <summary>
+            Representing a merged form field.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeListBoxField">
+            <summary>
+            Representing a list box field.
+            </summary>
+            <remarks>This class can be used to select different entries of a list box field.</remarks>
+            <example>The following example shows how to select a series of entries in a list box field.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Forms
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a MergeOptions object to import the AcroForm
+            		Dim options As MergeOptions = New MergeOptions(True)
+            
+            		' Create a merge document with your PDF containing form fields
+            		Dim MyDocument As MergeDocument = New MergeDocument( _
+            			"C:\ImportPDF.pdf", options)
+            
+            		' You may highlight multiple items in the list box
+            		Dim listBox As ListBoxField = MyDocument.Form.Fields("List Box2")
+            		listBox.SetValues(New String() {"Item1", "Item3", "Item5"})
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            			
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Forms;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a MergeOptions object to import the AcroForm
+            		MergeOptions options = new MergeOptions( true );
+            
+            		// Create a merge document with your PDF containing form fields
+            		MergeDocument document = new MergeDocument( 
+            			@"C:\ImportPDF.pdf", options );
+            
+            		// You may highlight multiple items in the list box
+            		ListBoxField listBox = (ListBoxField)document.Form.Fields["List Box2"];
+            		listBox.SetValues( new string[] { "Item1", "Item3", "Item5" } );
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeListBoxField.SetValues(System.String[])">
+            <summary>
+            Overridden. Sets the values of the list box field.
+            </summary>
+            <param name="values">Array of string values to set.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeListBoxField.DrawDictionary(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the merged list box field's dictionary entries to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the output.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.MergeListBoxField.Value">
+            <summary>
+            Overridden. Gets or sets the value of the merged list box field.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeRadioButtonField">
+            <summary>
+            Representing a radio button field.
+            </summary>
+            <remarks>This class can be used to select a certain button in radio button field.</remarks>
+            <example>The following example shows how to select the second option in a radio button field.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Forms
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a MergeOptions object to import the AcroForm
+            		Dim options As MergeOptions = New MergeOptions(True)
+            
+            		' Create a merge document with your PDF containing form fields
+            		Dim MyDocument As MergeDocument = New MergeDocument( _
+            			"C:\ImportPDF.pdf", options)
+            
+            		' Set the radio button's value equal to the value of the radio 
+            		' button you want selected
+            		Dim radioButton As RadioButtonField = MyDocument.Form.Fields("RB1")
+            		radioButton.Value = "Option2"
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            			
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Forms;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a MergeOptions object to import the AcroForm
+            		MergeOptions options = new MergeOptions( true );
+            
+            		// Create a merge document with your PDF containing form fields
+            		MergeDocument document = new MergeDocument( 
+            			@"C:\ImportPDF.pdf", options );
+            
+            		// Set the radio button's value equal to the value of the radio 
+            		// button you want selected
+            		RadioButtonField radioButton = (RadioButtonField)document.Form.Fields["RB1"];
+            		radioButton.Value = "Option2";
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeRadioButtonField.DrawDictionary(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the merged radio button field's dictionary entries to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the output.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.MergeRadioButtonField.Value">
+            <summary>
+            Overridden. Gets or sets the value of the merged radio button field.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeSignatureField">
+            <summary>
+            Representing a signature field.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeSignatureField.DrawDictionary(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the merged signature field's dictionary entries to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the output.</param>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.MergeTextField">
+            <summary>
+            Representing a text field.
+            </summary>
+            <remarks>This class can be used to enter of edit text in a text field.</remarks>
+            <example>The following example shows how to enter text in a text field.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Forms
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a MergeOptions object to import the AcroForm
+            		Dim options As MergeOptions = New MergeOptions(True)
+            
+            		' Create a merge document with your PDF containing form fields
+            		Dim MyDocument As MergeDocument = New MergeDocument("C:\ImportPDF.pdf", options)
+            
+            		' Set the value of the text field equal to the string you want to appear
+            		Dim text As TextField = MyDocument.Form.Fields("Text3")
+            		text.Value = "This is my text field"
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Forms;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a MergeOptions object to import the AcroForm
+            		MergeOptions options = new MergeOptions( true );
+            
+            		// Create a merge document with your PDF containing form fields
+            		MergeDocument document = new MergeDocument( @"C:\ImportPDF.pdf", options );
+            
+            		// Set the value of the text field equal to the string you want to appear
+            		TextField text = (TextField)document.Form.Fields["Text3"];
+            		text.Value = "This is my text field";
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.MergeTextField.DrawDictionary(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the merged text field's dictionary entries to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the output.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.MergeTextField.Value">
+            <summary>
+            Overridden. Gets or sets the value of the merged text field.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.MergeTextField.MaximumLength">
+            <summary>
+            Gets the maximum length of the merged text field.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.PdfButtonField">
+            <summary>
+            Representing a button field in a PDF document.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.PdfFormField">
+            <summary>
+            Representing a form field in a PDF document.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.GetOriginalPageNumber">
+            <summary>
+            Returns the original page number of the form field in the original PDF document.
+            </summary>
+            <returns>The page number that the form field appears on (1 based index).</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.PositionPageElement(ceTe.DynamicPDF.PageElement,ceTe.DynamicPDF.Page)">
+            <summary>
+            Sets the position of a page element to the coordinates of the form field.
+            </summary>
+            <param name="pageElement">Page element whose coordinates should be set.</param>
+            <param name="page">Page that contains the page element.</param>
+            <remarks>The page element must implement <see cref="T:ceTe.DynamicPDF.PageElements.IArea"/> and/or <see cref="T:ceTe.DynamicPDF.PageElements.ICoordinate"/>
+            in order for it's coordinates to be set.</remarks>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.GetX(ceTe.DynamicPDF.Page)">
+            <summary>
+            Returns the X coordinate of the form field on the given page.
+            </summary>
+            <param name="page">Page for which the X coordinates are returned.</param>
+            <returns>The X coordinate on the given page.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.GetY(ceTe.DynamicPDF.Page)">
+            <summary>
+            Returns the Y coordinate of the form field on the given page.
+            </summary>
+            <param name="page">Page for which the Y coordinates are returned.</param>
+            <returns>The Y coordinate on the given page.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.CreateLabel(ceTe.DynamicPDF.Page,System.Single,System.Single,System.String,ceTe.DynamicPDF.Font,System.Single)">
+            <summary>
+            Creates a <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object and adds it to the given page at the coordinates of the form field.
+            </summary>
+            <param name="page">Page to which the label will be added.</param>
+            <param name="xOffset">The X coordinate offset for the label.</param>
+            <param name="yOffset">The Y coordinate offset for the label.</param>
+            <param name="text">The text of the label.</param>
+            <param name="font">The font to use for the label.</param>
+            <param name="fontSize">The font size to use for the label.</param>
+            <returns>The <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object that was added to the page.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.CreateLabel(ceTe.DynamicPDF.Page,System.Single,System.Single,System.String,ceTe.DynamicPDF.Font,System.Single,ceTe.DynamicPDF.TextAlign)">
+            <summary>
+            Creates a <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object and adds it to the given page at the coordinates of the form field.
+            </summary>
+            <param name="page">Page to which the label will be added.</param>
+            <param name="xOffset">The X coordinate offset for the label.</param>
+            <param name="yOffset">The Y coordinate offset for the label.</param>
+            <param name="text">The text of the label.</param>
+            <param name="font">The font to use for the label.</param>
+            <param name="fontSize">The font size to use for the label.</param>
+            <param name="align">The text alignment of the label.</param>
+            <returns>The <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object that was added to the page.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.CreateLabel(ceTe.DynamicPDF.Page,System.Single,System.Single,System.String,ceTe.DynamicPDF.Font,System.Single,ceTe.DynamicPDF.TextAlign,ceTe.DynamicPDF.Color)">
+            <summary>
+            Creates a <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object and adds it to the given page at the coordinates of the form field.
+            </summary>
+            <param name="page">Page to which the label will be added.</param>
+            <param name="xOffset">The X coordinate offset for the label.</param>
+            <param name="yOffset">The Y coordinate offset for the label.</param>
+            <param name="text">The text of the label.</param>
+            <param name="font">The font to use for the label.</param>
+            <param name="fontSize">The font size to use for the label.</param>
+            <param name="align">The text alignment of the label.</param>
+            <param name="textColor">The text color of the label.</param>
+            <returns>The <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object that was added to the page.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.CreateLabel(ceTe.DynamicPDF.Page,System.String,ceTe.DynamicPDF.Font,System.Single)">
+            <summary>
+            Creates a <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object and adds it to the given page at the coordinates of the form field.
+            </summary>
+            <param name="page">Page to which the label will be added.</param>
+            <param name="text">The text of the label.</param>
+            <param name="font">The font to use for the label.</param>
+            <param name="fontSize">The font size to use for the label.</param>
+            <returns>The <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object that was added to the page.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.CreateLabel(ceTe.DynamicPDF.Page,System.String,ceTe.DynamicPDF.Font,System.Single,ceTe.DynamicPDF.TextAlign)">
+            <summary>
+            Creates a <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object and adds it to the given page at the coordinates of the form field.
+            </summary>
+            <param name="page">Page to which the label will be added.</param>
+            <param name="text">The text of the label.</param>
+            <param name="font">The font to use for the label.</param>
+            <param name="fontSize">The font size to use for the label.</param>
+            <param name="align">The text alignment of the label.</param>
+            <returns>The <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object that was added to the page.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.CreateLabel(ceTe.DynamicPDF.Page,System.String,ceTe.DynamicPDF.Font,System.Single,ceTe.DynamicPDF.TextAlign,ceTe.DynamicPDF.Color)">
+            <summary>
+            Creates a <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object and adds it to the given page at the coordinates of the form field.
+            </summary>
+            <param name="page">Page to which the label will be added.</param>
+            <param name="text">The text of the label.</param>
+            <param name="font">The font to use for the label.</param>
+            <param name="fontSize">The font size to use for the label.</param>
+            <param name="align">The text alignment of the label.</param>
+            <param name="textColor">The text color of the label.</param>
+            <returns>The <see cref="T:ceTe.DynamicPDF.PageElements.Label"/> object that was added to the page.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfFormField.GetValue">
+            <summary>
+            Gets the value of the form field.
+            </summary>
+            <returns>A <b>string</b> containing the value.</returns>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.HasChildFields">
+            <summary>
+            Gets the type of the form field.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.Width">
+            <summary>
+            Gets the width of the form field.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.Height">
+            <summary>
+            Gets the height of the form field.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.Parent">
+            <summary>
+            Gets the parent form field.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.Form">
+            <summary>
+            Gets the form the form field belongs to.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.ChildFields">
+            <summary>
+            Gets a collection of child form fields.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.Flags">
+            <summary>
+            Gets the partial name of the form field.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.Name">
+            <summary>
+            Gets the partial name of the form field.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormField.FullName">
+            <summary>
+            Gets the full name of the form field.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfButtonField.GetValue">
+            <summary>
+            Gets the value of the button field.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.PdfChoiceField">
+            <summary>
+            Representing a choice field in a PDF document.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfChoiceField.GetValues">
+            <summary>
+            Gets the values of the choice field.
+            </summary>
+            <returns>An array of strings containing the value.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfChoiceField.GetValue">
+            <summary>
+            Gets the value of the choice fields.
+            </summary>
+            <returns>A <b>string</b> containing the value.</returns>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.PdfForm">
+            <summary>
+            Representing a form in a PDF document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfForm.Fields">
+            <summary>
+            Gets a collection of form fields contained in the form.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.PdfFormFieldList">
+            <summary>
+            Representing a collection of form fields in a PDF document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormFieldList.Count">
+            <summary>
+            Gets the number of form fields in the collection.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormFieldList.Item(System.Int32)">
+            <summary>
+            Gets a form field at the specified index in the collection.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfFormFieldList.Item(System.String)">
+            <summary>
+            Gets the form field by the given name.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.PdfSignatureField">
+            <summary>
+            Representing a signature field in a PDF document.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.Forms.PdfTextField">
+            <summary>
+            Representing a text field in a PDF document.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.Forms.PdfTextField.GetValue">
+            <summary>
+            Gets the value of a text field.
+            </summary>
+            <returns>A <b>string</b> containing the value.</returns>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfTextField.MaximumLength">
+            <summary>
+            Gets the maximum length of the text field.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.Forms.PdfTextField.Text">
+            <summary>
+            Gets the text of the text field.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.IO.Arc4">
+            <summary>
+            Represents an ARC4 encryption class. For internal use only.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.ImportedPage">
+            <summary>
+            Represents an imported page.
+            </summary>
+            <remarks>This class can be used to pull a single selected page from an existing PDF document.</remarks>
+            <example>This example shows you how to import one page of an existing PDF and save it as a separate PDF.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a PDF Document
+            		Dim MyDocument As Document = New Document 
+            			
+            		' Create an ImportedPage and add it to the document
+            		Dim MyPage As ImportedPage = New ImportedPage("C:\ImportPDF.pdf", 2, 50)
+            		MyDocument.Pages.Add( MyPage )
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            		
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a PDF Document
+            		Document document = new Document();
+            
+            		// Create an ImportedPage and add it to the document
+            		ImportedPage page = new ImportedPage( @"C:\ImportPDF.pdf", 2, 50 );
+            		document.Pages.Add( page );
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPage"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.#ctor(System.String,System.Int32,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPage"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+            <param name="margins">Margins of the new page. Overrides the default margins.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.#ctor(ceTe.DynamicPDF.Merger.PdfPage)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPage"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="P:ceTe.DynamicPDF.Merger.ImportedPage.PdfPage"/> object to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.#ctor(ceTe.DynamicPDF.Merger.PdfPage,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPage"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="P:ceTe.DynamicPDF.Merger.ImportedPage.PdfPage"/> object to import.</param>
+            <param name="margins">Margins of the new page. Overrides the default margins.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.DrawContents(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the contents to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> to receive the output.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.DrawResources(ceTe.DynamicPDF.IO.DocumentWriter,ceTe.DynamicPDF.IO.PageResources)">
+            <summary>
+            Overridden. Draws the resources to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> to receive the output.</param>
+            <param name="resources">The pages resources.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.DrawPrepend(ceTe.DynamicPDF.IO.PageWriter)">
+            <summary>
+            Overridden. Draws the prepended output to the given <see cref="T:ceTe.DynamicPDF.IO.PageWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.PageWriter"/> to receive the output.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.DrawAnnotations(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the annotations to the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> to receive the output.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.DrawAppend(ceTe.DynamicPDF.IO.PageWriter)">
+            <summary>
+            Overridden. Draws the appended output to the given <see cref="T:ceTe.DynamicPDF.IO.PageWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.PageWriter"/> to receive the output.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPage.HasPageElements(ceTe.DynamicPDF.IO.DocumentWriter,System.Int32)">
+            <summary>
+            Overridden. Returns a value specifying if the page has page elements.
+            </summary>
+            <param name="writer">The <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object used for output.</param>
+            <param name="pageNumber">The page number to check.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPage.ContentObjects">
+            <summary>
+            Overridden. Gets the number of content objects used by the imported page.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPage.BackgroundElements">
+            <summary>
+            Gets a collection of page elements to be drawn as a background on the page.
+            </summary>
+            <remarks>Page elements placed in this collection will appear below the imported PDF data. Use the
+            <see cref="P:ceTe.DynamicPDF.Page.Elements"/> property to place page elements on top of the imported PDF data.</remarks>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPage.PdfPage">
+            <summary>
+            Gets the imported page that this page will be based on.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.ImportedPageArea">
+            <summary>
+            Represents an imported pages area.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.#ctor(System.String,System.Int32,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageArea"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF doument to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+            <param name="x">X coordinate of the imported page area.</param>
+            <param name="y">Y coordinate of the imported page area.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.#ctor(System.String,System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageArea"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+            <param name="x">X coordinate of the imported page area.</param>
+            <param name="y">Y coordinate of the imported page area.</param>
+            <param name="scale">The scale to use when rendering the imported page area.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.#ctor(ceTe.DynamicPDF.Merger.PdfPage,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageArea"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="T:ceTe.DynamicPDF.Merger.PdfPage"/> object containing the page.</param>
+            <param name="x">X coordinate of the imported page area.</param>
+            <param name="y">Y coordinate of the imported page area.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.#ctor(ceTe.DynamicPDF.Merger.PdfPage,System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageArea"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="T:ceTe.DynamicPDF.Merger.PdfPage"/> object containing the page.</param>
+            <param name="x">X coordinate of the imported page area.</param>
+            <param name="y">Y coordinate of the imported page area.</param>
+            <param name="scale">The scale to use when rendering the imported page area.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.#ctor(ceTe.DynamicPDF.Merger.ImportedPageContents,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageArea"/> class.
+            </summary>
+            <param name="contents"><see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> object containing the page's contents.</param>
+            <param name="x">X coordinate of the imported page area.</param>
+            <param name="y">Y coordinate of the imported page area.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.#ctor(ceTe.DynamicPDF.Merger.ImportedPageContents,System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageArea"/> class.
+            </summary>
+            <param name="contents"><see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> object containing the page's contents.</param>
+            <param name="x">X coordinate of the imported page area.</param>
+            <param name="y">Y coordinate of the imported page area.</param>
+            <param name="scale">The scale to use when rendering the imported page area.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.Draw(ceTe.DynamicPDF.IO.PageWriter)">
+            <summary>
+            Overridden. Draws the image to the given <see cref="T:ceTe.DynamicPDF.IO.PageWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.PageWriter"/> object to receive the image's output.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.SetBounds(System.Single,System.Single)">
+            <summary>
+            Scales the image to fit in the given box keeping the X and Y scale equal.
+            </summary>
+            <param name="maximumWidth">The maximum width.</param>
+            <param name="maximumHeight">The maximum height.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageArea.SetSize(System.Single,System.Single)">
+            <summary>
+            Scales the image to fit the exact width and height given.
+            </summary>
+            <param name="width">Width of image.</param>
+            <param name="height">Height of image.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageArea.X">
+            <summary>
+            Gets or sets the X coordinate of the page element.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageArea.Y">
+            <summary>
+            Gets or sets the Y coordinate of the imported page area.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageArea.Angle">
+            <summary>
+            Gets or sets the Y coordinate of the imported page area.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageArea.ScaleX">
+            <summary>
+            Gets or sets the horizontal scale of the imported page area.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageArea.ScaleY">
+            <summary>
+            Gets or sets the vertical scale of the imported page area.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageArea.Width">
+            <summary>
+            Gets or sets the width of the imported page area.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageArea.Height">
+            <summary>
+            Gets or sets the height of the imported page area.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageArea.Contents">
+            <summary>
+            Get the imported page area's <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> object.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.ImportedPageContents">
+            <summary>
+            Represents the contents used by an the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <remarks>This class can be used to reuse a pages contents in multiple <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> objects. Doing so will
+            reduce the size of the output PDF because the contents will only appears in the output document once.</remarks>
+            <example>This example shows you how to import one page of an existing PDF using this class.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a PDF Document
+            		Dim MyDocument As Document = New Document 
+            
+            		' Create a Page and add it to the document
+            		Dim MyPage As Page = New Page
+            		MyDocument.Pages.Add(MyPage)
+            
+            		' Create an ImportedPageContents object
+            		Dim MyContents As ImportedPageContents = _
+            			New ImportedPageContents( "C:\ImportPDF.pdf", 2 )
+            
+            		' Create an ImportedPage and add it to the document
+            		Dim MyData As ImportedPageData = New ImportedPageData( _
+            			MyContents, -200, -100, 0.24F )
+            		MyPage.Elements.Add(MyData)
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a PDF Document
+            		Document document = new Document();
+            			
+            		// Create a Page and add it to the document
+            		Page page = new Page();
+            		document.Pages.Add( page );
+            
+            		// Create an ImportedPageContents object
+            		ImportedPageContents contents =
+            			new ImportedPageContents( @"C:\ImportPDF.pdf", 2 );
+            
+            		// Create an ImportedPageData and add it to the page
+            		ImportedPageData data = new ImportedPageData( 
+            			contents, -200, -100, 0.24f );
+            		page.Elements.Add( data );
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageContents.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageContents.#ctor(ceTe.DynamicPDF.Merger.PdfPage)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="P:ceTe.DynamicPDF.Merger.ImportedPageContents.PdfPage"/> object to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageContents.#ctor(System.String,System.Int32,ceTe.DynamicPDF.Merger.PdfPageBoundaries)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+            <param name="pageBoundaries">The boundaries box to use as the edges of the page.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageContents.#ctor(ceTe.DynamicPDF.Merger.PdfPage,ceTe.DynamicPDF.Merger.PdfPageBoundaries)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="P:ceTe.DynamicPDF.Merger.ImportedPageContents.PdfPage"/> object to import.</param>
+            <param name="pageBoundaries">The boundaries box to use as the edges of the page.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageContents.SetBoundaries(ceTe.DynamicPDF.Merger.PdfPageBoundaries)">
+            <summary>
+            Sets the boundaries of the page to the specified boundary on the imported page.
+            </summary>
+            <param name="pageBoundaries"></param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageContents.Draw(ceTe.DynamicPDF.IO.DocumentWriter)">
+            <summary>
+            Overridden. Draws the contents the given <see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.DocumentWriter"/> object to receive the contents output.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageContents.RequiredPdfObjects">
+            <summary>
+            Overridden. Gets the number of PDF objects required by the imported page data's contents.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageContents.ClipLeft">
+            <summary>
+            Gets or sets the left clipping of the contents.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageContents.ClipRight">
+            <summary>
+            Gets or sets the right clipping of the contents.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageContents.ClipTop">
+            <summary>
+            Gets or sets the top clipping of the contents.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageContents.ClipBottom">
+            <summary>
+            Gets or sets the bottom clipping of the contents.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageContents.Width">
+            <summary>
+            Gets the clipped width of the contents.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageContents.Height">
+            <summary>
+            Gets the clipped height of the contents.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.ImportedPageData">
+            <summary>
+            Represents a Page Element containing the data of an imported page from a PDF document.
+            </summary>
+            <remarks>This class can be used to pull a single selected page from an existing PDF document.  
+            You can scale it or rotate it and you can place it on an another page.</remarks>
+            <example>This example shows you how to import one page of an existing PDF, scale that page and then place it on another blank page.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a PDF Document
+            		Dim MyDocument As Document = New Document 
+            
+            		' Create a Page and add it to the document
+            		Dim MyPage As Page = New Page
+            		MyDocument.Pages.Add(MyPage)
+            
+            		' Create an ImportedPage and add it to the document
+            		Dim MyData As ImportedPageData = New ImportedPageData( _
+            			"C:\ImportPDF.pdf", 2, -200, -100, 0.24F )
+            		MyPage.Elements.Add(MyData)
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a PDF Document
+            		Document document = new Document();
+            			
+            		// Create a Page and add it to the document
+            		Page page = new Page();
+            		document.Pages.Add( page );
+            
+            		// Create an ImportedPageData and add it to the page
+            		ImportedPageData data = new ImportedPageData( 
+            			@"C:\ImportPDF.pdf", 2, -200, -100, 0.24f );
+            		page.Elements.Add( data );
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(System.String,System.Int32,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+            <param name="xOffset">X offset of the placement on the page.</param>
+            <param name="yOffset">Y offset of the placement on the page.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(System.String,System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document to import.</param>
+            <param name="pageNumber">Page number to import.</param>
+            <param name="xOffset">X offset of the placement on the page.</param>
+            <param name="yOffset">Y offset of the placement on the page.</param>
+            <param name="scale">Scale of the imported page.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(ceTe.DynamicPDF.Merger.PdfPage)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="T:ceTe.DynamicPDF.Merger.PdfPage"/> object to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(ceTe.DynamicPDF.Merger.PdfPage,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="T:ceTe.DynamicPDF.Merger.PdfPage"/> object to import.</param>
+            <param name="xOffset">X offset of the placement on the page.</param>
+            <param name="yOffset">Y offset of the placement on the page.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(ceTe.DynamicPDF.Merger.PdfPage,System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="pdfPage"><see cref="T:ceTe.DynamicPDF.Merger.PdfPage"/> object to import.</param>
+            <param name="xOffset">X offset of the placement on the page.</param>
+            <param name="yOffset">Y offset of the placement on the page.</param>
+            <param name="scale">Scale of the imported page.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(ceTe.DynamicPDF.Merger.ImportedPageContents)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="contents"><see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> object containing the pages contents.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(ceTe.DynamicPDF.Merger.ImportedPageContents,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="contents"><see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> object containing the pages contents.</param>
+            <param name="xOffset">X offset of the placement on the page.</param>
+            <param name="yOffset">Y offset of the placement on the page.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.#ctor(ceTe.DynamicPDF.Merger.ImportedPageContents,System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageData"/> class.
+            </summary>
+            <param name="contents"><see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> object containing the pages contents.</param>
+            <param name="xOffset">X offset of the placement on the page.</param>
+            <param name="yOffset">Y offset of the placement on the page.</param>
+            <param name="scale">Scale of the imported page.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.ImportedPageData.Draw(ceTe.DynamicPDF.IO.PageWriter)">
+            <summary>
+            Overridden. Draws the imported page data to the given <see cref="T:ceTe.DynamicPDF.IO.PageWriter"/> object.
+            </summary>
+            <param name="writer"><see cref="T:ceTe.DynamicPDF.IO.PageWriter"/> object to receive the imported page data output.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.ClipLeft">
+            <summary>
+            Depreciated. Gets or sets the left clipping of the page.
+            </summary>
+            <remarks>This property is depreciated. Use Contents.ClipLeft instead.</remarks>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.ClipRight">
+            <summary>
+            Depreciated. Gets or sets the right clipping of the page.
+            </summary>
+            <remarks>This property is depreciated. Use Contents.ClipRight instead.</remarks>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.ClipTop">
+            <summary>
+            Depreciated. Gets or sets the top clipping of the page.
+            </summary>
+            <remarks>This property is depreciated. Use Contents.ClipTop instead.</remarks>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.ClipBottom">
+            <summary>
+            Depreciated. Gets or sets the bottom clipping of the page.
+            </summary>
+            <remarks>This property is depreciated. Use Contents.ClipBottom instead.</remarks>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.XOffset">
+            <summary>
+            Gets or sets the X offset of the page.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.YOffset">
+            <summary>
+            Gets or sets the Y offset of the page.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.ScaleX">
+            <summary>
+            Gets or sets the horizontal scale of the page.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.ScaleY">
+            <summary>
+            Gets or sets the vertical scale of the page.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.Width">
+            <summary>
+            Gets or sets the width of the page.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.Height">
+            <summary>
+            Gets or sets the height of the page.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.Angle">
+            <summary>
+            Gets or sets the angle of the page in degrees.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.ImportedPageData.Contents">
+            <summary>
+            Get the imported page data's <see cref="T:ceTe.DynamicPDF.Merger.ImportedPageContents"/> object.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.MergeDocument">
+            <summary>
+            Represents a document that can merge and append other documents.
+            </summary>
+            <remarks>This is the primary class used to merge or append entire PDF documents or certain pages from existing documents.
+            The merge document can be output to any object derived from the <see cref="T:System.IO.Stream"/> class that supports 
+            writing and can easily be integrated with ASP.NET to stream the document to Internet Information Server's HTTP output stream.</remarks>
+            <example>The following example will first merge two entire PDF documents together, then will Append a selected page of 
+            a third PDF to the end.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create two PDF document objects
+            		Dim MyPdfA As PdfDocument = New PdfDocument("C:\ImportPDFA.pdf")
+            		Dim MyPdfB As PdfDocument = New PdfDocument("C:\ImportPDFB.pdf")
+            
+            		' Merge the two documents
+            		Dim MyDocument As MergeDocument = MergeDocument.Merge(MyPdfA, MyPdfB)
+            
+            		' Append an additional document
+            		Dim MyPdfC As PdfDocument = New PdfDocument("C:\MyDocumentC.pdf")
+            		MyDocument.Append(MyPdfC, 2, 1)
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create two PDF document objects
+            		PdfDocument pdfA = new PdfDocument( @"C:\ImportPDFA.pdf" );
+            		PdfDocument pdfB = new PdfDocument( @"C:\ImportPDFB.pdf" );
+            
+            		// Merge the two documents
+            		MergeDocument document = MergeDocument.Merge( pdfA, pdfB );
+            
+            		// Append an additional document
+            		PdfDocument pdfC = new PdfDocument( @"C:\MyDocumentC.pdf" );
+            		document.Append( pdfC, 2, 1);
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+            <param name="filePath">The physical file path of the PDF to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor(ceTe.DynamicPDF.Merger.PdfDocument)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+            <param name="pdfDocument">The <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor(System.String,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+            <param name="filePath">The physical file path of the PDF to import.</param>
+            <param name="options">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor(ceTe.DynamicPDF.Merger.PdfDocument,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+            <param name="pdfDocument">The <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> to import.</param>
+            <param name="options">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+            <param name="filePath">The physical file path of the PDF to import.</param>
+            <param name="startPage">The page to start importing from.</param>
+            <param name="pageCount">The number of pages to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor(ceTe.DynamicPDF.Merger.PdfDocument,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+            <param name="pdfDocument">The <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> to import.</param>
+            <param name="startPage">The page to start importing from.</param>
+            <param name="pageCount">The number of pages to import.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor(System.String,System.Int32,System.Int32,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+            <param name="filePath">The physical file path of the PDF to import.</param>
+            <param name="startPage">The page to start importing from.</param>
+            <param name="pageCount">The number of pages to import.</param>
+            <param name="options">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.#ctor(ceTe.DynamicPDF.Merger.PdfDocument,System.Int32,System.Int32,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> class.
+            </summary>
+            <param name="pdfDocument">The <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> to import.</param>
+            <param name="startPage">The page to start importing from.</param>
+            <param name="pageCount">The number of pages to import.</param>
+            <param name="options">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Append(System.String)">
+            <summary>
+            Appends a PDF document to the current document.
+            </summary>
+            <param name="filePath">The physical file path of the PDF to import.</param>
+            <returns>An array of <see cref="T:ceTe.DynamicPDF.Page"/>s that were appended to the document.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Append(ceTe.DynamicPDF.Merger.PdfDocument)">
+            <summary>
+            Appends a PDF document to the current document.
+            </summary>
+            <param name="pdfDocument">The <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> to import.</param>
+            <returns>An array of <see cref="T:ceTe.DynamicPDF.Page"/>s that were appended to the document.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Append(System.String,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Appends a PDF document to the current document.
+            </summary>
+            <param name="filePath">The physical file path of the PDF to import.</param>
+            <param name="options">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options.</param>
+            <returns>An array of <see cref="T:ceTe.DynamicPDF.Page"/>s that were appended to the document.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Append(ceTe.DynamicPDF.Merger.PdfDocument,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Appends a PDF document to the current document.
+            </summary>
+            <param name="pdfDocument">The <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> to import.</param>
+            <param name="options">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options.</param>
+            <returns>An array of <see cref="T:ceTe.DynamicPDF.Page"/>s that were appended to the document.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Append(System.String,System.Int32,System.Int32)">
+            <summary>
+            Appends a PDF document to the current document.
+            </summary>
+            <param name="filePath">The physical file path of the PDF to import.</param>
+            <param name="startPage">The page to start importing from.</param>
+            <param name="pageCount">The number of pages to import.</param>
+            <returns>An array of <see cref="T:ceTe.DynamicPDF.Page"/>s that were appended to the document.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Append(ceTe.DynamicPDF.Merger.PdfDocument,System.Int32,System.Int32)">
+            <summary>
+            Appends a PDF document to the current document.
+            </summary>
+            <param name="pdfDocument">The <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> to import.</param>
+            <param name="startPage">The page to start appending from.</param>
+            <param name="pageCount">The number of pages to append.</param>
+            <returns>An array of <see cref="T:ceTe.DynamicPDF.Page"/>s that were appended to the document.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Append(System.String,System.Int32,System.Int32,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Appends a PDF document to the current document.
+            </summary>
+            <param name="filePath">The physical file path of the PDF to import.</param>
+            <param name="startPage">The page to start importing from.</param>
+            <param name="pageCount">The number of pages to import.</param>
+            <param name="options">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options.</param>
+            <returns>An array of <see cref="T:ceTe.DynamicPDF.Page"/>s that were appended to the document.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Append(ceTe.DynamicPDF.Merger.PdfDocument,System.Int32,System.Int32,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Appends a PDF document to the current document.
+            </summary>
+            <param name="pdfDocument">The <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> to import.</param>
+            <param name="startPage">The page to start appending from.</param>
+            <param name="pageCount">The number of pages to append.</param>
+            <param name="options">Specifies the merge options.</param>
+            <returns>An array of <see cref="T:ceTe.DynamicPDF.Merger.ImportedPage"/>s that were appended to the document.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Merge(System.String,System.String)">
+            <summary>
+            Merges two PDF documents together.
+            </summary>
+            <param name="firstDocumentFilePath">The physical file path to the first PDF document.</param>
+            <param name="secondDocumentFilePath">The physical file path to the second PDF document.</param>
+            <returns>A <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> containing the pages from both PDF documents.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Merge(ceTe.DynamicPDF.Merger.PdfDocument,ceTe.DynamicPDF.Merger.PdfDocument)">
+            <summary>
+            Merges two PDF documents together.
+            </summary>
+            <param name="firstDocument">A <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class representing the first PDF document.</param>
+            <param name="secondDocument">A <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class representing the second PDF document.</param>
+            <returns>A <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> containing the pages from both PDF documents.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Merge(System.String,ceTe.DynamicPDF.Merger.MergeOptions,System.String,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Merges two PDF documents together.
+            </summary>
+            <param name="firstDocumentFilePath">The physical file path to the first PDF document.</param>
+            <param name="firstDocumentOptions">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options for the first PDF document.</param>
+            <param name="secondDocumentFilePath">The physical file path to the second PDF document.</param>
+            <param name="secondDocumentOptions">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options for the second PDF document.</param>
+            <returns>A <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> containing the pages from both PDF documents.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeDocument.Merge(ceTe.DynamicPDF.Merger.PdfDocument,ceTe.DynamicPDF.Merger.MergeOptions,ceTe.DynamicPDF.Merger.PdfDocument,ceTe.DynamicPDF.Merger.MergeOptions)">
+            <summary>
+            Merges two PDF documents together.
+            </summary>
+            <param name="firstDocument">A <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class representing the first PDF document.</param>
+            <param name="firstDocumentOptions">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options for the first PDF document.</param>
+            <param name="secondDocument">A <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class representing the second PDF document.</param>
+            <param name="secondDocumentOptions">A <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> object specifying the merge options for the second PDF document.</param>
+            <returns>A <see cref="T:ceTe.DynamicPDF.Merger.MergeDocument"/> containing the pages from both PDF documents.</returns>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.MergeOptions">
+            <summary>
+            Represents options for merging PDF documents.
+            </summary>
+            <remarks>Currently the only merge option is whether or not to preserve the form fields on the PDF being merged in.  
+            Specifying true will keep the form fields on the merged PDF where specifying false will remove the form fields from the PDF.</remarks>
+            <example>The following example shows how to enter text in a text field specifying the MergeOptions.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Forms
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create a MergeOptions object to import the AcroForm
+            		Dim options As MergeOptions = New MergeOptions(True)
+            
+            		' Create a merge document with your PDF containing form fields
+            		Dim MyDocument As MergeDocument = New MergeDocument("C:\ImportPDF.pdf", options)
+            
+            		' Set the value of the text field equal to the string you want to appear
+            		Dim text As TextField = MyDocument.Form.Fields("Text3")
+            		text.Value = "This is my text field"
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Forms;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create a MergeOptions object to import the AcroForm
+            		MergeOptions options = new MergeOptions( true );
+            
+            		// Create a merge document with your PDF containing form fields
+            		MergeDocument document = new MergeDocument( @"C:\ImportPDF.pdf", options );
+            
+            		// Set the value of the text field equal to the string you want to appear
+            		TextField text = (TextField)document.Form.Fields["Text3"];
+            		text.Value = "This is my text field";
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeOptions.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> class.
+            </summary>
+            <param name="mergeFormFields">A value indicating if form fields should be merged.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.MergeOptions.#ctor(System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.MergeOptions"/> class.
+            </summary>
+            <param name="mergeFormFields">A value indicating if form fields should be merged.</param>
+            <param name="rootFormField">The root form field that all merged form fields will be placed under.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.MergeOptions.MergeFormFields">
+            <summary>
+            Gets or sets a value indicating if form fields should be merged.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.MergeOptions.RootFormField">
+            <summary>
+            Gets or sets the root form field.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.MergeSettings">
+            <summary>
+            Represents the merger settings for a document.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.PdfDocument">
+            <summary>
+            Represents a PDF document for import.
+            </summary>
+            <remarks>This class should be used when you will be referencing an existing PDF document more than once.  Using a 
+            PDFDocument is more efficient than specifying a file path because the document will not need to 
+            be parsed again on each subsequent reference.  This class is safe for multithreaded operations.</remarks>
+            <example>The following example will first merge two entire PDF documents together, then will Append a selected page of 
+            a third PDF to the end.<p/>
+            <code>
+            <SPAN class="lang">[Visual&amp;nbsp;Basic]</SPAN>
+            Imports System
+            Imports ceTe.DynamicPDF
+            Imports ceTe.DynamicPDF.Merger
+            
+            Module MyModule
+            
+            	Sub Main()
+            
+            		' Create two PDF document objects
+            		Dim pdfA As PdfDocument = New PdfDocument("C:\ImportPDF.pdf")
+            		' The owner's password is required to merge encrypted PDFs
+            		Dim pdfB As PdfDocument = New PdfDocument("C:\EncryptedPDF.pdf", "owner")
+            
+            		' Merge the two documents
+            		Dim MyDocument As MergeDocument = MergeDocument.Merge(pdfA, pdfB)
+            
+            		' Append an additional document
+            		Dim pdfC As PdfDocument = New PdfDocument("C:\MyDocumentC.pdf")
+            		MyDocument.Append(pdfC, 2, 1)
+            
+            		' Save the PDF
+            		MyDocument.Draw("C:\MyDocument.pdf")
+            		
+            	End Sub
+            End Module
+            <SPAN class="lang">[C#]</SPAN>
+            using System;
+            using ceTe.DynamicPDF;
+            using ceTe.DynamicPDF.Merger;
+            
+            class MyClass
+            {
+            	static void Main()
+            	{
+            		// Create two PDF document objects
+            		PdfDocument pdfA = new PdfDocument( @"C:\ImportPDF.pdf" );
+            		// The owner's password is required to merge encrypted PDFs
+            		PdfDocument pdfB = new PdfDocument( @"C:\EncryptedPDF.pdf", "owner" );
+            
+            		// Merge the two documents
+            		Dim document As MergeDocument = MergeDocument.Merge( pdfA, pdfB )
+            
+            		// Append an additional document
+            		PdfDocument pdfC = new PdfDocument( @"C:\MyDocumentC.pdf" );
+            		document.Append( pdfC, 2, 1);
+            
+            		// Save the PDF
+            		document.Draw( @"C:\MyDocument.pdf" );
+            	}
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfDocument.#ctor(System.IO.Stream)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class.
+            </summary>
+            <param name="stream"><see cref="T:System.IO.Stream"/> object containing the PDF document data.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfDocument.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class.
+            </summary>
+            <param name="data">A byte array containing the PDF document data.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfDocument.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfDocument.#ctor(System.IO.Stream,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class.
+            </summary>
+            <param name="stream"><see cref="T:System.IO.Stream"/> object containing the PDF document data.</param>
+            <param name="password">Owner password of the encrypted PDF document.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfDocument.#ctor(System.Byte[],System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class.
+            </summary>
+            <param name="data">A byte array containing the PDF document data.</param>
+            <param name="password">Owner password of the encrypted PDF document.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfDocument.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ceTe.DynamicPDF.Merger.PdfDocument"/> class.
+            </summary>
+            <param name="filePath">Physical file path of the PDF document.</param>
+            <param name="password">Owner password of the encrypted PDF document.</param>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfDocument.GetPage(System.Int32)">
+            <summary>
+            Gets a page by page number.
+            </summary>
+            <param name="pageNumber">The page number to retrieve.</param>
+            <returns>A <see cref="T:ceTe.DynamicPDF.Merger.PdfPage"/> object.</returns>
+            <remarks>The first page is 1.</remarks>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfDocument.SetDocumentInfo(ceTe.DynamicPDF.Document)">
+            <summary>
+            Sets the document info on the supplied <see cref="T:ceTe.DynamicPDF.Document"/> to match this document.
+            </summary>
+            <param name="document">A document to set.</param>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfDocument.Title">
+            <summary>
+            Gets the title property of the PDF document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfDocument.Author">
+            <summary>
+            Gets the author property of the PDF document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfDocument.Subject">
+            <summary>
+            Gets the subject property of the PDF document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfDocument.Keywords">
+            <summary>
+            Gets the keywords property of the PDF document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfDocument.Creator">
+            <summary>
+            Gets the creator property of the PDF document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfDocument.Producer">
+            <summary>
+            Gets the producer property of the PDF document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfDocument.Form">
+            <summary>
+            Gets the AcroForm for the document.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfDocument.Pages">
+            <summary>
+            Gets a collection of PDF pages for the document.
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.PdfPage">
+            <summary>
+            Represents a page from an imported PDF document.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfPage.GetDictionaryValue(System.String)">
+            <summary>
+            Returns the value of a given page dictionary key.
+            </summary>
+            <param name="key">The dictionaries key.</param>
+            <returns>The dictionary key's value as a string.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfPage.GetContents">
+            <summary>
+            Returns the uncompressed binary contents of the page.
+            </summary>
+            <returns>A byte array containing the pages contents.</returns>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfPage.GetDimensions">
+            <summary>
+            Gets the page dimensions of the page.
+            </summary>
+            <returns>A <see cref="T:ceTe.DynamicPDF.PageDimensions"/> object.</returns>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.PdfPageBoundaries">
+            <summary>
+            Specifies the boundaries of a PDF page.
+            </summary>
+        </member>
+        <member name="F:ceTe.DynamicPDF.Merger.PdfPageBoundaries.MediaBox">
+            <summary>
+            MediaBox
+            </summary>
+        </member>
+        <member name="F:ceTe.DynamicPDF.Merger.PdfPageBoundaries.CropBox">
+            <summary>
+            CropBox
+            </summary>
+        </member>
+        <member name="F:ceTe.DynamicPDF.Merger.PdfPageBoundaries.BleedBox">
+            <summary>
+            BleedBox
+            </summary>
+        </member>
+        <member name="F:ceTe.DynamicPDF.Merger.PdfPageBoundaries.TrimBox">
+            <summary>
+            TrimBox
+            </summary>
+        </member>
+        <member name="F:ceTe.DynamicPDF.Merger.PdfPageBoundaries.ArtBox">
+            <summary>
+            ArtBox
+            </summary>
+        </member>
+        <member name="T:ceTe.DynamicPDF.Merger.PdfPageList">
+            <summary>
+            Represents a collection of PDF pages.
+            </summary>
+        </member>
+        <member name="M:ceTe.DynamicPDF.Merger.PdfPageList.GetEnumerator">
+            <summary>
+            Returns an enumerator that can iterate through the <see cref="T:ceTe.DynamicPDF.Merger.PdfPageList"/>.
+            </summary>
+            <returns>An <see cref="T:System.Collections.IEnumerator"/> for the entire <see cref="T:ceTe.DynamicPDF.Merger.PdfPageList"/></returns>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfPageList.Count">
+            <summary>
+            Gets the number of PDF pages in the collection.
+            </summary>
+        </member>
+        <member name="P:ceTe.DynamicPDF.Merger.PdfPageList.Item(System.Int32)">
+            <summary>
+            Gets a PDF page at the given index.
+            </summary>
+        </member>
+    </members>
+</doc>

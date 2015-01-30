@@ -1,0 +1,286 @@
+/* Set default font and size */
+
+form, p, td, ol, td, ul, input, textarea
+{
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+}
+
+body
+{
+	margin: 10px 0px 0px 10px;
+	padding: 0px;
+	background-color: #000000;
+}
+
+#leftnavbar
+{
+	position: absolute;
+	top: 80px;
+	left: 10px;
+	width: 90px;
+}
+
+#tabgraphic
+{
+	position: absolute;
+	top: 101px;
+	left: 101px;
+	padding-left: 0px;
+	padding-top: 20px;
+}
+
+#maincontent_tab
+{
+	position: absolute;
+	top: 186px;
+	left: 101px;
+	width: 660px;
+	padding-left: 25px;
+	padding-top: 20px;
+}
+
+#maincontent
+{
+	position: absolute;
+	top: 101px;
+	left: 106px;
+	width: 660px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+a:link    {color:#396669; background-color:transparent; text-decoration:none}
+a:visited {color:#396669; background-color:transparent; text-decoration:none}
+a:active  {color:#990000; background-color:transparent; text-decoration:none}
+a:hover   {color:#990000; background-color:transparent; text-decoration:none}
+
+p
+{
+	line-height: 1.6em;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.addtable
+{
+	line-height: normal;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+h1
+{
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 14px;
+}
+
+h2
+{
+	color: #000000;
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+
+
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 4px;
+	list-style-position: outside;
+	list-style-type: disc;
+}
+
+ol
+{
+	margin-top: 0px;
+	margin-bottom: 4px;
+	list-style-position: outside;
+}
+
+li
+{
+	line-height: 1.4em;
+	padding-bottom: 2px;
+}
+
+sup, sub {font-size: 10px}
+
+img {border-style: none}
+
+.imageborder
+{
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: thin;
+}
+
+.aligncenter {text-align: center}
+
+.alignright {text-align: right}
+
+.divider
+{
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+.headertext
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.headertext2
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.bodytext
+{
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+}
+
+.captiontext
+{
+	font-family: Arial, Helvetica;
+	font-size: 11px;
+}
+
+.errortext {color: #ff0000}
+
+.required {color: #ff0000}
+
+.bodytext_gray {color: #999999}
+
+.bodytext_white {color: #333333}
+
+#login_form
+{
+	position: absolute;
+	top: 170px;
+	left: 100px;
+	width: 614px;
+	height: 60px;
+	margin-top: 0px;
+	margin-left: 12px;
+}
+
+a:link.loginform_link	 {color:#344493; text-decoration:underline}
+a:visited.loginform_link {color:#344493; text-decoration:underline}
+a:active.loginform_link	 {color:#344493; text-decoration:underline}
+a:hover.loginform_link	 {color:#344493; text-decoration:underline}
+
+.loginform_field  /* Reducing the font size to make the text boxes fit */
+{
+	color: #000000;
+	font-size: 12px;
+}
+
+/* Other styles for the login page */
+
+#login_section01
+{
+	position: absolute;
+	top: 225px;
+	left: 50px;
+	width: 700px;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+#login_section02
+{
+	position: absolute;
+	top: 420px;
+	left: 320px;
+	width: 310px;
+	margin-top: 20px;
+	margin-left: 0px;
+}
+
+a:link.login_section02_link	 	{color:#344493; text-decoration:underline}
+a:visited.login_section02_link	{color:#344493; text-decoration:underline}
+a:active.login_section02_link	{color:#344493; text-decoration:underline}
+a:hover.login_section02_link	{color:#344493; text-decoration:underline}
+
+.loginbody {background-color: #000000;}
+
+.logintext
+{
+	color: #000000;
+	font-size: 12px;
+	line-height: 1.6em;
+}
+
+.login_learnmore
+{
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	margin-top: 0px;
+	margin-bottom: 14px;
+	color: #000000;
+}
+.big_learnmore
+{
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	color: #344493;
+}
+
+a:link.login_learnmore_link	 	{color:#0000CC; text-decoration:underline}
+a:visited.login_learnmore_link	{color:#0000CC; text-decoration:underline}
+a:active.login_learnmore_link	{color:#990000; text-decoration:underline}
+a:hover.login_learnmore_link	{color:#990000; text-decoration:underline}
+
+.help_table
+{
+	height: 85%;
+	width: 98%;
+}
+
+/* ----------------------------- */
+/* Styles specific to PDI Report */
+/* ----------------------------- */
+
+.report_title
+{
+	font-weight: bold;
+	font-size: 26px;
+}
+
+.report_user
+{
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.report_image_left
+{
+	padding-right: 6px;
+	padding-bottom: 6px;
+}
+
+.sup_title_page
+{
+	font-size: 16px;
+}
+
+.report_list
+{
+	line-height: normal;
+	margin-left: 6px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+}

@@ -1,0 +1,123 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="MU_adduser">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Adding Users</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('mu_adduser.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20028')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="aboutmu.htm">Previous<img alt="(P)revious: aboutmu" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="mu_remuser.htm"><img alt="(N)ext: mu_remuser" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutmu.htm">Manage Users</A> &gt; </DIV>
+<h1>Adding Users</h1>
+<p class="body">Each DimensionNet user must have a unique name
+and password. The name must be unique not just within the collection
+of user names but also within the DimensionNet role names. When you
+add a user, you define that user's DimensionNet password and specify
+whether the user can change that password and whether this must be
+done the first time that the user logs in. Users who are allowed to
+change their passwords will see a Change Password option in the Tools
+menu. You may also assign the user to one or more roles.</p>
+<p class="body">The names that you set up can be domain or workgroup names, or
+they can be other names that exist in DimensionNet only. For example,
+a user called Ben Johnson might log in to the domain as <span class="name">SPSS\bjohnson</span> but might have a DimensionNet
+user name of  <span class="name">ben</span>.</p>
+<p class="body">DimensionNet creates a folder for the new user in <span class="name">FMRoot\Users</span> with the same name as the user
+name. If you are using domain or workgroup user names as DimensionNet
+login names, the \ in the domain or workgroup name is converted to
+an underscore in the folder name. For example, the folder name for <span class="name">SPSS\bjohnson</span> is  <span class="name">SPSS_bjohnson</span>. Because of this, do not create DimensionNet user names that result
+in folder names that match those required for domain or workgroup
+names. In the example, avoid <span class="name">SPSS_bjohnson</span> as a DimensionNet user name.</p>
+<p class="body">When a user creates a new project, DimensionNet creates
+a project folder with unique name based on the user's DimensionNet
+user name. DimensionNet does not support Japanese characters in pathnames,
+so make sure that any user accounts that you create do not contain
+Japanese characters.</p>
+<p class="body">Users can optionally have user properties assigned
+to them. These define special abilities or qualifications that the
+user has in relation to one or more activities. Typically, they are
+used to set up interviewer qualifications that are used in determining
+which records each interviewer receives for calling.</p>
+<p class="body">
+<span class="runinhead">To Add a New User:</span>
+</p>
+<p class="step">
+<span class="step-glyph">►</span> In the User Roles tree, click <span class="screen">Users</span>.</p>
+<p class="body">A list of current user names appears on the
+right of the screen.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">add new user</span>.</p>
+<p class="body">This opens the SPSS Manage Users dialog box.</p>
+<p class="step">
+<span class="step-glyph">►</span> Complete the fields in the dialog box and click <span class="screen">OK</span>.</p>
+<p class="step">
+<span class="step-glyph">►</span> On the next dialog box, select the roles to which the
+user should be added  and click <span class="screen">OK</span>. If you are creating an interviewer account, you must assign that
+user to the CATIinterviewer role if you want mrInterview to take interviewer
+qualifications into account when assigning calls to that interviewer.</p>
+<p class="step">
+<span class="step-glyph">►</span> If user property groups exist for the role you have
+chosen, you will now see one dialog box for each group listing the
+properties that can be set within that group. </p>
+<p class="bullet">&bull;&nbsp;To assign properties, select them in the Options
+lists. Manage Users selects the Applicable check box for each property
+you set. </p>
+<p class="bullet">&bull;&nbsp;To cancel a property assignment, click the Applicable
+check box for that property. </p>
+<p class="bullet">&bull;&nbsp;Click <span class="screen">OK</span>when
+you are ready to continue. If there is more than one property group,
+the Assign User Properties dialog box is displayed for the next property
+group, otherwise you are returned to the main user details dialog
+box.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">OK</span> to create
+the user account.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="mu_addgroup.htm">Adding Roles</A>
+</div>
+<div class="link">
+<A href="mu_userstogroups.htm">Assigning Users to Roles</A>
+</div>
+<div class="link">
+<A href="mu_moduser.htm">Modifying User Accounts</A>
+</div>
+<div class="link">
+<A href="mu_import.htm">Importing Users and Roles</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

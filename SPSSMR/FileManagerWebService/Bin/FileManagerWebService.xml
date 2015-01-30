@@ -1,0 +1,587 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FileManagerWebService</name>
+    </assembly>
+    <members>
+        <member name="T:SPSSMR.Configuration.ProductInfo">
+            <summary>
+            Global version information for components belonging to SPSS DimensionNet
+            </summary>
+        </member>
+        <member name="T:SPSS.Dimensions.FileManager.FileManagerServer">
+            <summary>
+            The FileManagerServer class provides methods to use and manipulate the FMRoot folder.
+            Client applications should not use this directly but instead use the FileManagerClient class 
+            </summary>>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.#ctor(SPSSMR.DPM.IAgent2)">
+            <summary>
+            FileManagerServer Constructor
+            </summary>
+            <param name="agent">An authenticated instance of the Agent component.</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.SplitFolderString(System.String)">
+            <summary>
+            Splits a folder string into a list of folders.
+            </summary>
+            <param name="folderString">The folder string to split</param>
+            <returns>The list of folders</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.ResolveAlias(System.String)">
+            <summary>
+            Converts an alias into a fully-qualified UNC path to the FMRoot folder. 
+            If the folder alias points to a User or Project folder, a check is made to ensure the calling user has permission to access it.
+            </summary>
+            <param name="alias">The alias to resolve.</param>
+            <returns>A fully-qualified UNC path to the FMRoot folder</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.GenerateAlias(System.String)">
+            <summary>
+            Generates an alias from a fully-qualified UNC path to the FMRoot folder.
+            </summary>
+            <param name="pathName">A fully-qualified UNC path to the FMRoot folder</param>
+            <returns>The generated alias</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.ZipFolder(System.String,System.String,System.Boolean)">
+            <summary>
+            Zips the specified folder.
+            </summary>
+            <param name="zipFileNameAlias">The alias of the zip file</param>
+            <param name="srcFolderAlias">The folder alias to zip</param>
+            <param name="recursive">Set to true to include subfolders, otherwise set to false</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.DeleteFolder(System.String,System.Boolean)">
+            <summary>
+            Deletes the specified folder.
+            </summary>
+            <param name="folderAlias">The alias of the folder to delete.</param>
+            <param name="recursive">Set to true to remove folders, subfolders, and files, otherwise set to false</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.CreateFolder(System.String)">
+            <summary>
+            Creates a folder in the specified location.
+            </summary>
+            <param name="folderAlias">The alias of the folder to create.</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.MoveFolder(System.String,System.String)">
+            <summary>
+            Moves a folder into the specified destination folder.
+            </summary>
+            <param name="srcFolderAlias">The alias of the source folder</param>
+            <param name="destFolderAlias">The alias of the destination folder</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.CopyFolder(System.String,System.String)">
+            <summary>
+            Copies a folder into the specified destination folder.
+            </summary>
+            <param name="srcFolderAlias">The alias of the source folder</param>
+            <param name="destParentFolderAlias">The alias of the destination parent folder</param>
+            <returns>Returns the destination folder alias</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.GetFolders(System.String)">
+            <summary>
+            Returns a list of folder aliases found in the specified parent folder.
+            </summary>
+            <param name="folderAlias">The alias of the parent folder</param>
+            <returns>The list of folders aliases</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.RenameFolder(System.String,System.String)">
+            <summary>
+            Renames the specified folder.
+            </summary>
+            <param name="srcFolderAlias">The alias of the folder to rename</param>
+            <param name="newFolderName">The new name for the folder</param>
+            <returns>The alias of the new folder name</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.FolderExists(System.String)">
+            <summary>
+            Checks to see if the specified folder exists.
+            </summary>
+            <param name="folderAlias">The alias of the folder</param>
+            <returns>Returns True if the folder exists, otherwise returns False</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.UnzipFile(System.String,System.String,System.Boolean)">
+            <summary>
+            </summary>
+            <param name="zipFileNameAlias"></param>
+            <param name="destFolderAlias"></param>
+            <param name="overwriteExisting"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.GetFiles(System.String,System.String)">
+            <summary>
+            Returns a list of files existing in the specified folder.
+            </summary>
+            <param name="folderAlias">The alias of the source folder</param>
+            <param name="searchPattern">The search string to match against the names of files in path. The searchPattern string can contain wildcards * and ?.
+            Examples:
+            
+            *.jpg       - returns all files whose extension starts with 'jpg'
+            museum.mdd  - returns all files called museum.mdd
+            museum.*    - returns all files called museum
+            
+            In addition you can specifiy a number of search patterns using a semi-colon as a seperator. For example: *.mtd;*.mdd
+            </param>
+            <returns>A list of existing files based on the search pattern specified</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.FileExists(System.String)">
+            <summary>
+            Checks to see if the file exists in the specified folder
+            </summary>
+            <param name="fileNameAlias">The alias of the file to check</param>
+            <returns>Returns True if the file exists, otherwise returns False</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.GetFileInfo(System.String)">
+            <summary>
+            Returns a FileInfo object of the specified file. 
+            </summary>
+            <param name="fileNameAlias">The alias of the source file</param>
+            <returns>Returns a FileInfo object of the specified file</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.CopyFile(System.String,System.String,System.Boolean)">
+            <summary>
+            Copies a file from the source folder into the specified destination folder.
+            </summary>
+            <param name="srcFileNameAlias">The alias of the source file</param>
+            <param name="destFolderAlias">The alias of the destination folder</param>
+            <param name="overwriteIfExisting">If set to True, the copy method will overwrite any existing file with the same name in the destination folder.</param>
+            <returns>Returns the destination file alias</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.MoveFile(System.String,System.String,System.Boolean)">
+            <summary>
+            Moves a file from the source folder into the specified destination folder.
+            </summary>
+            <param name="srcFileNameAlias">The alias of the source file</param>
+            <param name="destFolderAlias">The alias of the destination folder</param>
+            <param name="overwriteIfExisting">If set to True, the move method will overwrite any existing file with the same name in the destination folder.</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.MergeFile(System.String,System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Merges the source file with the destination file.
+            </summary>
+            <param name="srcFileNameAlias">The alias of the source file</param>
+            <param name="destFileNameAlias">The alias of the destination file</param>
+            <param name="args">A collection of additional arguments which affect the merge:
+            For MDM files:
+                Name:               Possible Value:     Default Value:      Description:
+                LockMdmVersion      true | false        true                Locks the latest version, if not already locked.
+            </param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.DeleteFile(System.String)">
+            <summary>
+            Deletes the specified file.
+            </summary>
+            <param name="fileNameAlias">The alias of the file to delete</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.RenameFile(System.String,System.String)">
+            <summary>
+            Renames the specified file.
+            </summary>
+            <param name="srcFileNameAlias">The alias of the file to rename</param>
+            <param name="newFileName">The new name for the file</param>
+            <returns>Returns the alias of the new file</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileManagerServer.BackupFile(System.String)">
+            <summary>
+            Backs up an existing file. This method will back up upto 10 copies of a file. 
+            If the maximum is reached, the last nine backups are renamed and the new file will be backed up.
+            NB. This means you will lose the earliest backed up file. You should move or rename it before calling this method if you wish to keep it.
+            </summary>
+            <param name="fileNameAlias">The alias of the file to backup</param>
+            <returns>The alias of the backed up file.</returns>
+        </member>
+        <member name="T:SPSS.Dimensions.FileManager.FileInfo">
+            <summary>
+            This class is used to store information about a specified file.
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileInfo.#ctor">
+            <summary>
+            FileInfo constructor.
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileInfo.#ctor(System.IO.FileInfo,System.String)">
+            <summary>
+            FileInfo constructor.
+            </summary>
+            <param name="fi">A System.IO.FileInfo object</param>
+            <param name="fileNameAlias">The associated file name alias</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileInfo.#ctor(System.String,System.String)">
+            <summary>
+            FileInfo constructor.
+            </summary>
+            <param name="fileName">The name of the file</param>
+            <param name="fileNameAlias">The associated file name alias</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileInfo.CopyTo(SPSS.Dimensions.FileManager.FileInfo)">
+            <summary>
+            Copies a FileInfo object into another FileInfo object
+            </summary>
+            <param name="fi">The target FileInfo object</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileInfo.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Deserialization constructor. 
+            </summary>
+            <param name="info">The SerializationInfo object</param>
+            <param name="ctxt">The StreamingContext object</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.FileInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization constructor.
+            </summary>
+            <param name="info">The SerializationInfo object</param>
+            <param name="ctxt">The StreamingContext object</param>
+        </member>
+        <member name="P:SPSS.Dimensions.FileManager.FileInfo.Length">
+            <summary>
+            Length of the file
+            </summary>
+        </member>
+        <member name="P:SPSS.Dimensions.FileManager.FileInfo.LastWriteTimeUtc">
+            <summary>
+            The last time the file was written to (UTC)
+            </summary>
+        </member>
+        <member name="P:SPSS.Dimensions.FileManager.FileInfo.FileName">
+            <summary>
+            The name of the file
+            </summary>
+        </member>
+        <member name="P:SPSS.Dimensions.FileManager.FileInfo.FileNameAlias">
+            <summary>
+            The file name alias
+            </summary>
+        </member>
+        <member name="P:SPSS.Dimensions.FileManager.FileInfo.Extension">
+            <summary>
+            The file extension
+            </summary>
+        </member>
+        <member name="T:SPSS.Dimensions.FileManager.FileMergeConstants">
+            <summary>
+            The following constants are used as property names in the args property of the MergeFile method.
+            </summary>
+        </member>
+        <member name="F:SPSS.Dimensions.FileManager.FileMergeConstants.LockMdmVersion">
+            <summary>
+            Used to define whether to lock the latest version, if not already locked.
+            Possible Values:    true | false
+            Default Value:      true                
+            </summary>
+        </member>
+        <member name="T:SPSSMR.Configuration.FileInfo">
+            <summary>   
+            Version information for this component
+            </summary>
+        </member>
+        <member name="T:SPSS.Dimensions.FileManager.WebService.FileManagerWebService">
+            <summary>
+            Summary description for Service1.
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.#ctor">
+            <summary>
+            FileManagerWebService constructor.
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.Initialize(System.String,System.String)">
+            <summary>
+            Validates the user's credentials and store's the authenticated agent in the session.
+            </summary>
+            <param name="userName">The user name</param>
+            <param name="userTicket">A valid user ticket</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.Uninitialize">
+            <summary>
+            Remove the user's authenticated agent from the session
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.Clear">
+            <summary>
+            Clears the session variables
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.ResolveAlias(System.String)">
+            <summary>
+            Converts an alias into a fully-qualified UNC path to the FMRoot folder. 
+            If the folder alias points to a User or Project folder, a check is made to ensure the calling user has permission to access it.
+            </summary>
+            <param name="alias">The alias to resolve.</param>
+            <returns>A fully-qualified UNC path to the FMRoot folder</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.GenerateAlias(System.String)">
+            <summary>
+            Generates an alias from a fully-qualified UNC path to the FMRoot folder.
+            </summary>
+            <param name="pathName">A fully-qualified UNC path to the FMRoot folder</param>
+            <returns>The generated alias</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.DeleteFolder(System.String,System.Boolean)">
+            <summary>
+            Deletes the specified folder. Users can only delete folders under their own user folder.
+            </summary>
+            <param name="folderAlias">Alias of folder to delete.</param>
+            <param name="recursive">true to remove folders, subfolders, and file in path, otherwise, false</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.CreateFolder(System.String)">
+            <summary>
+            Creates a folder in the specified location.
+            </summary>
+            <param name="folderAlias">The alias of the folder to create.</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.MoveFolder(System.String,System.String)">
+            <summary>
+            Moves a folder into the specified destination folder.
+            </summary>
+            <param name="srcFolderAlias">The alias of the source folder</param>
+            <param name="destFolderAlias">The alias of the destination folder</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.CopyFolder(System.String,System.String)">
+            <summary>
+            Copies a folder into the specified destination folder.
+            </summary>
+            <param name="srcFolderAlias">The alias of the source folder</param>
+            <param name="destFolderAlias">The alias of the destination folder</param>
+            <returns>Returns the destination folder alias</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.GetFolders(System.String)">
+            <summary>
+            Returns a list of folder aliases found in the specified parent folder.
+            </summary>
+            <param name="folderAlias">The alias of the parent folder</param>
+            <returns>The list of folders aliases</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.RenameFolder(System.String,System.String)">
+            <summary>
+            Renames the specified folder.
+            </summary>
+            <param name="srcFolderAlias">The alias of the folder to rename</param>
+            <param name="newFolderName">The new name for the folder</param>
+            <returns>The alias of the new folder name</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.FolderExists(System.String)">
+            <summary>
+            Checks to see if the specified folder exists.
+            </summary>
+            <param name="folderAlias">The alias of the folder</param>
+            <returns>Returns True if the folder exists, otherwise returns False</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.GetMaxBufferSize">
+            <summary>
+            Gets the maximum buffer size for uploading a file chunk
+            </summary>
+            <returns>Returns the maximum buffer size in bytes</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.PrepareFileUpload(System.String,System.String)">
+            <summary>
+            Prepares uploading of a file. Sets the session variables needed when uploading file chunks.
+            This method needs to be called prior to every file being uploaded.
+            </summary>
+            <param name="destFolderAlias">The alias of the destination folder</param>
+            <param name="fileName">The name of the file to upload</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.UploadFileChunk(System.Byte[],System.Int32)">
+            <summary>
+            Uploads a file chunk. Ensure that PrepareFileUpload is called prior to sending chunks to the server.
+            </summary>
+            <param name="buffer">The file chunk</param>
+            <param name="len">The length of the file chunk</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.CompleteFileUpload">
+            <summary>
+            Completes the file upload. Renames the file from the temporary file name to the file name as requested in the PrepareFileUpload.
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.PrepareFileDownload(System.String)">
+            <summary>
+            Prepares downloading of a file. Sets the session variables needed when downloading file chunks.
+            This method needs to be called prior to every file being downloaded.
+            </summary>
+            <param name="fileNameAlias">The alias of the file to be downloaded</param>
+            <returns>The total file size to download</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.DownloadFileChunk">
+            <summary>
+            Downloads a file chunk. Ensure that PrepareFileDownload is called prior to receiving chunks from the server.
+            </summary>
+            <returns>The file chunk</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.CompleteFileDownload">
+            <summary>
+            Completes the file download. Closes file stream
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.GetFiles(System.String,System.String)">
+            <summary>
+            Returns a list of files existing in the specified folder.
+            </summary>
+            <param name="folderAlias">The alias of the source folder</param>
+            <param name="searchPattern">The search string to match against the names of files in path. The searchPattern string can contain wildcards * and ?.
+            Examples:
+            
+            *.jpg       - returns all files whose extension starts with 'jpg'
+            museum.mdd  - returns all files called museum.mdd
+            museum.*    - returns all files called museum
+            
+            In addition you can specifiy a number of search patterns using a semi-colon as a seperator. For example: *.mtd;*.mdd
+            </param>
+            <returns>A list of existing files based on the search pattern specified</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.FileExists(System.String)">
+            <summary>
+            Checks to see if the file exists in the specified folder
+            </summary>
+            <param name="fileNameAlias">The alias of the file to check</param>
+            <returns>Returns True if the file exists, otherwise returns False</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.GetFileInfo(System.String)">
+            <summary>
+            Returns a FileInfo object of the specified file. 
+            </summary>
+            <param name="fileNameAlias">The alias of the source file</param>
+            <returns>Returns a FileInfo object of the specified file</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.CopyFile(System.String,System.String,System.Boolean)">
+            <summary>
+            Copies a file from the source folder into the specified destination folder.
+            </summary>
+            <param name="srcFileNameAlias">The alias of the source file</param>
+            <param name="destFolderAlias">The alias of the destination folder</param>
+            <param name="overwriteIfExisting">If set to True, the copy method will overwrite any existing file with the same name in the destination folder.</param>
+            <returns>Returns the destination file alias</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.MoveFile(System.String,System.String,System.Boolean)">
+            <summary>
+            Moves a file from the source folder into the specified destination folder.
+            </summary>
+            <param name="srcFileNameAlias">The alias of the source file</param>
+            <param name="destFolderAlias">The alias of the destination folder</param>
+            <param name="overwriteIfExisting">If set to True, the move method will overwrite any existing file with the same name in the destination folder.</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.MergeFile(System.String,System.String,System.Object)">
+            <summary>
+            Merges the source file with the destination file.
+            </summary>
+            <param name="srcFileNameAlias">The alias of the source file</param>
+            <param name="destFileNameAlias">The alias of the destination file</param>
+            <param name="args">A collection of additional arguments which affect the merge:
+            For MDM files:
+                Name:               Possible Value:     Default Value:      Description:
+                LockMdmVersion      true | false        true                Locks the latest version, if not already locked.
+            </param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.DeleteFile(System.String)">
+            <summary>
+            Deletes the specified file.
+            </summary>
+            <param name="fileNameAlias">The alias of the file to delete</param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.RenameFile(System.String,System.String)">
+            <summary>
+            Renames the specified file.
+            </summary>
+            <param name="srcFileNameAlias">The alias of the file to rename</param>
+            <param name="newFileName">The new name for the file</param>
+            <returns>Returns the alias of the new file</returns>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.FileManagerWebService.BackupFile(System.String)">
+            <summary>
+            Backs up an existing file. This method will back up upto 10 copies of a file. 
+            If the maximum is reached, the last nine backups are renamed and the new file will be backed up.
+            NB. This means you will lose the earliest backed up file. You should move or rename it before calling this method if you wish to keep it.
+            </summary>
+            <param name="fileNameAlias">The alias of the file to backup</param>
+            <returns>The alias of the backed up file.</returns>
+        </member>
+        <member name="T:SPSS.Dimensions.FileManager.WebService.Global">
+            <summary>
+            Summary description for Global.
+            </summary>
+        </member>
+        <member name="F:SPSS.Dimensions.FileManager.WebService.Global.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.Application_Start(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.Session_Start(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.Application_BeginRequest(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.Application_EndRequest(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.Application_AuthenticateRequest(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.Application_Error(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.Session_End(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.Application_End(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SPSS.Dimensions.FileManager.WebService.Global.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

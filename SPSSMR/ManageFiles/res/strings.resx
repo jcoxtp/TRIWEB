@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="menu_actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="menu_actions_checkin" xml:space="preserve">
+    <value>Check In</value>
+  </data>
+  <data name="menu_actions_checkout" xml:space="preserve">
+    <value>Check Out</value>
+  </data>
+  <data name="menu_actions_undocheckout" xml:space="preserve">
+    <value>Undo Check Out</value>
+  </data>
+  <data name="menu_actions_delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="menu_actions_download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="menu_actions_upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="menu_help_tooltip" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="menu_exit_tooltip" xml:space="preserve">
+    <value>Back to DimensionNet</value>
+  </data>
+  <data name="ProjectInfo_HeaderText" xml:space="preserve">
+    <value>Manage Files</value>
+  </data>
+  <data name="ProjectInfo_ProjectId" xml:space="preserve">
+    <value>Project Id:</value>
+  </data>
+  <data name="ProjectInfo_ProjectName" xml:space="preserve">
+    <value>Project Name:</value>
+  </data>
+  <data name="ProjectInfo_Description" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="ProjectInfo_Advice" xml:space="preserve">
+    <value>Change the properties of a file by selecting it and choosing an action from the menu above.</value>
+  </data>
+  <data name="main_WaitMessage" xml:space="preserve">
+    <value>Checking project files. Please wait...</value>
+  </data>
+  <data name="main_SelectAllTooltip" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="main_FilelistFileName" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="main_FilelistLoaction" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="main_FilelistDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="main_FileinfoFileNameLabel" xml:space="preserve">
+    <value>File Name:</value>
+  </data>
+  <data name="main_SharedFolderNameLabel" xml:space="preserve">
+    <value>Shared Folder:</value>
+  </data>
+  <data name="main_SharedLastModifiedLabel" xml:space="preserve">
+    <value>File Modified:</value>
+  </data>
+  <data name="main_SharedFileSizeLabel" xml:space="preserve">
+    <value>File Size:</value>
+  </data>
+  <data name="main_UserFolderNameLabel" xml:space="preserve">
+    <value>My Folder:</value>
+  </data>
+  <data name="main_UserLastModifiedLabel" xml:space="preserve">
+    <value>Last Modified:</value>
+  </data>
+  <data name="main_UserFileSizeLabel" xml:space="preserve">
+    <value>File Size:</value>
+  </data>
+  <data name="main_filelist_entry" xml:space="preserve">
+    <value>
+ - {0}</value>
+    <comment>The first newline is important! {0} is replaced with a filename</comment>
+  </data>
+  <data name="main_chekinfiles_failed" xml:space="preserve">
+    <value>Failed to check in one or more of the selected files.
+
+Below is the list of files that couldn't be checked in:{0}</value>
+    <comment>{0} is replaced with a list of files that wasn't successfully checked in.</comment>
+  </data>
+  <data name="main_delete_getfolder_failed" xml:space="preserve">
+    <value>Failed to delete the selected file(s).\n\nThe application could not get the path to the project folder.</value>
+  </data>
+  <data name="main_delete_files_failed" xml:space="preserve">
+    <value>ManageFiles failed to delete the following files:{0}</value>
+    <comment>{0} is replaced with the list of files that could't be deleted</comment>
+  </data>
+  <data name="main_failed_to_create_zip" xml:space="preserve">
+    <value>The files could not be downloaded.\nAn error occurred while trying to create a temporary zip file.</value>
+  </data>
+  <data name="main_ConfirmDeleteSelectedFiles" xml:space="preserve">
+    <value>Are you sure you want to delete the selected file(s)?</value>
+  </data>
+  <data name="main_err_could_not_get_project_folders" xml:space="preserve">
+    <value>Could not get paths for shared and user project folders.</value>
+  </data>
+  <data name="main_subfolder_link_tooltip" xml:space="preserve">
+    <value>Navigate to the {0} sub folder</value>
+    <comment>{0} is replaced with the name of the subfolder</comment>
+  </data>
+  <data name="main_levelup_link" xml:space="preserve">
+    <value>&lt; Up One Level &gt;</value>
+  </data>
+  <data name="main_levelup_link_tooltip" xml:space="preserve">
+    <value>Navigate to the parent folder</value>
+  </data>
+  <data name="main_error_invalid_to_directory" xml:space="preserve">
+    <value>Could not navigate to the requested directory.</value>
+  </data>
+  <data name="main_error_changedirectory_failed" xml:space="preserve">
+    <value>Could not navigate to the requested directory.</value>
+  </data>
+  <data name="dlgMddCopyOption_dialog_title" xml:space="preserve">
+    <value>Select Copy Option</value>
+  </data>
+  <data name="dlgMddCopyOption_copyoption_owerwrite" xml:space="preserve">
+    <value>Overwrite</value>
+  </data>
+  <data name="dlgMddCopyOption_copyoption_activatemerge" xml:space="preserve">
+    <value>Merge By Activation</value>
+  </data>
+  <data name="dlgMddCopyOption_label_explanatorytext" xml:space="preserve">
+    <value>You must decide how to Check In the file "{0}"</value>
+    <comment>{0} will be replaced with the filename to checkin</comment>
+  </data>
+  <data name="dlgMddCopyOption_label_copyoption" xml:space="preserve">
+    <value>Copy Option:</value>
+  </data>
+  <data name="dlgMddCopyOption_button_ok" xml:space="preserve">
+    <value> OK </value>
+  </data>
+  <data name="dlgMddCopyOption_button_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="dlgUploadFiles_dialog_title" xml:space="preserve">
+    <value>Upload Files</value>
+  </data>
+  <data name="dlgUploadFiles_button_close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="dlgUploadFiles_UploadFileLabel" xml:space="preserve">
+    <value>Upload File:</value>
+  </data>
+  <data name="dlgUploadFiles_popup_uploading" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="dlgUploadFiles_popup_file_saved" xml:space="preserve">
+    <value>Saved.</value>
+  </data>
+  <data name="dlgUploadFiles_err_could_not_get_project_folder" xml:space="preserve">
+    <value>The application was not able to resolve the path to the project folder for the project '{0}'.</value>
+    <comment>{0} is replaced with the ID of the project</comment>
+  </data>
+  <data name="dlgUploadFiles_err_could_not_save_zip" xml:space="preserve">
+    <value>The uploaded file could not be saved on the server.</value>
+  </data>
+  <data name="dlgUploadFiles_err_open_upload_zip_failed" xml:space="preserve">
+    <value>Could not open the uploaded zip file for reading.</value>
+  </data>
+  <data name="dlgUploadFiles_err_upload_unzip_get_existing_fileinfo_failed" xml:space="preserve">
+    <value>An error occurred while trying to overwrite the destination file.</value>
+  </data>
+  <data name="dlgUploadFiles_err_upload_unzip_get_delete_existing_failed" xml:space="preserve">
+    <value>An error occurred while trying to overwrite the destination file.</value>
+  </data>
+  <data name="dlgUploadFiles_err_unzip_error_occurred" xml:space="preserve">
+    <value>An error occurred while extracting the uploaded zip file.</value>
+  </data>
+  <data name="dlgUploadFiles_err_upload_savefile_failed" xml:space="preserve">
+    <value>The uploaded file could not be saved on the server.</value>
+  </data>
+  <data name="default_dpm_logon_failed" xml:space="preserve">
+    <value>Failed to log on to DPM</value>
+  </data>
+  <data name="filestatus_checked_out" xml:space="preserve">
+    <value>Checked Out</value>
+  </data>
+  <data name="filestatus_checked_in" xml:space="preserve">
+    <value>Checked In</value>
+  </data>
+  <data name="filestatus_private" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="filestatus_none" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="help_dialog_title" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="help_files_not_found" xml:space="preserve">
+    <value>Could not find the help files on the server.</value>
+  </data>
+  <data name="StopErrorBrowserTitle" xml:space="preserve">
+    <value>ManageFiles Error</value>
+  </data>
+  <data name="StopErrorReturnLinkText" xml:space="preserve">
+    <value>Back to start page</value>
+  </data>
+  <data name="StopErrorCloseLinkText" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="StopErrorDefaultHeader" xml:space="preserve">
+    <value>ManageFiles Error</value>
+  </data>
+  <data name="Default_ApplicationAccessDeniedH" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Default_ApplicationAccessDenied" xml:space="preserve">
+    <value>You do not have permission to use the ManageFiles application.\n\nPlease contact your system administrator if you believe that this is an error</value>
+  </data>
+  <data name="Default_NoProjectGiven" xml:space="preserve">
+    <value>ManageFiles requires a project to be posted to the start page.\n\nNo project was posted to ManageFiles, so the application cannot start.</value>
+  </data>
+  <data name="Default_ProjectAccessDenied" xml:space="preserve">
+    <value>You do not have permission to see the project or the project does not exists.</value>
+  </data>
+  <data name="main_CurrentDirectory" xml:space="preserve">
+    <value>Current Directory: {0}</value>
+  </data>
+  <data name="upload_uploading" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="upload_size" xml:space="preserve">
+    <value>{0} of {1}</value>
+  </data>
+  <data name="upload_selectfile" xml:space="preserve">
+    <value>Select a file to upload:</value>
+  </data>
+  <data name="main_no_project_files" xml:space="preserve">
+    <value>No files exist for the project</value>
+  </data>
+  <data name="dlgUploadFiles_confirm_upload_invalidextn" xml:space="preserve">
+    <value>Cannot upload invalid file "{0}"</value>
+  </data>
+  <data name="dlgUploadFiles_confirm_upload_invalidextn_zip" xml:space="preserve">
+    <value>Cannot extract the following invalid files "{0}"</value>
+  </data>
+  <data name="dlgUploadFiles_button_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="dlgUploadFiles_button_Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="dlgUploadFiles_confirm_upload_overwrite" xml:space="preserve">
+    <value>The file "{0}" already exists.\nOverwrite?</value>
+    <comment>{0} is replaced with the filename</comment>
+  </data>
+  <data name="dlgUploadFiles_confirm_upload_rename" xml:space="preserve">
+    <value>Rename "{0}" to "{1}" when uploading?</value>
+    <comment>{0} is replaced with the filename of the uploaded file. {1} is replaced with the name the ManageFiles would like to rename the file to</comment>
+  </data>
+  <data name="dlgUploadFiles_confirm_upload_unzip_overwrite" xml:space="preserve">
+    <value>The file "{0}" already exists.\n\nOverwrite?</value>
+    <comment>{0} is replaced with the filename</comment>
+  </data>
+  <data name="dlgUploadFiles_err_empty_file" xml:space="preserve">
+    <value>"{0}" is empty or inaccessible on the client side. Empty or inaccessible files cannot be uploaded.</value>
+  </data>
+  <data name="dlgUploadFiles_err_invalid_mddfile" xml:space="preserve">
+    <value>Invalid mdd file or mdd file version error. File "{0}" cannot be uploaded.</value>
+  </data>
+  <data name="upload_CancelUpload" xml:space="preserve">
+    <value>Cancel upload?</value>
+  </data>
+  <data name="upload_FileOfTotal" xml:space="preserve">
+    <value>file {0} of {1}:</value>
+  </data>
+  <data name="upload_FileSelectedWarn" xml:space="preserve">
+    <value>You have already selected "{0}".</value>
+  </data>
+  <data name="upload_FilesToUploadHeader" xml:space="preserve">
+    <value>Files to Upload (maximum {0})</value>
+  </data>
+  <data name="upload_MaxFileCountWarn" xml:space="preserve">
+    <value>You have already selected {0} files.</value>
+  </data>
+  <data name="upload_selectfileFooter" xml:space="preserve">
+    <value>Click Upload to upload the selected files.</value>
+  </data>
+  <data name="upload_selectfileHeader" xml:space="preserve">
+    <value>Select Files</value>
+  </data>
+  <data name="QuestionYesNo_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="QuestionYesNo_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="MergeOverwriteCancel_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="MergeOverwriteCancel_Merge" xml:space="preserve">
+    <value>Merge</value>
+  </data>
+  <data name="MergeOverwriteCancel_Overwrite" xml:space="preserve">
+    <value>Overwrite</value>
+  </data>
+  <data name="upload_InvalidFileWarn" xml:space="preserve">
+    <value>Cannot upload invalid files({0}).</value>
+  </data>
+  <data name="upload_InvalidFileWarn_zip" xml:space="preserve">
+    <value>Cannot upload invalid file "{0}".</value>
+  </data>
+  <data name="upload_LongestFileNameWarn" xml:space="preserve">
+    <value>The file name and path cannot be longer than 128 characters.</value>
+  </data>
+  <data name="dlgUploadFiles_confirm_upload_merge" xml:space="preserve">
+    <value>The file "{0}" already exists.</value>
+  </data>
+</root>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application name="InterviewExporter">
+	<ApplicationSettings>
+		<Property name="ShowInLauncher" datatype="11">1</Property>
+		<Property name="DisplayName" datatype="8">
+			<![CDATA[InterviewExporter]]>
+		</Property>
+		<Property name="DPMAccessType" datatype="string">ReadOnly</Property>
+                <Property name="FileAccessType" datatype="string">ReadOnly</Property>
+		<Property name="ApplicationType" datatype="string">
+			<![CDATA[datacollection]]> 
+		</Property>
+		<Property name="StartURL" datatype="8">
+			<![CDATA[../InterviewExporter/ApplicationInit.aspx]]>
+		</Property>
+		<Property name="PublicResourceFolder" datatype="string">
+			<![CDATA[../InterviewExporter/bin]]>
+		</Property>
+		<Property name="PublicResourceFileName" datatype="8">
+			<![CDATA[PublicResources.resx]]>
+		</Property>
+		<Property name="SortIndex" datatype="integer">10</Property>
+	</ApplicationSettings>
+	<UserSettings/>
+	<MustMatch>
+		<Project>
+			<Property name="TimeLastActivated" datatype="string">RegExp:.+</Property>
+			<Property name="ShowInterviewApps" datatype="boolean">True</Property>
+		</Project>
+	</MustMatch>
+	<Features/>
+
+</Application>

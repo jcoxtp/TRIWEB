@@ -1,0 +1,186 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="AboutMU">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Manage Users</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('aboutmu.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N2001B')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="mu_adduser.htm"><img alt="(N)ext: mu_adduser" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutmu.htm">Manage Users</A> &gt; </DIV>
+<h1>Manage Users</h1>
+<p class="body">You use Manage Users to set up and maintain accounts
+for DimensionNet  users, and to set up and maintain user groups (known
+as <span class="definedword">roles</span> in DimensionNet).</p>
+<p class="body">When DimensionNet is installed, the following special
+roles are created:</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">DPMAdmins</span> This is an administration role and the user named as the DPM administrator
+during installation is made a member of this group. Anyone who is
+part of this group has unlimited access to all projects, activities,
+and activity features.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">CATIsupervisor</span> This role is for CATI supervisors and is set up to provide access
+to the following activities:</p>
+<p class="list-contin">&ndash; DimensionNet (excluding the "Allow
+unlock project" feature)<br>&ndash; Manage Users<br>&ndash; Interviewer
+Monitoring (including the "Can set up supervisor stations" feature)<br>&ndash; Dialer Administration<br>&ndash; View Survey Link<br>&ndash; Launch (excluding the "Allow upload/edit sample script"
+and "Allow access via DimensionNet" features)<br>&ndash; Participants
+(including all features except "Can create databases" and "Can delete
+participants" <span class="superscript">1</span>)<br>&ndash;
+Email<br>&ndash; Phone Surveys (including all features except "Can
+edit fields", "Can edit call outcomes", and "Can delete call outcomes")<br>&ndash; Quotas (including only the "Allow editing quota targets,
+completes, and prioritization" and "Allow editing quota targets" features)<br>&ndash; Phone Participants (including the "Can set up interviewer
+stations" feature)<br>&ndash; Export Data<br>&ndash; Survey Results<br>&ndash; Status<br>&ndash; Phone (including only the "Can view
+all interviewers' data" feature)</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">CATIinterviewer</span> This role is for CATI Interviewers and is set up to give access
+only to DimensionNet (excluding the "Allow unlock project" feature)
+and the Phone Participants activity (excluding the "Can set up interviewer
+stations" feature). <span class="italic">You must make your interviewers
+members of this role if you want mrInterview to take interviewer qualifications
+into account when assigning calls to interviewers</span>.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">TabulationFullAccess</span> This role is for users who require access to all of the mrTables
+and Reporter functionality. Access is provided to the following activities:</p>
+<p class="list-contin">&ndash; DimensionNet (including the "Allow
+unlock project" feature)<br>&ndash; Project Editor (including the
+"Allow modifying properties", "Allow creating new projects", and "Allow
+changing the project state" features)<br>&ndash; Files<br>&ndash;
+Delete (including the "Allow delete project" feature)<br>&ndash;
+Tabulation (including the "Full access" feature)<br>&ndash; Reporter</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">TabulationMediumAccess </span> This role is for mrTables users and Reporter users who need to set
+up their own projects and tables and edit variables on individual
+tables, but who do not need to edit variables at project level. Access
+is provided to the same activities as for the TabulationFullAccess
+role, except that the Tabulation activity and Reporter activity includes
+the "Medium access" feature instead of the "Full access" feature.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">TabulationMinimumAccess</span> This role is for mrTables users and Reporter users who do not need
+to set up their own projects or tables, or edit variables. Access
+is provided to the following activities: <br>&ndash; DimensionNet
+(excluding the "Allow unlock project" feature)<br>&ndash; Tabulation
+(including the "Minimum access" feature)<br>&ndash; Reporter</p>
+<h2>User Properties</h2>
+<p class="body">User properties define any special abilities or qualifications
+that a user has in relation to the requirements of one or more activities.
+One of the most common uses of user properties is for interviewer
+qualifications which help to determine which records are allocated
+to each interviewer for calling. For example, if a participant record
+indicates that the participant's usual language is French, the project's
+Sample Management script can ensure that the record is allocated to
+a French-speaking interviewer.</p>
+<p class="body">User properties are defined as part of property groups,
+each of which is associated with a specific role. Only members of
+the role may have user properties assigned to them from groups associated
+with that role. Currently, interviewer qualifications are the only
+user properties that the standard Dimensions activities recognize.
+To use them, you must create a property group called InterviewerQualifications
+and associate it with the CATIinterviewer role. You can then assign
+interviewer qualifications to all members of the CATIinterviewer role.
+If your company has added its own activities, and these activities
+recognize user qualifications, you may create other types of properties
+for use with those activities.</p>
+<p class="body">There are three stages to setting up user properties,
+some of which you will do more than others:</p>
+<p class="bullet">&bull;&nbsp; Create a property group (for example, InterviewerQualifications)</p>
+<p class="bullet">&bull;&nbsp; Add properties to the property group (for example,
+Language spoken, Refusal converter)</p>
+<p class="bullet">&bull;&nbsp; Assign properties to users. (For existing users,
+simply modify the user's account and click the User Properties button
+to assign the properties; when creating new users, you will be prompted
+to assign properties as part of the user-creation process.)</p>
+<p class="body">You can also change the definitions of properties
+within a group, delete properties from a group, and delete property
+groups.</p>
+<p class="body">Although it is browser based, Manage Users
+works in a similar way to  Windows Explorer. It displays an expandable
+tree-like structure on the left of the page  for viewing current user
+and group details, and uses the right-hand side of the page for displaying
+more detailed information and links for possible actions.</p>
+<p class="body">When you have finished using Manage Users, click the
+Home icon in the menu bar.</p>
+<p class="body">
+<span class="italic">Note</span>: If you want
+to use Manage Users, you must be authorized in DimensionNet to use
+it and must be a member of the role named in the HKEY_LOCAL_MACHINE\SOFTWARE\SPSS\MRUserManagement\UserMgtAdministratorRole
+registry key (which is the DPMAdmins role by default). For further
+details open the <span class="italic">Dimensions Development Library</span> documentation and search for the topic entitled "Who Can Run Manage
+Users and Manage Access".</p>
+<p class="body">
+<span class="superscript">1</span> Deleting participants from telephone interviewing projects can cause
+phone reports to show unexpected results. If a user or role is assigned
+to telephone interviewing projects, do not assign that user or role
+to the "Can Delete Participants" feature.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="mu_adduser.htm">Adding Users</A>
+</div>
+<div class="link">
+<A href="mu_remuser.htm">Removing Users</A>
+</div>
+<div class="link">
+<A href="mu_addgroup.htm">Adding Roles</A>
+</div>
+<div class="link">
+<A href="mu_remgroup.htm">Removing Roles</A>
+</div>
+<div class="link">
+<A href="mu_userstogroups.htm">Assigning Users to Roles</A>
+</div>
+<div class="link">
+<A href="mu_usersfromgroups.htm">Removing Users from Roles</A>
+</div>
+<div class="link">
+<A href="mu_moduser.htm">Modifying User Accounts</A>
+</div>
+<div class="link">
+<A href="mu_userprops_creategroup.htm">Creating User Property Groups</A>
+</div>
+<div class="link">
+<A href="mu_userprops_deletegroup.htm">Deleting User Property Groups</A>
+</div>
+<div class="link">
+<A href="mu_userprops_addprops.htm">Adding Properties to User Property Groups</A>
+</div>
+<div class="link">
+<A href="mu_userprops_changeprops.htm">Changing a User Property's Definition</A>
+</div>
+<div class="link">
+<A href="mu_userprops_deleteprops.htm">Deleting a User Property</A>
+</div>
+<div class="link">
+<A href="mu_export.htm">Exporting Users, Roles, and Permissions</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

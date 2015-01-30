@@ -1,0 +1,2 @@
+<h1 style="text-align:center">Thank You for Completing This DISC Assessment</h1>
+<p>You will receive your DISC report via email shortly. Please contact <a href="mailto:info@triaxiapartners.com?Subject=DISC%20Report%20Inquiry">Triaxia Partners</a> if you have any questions.</p>

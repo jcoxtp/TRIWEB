@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application name="ManageFiles">
+	<ApplicationSettings>
+		<Property name="ShowInLauncher" datatype="boolean">True</Property>
+		<Property name="DisplayName" datatype="string">
+			<![CDATA[ManageFiles]]>
+		</Property>
+		<Property name="DPMAccessType"  datatype="string">ReadWrite</Property>
+		<Property name="FileAccessType" datatype="string">ReadWrite</Property>	
+		<Property name="WriteAccessForProject" datatype="boolean">True</Property>
+		<Property name="ApplicationType" datatype="string">
+			<![CDATA[manage]]>
+		</Property>
+		<Property name="StartURL" datatype="string">
+			<![CDATA[../ManageFiles/ApplicationInit.aspx]]>
+		</Property>
+		<Property name="ShowAsTool" datatype="boolean">False</Property>
+		<Property name="ShowForProject" datatype="boolean">True</Property>
+		<Property name="RenameUploadExtensionList" datatype="string">
+			<![CDATA[.mdd;.sif;.qqc;.mqd]]>
+		</Property>
+		<Property name="PublicResourceFolder" datatype="string">
+		      <![CDATA[../ManageFiles/bin]]>
+		</Property>
+		<Property name="PublicResourceFileName" datatype="8">
+			<![CDATA[PublicResources.resx]]>
+		</Property>
+		<Property name="SortIndex" datatype="integer">30</Property>
+	</ApplicationSettings>
+	<UserSettings>
+		<Default/>
+	</UserSettings>
+	<Features>
+	</Features>
+	<MustMatch/>
+</Application>

@@ -1,0 +1,4 @@
+Normal Site Colors
+============================================
+#3333CC : blue background
+#2819B2 : Darker Blue found in the border bars

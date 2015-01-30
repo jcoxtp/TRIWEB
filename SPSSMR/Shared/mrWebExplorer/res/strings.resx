@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="open">
+		<value>Open</value>
+	</data>
+	<data name="close">
+		<value>Close</value>
+	</data>
+	<data name="openfavorite">
+		<value>Open</value>
+	</data>
+	<data name="save">
+		<value>Save</value>
+	</data>
+	<data name="saveas">
+		<value>Save As</value>
+	</data>
+	<data name="select">
+		<value>Select</value>
+	</data>
+	<data name="upload">
+		<value>Upload</value>
+	</data>
+	<data name="upload_tooltip">
+		<value>Copy file to the server</value>
+	</data>
+	<data name="download">
+		<value>Download</value>
+	</data>
+	<data name="download_tooltip">
+		<value>Get copy of file from server</value>
+	</data>
+	<data name="selectedfile_label">
+		<value>Filename: </value>
+	</data>
+	<data name="filemask_label">
+		<value>Filemask: </value>
+	</data>
+	<data name="folders">
+		<value>Folders</value>
+	</data>
+	<data name="rootfolder_name">
+		<value>Root</value>
+	</data>
+	<data name="name">
+		<value>Name</value>
+	</data>
+	<data name="type">
+		<value>Type</value>
+	</data>
+	<data name="date">
+		<value>Date</value>
+	</data>
+	<data name="please_select_file">
+		<value>Please make selection</value>
+	</data>
+	<data name="filename_relative_invalid">
+		<value>The filename is invalid.
+
+The filename can not be a relative path, but must specify
+a filename in the currently selected folder.</value>
+	</data>
+	<data name="upload_confirm_filemask">
+		<value>The selected file name does not match the filemask.
+The file will not be visible in the file list after upload.
+
+Do you want to upload the file anyway?</value>
+	</data>
+	<data name="upload_confirm_upload">
+		<value>Do you want to upload [{0}] to [{1}]?</value>
+		<comment>{0} will be substituted with the selected filename. {1} will be substituted with the destination path</comment>
+	</data>
+	<data name="confirm_upload_overwrite">
+		<value>File already exists on server.\n\nOverwrite with uploaded file?</value>
+	</data>
+	<data name="error_upload_savefile_failed">
+		<value>Unable to save file.</value>
+	</data>
+	<data name="confirm_save_overwritefile">
+		<value>A File with the specified name already exists in the folder.\n\nDo you want to overwrite the existing file?</value>
+	</data>
+	<data name="srctree_folder_not_found">
+		<value>The path for the [{0}] folder does not exist.</value>
+		<comment>{0} will be substituted with the folder alias</comment>
+	</data>
+	<data name="ok">
+		<value> OK </value>
+	</data>
+	<data name="cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="upload_in_progress">
+		<value>Upload in progress...</value>
+	</data>
+	<data name="download_filenotfound">
+		<value>Could not find the file [{0}].</value>
+		<comment>{0} will be substituted with the name and path of the file that could not be found</comment>
+	</data>
+</root>

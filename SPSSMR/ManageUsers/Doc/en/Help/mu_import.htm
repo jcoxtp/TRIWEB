@@ -1,0 +1,94 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="mu_import">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Importing Users and Roles</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('mu_import.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20064')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="mu_userprops_deleteprops.htm">Previous<img alt="(P)revious: mu_userprops_deleteprops" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="mu_import_spreadsheet.htm"><img alt="(N)ext: mu_import_spreadsheet" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutmu.htm">Manage Users</A> &gt; </DIV>
+<h1>Importing Users and Roles</h1>
+<div class="imageblock">
+<img alt="Import icon" src="images/mu_import.gif"></div>
+<p class="body"></p>
+<p class="body">When you first install DimensionNet it can be a tedious process
+to add each user and role manually, and then to assign users to roles
+and roles to projects. To help you with this, Manage Users provides
+an import facility that lets you import this information from an Excel
+spreadsheet. Once you have the basic information in DimensionNet,
+you can then make more specific changes manually in the usual way.</p>
+<p class="body">If you import user and role settings that already exist,
+the following rules apply:</p>
+<p class="bullet">&bull;&nbsp;Password definitions apply only to new accounts that
+are created by the import process. Passwords are never changed or
+removed for existing users even if the password column contains a
+value.</p>
+<p class="bullet">&bull;&nbsp;If a description is defined for an existing user
+or role, the new description overwrites the existing one.</p>
+<p class="bullet">&bull;&nbsp;If a role or project is specified for an existing
+user, the assignments are treated as additions to the user's current
+settings. For example, specifying the Manager2 role for a user who
+is already a member of the Manager1 role makes that user a member
+of both roles.</p>
+<p class="bullet">&bull;&nbsp;Entering a blank role, project, or activity setting
+for a user does not delete the existing settings for that user. The
+only way to delete existing settings is to remove them manually using
+Manage Users or Manage Access.</p>
+<p class="bullet">&bull;&nbsp;Any users, roles, projects, activities, or user settings
+that are not mentioned in the spreadsheet remain unchanged. Any deletions
+must be made manually using the appropriate activity.</p>
+<p class="step">
+<span class="step-glyph">►</span> <A href="mu_import_spreadsheet.htm">Create the spreadsheet</A>.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click the Import icon in the toolbar.</p>
+<p class="body">This displays the Upload File dialog box.</p>
+<p class="body"></p>
+<p class="step">
+<span class="step-glyph">►</span> Enter the full pathname of the Excel spreadsheet file
+or use the Browse button to select it and then click <span class="screen">OK</span>.</p>
+<p class="step">
+<span class="step-glyph">►</span> Manage Users reads the file and checks it for errors
+and inconsistencies. If it finds anything amiss, it reports it in
+a message box and asks whether you wish to continue with the import.
+Typical errors are naming nonexistent properties or projects, and
+naming users that do not currently exist in DimensionNet and that
+are not created by the spreadsheet. Click <span class="screen">OK</span> to continue or <span class="screen">Cancel</span> to stop without importing anything.</p>
+<p class="body">If you continue with the import, a progress dialog box displays
+confirmation messages as each stage of the import process completes.
+At the end of the import, a list of errors is displayed. Click <span class="screen">Close</span> to close the dialog box.</p>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

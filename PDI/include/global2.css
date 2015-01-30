@@ -1,0 +1,190 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #19305c;
+}
+.jumbotron {
+  padding-bottom: 10px;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  font-size: 48px;
+}
+.jumbotron p {
+  font-size: 20px;
+}
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+.intro-header {
+  background: url(pdibg1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.intro-header .intro-overlay {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.intro-message {
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.intro-message > h1 {
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  font-size: 4em;
+}
+.intro-divider {
+  width: 600px;
+  border-top: 1px solid #f8f8f8;
+}
+.intro-message > h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+@media (max-width: 767px) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+  ul.intro-cta-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.intro-cta-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+  .intro-divider {
+    width: 100%;
+  }
+}
+.img-cover {
+  box-shadow: 1px 1px 2px #cccccc;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+.short {
+  vertical-align: middle;
+}
+.network-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.content-section-a a,
+.content-section-b a {
+  font-weight: 600;
+  color: #0054A6;
+  text-decoration: underline;
+}
+.content-section-a {
+  padding: 30px 0;
+  background-color: #f8f8f8;
+}
+.content-section-b {
+  padding: 20px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.section-heading {
+  margin-bottom: 30px;
+}
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
+.banner {
+  background: url('pdibg4.jpg') no-repeat center center;
+  background-size: cover;
+  border-top: 1px solid #e7e7e7;
+}
+.banner .banner-overlay {
+  padding: 60px 0;
+  color: #f8f8f8;
+  background: none transparent;
+  background: rgba(0, 0, 0, 0.35);
+}
+.banner h2 {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.25em;
+  color: white;
+}
+.banner h2 .medium {
+  font-size: 120%;
+}
+.banner ul {
+  margin-bottom: 0;
+}
+.banner-cta-buttons {
+  float: right;
+  margin-top: 2em;
+}
+.hero-spacer {
+  margin-top: 50px;
+}
+.hero-feature {
+  margin-bottom: 30px;
+}
+.navbar-bright {
+  background-color: #111155;
+  color: #fff;
+}
+.affix-top,
+.affix {
+  position: static;
+}
+@media (max-width: 1199px) {
+  ul.banner-cta-buttons {
+    float: left;
+    margin-top: 1em;
+  }
+}
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top: 30px;
+    width: 228px;
+  }
+  #sidebar.affix {
+    position: fixed;
+    top: 70px;
+    width: 228px;
+  }
+}
+#sidebar li.active {
+  border: 0 #eee solid;
+  border-right-width: 5px;
+}
+@media (max-width: 767px) {
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+  }
+  ul.banner-cta-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-cta-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}

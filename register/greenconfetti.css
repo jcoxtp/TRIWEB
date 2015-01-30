@@ -1,0 +1,46 @@
+.page-title
+{
+	font-family: Garamond, Times;
+	font-weight: bold;
+	color: #F1F6EF;
+	font-size: 18pt;
+}
+
+.box-border
+{
+	border-top: solid 1px #4D7540;
+	border-bottom: solid 1px #4D7540;
+	border-left: solid 1px #4D7540;
+	border-right: solid 1px #4D7540;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.standard-label
+{
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 9pt;
+	color: #3F4C73;
+}
+
+.standard-textbox
+{
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 9pt;
+}
+
+.standard-button
+{
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+.error-message
+{
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 9pt;
+	color: #733F4C;
+}

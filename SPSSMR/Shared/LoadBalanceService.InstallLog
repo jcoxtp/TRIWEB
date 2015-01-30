@@ -1,0 +1,19 @@
+﻿Uninstalling assembly 'C:\TRIWEB\SPSSMR\Shared\LoadBalanceService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\TRIWEB\SPSSMR\Shared\LoadBalanceService.exe
+   logfile = C:\TRIWEB\SPSSMR\Shared\LoadBalanceService.InstallLog
+Removing EventLog source mrLoadBalanceService.
+Service mrLoadBalanceService is being removed from the system...
+Service mrLoadBalanceService was successfully removed from the system.
+Uninstalling assembly 'C:\TRIWEB\SPSSMR\Shared\LoadBalanceService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\TRIWEB\SPSSMR\Shared\LoadBalanceService.exe
+   logfile = C:\TRIWEB\SPSSMR\Shared\LoadBalanceService.InstallLog
+Removing EventLog source mrLoadBalanceService.
+Warning: The source mrLoadBalanceService is not registered on the local machine.
+Service mrLoadBalanceService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.

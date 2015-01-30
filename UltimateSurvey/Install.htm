@@ -1,0 +1,266 @@
+<!--
+   System: Ultimate Survey Advanced Edition 
+   Page Description: Installation document for Ultimate Survey
+
+   COPYRIGHT NOTICE								
+
+   See attached Software License Agreement
+
+   (c) Copyright 2001 - 2005 by UltimateApps.com.  All rights reserved.
+-->
+<HTML>
+	<HEAD>
+		<TITLE>Install Document</TITLE>
+		<LINK REL="stylesheet" HREF="Include/Stylesheets/UltimateAppsStyles.css">
+	</HEAD>
+	<BODY>
+		<P>
+			<SPAN CLASS="Heading">
+Ultimate Survey Advanced Edition Install Document</SPAN><br>
+			<span class="normalSmall">by Ultimate Software Designs ©2003</span></P>
+<P>
+			<span class="message">These instructions are for new installations only.</span></P>
+<P><SPAN class=message>FOR UPGRADE INSTRUCTIONS: Please refer to 
+Upgrade.htm</SPAN><br></P>
+		<P><SPAN class="Heading">Table of Contents</SPAN><BR>
+		</P>
+		<UL>
+			<LI>
+				<p class="normalBold"><A href="#Introduction">Introduction</A></p>
+			<LI>
+				<p class="normalBold"><A href="#Installation">Installation</A>
+					<UL>
+						<LI>
+							<p class="normalBold">
+								<A href="#webserver">Web Server Setup</A></p>
+						<LI>
+							<p class="normalBold">
+								<A href="#databasesetup">Database Setup</A></p>
+						<LI>
+							<p class="normalBold">&nbsp;&nbsp;&nbsp; <A href="#MSAccess">MS Access</A></p>
+						<LI>
+							<p class="normalBold">&nbsp;&nbsp;&nbsp; <A href="#SQLServer">SQL Server</A></p>
+						<LI>
+							<p class="normalBold">
+								<A href="#DatabaseConnection">Database Connection Setup</A></p>
+						<LI>
+							<p class="normalBold">
+								<A href="#gettingstarted">Getting Started with Surveys</A></p>
+						</LI>
+					</UL>
+			<LI>
+				<p class="normalBold"><A href="#ApplicationDesign">Application Design Notes</A></p>
+			<LI>
+				<p class="normalBold"><A href="#CustomizingTheApplication">Customizing the Application</A>
+					<UL>
+						<LI>
+							<p class="normalBold"><A href="#ChangingTheColorScheme">Changing the Color Scheme 
+									and/or the Look and Feel</A></p>
+						<LI>
+							<p class="normalBold">
+								<A href="#ModifyFunc">Modifying Functionality</A></p>
+						</LI>
+					</UL>
+			</LI>
+		</UL>
+		<p>
+			<A NAME="Introduction">
+				<SPAN CLASS="Heading">Introduction</SPAN></A><BR>
+		</p>
+		<P class="normal">Ultimate Survey is a powerful application that allows 
+			non-technical users to create and take complex surveys. In addition, it 
+			includes an extremely powerful reporting interface that allows for detailed 
+			analysis of survey responses.</P>
+		<P class="normal">All ASP source code is included so that it can be easily 
+			modified. Any ASP developer will be able to easily understand the code and make 
+			changes to it as needed. All coding was done in accordance with a robust set of 
+			coding standards, so the code is clean, consistent, and well documented. The 
+			reason for doing this is so that the purchaser can easily install, modify, 
+			maintain, and augment the existing code base.</P>
+		<P class="normal">To use this system, your web site must be running Microsoft IIS 
+			with full support for Active Server Pages. The application has been written to 
+			run against either a SQL Server or MS Access database.</P>
+		<p>
+			<A NAME="Installation">
+				<SPAN CLASS="Heading">Installation</SPAN></A><BR>
+		</p>
+		<P class="normal">The steps to install Ultimate Survey are as follows:</P>
+		<OL>
+			<LI>
+				<p class="normal"><b> <a name="webserver">Web Server Setup</a></b><br>
+					<br>
+					<STRONG>a) Installing the ASP files. </STRONG>Unzip the files to a directory on 
+					the web server. If necessary, create a virtual directory to point to the 
+					application’s root directory. Note: this document assumes that it will be 
+					installed in a directory called "UltimateSurvey" but you may change it.</p>
+				<P class="normal">The directory structure for the application is:</P>
+				<UL>
+					<LI>
+						<p class="normal">
+							UltimateSurvey – Contains .asp files that display allow for creating, taking, 
+							and reporting on surveys.
+							<UL>
+								<LI>
+									<p class="normal">Include – Contains all include files (_inc.asp extension)
+										<UL>
+											<LI>
+												<p class="normal">Stylesheet – Contains stylesheet (CSS) for application.</p>
+											</LI>
+										</UL>
+								<LI>
+									<p class="normal">Images – Contains all images<UL>
+											<li>
+												<p class="normal">&nbsp;Upload - Folder to hold all uploaded images</p>
+											</li>
+										</UL>
+								<LI>
+									<p class="normal">
+										Help – Contains all help files</p>
+								</LI>
+							</UL>
+							<UL>
+								<LI>
+									<p class="normal">
+										Database – Contains the SQL script needed to install the application on a 
+										Microsoft SQL Server database and the MS Access databases</p>
+								</LI>
+							</UL>
+					</LI>
+				</UL>
+				<P class="normal">
+					<STRONG>b) Setting permissions.</STRONG> You will have to set "write" 
+					permissions on the folder that will contain your uploaded images (Images/Upload 
+					by default) , so that you can upload images for surveys as desired</P>
+				<br>
+				&nbsp;
+				<P></P>
+			<LI>
+				<p class="normal"><b> <a name="databasesetup">Database Setup</a></b><br>
+					<br>
+					At this point, you must decide whether to use SQL Server or MS Access.&nbsp; 
+					Choose your database and follow the corresponding&nbsp;instructions 
+					below:&nbsp;
+				</p>
+				<p class="message">SQL Server is highly recommended for maximum speed and 
+					scalability.</p>
+				<P>
+					<A NAME="MSAccess">
+						<SPAN CLASS="normalBold">
+							<U>INTRUCTIONS FOR MS ACCESS</U></SPAN></A>
+				<P class="normal">
+					The database, which has been fully populated with a username and various needed 
+					values, is located in the "Database" directory. This folder contains two copies 
+					of the Access database. The version named UltimateSurvey.mdb is in Access 2000 
+					format, and the version named UltimateSurvey-97.mdb is in Access 1997 format. 
+					Our recommendation is to use the version of the database in Access 2000 format, 
+					but both versions should work fine. There are no database passwords by default.</P>
+				<P class="normal">
+					After deciding which version of Access you will be using, you may delete the 
+					other Access database if you like.&nbsp; At this point, you may want to move 
+					the database to another desired location on the server.</P>
+				<P class="normal"><b> NOTE: The anonymous IIS user must have WRITE permission to this 
+						file.</b></P>
+				<p><U><a name="SQLServer"></a><SPAN CLASS="normalBold"><BR>INSTRUCTIONS FOR SQL SERVER</SPAN></U>
+				</p>
+				<P class="normal">a) At this point, you may want to optionally create a new 
+					database for the application. If you decide not to create a new database and to 
+					use an existing database instead, note that all table names have the prefix 
+					"usd_" so that they can easily be distinguished from other tables in the 
+					database.</P>
+				<P class="normal">
+					b) Load the tables into the database. The script for the tables is located in 
+					the file, "UltimateSurveyTables.sql," which is located in the "Database" 
+					directory. The best way to load the tables is to open Microsoft Query Analyzer, 
+					open this file from Query Analyzer, and execute.</P>
+				<P class="normal">c) Create a user in the database for the Ultimate Survey 
+					application. Grant this user full access to all of the tables.</P>
+				<P class="normal">d) Load the required data into the database. The script for the 
+					data is located in the file, "UltimateSurveyData.sql," which is located in the 
+					"Database" directory. The best way to load the meta-data is to open Microsoft 
+					Query Analyzer, open this file from Query Analyzer, and execute.<br>
+					&nbsp;</P>
+			<LI>
+				<P class="normal"><b> <a name="DatabaseConnection">Database Connection Setup</a></b><br>
+					<br>
+					The application uses a DSN-less connection. The connection string is located in 
+					the file, "SurveyConnection_inc.asp" in the Include directory. This file 
+					contains two versions of the constant DB_CONNECTION. One of the versions is for 
+					connecting to a SQL Server database, and the other is for using a MS Access 
+					database. Above each constant are detailed comments for how to configure the 
+					connection string for your database. At this point, comment out the constant 
+					that you will not be using, and set up the connection string, as shown.<br>
+					<br>
+					In the same file, "SurveyConnection_inc.asp," there is a constant called 
+					DATABASE_TYPE. Depending on whether you are using SQL Server or MS Access, the 
+					value for this constant must be updated to either "SQLServer" or "MSAccess", as 
+					appropriate. These values are noted in the comment above the constant.<br>
+					&nbsp;</P>
+			<LI>
+				<P class="normal"><b> <a name="gettingstarted">Getting Started with Surveys</a></b><br>
+					<br>
+					a) By default, the application has a single user.&nbsp; The username for this 
+					default user is "Admin" and the password is also "Admin". This account has been 
+					granted full user rights to the entire application.&nbsp; Go to the main page 
+					of the application and click "Login" to begin using Ultimate Survey.<br>
+					<br>
+					b) It is highly recommended that you immediately edit user information by 
+					clicking the username in the top right corner of the screen.<br>
+					<br>
+					c) Click "Settings" and carefully review each setting. Information on each 
+					setting is found in the help section of the application. These settings may be 
+					changed by any system administrator at any time.<br>
+					<br>
+					d) Add a survey. To start adding surveys, click the "Manage Surveys" tab and 
+					then click "Add New&nbsp;Survey"<br>
+					<br>
+					e) All actions are explained throughout the application and the help section.</P>
+			</LI>
+		</OL>
+		<p>
+			<A NAME="ApplicationDesign">
+				<SPAN CLASS="Heading">Application Design 
+                                                Notes</SPAN></A><BR>
+		</p>
+		<P class="normal">This section contains information about various aspects of the 
+			application. The purpose in giving this information is twofold: first, with 
+			this information, users of the application will be able to better understand 
+			the existing functionality. Second, this information will enable administrators 
+			of the application and developers to more easily modify the code to their own 
+			custom solution.</P>
+		<P class="normal">Initially, the administrator is the only user who can create and 
+			edit surveys. As users register, the&nbsp; administrator can go to "Manage 
+			Users" and specify which users are allowed to create surveys, and can even 
+			grant administrator privileges to users.</P>
+		<P class="normal">All constants besides the connection string and database type 
+			have been written in capital letters, with a prefix of SV (Survey) or 
+			USD(Ultimate Software Designs), and are included in /Include/Constants_inc.asp. 
+			For example, 'SV_DEFAULT_COMPLETION_MESSAGE'</P>
+		<P class="normal">
+			All functions that are in include files are prefixed with the name of the 
+			include file.&nbsp; For example, if you see the function 
+			"surveyCreation_createSurvey", you will know that it is located in 
+			"Include/surveyCreation_inc.asp".</P>
+		<P class="normal">For some surveys, and for all administration tasks, a user must 
+			first log in. Once logged in, the user's username is stored in a cookie or 
+			session, and security is done through validation of this cookie or session.</P>
+		<p>
+			<A NAME="CustomizingTheApplication">
+				<SPAN CLASS="Heading">Customizing the Application</SPAN></A><BR>
+		</p>
+		<p class="normal">
+			<A NAME="ChangingTheColorScheme">
+				<SPAN CLASS="normalBold">Changing the Color Scheme and/or the Look and Feel</SPAN></A><BR>
+		</p>
+		<P class="normal">All styles in the application are located in the style sheet, 
+			which can be found under 
+			UltimateSurvey/Includes/StyleSheets/UltimateAppsStyles.css.
+		</P>
+		<P class="normal"><b> <a name="ModifyFunc">Modifying the Functionality</a></b></P>
+		<p class="normal">Before making any modifications, it is a good idea to check <a href="http://www.ultimateapps.com">
+				http://www.ultimateapps.com</a> to see if you have the latest version of 
+			the application. Also, please read the "Application Design" section of this 
+			document and, as with any project of this type, make a backup of the working 
+			copy of the application before making any modifications.</p>
+		<P class="normal">&nbsp;</P>
+	</BODY>
+</HTML>

@@ -1,0 +1,1 @@
+<h2 style="text-align:center"><img width="139" height="32" src="rs/synovus/focus3_logo_small.jpg" />&nbsp;Thanks You<br>for Completing This Assessment</h2>

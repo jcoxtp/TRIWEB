@@ -1,0 +1,162 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DimNet_newproj_mrinterview">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Creating a New Questionnaire Project</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('dimnet_newproj_mrinterview.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20104')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="dimnet_newproj.htm">Previous<img alt="(P)revious: dimnet_newproj" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="dimnet_newtablesproject.htm"><img alt="(N)ext: dimnet_newtablesproject" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; <A HREF="dimnet_newproj.htm">Creating a New Project</A> &gt; </DIV>
+<h1>Creating a New Questionnaire Project</h1>
+<p class="body">These instructions cover setting up a project for use with mrInterview.
+If you also have mrTables installed, the project will automatically
+be set up for use with mrTables. This means that you will be able
+to define your analyses in mrTables even before you start interviewing.
+It is safe to use mrTables to analyze your data while you are collecting
+it, because mrTables always opens the data in read-only mode. (When
+you create new variables in mrTables, they are stored separately from
+the main project data.)</p>
+<h2>Project Names and IDs</h2>
+<p class="body">Every project has a name and an ID. The name is the
+name by which the project will be identified in DimensionNet. It is
+for display purposes only and you can change it at any point in the
+project's life cycle. The ID is the name that the DimensionNet activities
+will use when creating files associated with the project, so it is
+usual to make it the same as the project name if possible. Once the
+ID has been set you cannot change it even if you change the project
+name.</p>
+<p class="body">Because the project ID is used in filenames it has
+to be something that is valid for filenames. The rules are these:</p>
+<p class="bullet">&bull;&nbsp;The ID must be unique.</p>
+<p class="bullet">&bull;&nbsp;It must start with an English letter (A to Z, a to
+z).</p>
+<p class="bullet">&bull;&nbsp;The rest of the name may contain English letters
+and the digits 0 to 9.</p>
+<p class="body">If the project name meets these criteria, DimensionNet
+uses it as the project ID (you can change this if you wish). If not,
+DimensionNet copies the name and then makes the following changes
+in an attempt to make it acceptable. Once an acceptable ID emerges,
+no further changes are made.</p>
+<p class="numbered-p">1.&nbsp;Remove invalid characters (non-English letters
+or punctuation, for instance). If this results in a zero-length ID,
+DimensionNet generates an ID based on your user name as described
+below.</p>
+<p class="numbered-p">2.&nbsp; If the ID starts with a number DimensionNet inserts
+the letter A at the start of the ID.</p>
+<p class="numbered-p">3.&nbsp;If the ID is longer than 16 characters it is truncated
+to that length.</p>
+<p class="numbered-p">4.&nbsp;If the ID is not unique DimensionNet appends a
+number in the range 1 to 999. Numbers are chosen in sequence starting
+with 1 so this allows for 999 files with the same root to the filename
+(ID1 to ID999, for instance). If adding a number would make the ID
+longer than 16 characters, DimensionNet removes characters from the
+end of the ID before appending the number.</p>
+<p class="body">If none of these changes results in a valid
+project ID, DimensionNet generates an ID based on your user name and
+the date and time, modifying it to produce a unique and valid ID if
+necessary &mdash; for example, ben0501191226.</p>
+<p class="body">
+<span class="runinhead">To Create a New
+Questionnaire Project</span>
+</p>
+<div class="imageblock">
+<img alt="" src="images/dn_newproj.gif"></div>
+<p class="body"></p>
+<p class="step">
+<span class="step-glyph">►</span> Click the New Project icon.</p>
+<p class="body">This opens the New Project dialog box.</p>
+<p class="step">
+<span class="step-glyph">►</span> In Project Type, choose <span class="screen">New
+questionnaire (Dimensions)</span>.</p>
+<p class="step">
+<span class="step-glyph">►</span> In Name, enter the project's name as you want it
+to appear in the project list.</p>
+<p class="step">
+<span class="step-glyph">►</span> Optionally, in Description,
+type a more detailed description of the project.</p>
+<p class="step">
+<span class="step-glyph">►</span> If you
+want to do any of the following, click  <span class="screen">Advanced</span>.
+If not, click <span class="screen">OK</span>  to create the project
+using the default settings.</p>
+<p class="bullet">&bull;&nbsp;Specify additional project
+details such as the project ID or the project folder.</p>
+<p class="bullet">&bull;&nbsp;Specify
+which roles may access the project. The default is for only the creator and
+members of the DPMAdmins role to have access.</p>
+<p class="step">
+<span class="step-glyph">►</span> To specify
+additional project details, select the Project tab.</p>
+<p class="step">
+<span class="step-glyph">►</span> If you do not
+like the Project ID that DimensionNet has chosen, enter the name that you
+want to use as the basename for all files associated with this project.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">Check</span>  to verify that
+the name you have chosen is valid.</p>
+<p class="step">
+<span class="step-glyph">►</span> The Project Folder field
+allows you to group projects using characteristics of your choice. How you
+use this field depends on your permissions.</p>
+<p class="bullet">&bull;&nbsp;Everyone can
+choose an existing folder name to place the project in that folder, or &lt;Top
+level&gt; to create a project in the top level of the project hierarchy.</p>
+<p class="bullet">&bull;&nbsp;If
+you have permission to manage project folders, you may choose &lt;Create new
+folder&gt; to place the project in a new folder with a name of your choice (enter
+the folder name when prompted to do so).</p>
+<p class="list-contin">
+<span class="italic">Note</span>: The hierarchical project list is a display
+feature only. It does not create a hierarchical structure on the disk. All
+projects are created in your user folder (for example, in Users\ben\Projects)
+even if they are displayed as being in a folder in the project list.</p>
+<p class="step">
+<span class="step-glyph">►</span> To specify which roles may access the project, select the Permissions
+tab and then select roles as appropriate.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">OK</span> to close the Advanced dialog box and then click <span class="screen">OK</span> again to create the project.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="dimnet_newproj.htm">Creating a New Project</A>
+</div>
+<div class="link">
+<A href="dimnet_newtablesproject.htm">Creating a New Analysis Project</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

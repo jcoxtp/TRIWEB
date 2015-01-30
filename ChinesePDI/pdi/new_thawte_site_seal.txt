@@ -1,0 +1,9 @@
+<table width="80" border="0" cellpadding="2" cellspacing="0" title="Click to Verify - This site chose Thawte SSL for secure e-commerce and confidential communications.">
+<tr>
+<td width="80" align="center" valign="top"><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.csnsurvey.org&amp;size=M&amp;lang=en"></script></td>
+</tr>
+<tr>
+<td  align="center" valign="top"><a href="http://www.thawte.com/digital-certificates/" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px arial,sans-serif; text-align:center; margin:0px; padding:0px;">ABOUT SSL CERTIFICATES</a></td>
+<td width="155">&nbsp;</td>
+</tr>
+</table>

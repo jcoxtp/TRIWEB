@@ -1,0 +1,101 @@
+.PropertiesTable
+{
+	BACKGROUND-COLOR: white;
+	BORDER: solid 3px #31569C;
+	BORDER-COLLAPSE: separate;
+}
+
+.PropertiesTableHeader
+{ 
+	BACKGROUND-COLOR: #31569C;
+	BORDER: solid 2px #31569C;
+	PADDING: 1px;
+	
+	FONT-FAMILY: Arial;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 10pt;
+	COLOR: white;
+	HEIGHT: 10px;
+	
+	WHITE-SPACE: nowrap;
+}
+
+.PropertiesTableRow, .PropertiesTableRowSelected, .PropertiesTableRowReadOnly
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	
+	FONT-FAMILY: Arial;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10pt;
+	COLOR: #000066;
+}
+
+.PropertiesTableRowReadOnly
+{
+	COLOR: #94bee7;
+}
+
+.PropertiesTableRowSelected
+{
+	BACKGROUND-COLOR: #F0F0F0;
+	CURSOR: pointer;
+	CURSOR: hand;
+}
+
+.PropertiesTableRow
+{
+	CURSOR: pointer;
+	CURSOR: hand;
+}
+
+.PropertiesTableCell
+{ 
+	PADDING: 1px;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT: 6px;
+	
+	HEIGHT: 10px;
+	
+	WHITE-SPACE: nowrap;
+}
+
+.PropertiesTableAddPropAnc
+{
+	BORDER: dashed 1px #000066;
+	FONT-FAMILY: Arial;
+	FONT-STYLE: italic;
+	FONT-SIZE: 10pt;
+    COLOR: #000066;
+	
+	TEXT-DECORATION: none;
+	
+	PADDING-LEFT: 4px;
+	PADDING-RIGHT: 4px;
+	
+	WIDTH: 100%;
+	WHITE-SPACE: nowrap;
+}
+
+.PropertiesTableCtrl, .PropertiesTableCtrlReadOnly
+{ 
+	BACKGROUND-COLOR: transparent;
+	BORDER: 0px solid;
+	PADDING: 1px;
+	
+	FONT-FAMILY: Arial;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10pt;
+	COLOR: #000066;
+	
+	WIDTH: 100%;
+}
+
+.PropertiesTableCtrl
+{ 
+	CURSOR: pointer;
+	CURSOR: hand;
+}
+.PropertiesTableCtrlReadOnly 
+{ 
+	COLOR: #94bee7;
+}

@@ -1,0 +1,1 @@
+Your DISC Assessment has been generated. You can now close your web browser program.

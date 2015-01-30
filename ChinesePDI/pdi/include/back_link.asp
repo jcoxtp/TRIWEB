@@ -1,0 +1,1 @@
+<a href="javascript:history.go(-1)"><img src="images/back.gif" alt="" width="73" height="16" /></a>

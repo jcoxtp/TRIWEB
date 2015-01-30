@@ -1,0 +1,8 @@
+		<add assembly="CrystalDecisions.CrystalReports.Engine, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+		<add assembly="CrystalDecisions.ReportSource, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+		<add assembly="CrystalDecisions.Shared, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+		<add assembly="CrystalDecisions.Web, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+		<add assembly="CrystalDecisions.ReportAppServer.ClientDoc, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+		<add assembly="CrystalDecisions.Enterprise.Framework, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+		<add assembly="CrystalDecisions.Enterprise.InfoStore, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+		<add assembly="CrystalDecisions.Enterprise.Web, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>

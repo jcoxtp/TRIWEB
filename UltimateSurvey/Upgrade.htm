@@ -1,0 +1,176 @@
+<HTML>
+	<HEAD>
+		<TITLE>Install Document</TITLE>
+		<LINK REL="stylesheet" HREF="Include/Stylesheets/UltimateAppsStyles.css">
+	</HEAD>
+	<BODY class="normal">
+		<P>
+			<SPAN CLASS="Heading">
+                                                Ultimate Survey Advanced Edition - v6.7.4 Upgrade Documentation</SPAN><br>
+			<span class="normalSmall">by Ultimate Software Designs ©2003</span></P>
+		<P>If you want to upgrade to Ultimate Survey Advanced Edition Version 6.7.4 and 
+			keep all of your current data, please follow the instructions in this 
+			file.&nbsp; If you want to install version 6.7.4 with a brand new database, you 
+			can follow the instructions in Install.htm.&nbsp; These instructions are for 
+			users who are currently running Ultimate Survey 6.6.x. or 6.7.x&nbsp;&nbsp;
+		</P>
+		<p>If you have already upgraded to version 6.7, 6.7.1,&nbsp;6.7.2, 
+			or&nbsp;6.7.3&nbsp;please skip to step 4</p>
+		<P>1)&nbsp; Backup your Ultimate Survey directory and backup your database.&nbsp; 
+			We cannot guarantee support for upgrades if you do not do this.&nbsp; You can 
+			perfom this upgrade against the current database or the copy.&nbsp; If you do 
+			not do it against the copy, any logged in users may experience delays and other 
+			problems.&nbsp;</P>
+		<P>2)&nbsp; If you have not already done so, update your database to correspond to 
+			Ultimate Survey Advanced Edition v6.6.1.&nbsp; You can do this by following the 
+			upgrade instructions in the&nbsp;files&nbsp;available in&nbsp;our customer area 
+			at <A href="http://www.ultimateapps.com/support/members">http://www.ultimateapps.com/support/members</A>&nbsp;.&nbsp; 
+			You do not&nbsp;need the ASP files from the previous versions</P>
+		<P>3)&nbsp; Update your database to Version 6.7.&nbsp;&nbsp;&nbsp;
+		</P>
+		<UL>
+			<LI>
+			SQL Server Users - Open query analyzer pointing to your Ultimate Survey 
+			database.&nbsp; Open the file "Database/databaseUpdate.sql" and run it.
+			<LI>
+				MSAccess Users
+				<UL>
+					<LI>
+						Add the following fields to existing tables:<BR>
+						<TABLE id="Table1" height="168" cellSpacing="1" cellPadding="1" width="744" border="1">
+							<TR>
+								<TD width="195" bgColor="silver">Table Name</TD>
+								<TD bgColor="silver">Field Name</TD>
+								<TD bgColor="silver">Field Type</TD>
+							</TR>
+							<TR>
+								<TD width="195" height="19">usd_answers</TD>
+								<TD height="19">orderByID</TD>
+								<TD height="19">number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_matrixSets</TD>
+								<TD>fieldLength</TD>
+								<TD>number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveyItem</TD>
+								<TD>pipedItemID1</TD>
+								<TD>number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveyItem</TD>
+								<TD>pipedItemID2</TD>
+								<TD>number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveyItem</TD>
+								<TD>pipedItemID3</TD>
+								<TD>number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveyItem</TD>
+								<TD>numberRows</TD>
+								<TD>number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveyItem</TD>
+								<TD>numberColumns</TD>
+								<TD>number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveyItem</TD>
+								<TD>variableName</TD>
+								<TD>text</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveySettings</TD>
+								<TD>preventConcurrentLogin</TD>
+								<TD>number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveySettings</TD>
+								<TD>cookieName</TD>
+								<TD>text</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_surveyUser</TD>
+								<TD>userGUID</TD>
+								<TD>text</TD>
+							</TR>
+						</TABLE>
+					</LI>
+				</UL>
+			</LI>
+		</UL>
+		<P>
+			4)&nbsp;Make database changes for Version 6.7.4.</P>
+		<UL>
+			<LI>
+			SQL Server Users - Open query analyzer pointing to your Ultimate Survey 
+			database.&nbsp; Open the file "Database/databaseUpdate-6.7.4.sql" and run it.
+			<LI>
+				MSAccess Users
+				<UL>
+					<LI>
+						Add the following fields to existing tables:<BR>
+						<TABLE id="Table2" height="128" cellSpacing="1" cellPadding="1" width="752" border="1">
+							<TR>
+								<TD width="195" bgColor="silver">Table Name</TD>
+								<TD bgColor="silver">Field Name</TD>
+								<TD bgColor="silver">Field Type</TD>
+							</TR>
+							<TR>
+								<TD width="195" height="19">usd_matrixAnswers</TD>
+								<TD height="19">orderByID</TD>
+								<TD height="19">number</TD>
+							</TR>
+							<TR>
+								<TD width="195">usd_matrixCategories</TD>
+								<TD>orderByID</TD>
+								<TD>number</TD>
+							</TR>
+						</TABLE>
+					</LI>
+				</UL>
+			</LI>
+		</UL>
+		<P>5)&nbsp; Update your Ultimate Survey directory with files</P>
+		<UL dir="ltr" style="MARGIN-RIGHT: 0px">
+			<LI>
+				Copy the files contained in the zip to your Ultimate Survey directory.&nbsp; If 
+				you are using the same database as you did for previous versions, do not 
+				overwrite "Include/SurveyConnection_inc.asp".&nbsp; If you are using a 
+				different database, please update your connection string in this file.</LI></UL>
+		<P>&nbsp;
+		</P>
+		<P>The following files have changes between&nbsp;Version 6.7.3 and 6.7.4:</P>
+		<UL>
+			<LI>
+				addItemFromCategory.asp</LI>
+			<LI>
+				copyItem.asp</LI>
+			<LI>
+				editMatrixCategories.asp</LI>
+			<LI>
+				editMatrixSet.asp</LI>
+			<LI>
+				FCColumn.swf</LI>
+			<LI>
+				FCDough.swf</LI>
+			<LI>
+				FCLine.swf</LI>
+			<LI>
+				FCPie.swf</LI>
+			<LI>
+				viewResponses.asp</LI>
+			<LI>
+				Include/constants_inc.asp</LI>
+			<LI>
+				Include/itemDisplay_inc.asp</LI>
+			<LI>
+				Include/surveyCreation_inc.asp</LI>
+			<LI>
+				Include/utility_inc.asp</LI></UL>
+	</BODY>
+</HTML>

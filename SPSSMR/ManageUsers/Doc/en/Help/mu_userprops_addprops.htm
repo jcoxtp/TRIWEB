@@ -1,0 +1,145 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="mu_userprops_addprops">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Adding Properties to User Property Groups</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('mu_userprops_addprops.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20055')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="mu_userprops_deletegroup.htm">Previous<img alt="(P)revious: mu_userprops_deletegroup" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="mu_userprops_changeprops.htm"><img alt="(N)ext: mu_userprops_changeprops" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutmu.htm">Manage Users</A> &gt; </DIV>
+<h1>Adding Properties to User Property Groups</h1>
+<div class="imageblock">
+<img alt="Edit user properties icon" src="images/mu_userprops_button.gif"></div>
+<div class="imageblock">
+<img alt="Add property group icon" src="images/add.gif"></div>
+<p class="body">User properties have the following components:</p>
+<p class="bullet">&bull;&nbsp;A name that is used internally by DimensionNet and
+mrInterview activities.</p>
+<p class="bullet">&bull;&nbsp;A description that is used in screens and dialog
+boxes displayed by activities.</p>
+<p class="bullet">&bull;&nbsp;A data type. This is either Bool for a boolean (true/false)
+property or Category for a single text value or list of values.</p>
+<p class="bullet">&bull;&nbsp;A selection type that specifies how many values the
+property may have.</p>
+<p class="bullet">&bull;&nbsp;A list of possible values.</p>
+<p class="bullet">&bull;&nbsp;A default value. This may be one of the values you
+define when you create the property or the special "Matches Any" setting.
+Use "Matches Any" when you do not want to choose any of the predefined
+values as the default. This default applies across all projects that
+an interviewer works on.</p>
+<h2>Interviewer qualifications</h2>
+<p class="body">There are two types of interviewer qualification: those that are
+linked to a queue and those that are not. Qualifications related to
+queues must be called HandleQueue_<span class="italic">QueueName</span>; for example, HandleQueue_REFUSED for interviewers who are skilled
+at persuading respondents who have refused to be interviewed to reconsider
+their decision. </p>
+<p class="body">Interviewer qualifications that are not linked to queues
+are typically related to information present in the participant records.
+These qualifications must have the same name as the field in the sample
+record that stores the appropriate item of participant information.
+For example, if the interviewer qualification called Language defines
+the languages that an interviewer speaks, the field in the sample
+record that contains the respondent's native language must also be
+called Language. If you will be setting up this type of interviewer
+qualification you may need to liaise with whoever deals with participant
+records to ensure that the qualification names and sample field names
+match.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click the Edit user properties icon in the toolbar.</p>
+<p class="body">This opens the Edit User Properties dialog box.</p>
+<p class="step">
+<span class="step-glyph">►</span> In the Property Groups frame, click the group to which
+you want to add properties and, when the line is shaded in grey, click
+the Edit property icon in the frame's title bar.</p>
+<p class="body">This opens a new page listing the properties defined
+for the group.</p>
+<p class="step">
+<span class="step-glyph">►</span> In the User Properties frame, click the Add property
+group icon in the title bar or click <span class="screen">&lt;Click
+here to add new&gt;</span>.</p>
+<p class="body">This displays a dialog for adding a new property.</p>
+<p class="step">
+<span class="step-glyph">►</span> In Property, type a name for the property. Names may
+not contain spaces.</p>
+<p class="step">
+<span class="step-glyph">►</span> In Description, type a description of the property.</p>
+<p class="step">
+<span class="step-glyph">►</span> In Type, choose the property's data type. This must
+be one of:</p>
+<p class="bullet">&bull;&nbsp;<span class="italic">Category</span>. The
+equivalent of the response list to a categorical question. Used for
+properties such as languages spoken, gender, level of experience.</p>
+<p class="bullet">&bull;&nbsp;<span class="italic">Bool</span>. A pair
+of boolean values. Used for properties with Yes/No values, such as
+whether the interviewer is a refusal converter.</p>
+<p class="step">
+<span class="step-glyph">►</span> In Selection Type, choose <span class="screen">single</span> if an interviewer may have only one of the property's
+values set, or <span class="screen">multiple</span> if interviewers
+may have more than one of the property's values set.</p>
+<p class="step">
+<span class="step-glyph">►</span> In the Options box, type the possible values for this
+property. Values may be entered on separate lines or as a single,
+comma-separated list. You must enter at least one value. Options for
+boolean properties are displayed automatically.</p>
+<p class="step">
+<span class="step-glyph">►</span> In the Default box, select the default value for the
+property. If you do not want to set a default value, choose Matches
+Any. When you create new user accounts, the default setting will be
+assigned to any interviewer for whom a more specific qualification
+is not set. For example, if you set Matches Any for a language qualification,
+any interviewer who does not have a specific language qualification
+set will be able to receive calls for respondents who speak any language
+at all.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">Apply</span>.</p>
+<p class="step">
+<span class="step-glyph">►</span> Repeat these steps to add other properties to the same
+group.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">Close</span> to
+return to the Manage User Properties page.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="mu_userprops_changeprops.htm">Changing a User Property's Definition</A>
+</div>
+<div class="link">
+<A href="mu_userprops_deleteprops.htm">Deleting a User Property</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

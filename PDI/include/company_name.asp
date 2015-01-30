@@ -1,0 +1,1 @@
+Team Resources, Inc.<sup>&reg;</sup>

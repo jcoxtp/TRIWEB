@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<FilesTypes>
+    <FileType type="mdd">
+        <name>MetadataDocument</name>
+        <imagename_small>MetadataDocument.gif</imagename_small>
+        <imagename_large>lgMetadataDocument.gif</imagename_large>
+        <resourceid>filetype_mdd</resourceid>
+        <description>Dimensions metadata document</description>
+    </FileType>
+    <FileType type="mrs">
+        <name>mrScriptBasic</name>
+        <imagename_small>mrScriptBasic.gif</imagename_small>
+        <imagename_large>lgmrScriptBasic.gif</imagename_large>
+        <resourceid>filetype_mrs</resourceid>
+        <description>Dimensions mrScriptBasic script</description>
+    </FileType>
+    <FileType type="mtd">
+        <name>TableDocument</name>
+        <imagename_small>mtdDocument.gif</imagename_small>
+        <imagename_large>lgMtdDocument.gif</imagename_large>
+        <resourceid>filetype_mtd</resourceid>
+        <description>Dimensions table definition</description>
+    </FileType>
+    <FileType type="xml">
+        <name>ExtensibleMarkupLanguage</name>
+        <imagename_small>type_xml.gif</imagename_small>
+        <imagename_large>lgType_xml.gif</imagename_large>
+        <resourceid>filetype_xml</resourceid>
+        <description>Extensible markup language</description>
+    </FileType>
+    <FileType type="htm">
+        <name>Hypertextmarkuplanguage</name>
+        <imagename_small>type_html.gif</imagename_small>
+        <imagename_large>lgType_html.gif</imagename_large>
+        <resourceid>filetype_html</resourceid>
+        <description>Hypertext markup language</description>
+    </FileType>
+    <FileType type="html">
+        <name>Hypertextmarkuplanguage</name>
+        <imagename_small>type_html.gif</imagename_small>
+        <imagename_large>lgType_html.gif</imagename_large>
+        <resourceid>filetype_html</resourceid>
+        <description>Hypertext markup language</description>
+    </FileType>
+    <FileType type="css">
+        <name>CascadingStyleSheet</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_css</resourceid>
+        <description>Cascading style sheet</description>
+    </FileType>
+    <FileType type="ivs">
+        <name>Questionnairedefinitionfile</name>
+        <imagename_small>InterviewScript.gif</imagename_small>
+        <imagename_large>lgInterviewScript.gif</imagename_large>
+        <resourceid>filetype_ivs</resourceid>
+        <description>Dimensions questionnaire definition file</description>
+    </FileType>
+    <FileType type="zip">
+        <name>WinZipFile</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_zip</resourceid>
+        <description>Zip file</description>
+    </FileType>
+    <FileType type="mqd">
+        <name>QuotaDefinitionFile</name>
+        <imagename_small>type_quota.gif</imagename_small>
+        <imagename_large>type_quota.gif</imagename_large>
+        <resourceid>filetype_mqd</resourceid>
+        <description>Quota definition file</description>
+    </FileType>
+    <FileType type="chm">
+        <name>CompiledHelpFile</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_chm</resourceid>
+        <description>Compiled help file</description>
+    </FileType>
+    <FileType type="doc">
+        <name>WordDocument</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_doc</resourceid>
+        <description>Word document</description>
+    </FileType>
+    <FileType type="dot">
+        <name>WordTemplate</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_dot</resourceid>
+        <description>Word template</description>
+    </FileType>
+    <FileType type="xls">
+        <name>ExcelDocument</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_xls</resourceid>
+        <description>Excel document</description>
+    </FileType>
+    <FileType type="ppt">
+        <name>PowerPointDocument</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_ppt</resourceid>
+        <description>PowerPoint document</description>
+    </FileType>
+    <FileType type="txt">
+        <name>TextFile</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_txt</resourceid>
+        <description>Text file</description>
+    </FileType>
+    <FileType type="dms">
+        <name>DataManagementScript</name>
+        <imagename_small>DataManagerScript.gif</imagename_small>
+        <imagename_large>lgDataManagerScript.gif</imagename_large>
+        <resourceid>filetype_dms</resourceid>
+        <description>Data management script</description>
+    </FileType>
+    <FileType type="sav">
+        <name>SPSSFile</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_sav</resourceid>
+        <description>SPSS file</description>
+    </FileType>
+    <FileType type="qdt">
+        <name>SurveyCraftFile</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_qdt</resourceid>
+        <description>SurveyCraft file</description>
+    </FileType>
+    <FileType type="vq">
+        <name>SurveyCraft File</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_vq</resourceid>
+        <description>SurveyCraft file</description>
+    </FileType>
+    <FileType type="dat">
+        <name>QuantumFormatASCIIDataFile</name>
+        <imagename_small>type_unknown.gif</imagename_small>
+        <imagename_large>lgType_unknown.gif</imagename_large>
+        <resourceid>filetype_dat</resourceid>
+        <description>Quantum-format ASCII data file</description>
+    </FileType>
+    <FileType type="sws">
+        <name>mrStudioWorkspaceFile</name>
+        <imagename_small>Type_WorkSpace.gif</imagename_small>
+        <imagename_large>lgType_WorkSpace.gif</imagename_large>
+        <resourceid>filetype_sws</resourceid>
+        <description>mrStudio workspace file</description>
+    </FileType>
+</FilesTypes>

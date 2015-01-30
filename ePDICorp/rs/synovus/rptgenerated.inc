@@ -1,0 +1,1 @@
+Your DISC Assessment has been completed. Your report will be emailed to your company's administrator.

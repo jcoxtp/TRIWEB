@@ -1,0 +1,46 @@
+/* ======================================== 
+	Reseller StyleSheet
+	- this file extends the _system stylesheet and is to be used for reseller specific styles
+	- styles defined in this sheet will override those with the same name/scope in the _system stylesheet
+	- do not put global style changes in this file
+=========================================*/
+body
+{
+	background-color: #ffffff;
+}
+a:link, a:visited, a:active
+{
+	color:#396669; 
+	background-color:transparent; 
+	text-decoration:none
+}
+#login_form
+{
+	top: 180px;
+	left: 150px;
+}
+a:link.loginform_link, a:visited.loginform_link, a:active.loginform_link
+{
+	color:#396669; 
+	text-decoration:underline
+}
+a:hover.loginform_link
+{
+	color:#DDDDDD; 
+	text-decoration:underline
+}
+#login_section01
+{
+	top: 235px;
+	left: 35px;
+	width: 730px;
+}
+#login_section02
+{
+	top: 440px;
+	left: 320px;
+}
+.logintext
+{
+	color: #396669;
+}

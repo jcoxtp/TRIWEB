@@ -1,0 +1,76 @@
+/* Stylesheet definitions specific for SPSS FileManager pages */
+body
+{
+	font-family:Arial;
+	background-color:white;
+	background-color		:#94BEE7;
+	font-size:10;
+	scrollbar-arrow-color: #FFFFFF; 
+	scrollbar-base-color: #94BEE7;
+	scrollbar-face-color: #31569C;
+}
+
+a
+{
+	cursor:hand;
+	cursor:pointer;
+}
+
+.treeitem
+{
+	font-size:10pt;
+	font-family:Arial;
+}
+
+.filelistheader
+{
+	background-color:Silver;
+	border-color: Black;
+	border-width: 1;
+	font-size: 10pt
+}
+
+.filelistitem
+{
+	border:solid 2px;
+	font-size: 10pt
+}
+
+.headerbutton
+{
+	font-family:Arial;
+	font-size:10;
+	font-weight:bold;
+	width:100%
+}
+
+.cmdstatusbody
+{
+	background-color:Silver;
+}
+
+.dirfile_selection
+{
+	font-family:Arial;
+	font-size:8pt;
+	color:Black;
+}
+
+.imagebuttons
+{
+	border:SOLID 1px;
+	border-bottom-color:BLACK;
+	border-left-color:WHITE;
+	border-top-color:WHITE;
+	border-right-color:Black;	
+}
+
+.PopupMessageTable
+{
+	background-color: Silver;
+	border: inset 3px Silver;
+	
+	margin: 10px;
+	font: normal normal bold 14pt Arial;
+	
+}

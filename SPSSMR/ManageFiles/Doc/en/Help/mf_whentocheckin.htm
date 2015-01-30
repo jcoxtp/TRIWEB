@@ -1,0 +1,183 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="MF_whentocheckin">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>When to Check Files In and Out</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('mf_whentocheckin.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20045')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="mf_undocheckout.htm">Previous<img alt="(P)revious: mf_undocheckout" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="mf_upload.htm"><img alt="(N)ext: mf_upload" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutmf.htm">Files</A> &gt; </DIV>
+<h1>When to Check Files In and Out</h1>
+<p class="body">Some users find the concept of checking files in and out
+ confusing, and often worry that they will lose their work either because
+someone  else overwrites a file with a different version, or because they
+start working  on the wrong version of a file without realizing it. The rules
+for checking  files in and out can vary between and within companies, depending
+on the number  of people involved in a project's development, so it is hard
+to give fixed  rules about when to check files in and out. This topic gives
+some recommendations  on good practise regarding checking files in and out,
+and provides an example  that may help to clarify the situation further.</p>
+<p class="body">If you are worried about losing work, remember that all the
+ time you have a  project locked, very few of the project files will be available
+ to any user who does not have administrative privileges. However, do not
+fall  into the trap of keeping a project locked indefinitely as this can be
+annoying  and counterproductive too.</p>
+<h2>Overview</h2>
+<p class="body">When you work on a project, you always work on files in your
+ personal User folder. Activities such as Build, that create questionnaires,
+ always look for files in your User folder first, and will open those files
+ if they exist. If an activity cannot find the files it needs in your User
+ folder, it looks for those files in the Shared folder. If the activity finds
+ the files it wants in the Shared folder, it copies them into your User folder
+ and opens them. If the files cannot be found in your User folder or in the
+ Shared folder, the activity creates a new file in your User folder and opens
+ that file.</p>
+<p class="body">Certain options within activities create files in the Shared
+ folder as well as in  your User folder. For example, if you activate a questionnaire
+ from within Build, the project's  <span class="name">.mdd</span> is
+ checked in to the Shared area as part of the activation process. However,
+ as long as you have the project locked, no one else can access the files
+in  the Shared folder, so you can continue working on the project, knowing
+that  nobody else has access to  the files.</p>
+<p class="body">You can check files in to and out of the Shared folder whenever
+ you wish, simply by running Files. If you are the only person working on
+a  project, it is not important when you check files in because you will always
+ have the files you need in your User folder. This is not the case when you
+  are working on a project with other people. In that situation, it is important
+ that you check files in and out regularly and at the appropriate points in
+ the project's development cycle, as this ensures that each user has access
+ to the latest versions of the project's files.</p>
+<h2>Recommendations</h2>
+<p class="body">The following recommendations should ensure that everyone working
+ on a project has access to the latest versions of the project files.</p>
+<p class="bullet">&bull;&nbsp;When you start work on an existing project, always run Files
+ and look to see  whether there are any project files in the Shared folder.
+ If so, check these files out. This places copies of those files in your User
+ folder.</p>
+<p class="bullet">&bull;&nbsp;When you start work on a new project, check your files in
+ regularly. For example, if you are designing a new questionnaire using Build,
+ you might want to check your files in when you have finished the first draft
+ of the questionnaire.</p>
+<p class="bullet">&bull;&nbsp;If you have finished working on the project for the time
+ being and have checked all your files in, unlock the project so that other
+ users know  that they can use the files.</p>
+<p class="bullet">&bull;&nbsp;It is possible to unlock a project without checking in files,
+ but this is bad practise as this is how newer files can be overwritten with
+ out of date ones. If you unlock a project that already has files in the Shared
+ folder, and you are interrupted before you have time to check in your latest
+ files, someone else may check out the old files from the Shared folder. If
+ you then check in your files, they will be overwritten when the other person
+ checks in their changes, and your changes will be lost. Get into the habit
+ of checking in files and then unlocking the project. If in doubt, do not
+unlock  the project.</p>
+<p class="bullet">&bull;&nbsp;As soon as you run an activity on a project, the project
+ is locked and other users will not be able to access the files. If you are
+ ready to work on a project but cannot run an activity straight away, lock
+ the project to prevent other users using the files.</p>
+<h2>Example</h2>
+<p class="body">Here is an example that illustrates how an questionnaire
+ designer, a translator, and a scriptwriter can all work on a project together.</p>
+<p class="bullet">&bull;&nbsp;The questionnaire designer creates the project and runs Build
+ to build the basic questionnaire. It takes the designer two days to complete
+ the first draft of the questionnaire. The project is automatically locked
+ by questionnaire designer, so the translator and scriptwriter cannot access
+ any of the files that Build creates. (In any case, until the questionnaire
+ designer  checks the files in manually or tests or activates the questionnaire,
+ the files exist only in the User  folder.)</p>
+<p class="bullet">&bull;&nbsp;The questionnaire designer tests the questionnaire, which
+ automatically copies files from the User folder into the Shared folder. However,
+ because the project is still locked, no one else can access these files.</p>
+<p class="bullet">&bull;&nbsp;The questionnaire designer continues the cycle of testing
+ and modifying the  questionnaire. Because no one else has yet worked on the
+ project, and because Build always uses the files in the User folder if they
+ exist, there is no need for the questionnaire designer to check in the files
+ during this process.</p>
+<p class="bullet">&bull;&nbsp;At the end of the second day, the questionnaire designer
+ has finished all she can do on the questionnaire and is ready to pass it
+to  the scriptwriter for the final changes to be made prior to translation.
+She  therefore uses Files to check all the files in her User folder into the
+Shared  folder, and then unlocks the project. At this stage, the files in
+the Shared  folder become available to the scriptwriter and the translator.</p>
+<p class="bullet">&bull;&nbsp;On the third day, the scriptwriter checks the project files
+ out from the Shared folder into her User folder. Because she will not be
+able  to work on the files straight away she locks the project to ensure that
+no  one else can check out the Shared files and start working on them.</p>
+<p class="bullet">&bull;&nbsp;Later that day, the scriptwriter makes some additions to
+ the questionnaire and runs some final tests. She does not check the files
+ in after every change because she has the project locked and knows that no
+ one else can access the Shared files. When the scriptwriter is satisfied
+that  the questionnaire is finished, she checks all the project files that
+are in  her User folder into the Shared folder and unlocks the project. This
+makes  the files in the Shared folder available to other users.</p>
+<p class="bullet">&bull;&nbsp;The translator checks out the <span class="name">.mdd</span> file
+ and locks the project, even though she cannot use mrTranslate through DimensionNet.
+ She then  downloads the file onto her computer and translates the texts.
+When  she has finished, she uses Files to upload the translated file into
+her User  folder and then checks it in to the Shared folder. Finally, she
+unlocks the  project.</p>
+<p class="bullet">&bull;&nbsp;The scriptwriter checks all the project files out into her
+ User folder and runs some final tests to ensure that the script appears correctly
+ in the various translations. She works on the project as soon as she has
+checked  out the files, so she lets DimensionNet lock the project for her
+automatically.</p>
+<p class="bullet">&bull;&nbsp;The scriptwriter activates the project in Active mode, and
+ the project becomes available for live interviewing. If the scriptwriter
+made  any changes to the questionnaire, she checks the files back in before
+unlocking  the project.</p>
+<p class="body">Some users (usually managers) have permission to unlock
+ other people's projects. If you have this permission, be very careful when
+ you use it and what you do with the project files after you have unlocked
+ the project. For information about unlocking other people's files, and an
+ example that illustrates the possible pitfalls of careless unlocking,   refer to "Unlocking Other Peoples' Projects" in the DimensionNet
+ User's Guide. </p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="mf_checkin.htm">Checking Files In to the Shared Folder</A>
+</div>
+<div class="link">
+<A href="mf_checkout.htm">Checking Files Out from the Shared Folder</A>
+</div>
+<div class="link">
+<A href="mf_upload.htm">Uploading Files from your Computer into your User Folder</A>
+</div>
+<div class="link">
+<A href="mf_download.htm">Downloading Files onto your Computer</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

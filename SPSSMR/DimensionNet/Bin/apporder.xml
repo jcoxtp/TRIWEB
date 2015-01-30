@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationOrder>
+	<App id="design"/>
+	<App id="manage"/>
+	<App id="datacollection"/>
+	<App id="reports"/>
+	<App id="other"/>
+</ApplicationOrder>

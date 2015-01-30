@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BTN_APPLY" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="BTN_ARCHIVE" xml:space="preserve">
+    <value>Download Logs</value>
+  </data>
+  <data name="BTN_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="BTN_CLOSE" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="BTN_VIEW" xml:space="preserve">
+    <value>View Logs</value>
+  </data>
+  <data name="DDL_PRIORITY_HIGH" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="DDL_PRIORITY_LOW" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="DDL_PRIORITY_MEDIUM" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="GV_HEADER" xml:space="preserve">
+    <value>Log Files</value>
+  </data>
+  <data name="GV_INITMSG" xml:space="preserve">
+    <value>To view logs, choose a machine, enter a SQL query and click the View Logs button.</value>
+  </data>
+  <data name="GV_MSG" xml:space="preserve">
+    <value>There are no records that match the selection criteria.</value>
+  </data>
+  <data name="GV_TOTALPAGES" xml:space="preserve">
+    <value>Number of pages:  </value>
+  </data>
+  <data name="GV_TOTALRECORDS" xml:space="preserve">
+    <value>Total number of records:  </value>
+  </data>
+  <data name="INF0_FUTURN" xml:space="preserve">
+    <value>All dates must be in the past.</value>
+  </data>
+  <data name="INF0_PROMPT" xml:space="preserve">
+    <value>The start time must be earlier than the end time.</value>
+  </data>
+  <data name="INF0_TYPE" xml:space="preserve">
+    <value>Please select log file types.</value>
+  </data>
+  <data name="INFO_COMPRESS" xml:space="preserve">
+    <value>Specify which files you want to compress.&lt;br&gt;
+
+ 
+
+The compression process creates a ReadMe file that explains the problem to which the files relate. Specify the problem's importance to you, give a contact name or email address, and enter a description of the problem.</value>
+  </data>
+  <data name="INFO_CONTACT" xml:space="preserve">
+    <value>Contact details:</value>
+  </data>
+  <data name="INFO_CUSTOM" xml:space="preserve">
+    <value>Custom date filter:</value>
+  </data>
+  <data name="INFO_DATE" xml:space="preserve">
+    <value>Date filter:</value>
+  </data>
+  <data name="INFO_DESC" xml:space="preserve">
+    <value>Description of problem:</value>
+  </data>
+  <data name="INFO_DOWNLOAD" xml:space="preserve">
+    <value>Specify which files you want to download.&lt;br&gt;
+The download process creates a ReadMe file that explains the problem to which the files relate. Specify the problem's importance to you, give a contact name or email address, and enter a description of the problem.</value>
+  </data>
+  <data name="INFO_ENDDATE" xml:space="preserve">
+    <value>End date:</value>
+  </data>
+  <data name="INFO_EVENT" xml:space="preserve">
+    <value>Include Windows event logs?</value>
+  </data>
+  <data name="INFO_EXIT" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="INFO_FILETYPE" xml:space="preserve">
+    <value>Log file types:</value>
+  </data>
+  <data name="INFO_HELP" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="INFO_MACHINES" xml:space="preserve">
+    <value>Machines:</value>
+  </data>
+  <data name="INFO_PAGENUM" xml:space="preserve">
+    <value>Number of records per page:</value>
+  </data>
+  <data name="INFO_PRIORITY" xml:space="preserve">
+    <value>Priority:</value>
+  </data>
+  <data name="INFO_README" xml:space="preserve">
+    <value>ReadMe content:</value>
+  </data>
+  <data name="INFO_SORT" xml:space="preserve">
+    <value>Sort Logs By:</value>
+  </data>
+  <data name="INFO_SQL" xml:space="preserve">
+    <value>SQL query:</value>
+  </data>
+  <data name="INFO_STARTDATE" xml:space="preserve">
+    <value>Start date:</value>
+  </data>
+  <data name="INFO_TIME" xml:space="preserve">
+    <value>Log files date filter:</value>
+  </data>
+  <data name="INFO_VIEW" xml:space="preserve">
+    <value>Choose the machine whose log files you want to view and then enter an SQL query that selects the records you want to see.</value>
+  </data>
+  <data name="INFO_VIEWSETTINGS" xml:space="preserve">
+    <value>Choose the number of records you want to display on each page and set up the connection string for the machine whose log files you will be viewing.</value>
+  </data>
+  <data name="TAB_PACK" xml:space="preserve">
+    <value>Download Logs</value>
+  </data>
+  <data name="TAB_SETTING" xml:space="preserve">
+    <value>View Settings</value>
+  </data>
+  <data name="TAB_VIEW" xml:space="preserve">
+    <value>View Logs</value>
+  </data>
+  <data name="navigation_page" xml:space="preserve">
+    <value>
+			Page
+		</value>
+  </data>
+  <data name="navigation_first" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="navigation_previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="navigation_last" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="navigation_next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="INFO_DOWNLOADERROR" xml:space="preserve">
+    <value>Error occurs during compressing.</value>
+  </data>
+  <data name="IDS_ERR_ERROR" xml:space="preserve">
+    <value>Manage Logs Error:</value>
+  </data>
+  <data name="IDS_ERR_ERRORRETRIEVINGROLES" xml:space="preserve">
+    <value>An error was thrown while trying to retrieve the roles. You may not have administration rights to access the roles.</value>
+  </data>
+  <data name="IDS_ERR_MSG" xml:space="preserve">
+    <value>Error Message: {0}</value>
+  </data>
+  <data name="IDS_INFO_BACKTOLAUNCHER" xml:space="preserve">
+    <value>Back to DimensionNet</value>
+  </data>
+  <data name="All_Machines" xml:space="preserve">
+    <value>All Machines</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="Last12H" xml:space="preserve">
+    <value>Last 12 hours</value>
+  </data>
+  <data name="Last1W" xml:space="preserve">
+    <value>Last week</value>
+  </data>
+  <data name="Last24H" xml:space="preserve">
+    <value>Last 24 hours</value>
+  </data>
+  <data name="Last2D" xml:space="preserve">
+    <value>Last 2 days</value>
+  </data>
+  <data name="Last2H" xml:space="preserve">
+    <value>Last 2 hours</value>
+  </data>
+  <data name="waiting_string" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+</root>

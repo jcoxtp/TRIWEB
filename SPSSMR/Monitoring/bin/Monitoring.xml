@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application name="Monitoring">
+	<ApplicationSettings>
+		<Property name="ShowInLauncher" datatype="11">True</Property>
+		<Property name="ShowForProject" datatype="boolean">False</Property>
+		<Property name="DisplayName" datatype="string">Usage Reports</Property>
+		<Property name="DPMAccessType" datatype="string">ReadOnly</Property>
+		<Property name="FileAccessType" datatype="string">ReadOnly</Property>
+		<Property name="ApplicationType" datatype="string"><![CDATA[reports]]></Property>
+		<Property name="ShowAsTool" datatype="boolean">False</Property>
+		<Property name="ShowAsReports" datatype="boolean">True</Property>
+		<Property name="StartURL" datatype="string"><![CDATA[ ../Monitoring/ApplicationInit.aspx]]></Property>
+		<Property name="PublicResourceFolder" datatype="string">
+		      <![CDATA[../Monitoring/bin]]>
+		</Property>
+		<Property name="PublicResourceFileName" datatype="8">
+			<![CDATA[PublicResources.resx]]>
+		</Property>
+		<Property name="SupportsFirefoxBrowser" datatype="boolean">True</Property>
+	</ApplicationSettings>
+	<UserSettings/>
+	<MustMatch />	
+	<Features>
+		<Property name="canViewUsageReports" datatype="empty" />
+	</Features>
+</Application>

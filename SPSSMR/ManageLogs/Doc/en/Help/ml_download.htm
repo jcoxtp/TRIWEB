@@ -1,0 +1,155 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="ml_download">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Downloading Log Files</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('ml_download.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20032')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="ml_view.htm">Previous<img alt="(P)revious: ml_view" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="ml_zipfile.htm"><img alt="(N)ext: ml_zipfile" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="ml_about.htm">Manage Logs</A> &gt; </DIV>
+<h1>Downloading Log Files</h1>
+<p class="body">If there are problems with your installation that you cannot solve, you
+may be asked to send the log files to your SPSS support representative. The
+easiest way to do this is to use the Download tab to create a zip (compressed)
+file that you can then send by email.</p>
+<p class="body">The download process copies all files that were created
+on or after a given start date or that were last modified on or before a given
+end date. When choosing dates, remember that some files grow more quickly
+than others so you may need to extend the date range outside the period when
+the problem actually existed. The download process also creates
+a ReadMe file containing information related to the problem. You provide some
+of this information and some comes from DPM.</p>
+<p class="body">Zipped files are named <span class="italic">SiteName</span>_yyyy&ndash;mm&ndash;dd.zip
+(for example, BJH_2007&ndash;10&ndash;26.zip). Once the file has been created,
+Manage Logs displays a standard Windows download message box asking whether
+you want to open or save the file.</p>
+<p class="body">The date range, the file types downloaded, and the setting
+for Windows event files are saved in DPM as application settings so that they
+become the defaults the next time you run Manage Logs.</p>
+<p class="body">
+<span class="italic">Notes</span>
+</p>
+<p class="bullet">&bull;&nbsp;Although downloading is usually quite fast, it may take some
+time if you download a lot of very large log files or you download Windows
+event logs. You will not be able to use DimensionNet while the download is
+in progress.</p>
+<p class="bullet">&bull;&nbsp;If you have a number of people with administrator privileges,
+only one of those users can download log files at a time.</p>
+<p class="body">
+<span class="runinhead">To Zip and Download Log Files</span>
+</p>
+<p class="step">
+<span class="step-glyph">►</span> Select the Download Logs tab.</p>
+<p class="step">
+<span class="step-glyph">►</span> In Machines, choose the machines whose log records you want
+to download.</p>
+<p class="step">
+<span class="step-glyph">►</span> In Log file types, choose the types of log files you want to
+download:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Select</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrInterview (ISE)</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Records related to the interview engine.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrInterview Components (IVW)</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Records related to interviews.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Others</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Records from log files for other activities such as Participants or
+Export Data.</td>
+</tr>
+</tbody>
+</table>
+<p class="body"></p>
+<p class="step">
+<span class="step-glyph">►</span> In Log files date filter, choose the date range you want to
+see. Possibilities are the last two, 12, or 24 hours, the last two days, or
+the last week. The default is the last two days. If you would rather specify
+your own date range, select <span class="screen">Custom</span> and
+then choose the start and end dates in the new fields that Manage Logs displays.</p>
+<p class="step-contin">
+<span class="italic">Note:</span> The date
+range applies to the creation and last modified dates of the log files themselves,
+not to the dates that the log entries were written. On a lightly loaded system
+this may mean that some files contain information that is not relevant to
+the current issue.</p>
+<p class="step">
+<span class="step-glyph">►</span> Select <span class="screen">Include windows event logs?</span> if
+you want to download the Windows system and application logs. The default
+is to download these files as they often contain useful information about
+what has been happening on a machine while DimensionNet has been running.</p>
+<p class="step">
+<span class="step-glyph">►</span> Use the check boxes in the ReadMe content section to specify
+information to be added to the ReadMe file that is created to accompany the
+log files.</p>
+<p class="bullet">&bull;&nbsp;In Priority, select the job's importance to you.</p>
+<p class="bullet">&bull;&nbsp;In Contact details, type the name and telephone number or
+email address of the person that the support representative should contact
+about the problem.</p>
+<p class="bullet">&bull;&nbsp;In Description of problem, type a clear and concise description
+of the problem that has been observed. If you have other information that
+will be helpful, make a note of it here. For example, if a sample management
+script has recently been changed or the problem occurred after a system upgrade,
+add it to this field so that the support representative is aware of the issue.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">Download Logs</span>.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="ml_about.htm">Manage Logs</A>
+</div>
+<div class="link">
+<A href="ml_zipfile.htm">What's in the Zip File</A>
+</div>
+<div class="link">
+<A href="ml_viewsettings.htm">View Settings</A>
+</div>
+<div class="link">
+<A href="ml_view.htm">Viewing Log Files</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<% @ webhandler class="TeamSummary.LeagueManagerHTTPHandler" %>

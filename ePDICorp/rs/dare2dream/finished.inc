@@ -1,0 +1,1 @@
+<h1 style="text-align:center">Thank you for completing this DISC assessment</h1>

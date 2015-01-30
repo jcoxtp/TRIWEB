@@ -1,0 +1,91 @@
+<%@ Page language="c#" Codebehind="PDI.Translation.InsertPageX.aspx.cs" validateRequest="false" AutoEventWireup="false" Inherits="PDI.Translation.InsertPageX" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>InsertPageX</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<script language="JavaScript">
+	<!--
+		function TitleCase(strString) {
+			// This function capitalizes the first character of every word
+			// appearing in the string.
+			window.status = strString;
+			var htext
+			var nhtext;
+			var htext = strString;
+			htext = htext.toLowerCase();
+			// Just in case they're all caps.
+			j = htext.length;
+			nhtext = "";
+			for(i=0; i<j; i++) {
+			 	if(i == 0) {
+					// To capitalize the first character.
+					nhtext = nhtext + htext.substr(i,1).toUpperCase();
+				}
+				else if(htext.charAt(i) == " ") {
+					// Checks for the appearance of the space character.
+					nhtext = nhtext + htext.substr(i,1);
+					// Adds that space character to the string.
+					nhtext = nhtext + htext.substr(++i,1).toUpperCase();
+					// Capitalizes and adds the next character to the
+					// string.
+				} else if(htext.charAt(i) == " ") {
+					// Checks for the appearance of the newline character.
+					nhtext = nhtext + htext.substr(i,1);
+					// Adds the newline character to the string.
+					nhtext = nhtext + htext.substr(++i,1).toUpperCase();
+					// Capitalizes and adds the next character to the
+					// string.
+				} else {
+					nhtext = nhtext + htext.substr(i,1);
+					// Adds the character in a normal way.
+				}
+			}
+			return nhtext;
+		}
+
+		function RemoveSpaces(string) {
+			var temp = "";
+			string = '' + string;
+			splitstring = string.split(" ");
+			for(i = 0; i < splitstring.length; i++)
+			temp += splitstring[i];
+			return temp;
+		}
+
+		function CreateProposedTextName() {
+			// Get string value
+			var strTempText = document.Form1.txtText.value;
+			// Convert string to Title Case
+			var strTempText2 = TitleCase(strTempText);
+			// Remove spaces from string
+			var strTempText3 = RemoveSpaces(strTempText2);
+			// Remove non-alphanumeric characters
+			var strTempText4 = strTempText3.replace(/[^a-zA-Z 0-9]+/g,'');
+			// Get first 100 characters for alternate proposed text name
+			document.Form1.txtAltText.value = strTempText4.substring(strTempText4, 100);
+			// Get first 30 characters
+			document.Form1.txtTextName.value = strTempText4.substring(strTempText4, 30);
+		}
+		-->
+		</script>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout">
+		<form id="Form1" method="post" runat="server">
+			<asp:textbox id="txtText" style="Z-INDEX: 101; LEFT: 224px; POSITION: absolute; TOP: 136px" runat="server"
+				Width="696px" Height="176px" TextMode="MultiLine"></asp:textbox><asp:textbox id="txtTextName" style="Z-INDEX: 102; LEFT: 224px; POSITION: absolute; TOP: 328px"
+				runat="server" Width="696px"></asp:textbox><asp:textbox id="txtAltText" style="Z-INDEX: 103; LEFT: 224px; POSITION: absolute; TOP: 360px"
+				runat="server" Width="696px"></asp:textbox><asp:button id="btnSubmit" style="Z-INDEX: 104; LEFT: 864px; POSITION: absolute; TOP: 400px"
+				runat="server" Text="Button"></asp:button><asp:dropdownlist id="ddlPage" style="Z-INDEX: 105; LEFT: 224px; POSITION: absolute; TOP: 48px" runat="server"
+				DataTextField="FileName" DataValueField="PageID"></asp:dropdownlist><asp:dropdownlist id="ddlTextType" style="Z-INDEX: 106; LEFT: 224px; POSITION: absolute; TOP: 88px"
+				runat="server" DataTextField="Name" DataValueField="TextTypeID"></asp:dropdownlist>
+			<asp:Label id="lblPrevResults" style="Z-INDEX: 107; LEFT: 232px; POSITION: absolute; TOP: 472px"
+				runat="server" Width="688px" Height="104px" Font-Names="Tahoma" Font-Size="9pt">Label</asp:Label>
+			<asp:Label id="Label1" style="Z-INDEX: 108; LEFT: 232px; POSITION: absolute; TOP: 440px" runat="server"
+				Width="416px" Font-Names="Tahoma" Font-Bold="True">Previous Results</asp:Label>
+			<asp:LinkButton id="lnkUpload" style="Z-INDEX: 109; LEFT: 16px; POSITION: absolute; TOP: 24px" runat="server">Upload to Database</asp:LinkButton></form>
+	</body>
+</HTML>

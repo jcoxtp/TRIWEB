@@ -1,0 +1,66 @@
+/* CoolMenus 4 - default styles - do not edit */
+.clCMAbs{position:absolute; visibility:hidden; left:0; top:0}
+/* CoolMenus 4 - default styles - end */
+  
+/*Style for the background-bar*/
+    .clBar {
+        position:absolute;
+        background-color:#94BEE7;
+        layer-background-color:#94BEE7;
+        visibility:hidden;
+    }
+
+
+/*General Styles for all levels*/
+    .clActiveMenuItemOff,.clActiveMenuItemOn,.clInactiveMenuItem {
+        position:absolute;
+        padding:0px;
+        font-family:tahoma,arial,helvetica;
+        font-size:xx-small;
+        font-weight:normal;
+        
+        cursor:pointer;
+        cursor:hand;
+    }
+    .clActiveMenuItemOff {
+        background-color:#94BEE7;
+        layer-background-color:#94BEE7;
+        color:#000066;
+        
+        border: 2px solid #94BEE7;
+    }
+    .clActiveMenuItemOn {
+        background-color:#31569C;
+        layer-background-color:#31569C;
+        color:White;
+        
+        border:2px solid;
+        
+        border-top-color: #86ABF1;
+        border-left-color: #6489CF;
+        border-bottom-color: #001258;
+        border-right-color: #001258;
+    }
+    .clInactiveMenuItem {
+        background-color:#94BEE7;
+        layer-background-color:#94BEE7;
+        color:#808080;
+        
+        border: 2px solid #94BEE7;
+    }
+    .clActiveMenuItemBorder0 {
+        position:absolute;
+        visibility:hidden;
+        background-color:#94BEE7;
+        layer-background-color:#94BEE7;
+    }
+    .clActiveMenuItemBorder1 {
+        position:absolute;
+        visibility:hidden;
+        background-color:#94BEE7;
+        layer-background-color:#94BEE7;
+        border-right: solid 1px #000066;
+        border-bottom: solid 1px #000066;
+        border-left: solid 1px #BBDDF9;
+        border-top: solid 1px #BBDDF9;
+    }

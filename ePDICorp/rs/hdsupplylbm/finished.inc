@@ -1,0 +1,1 @@
+<h1 style="text-align:center">The Home Depot Thanks You<br>for Completing This Assessment</h1>

@@ -1,0 +1,23 @@
+.DG_HEADER
+{
+    font-weight: bold;
+    font-size: 8pt;
+    color: black;
+    font-family: Verdana;
+    text-indent : 8;
+    background-image: url(..\Shared\Images\RoundedTableControl\light_shading.gif);
+}
+
+.DG_Normal
+{
+    background-color : White;
+    color : #000066;
+    text-indent : 8;
+}
+
+.DG_Alternative
+{
+    background-color : #EFF7FF;
+    color : #000066;
+    text-indent : 8;
+}

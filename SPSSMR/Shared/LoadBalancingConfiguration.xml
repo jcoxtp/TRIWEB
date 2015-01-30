@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<LoadReporting>
+
+		<Application name="mrtables" applicationpool="SPSSDimensionNetPool" ReportingInterval="1000" protocoltype="TCP" applicationpath="http://localhost:80/SPSSMR/mrTables/webservice/webservice.asmx">
+			<UdpConnection MulticastAddress="224.0.0.10" Port="12000" />
+	
+			<TcpConnections>
+				<Connection ServerName="127.0.0.1" Port="12000" />
+			</TcpConnections>
+
+			<PerformanceCounters>
+				<counter alias="Memory" category="Process" name="Working Set" instance="w3wp" load-weight="0.3"
+					interval="1000" maximum-measures="5" minlimit="0" maxlimit="-1"/>
+			</PerformanceCounters>
+		</Application>
+
+		<Application name="dimensionnet" applicationpool="SPSSDimensionNetPool" ReportingInterval="1000" protocoltype="TCP" applicationpath="http://localhost:80/SPSSMR/DimensionNet/Default.aspx">
+			<UdpConnection MulticastAddress="224.0.0.10" Port="12000" />
+	
+			<TcpConnections>
+				<Connection ServerName="127.0.0.1" Port="12000" />
+			</TcpConnections>
+
+			<PerformanceCounters>
+				<counter alias="Memory" category="Process" name="Working Set" instance="w3wp" load-weight="0.3"
+					interval="1000" maximum-measures="5" minlimit="0" maxlimit="-1"/>
+			</PerformanceCounters>
+		</Application>
+
+	</LoadReporting>
+
+	<LoadMonitoring ReportExpireTime="5000" ProtocolType="TCP">
+		<TCPSettings Port="12000"/>
+		<UDPSettings MulticastAddress="224.0.0.10" Port="12000"/>
+	</LoadMonitoring>
+
+	<LoadBalance Port="11000" />
+</configuration>

@@ -1,0 +1,78 @@
+body {
+  background-color: black;
+}
+#footer {
+  width: 790px;
+  color: #cccccc;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  position: relative;
+}
+#footer,
+#footer * {
+  box-sizing: border-box;
+}
+.footer-column {
+  width: 30%;
+  margin: 1em .5em;
+  padding: 0 .5em;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 320px;
+}
+.footer-copyright {
+  font-size: .8em;
+  padding-right: .75em;
+}
+#footer-column-1 {
+  text-align: center;
+  border-right: thin solid #333333;
+}
+#footer-column-3 {
+  border-right: none;
+  background-color: #8a8a8a;
+  color: white;
+  padding-left: 1em;
+  margin-left: 0;
+  border-radius: 3px;
+  min-height: initial;
+  padding-bottom: 1em;
+}
+#footer-column-3 h3 {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  padding-bottom: .25em;
+  margin-right: .5em;
+  border-bottom: thin solid white;
+}
+.phone-intro,
+.email-intro {
+  text-align: center;
+  margin-bottom: .5em;
+}
+.phone-number,
+.email-intro a {
+  font-size: 1.25em;
+  text-align: center;
+  margin: .25em 0;
+  line-height: 1.25em;
+  color: #293A6E;
+  font-weight: bolder;
+}
+.email-intro a {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.reg {
+  vertical-align: text-top;
+  font-size: .7em;
+  margin-left: .25em;
+}
+.copyright {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 0.25em;
+  padding-top: 1px;
+  vertical-align: text-top;
+}

@@ -1,0 +1,334 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="MA_globalfilters">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Setting Up Global Filters</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('ma_globalfilters.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20046')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="ma_remroleproj.htm">Previous<img alt="(P)revious: ma_remroleproj" border="none" id="backbutton" src="images/help_back.png"></a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutma.htm">Manage Access</A> &gt; </DIV>
+<h1>Setting Up Global Filters</h1>
+<p class="body">Global filters are user-level or role-level filters that control
+access to case data in a project. For example, in a company that provides
+insurance services you may have roles associated with different types
+of insurance. The Household role may have a global filter that restricts
+group members to seeing data associated with household insurance such
+as building or contents insurance; the Personal role may have a global
+filter that selects only data associated with life and earnings protection
+insurance; and so on. Alternatively, you might decide to set up filters
+based on sales regions, so that members of the Eastern sales group
+can see details about all insurance types, but only for clients in
+their area.</p>
+<p class="body">For any user or role, you may set the same global filter
+for all projects or you may vary them between projects. Activities
+that use global filters include Survey Results, Export Data, and Reporter.</p>
+<p class="body">If a user who has a global filter is also a member
+of a role that has a different global filter, the filter at the user
+level overrides the role-level filter. If a user is a member of two
+roles that have different filters for a project, the filters are combined
+so that he/she sees data selected by at least one of the filters.</p>
+<div class="collapse_trigger">
+<a id="N306C0_opener" name="N306C0_opener" href="javascript:top.topic.expando('N306C0');">Click here for a detailed example</a><a style="display:none" id="N306C0_closer" name="N306C0_closer" href="javascript:top.topic.expando('N306C0');"><img border="0" alt="Collapse" src="images/menu_minus.gif"> Hide details</a>
+</div>
+<div id="N306C0">
+<div style="display:none;" class="collapsible_block">
+<p class="body">Suppose you have the following users and roles:</p>
+<p class="bullet">&bull;&nbsp;UserA belongs to Role1 and Role2</p>
+<p class="bullet">&bull;&nbsp;UserB belongs to Role2 and Role3</p>
+<p class="bullet">&bull;&nbsp;UserC belongs
+to Role2 and Role4 </p>
+<p class="body">and you set up the following
+global filters:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Project Id</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">User name</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Role name</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Global filter</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectA</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UserA</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Region.ContainsAny({Eastern})</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectA</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Role1</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Region.ContainsAny({Western})</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Role2</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Region.ContainsAny({Southern})</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Role3</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Region.ContainsAny({Northern})</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Role4</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">NOT Region.ContainsAny({Northern})</td>
+</tr>
+</tbody>
+</table>
+<p class="body"></p>
+<p class="body">When the users access the case
+data for project A, the following filters are applied:</p>
+<p class="bullet">&bull;&nbsp;UserA: the filter is Region.ContainsAny({Eastern})</p>
+<p class="bullet">&bull;&nbsp;UserB: the filter is Region.ContainsAny({Southern
+}) OR Region.ContainsAny({Northern})</p>
+<p class="bullet">&bull;&nbsp;UserC: the
+filter is Region.ContainsAny({Southern }) OR (NOT Region.ContainsAny({Northern}))</p>
+</div>
+</div>
+<p class="body">Global filters are based on questions in the project's
+questionnaire script. In the first example, the case data would need
+to include a question that says what type of insurance the data refers
+to; in the second example, the case data would need a question that
+identifies the region in which each respondent lives. The syntax for
+defining global filters varies slightly depending on the type of question
+you are filtering on.</p>
+<p class="body">
+<span class="runinhead">Numeric questions</span>
+</p>
+<p class="body">To filter on a numeric question, type:</p>
+<pre class="syntaxcompactblock">
+<span class="parameter">QuestionName Operator Value</span>
+</pre>
+<p class="body">where:</p>
+<p class="bullet">&bull;&nbsp;<span class="syntax">QuestionName</span> is the name of a question in the project's questionnaire file.</p>
+<p class="bullet">&bull;&nbsp;<span class="syntax">Value</span> is a number.</p>
+<p class="bullet">&bull;&nbsp;<span class="syntax">Operator</span> is
+one of the following:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">=</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Equal to</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&lt;&gt;</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Unequal to</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&lt;</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Less than</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&lt;=</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Less than or equal to</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&gt;</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Greater than</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&gt;=</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Greater than or equal to</td>
+</tr>
+</tbody>
+</table>
+<p class="body">For example <span class="syntax">Age&gt;60</span> restricts the user/role to seeing data for respondents who are older
+than 60.</p>
+<p class="body">
+<span class="runinhead">Text questions</span>
+</p>
+<p class="body">To filter on a text question, type:</p>
+<pre class="syntaxcompactblock">
+<span class="parameter">QuestionName</span> <span class="code-required">Like "</span><span class="parameter">Pattern</span><span class="code-required">"</span>
+</pre>
+<p class="body">where:</p>
+<p class="bullet">&bull;&nbsp;<span class="syntax">QuestionName</span> is the name of a question in the project's questionnaire file.</p>
+<p class="bullet">&bull;&nbsp;<span class="syntax">Pattern</span> is the
+text with which the data is to be compared. An underscore in the text
+matches any single character, and a percent sign matches any number
+of characters, including zero.</p>
+<p class="body">For example, <span class="syntax">Postcode
+Like "TN%"</span> allows the user/role to access all data for
+postal codes that start with the letters TN.</p>
+<p class="body">
+<span class="runinhead">Categorical questions</span>
+</p>
+<p class="body">To define filters for categorical questions
+(single choice or multiple choice responses), type one of the following:</p>
+<pre class="syntaxcompactblock">
+<span class="parameter">QuestionName Operator Value</span>
+<span class="parameter">QuestionName</span><span class="code-required">.</span><span class="parameter">Function</span><span class="code-required">({</span><span class="parameter">Value</span><span class="code-required">})</span>
+</pre>
+<p class="body">where:</p>
+<p class="bullet">&bull;&nbsp;<span class="syntax">QuestionName</span> is the name of a question in the project's questionnaire file.</p>
+<p class="bullet">&bull;&nbsp;<span class="syntax">Value</span> is the
+name of a response in the question's response list. You may enter
+more than one response name as long as the names are separated by
+commas.</p>
+<p class="bullet">&bull;&nbsp;<span class="syntax">Operator</span> is
+one of the following.</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">=</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Selects data that exactly matches the given value.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&lt;&gt;</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Selects data does not exactly match the given value.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&lt;</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Selects data that contains a subset of the listed answers but
+not all of them.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&lt;=</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Selects data that contains one or more of the listed answers.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&gt;</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Selects data that contains all the listed answers and at least
+one other answer.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">&gt;=</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Selects data that contains all specified answers, with or without
+additional answers.</td>
+</tr>
+</tbody>
+</table>
+<p class="bullet">&bull;&nbsp;<span class="syntax">Function</span> is
+one of the following:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">ContainsAll</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Selects data that contains all the specified answers.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">ContainsAny</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Selects data that contains at least one of the specified answers.</td>
+</tr>
+</tbody>
+</table>
+<p class="body">For example:</p>
+<pre class="syntaxcompactblock">InsuranceType={Household}</pre>
+<p class="body">gives access to data where the value of <span class="italic">InsuranceType</span> is Household and nothing else,
+whereas:</p>
+<pre class="syntaxcompactblock">InsuranceType.ContainsAny({Household})</pre>
+<p class="body">gives access to data where the value of <span class="italic">InsuranceType</span> is just Household or Household
+and some other type of insurance.</p>
+<p class="body">
+<span class="italic">Note</span>: <span class="syntax">ContainsAny</span> and <span class="syntax">ContainsAll</span> are the most commonly used functions for
+setting up filters, but you may use any function in the Dimensions
+Function Library. If you are unable to set up the filters you want
+using the methods shown in this topic, refer to the "Dimensions Function
+Library" topic in the Dimensions Development Library documentation
+for details of further filtering keywords.</p>
+<p class="body">You can create filters that combine two or more criteria;
+for example, household insurance in the east. To do this, type the
+two filter expressions one after the other, separated with either
+"And" or "Or":</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">And</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Both expressions must be true in order for the user/role to
+see the data.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Or</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">One or both expressions must be true  in order for the user/role
+to see the data.</td>
+</tr>
+</tbody>
+</table>
+<p class="body">The filter for household insurance in the east might be:</p>
+<pre class="syntaxcompactblock">InsuranceType.ContainsAny({Household}) And Region={East}</pre>
+<p class="body">Compare this with:</p>
+<pre class="syntaxcompactblock">InsuranceType.ContainsAny({Household} Or Region={East}</pre>
+<p class="body">which gives access to all household data for
+the eastern region, but also to all data about household insurance
+in any region and all data about any type of insurance in the eastern
+region.</p>
+<p class="body">
+<span class="runinhead">To set up global filters</span>
+</p>
+<p class="step">
+<span class="step-glyph">►</span> In the DPM tree frame, select the user/role and project
+for which you want to define a global filter. There are various ways
+of doing this:</p>
+<p class="bullet">&bull;&nbsp;Expand Users or Roles and select a user or role.
+Then expand that user's/role's Projects entry and choose a project.</p>
+<p class="bullet">&bull;&nbsp;Expand Projects and select a project. Then expand
+that project's Users or Roles entry and select a user or role.</p>
+<p class="body">This displays a frame on the right of the page
+showing the global filter, if any for the chosen user/role and project
+combination.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">Edit Filter</span>.</p>
+<p class="step-contin">This opens the Global Filter Editor dialog box.</p>
+<p class="step">
+<span class="step-glyph">►</span> Type the filter specification and click <span class="screen">OK</span>.</p>
+<p class="step-contin">Manage Access checks that the filter syntax
+is correct and then adds the filter to the frame on the right of the
+page.</p>
+<p class="step-contin">
+<span class="italic">Note:</span> Manage
+Access cannot check that the question exists in the project or that
+the value you have entered is valid for the question. If the question
+does not exist, the user/role will have access to all data. If the
+question exists but the value is invalid, which data the user/role
+sees (if any) will depend on the meaning of the expression as a whole.
+If the filter is <span class="syntax">Region={SouthWest}</span>, for instance, and there is no such category, no data will be available
+because there will be nothing that matches the filter. On the other
+hand, if the filter is <span class="syntax">Region&lt;&gt;{SouthWest}</span>, all data will be available because all records will have a value
+other than SouthWest.</p>
+<p class="body">If you have a lot of global filters to set up, you may find it
+easier to import them from a spreadsheet rather than specifying them
+manually one by one.  Refer to
+"Importing Users and Roles" in the Manage Users help for details.</p>
+<p class="body">
+<span class="runinhead">To change a global filter</span>
+</p>
+<p class="step">
+<span class="step-glyph">►</span> Follow the steps for creating filters. When you click
+Edit Filter, the dialog box shows an empty box. Enter the new filter
+and click <span class="screen">OK</span> to have the new
+filter replace the existing one in the main frame.</p>
+<p class="body">
+<span class="runinhead">To delete a global filter</span>
+</p>
+<p class="step">
+<span class="step-glyph">►</span> Follow the steps for creating filters. When you click
+Edit Filter, the dialog box shows an empty box. Click <span class="screen">OK</span> and the existing filter will be deleted
+from the main frame.</p>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

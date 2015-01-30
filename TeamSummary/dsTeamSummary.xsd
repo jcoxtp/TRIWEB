@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsTeamSummary" targetNamespace="http://tempuri.org/dsTeamSummary.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsTeamSummary.xsd" xmlns:mstns="http://tempuri.org/dsTeamSummary.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsTeamSummary" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TeamSummaryResults">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TeamSummaryID" type="xs:int" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1"
+								msdata:AutoIncrementStep="-1" />
+							<xs:element name="TeamName" type="xs:string" />
+							<xs:element name="UserID" type="xs:int" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1"
+								msdata:AutoIncrementStep="-1" />
+							<xs:element name="FirstName" type="xs:string" minOccurs="0" />
+							<xs:element name="LastName" type="xs:string" minOccurs="0" />
+							<xs:element name="C_NumberD" type="xs:int" />
+							<xs:element name="CPD" type="xs:int" minOccurs="0" />
+							<xs:element name="D_Score" type="xs:int" minOccurs="0" />
+							<xs:element name="C_NumberI" type="xs:int" />
+							<xs:element name="CPI" type="xs:int" minOccurs="0" />
+							<xs:element name="I_Score" type="xs:int" minOccurs="0" />
+							<xs:element name="C_NumberS" type="xs:int" />
+							<xs:element name="CPS" type="xs:int" minOccurs="0" />
+							<xs:element name="S_Score" type="xs:int" minOccurs="0" />
+							<xs:element name="C_NumberC" type="xs:int" />
+							<xs:element name="CPC" type="xs:int" minOccurs="0" />
+							<xs:element name="C_Score" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

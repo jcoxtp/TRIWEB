@@ -1,0 +1,1871 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{66CA08AD-B270-4E8A-9BE5-73F4819A93EE}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "SurveyEngine"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "SurveyEngine"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "addAddressesToList.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addAnswerSet.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addHiddenField.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addItem.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addItemCategory.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addItemFromCategory.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addItemToCategory.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addItemToCategoryFromCategory.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addSurveyItemToCategory.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addTemplate.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addUsersToGroup.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "bulkRegistration.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "changeLoginInfo.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "chooseAddType.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "chooseColor.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "chooseExport.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "chooseReport.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "chooseSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "continueSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "copyItem.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "copyPage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "createSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "databaseUpdate.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "default.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "deletePage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "deleteResponse.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "deleteSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editCategories.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editEmailList.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editGroup.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editHiddenField.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editItem.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editItemCategory.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editList.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editMatrixCategories.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editMatrixSet.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editQuestionText.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editTemplate.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "editUserGroup.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "emailTester.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "executeExport.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "executeExportAccess.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "exportExcel.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "forgotLoginInfo.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "getGraphXML.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.vb"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "groupPermissions.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "header_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "helpHeader.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "helpIndex.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "hiddenFields.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "index.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "individualPermissions.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Install.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "itemDisplay_displayMatrixAnalysis.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "listProperties.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "logDir.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "login.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "loginDirectTake.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "manageCategories.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "manageGroups.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "manageIndividualSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "manageItemConditions.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "manageLists.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "managePageConditions.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "manageSurveys.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "manageUsers.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "movePage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "moveToPage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pageBranching.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "piping.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "previewItem.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "printResults.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "printSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "processResponse.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReadMe.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "register.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "registerUser.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "registrationFields.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "removeAddressesFromList.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "scoringMessages.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "searchReports.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "searchResults.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sendInvitations.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sendReminders.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "settings.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Styles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "styleTemplates.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "surveyComplete.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "surveyProperties.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "surveySearch.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "surveySecurity.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "takeSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Upgrade.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "uploadFile.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "viewResponseDetails.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "viewResponses.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "viewResults.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "viewResultsNoHeader.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "viewSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "viewUser.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WebForm1.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WebForm1.aspx.vb"
+                    DependentUpon = "WebForm1.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WebForm1.aspx.resx"
+                    DependentUpon = "WebForm1.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Database\databaseUpdate.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Database\databaseUpdate-6.7.4.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Database\Surveys_db_20031013_JT"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Database\UltimateSurvey.mdb"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Database\UltimateSurvey-97.mdb"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Database\UltimateSurveyData.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Database\UltimateSurveyTables.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Documentation\LICENSE.TXT"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Documentation\releasenotes.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Documentation\Ultimate_Survey_Advanced_Developer_Guide.pdf"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Documentation\Ultimate_Survey_Advanced_Manual.pdf"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Documentation\Ultimate_Survey_Advanced_Screen_Map.pdf"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Help\basic_map.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\body_index.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\body_index_map.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\createSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\empty.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\head_index.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\head_index_map.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\header.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\helpMenu.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\index.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\index.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\index_map.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\index_map.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\index_map_map.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\indexcreate_map.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\inviteusers.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\manageConditions.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\viewSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\admin\body_index_map.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\admin\empty.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\admin\head_index_map.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\admin\index_map.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\admin\index_map_map.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\Basic\body_index.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\Basic\head_index.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\Basic\index_map.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator\body_index.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator\empty.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator\head_index.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator\index.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator\index_map.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator2\body_index.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator2\empty.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator2\head_index.inc"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator2\index.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\creator2\index_map.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\template.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\gettingstarted\overview.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\gettingstarted\requirements.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\questionLibraries\general.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\reports\searchByQuestion.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\allowPublicRegistration.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\cookieName.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\customUserFields.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\defaultUserType.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\domainName.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\dropdownMenuText.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\emailObject.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\emailRequired.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\homePageHeader.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\homePageText.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\inviteUsersCheckboxes.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\inviteUsersFrom.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\menuColor.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\preventConcurrentLogin.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\resultsPerPage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\rootPath.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\securityType.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\sessionTimeout.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\showNavLinks.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\siteName.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\smtpMailHost.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\surveyResultsFrom.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\titleColor.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\topColor.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\uploadedImageFolder.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\settings\uploadedImageURL.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\createSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\hiddenFields.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\inviteUsers.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\printingTips.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\branching\general.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\branching\goToPage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\branching\questionToBranch.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\branching\response.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\conditions\addExisting.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\conditions\createNew.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\editSurvey\general.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\items\numberAnswerInputs.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\allowResume.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\completionAction.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\description.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\displayMessage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\emailResponsesTo.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\endDate.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\logNTUser.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\maxRespondents.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\numberLabels.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\privacyLevel.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\redirectToURL.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\responsesPerUser.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\scoredSurvey.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\showProgress.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\startDate.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\surveyTitle.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\surveys\properties\surveyType.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\users\manageUsers.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\docs\users\networkUsers.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\images\sxicon0.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\images\sxicon1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\images\sxicon2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\images\sxicon3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\images\sxicon4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\stylesheet.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\images\sxicon0.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\images\sxicon1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\images\sxicon2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\images\sxicon3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\images\sxicon4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\scripts\tree_dom.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\scripts\tree_opera.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\includes\scripts\tree_v4.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\scripts\tree_dom.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\scripts\tree_opera.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\scripts\tree_v4.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\addTemplate.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\AscOn.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\background.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\bargraph_maroon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\black.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-125x17.psd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Images\button-45x17.psd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Images\button-65x17.psd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Images\button-90x17.psd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Images\button-activate.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-activatesurvey.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-add.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addAddresses.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addBranch.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addCategory.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addCondition.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addFromLibrary.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addgroup.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addGroups.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addHiddenField.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-additem.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addItem-large.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-additemToPage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addLibrary.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addMessage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addNetworkUsers.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addnew.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addNewGroup.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addNewList.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addNewSurvey.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addNewUser.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addSubcategory.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addTemplate.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addUser.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addUserGroup.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addUsers.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-addUsersToGroup.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-branching.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-cancelSearch.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-change.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-changeSurvey.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-choose.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-cleardata.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-clearResponses.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-colorPicker.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-conditions.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-continue.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-copy.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-copyItem.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-copyPage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-deactivate.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-delete.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-deleteItem.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-delete-large.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-delete-mini.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-deletepage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-deleteResponse.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-deleteResponses.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-deleteResults.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-deleteSelected.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-delete-small.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-deletesurvey.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-details.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-details-small.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-down2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-down-mini.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-edit.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-editItem.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-editproperties.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-editResponse.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-editSurvey.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-export.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-getInfo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-goBack.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-goToPage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-graphResults.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-groupPermissions.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-hiddenFields.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-hideItemDetails.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-importdata.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-import-small.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-invite.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-inviteUsers.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-itemConditions.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-ivniteUsers.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-login.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-login2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-manage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-movePage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-moveToPage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-page.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-pageBranching.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-printableVersion.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-printSurvey.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-properties.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-register.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-register2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-remove.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-reports.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-reportsexport.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttonRestart.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-restart.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-results.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-reviewResponse.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-runReport.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttons-addpage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttons-addtopage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-save.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttons-close.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttons-conditions.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-scoringmessages.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttons-deletepage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-search.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttons-editinfo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-selectPage.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-send.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-showEntireItem.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttons-logout.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\buttons-pageconditions.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-submit.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-submitChanges.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-summary.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-summaryResults.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-surveycopy.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-surveydelete.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-surveyProperties.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-surveyresults.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-up.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-update.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-upload.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-uploadFile.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-up-mini.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-userPermissions.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-view.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-viewAliases.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-viewEdit.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-viewFullText.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-viewResponses.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-viewResults.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\button-viewStatistics.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\charts-bar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\charts-donut.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\charts-line.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\charts-pie.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\DescOn.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\goback.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\help.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\help-big.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\images-addFromLibrary.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\leftnav-back.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\navbar_bg.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\navbar_divider.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-home-off.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-home-on.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-login.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-logout.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-myinfo-off.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-myinfo-on.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-reports-off.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-reports-on.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-settings-off.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-settings-on.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-shadow.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-shadowcorner.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-surveys-off.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-surveys-on.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-users-off.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\nav-users-on.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-help.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-managesurveys.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-managesurveys_.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-manageusers.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-manageusers_.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tab-spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-takesurveys.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-takesurveys_.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-viewreports.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\tabs-viewreports_.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Images\Upload\cnllogosmall2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\addItems_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\adovbs_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\categories_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\common_ui_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\Constants_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\copy_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\copyItem_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\copySurvey_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\editItems_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\editSurvey_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\error_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\footer_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\header_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\header_inc_removed_user_info.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\inviteUsers_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\itemDisplay_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\reports_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\response_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\survey_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\SurveyConnection_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\surveyCreation_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\user_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\Utility_inc.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Include\StyleSheets\UltimateAppsStyles.css"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

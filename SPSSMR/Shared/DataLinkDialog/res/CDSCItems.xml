@@ -1,0 +1,18 @@
+<CDSCItems>
+	<!--
+	These will be added before DSC's loaded from DSC Reg
+	Add DSC's manually here if DSC's are not registered on server
+	
+	<item>
+		<text>SPSS MR XML MDSC</text>
+		<value>mrXmlDSC</value>
+		<IsWritable>true</IsWritable>		true, false
+		<IsReadable>true</IsReadable>		true, false
+		<SourceType>-1</SourceType>			drUnknown:-1, drFile:0, drFolder:1, drDSN:2, drUDL:3
+	</item>
+	-->
+	<item>
+		<text>(none)</text>
+		<value />
+	</item>
+</CDSCItems>

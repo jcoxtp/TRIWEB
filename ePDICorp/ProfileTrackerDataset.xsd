@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ProfileTrackerDataset" targetNamespace="http://tempuri.org/ProfileTrackerDataset.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ProfileTrackerDataset.xsd"
+	xmlns:mstns="http://tempuri.org/ProfileTrackerDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ProfileTrackerDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="vw_ProfileTrackingResults">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TestCode" type="xs:string" minOccurs="0" />
+							<xs:element name="PurchaseDate" type="xs:dateTime" />
+							<xs:element name="Redeemed" type="xs:string" minOccurs="0" />
+							<xs:element name="TestTaker" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Area" type="xs:string" minOccurs="0" />
+							<xs:element name="TestStartDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TestCompleteDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FileCreated" type="xs:int" minOccurs="0" />
+							<xs:element name="PDFFileName" type="xs:string" minOccurs="0" />
+							<xs:element name="HighFactorType1" type="xs:string" minOccurs="0" />
+							<xs:element name="HighFactorType2" type="xs:string" minOccurs="0" />
+							<xs:element name="RepProfileName" type="xs:string" minOccurs="0" />
+							<xs:element name="AppModFileName" type="xs:string" minOccurs="0" />
+							<xs:element name="AppModCreated" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="UserID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

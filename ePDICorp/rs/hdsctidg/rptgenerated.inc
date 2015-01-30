@@ -1,0 +1,1 @@
+Your DISC Assessment has been generated. A link to your report will be mailed to you shortly.

@@ -1,0 +1,251 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+h1,
+.intro-message h1,
+h2,
+.intro-message h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #19305c;
+}
+.jumbotron {
+  padding-bottom: 10px;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  font-size: 48px;
+}
+.jumbotron p {
+  font-size: 20px;
+}
+#sidebar li {
+  transition: all .25s linear;
+}
+#sidebar.features-list a {
+  font-size: 13px;
+  padding: 5px 15px 5px 10px;
+  font-weight: bold;
+}
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+.intro-header {
+  background: url(../images/pdibg1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.intro-message {
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.banner-cta-buttons a:visited,
+.intro-message a:visited,
+.banner-cta-buttons a:active,
+.intro-message a:active {
+  color: #FFFFFF;
+}
+.intro-message > h1 {
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  font-size: 4em;
+  text-align: center;
+}
+.intro-divider {
+  width: 600px;
+  border-top: 1px solid #f8f8f8;
+}
+.intro-message > h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  font-style: italic;
+  text-align: center;
+}
+ul.intro-cta-buttons {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+  ul.intro-cta-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.intro-cta-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+  .intro-divider {
+    width: 100%;
+  }
+}
+.img-cover {
+  box-shadow: 1px 1px 2px #cccccc;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+.short {
+  vertical-align: middle;
+}
+.network-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.content-section-a a,
+.content-section-b a {
+  font-weight: 600;
+  color: #0054A6;
+  text-decoration: underline;
+}
+.content-section-a {
+  padding: 30px 0;
+  background-color: #f8f8f8;
+}
+.content-section-b {
+  padding: 20px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.section-heading {
+  margin-bottom: 30px;
+}
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
+.banner {
+  background: url('../images/pdibg4.jpg') no-repeat center center;
+  background-size: cover;
+  border-top: 1px solid #e7e7e7;
+}
+.banner .banner-overlay {
+  padding: 60px 0;
+  color: #f8f8f8;
+  background: none transparent;
+  background: rgba(0, 0, 0, 0.35);
+}
+.banner h2 {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.25em;
+  color: white;
+}
+.banner h2 .medium {
+  font-size: 120%;
+}
+.banner ul {
+  margin-bottom: 0;
+}
+.banner-cta-buttons {
+  float: right;
+  margin-top: 2em;
+}
+.hero-spacer {
+  margin-top: 50px;
+}
+.hero-feature {
+  margin-bottom: 30px;
+}
+.navbar-bright {
+  background-color: #111155;
+  color: #fff;
+}
+.affix-top,
+.affix {
+  position: static;
+}
+.disc-mbti {
+  margin-bottom: 0;
+}
+.disc-mbti td.disc,
+.disc-mbti th.disc,
+.disc-mbti td.mbti,
+.disc-mbti th.mbti {
+  line-height: 1.25em !important;
+}
+.disc-mbti .list-unstyled li {
+  margin-bottom: .5em;
+}
+.addtable {
+  line-height: 125%;
+}
+.addtable tr td {
+  padding-bottom: 15px;
+}
+.addtable td, th {
+    padding:1px;
+}
+
+@media (max-width: 1199px) {
+  ul.banner-cta-buttons {
+    float: left;
+    margin-top: 1em;
+  }
+}
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top: 30px;
+    width: 228px;
+  }
+  #sidebar.affix {
+    position: fixed;
+    top: 70px;
+    width: 228px;
+  }
+}
+#sidebar li.active {
+  border: 0 #19305c solid;
+  border-right-width: 5px;
+  background: #d9d9d9;
+}
+@media (max-width: 767px) {
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+  }
+  ul.banner-cta-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-cta-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,120 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DataLinkProperties_cdscnames">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DSCs Supplied with the Dimensions Data Model</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('datalinkproperties_cdscnames.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N201B3')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="datalinkproperties_all.htm">Previous<img alt="(P)revious: datalinkproperties_all" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="dimnet_mrtables_namespaces.htm"><img alt="(N)ext: dimnet_mrtables_namespaces" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; <A HREF="dimnet_newproj.htm">Creating a New Project</A> &gt; <A HREF="dimnet_newtablesproject.htm">Creating a New Analysis Project</A> &gt; <A HREF="datalinkproperties_overview.htm">Data Link Properties Dialog Box</A> &gt; </DIV>
+<h1>DSCs Supplied with the Dimensions Data Model</h1>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">DSC</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Description</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Internal Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">ADO DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads case data and metadata from ADO files.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrAdoDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Delimited Text DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads and writes tab-delimited, variable length, case data records
+to a text file.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrCsvDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Dimensions Data File CDSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads and writes case data to a Dimensions file-based database. The
+Dimensions Data File CDSC has all the features of the Relational MR Database
+(RDB) CDSC, but does not require a separate relational database management
+system. Dimensions Files therefore provide a simpler and more portable format
+for the storage of "offline" mrInterview data.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrDataFileDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">In2data DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads In2data case data and metadata.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrI2dDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Log DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads standard Dimensions log files.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrLogDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">QDI/DRS DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads case data and metadata in the standard Quancept QDI/DRS format.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrQdiDrsDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Quantum DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"> Reads and writes case data in a Quantum-format ASCII data file. Writes
+metadata in the form of a basic Quantum specification.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrPunchDsc.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Quanvert DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads metadata and case data in a Quanvert database.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrQvDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Relational MR (RDB) Database CDSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads and writes case data to an SPSS Dimensions relational database.
+The RDB DSC currently supports SQL Server databases only. This is the CDSC
+that mrInterview uses to write response data.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrRdbDsc2</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">SPSS SAV DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads and writes metadata and case data in an SPSS <span class="name">.sav</span> file.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrSavDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">SurveyCraft DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads SurveyCraft case data and metadata.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrScDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">Triple-S DSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads and writes case data in a fixed-format or comma-separated text
+file that meets the version 1.2 or 2.0 Triple-S standard. Reads and writes
+metadata in a version 1.2 or 2.0 Triple-S XML file.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrTripleSDsc</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="runinhead">XML CDSC</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Reads and writes case data to an XML file. Typically, you use this
+CDSC when you want to demonstrate or test the tabulation of small volumes
+of case data. To tabulate "offline" production data, use the Dimensions Data
+File CDSC.</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrXmlDsc</td>
+</tr>
+</tbody>
+</table>
+<p class="body">For detailed information about these DSCs and how they interpret the underlying
+data, see the Dimensions Development Library (DDL) documentation.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="datalinkproperties_connection.htm">Data Link Properties Dialog Box: Connection Tab</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

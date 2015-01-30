@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="open">
+		<value>Open</value>
+	</data>
+	<data name="close">
+		<value>Close</value>
+	</data>
+	<data name="openfavorite">
+		<value>Open</value>
+	</data>
+	<data name="save">
+		<value>Save</value>
+	</data>
+	<data name="saveas">
+		<value>Save As</value>
+	</data>
+	<data name="select">
+		<value>Select</value>
+	</data>
+	<data name="upload">
+		<value>Upload</value>
+	</data>
+	<data name="download">
+		<value>Download</value>
+	</data>
+	<data name="selectedfile_label">
+		<value>Filename : </value>
+	</data>
+	<data name="filemask_label">
+		<value>Filemask : </value>
+	</data>
+	<data name="folders">
+		<value>Folders</value>
+	</data>
+	<data name="name">
+		<value>Name</value>
+	</data>
+	<data name="type">
+		<value>Type</value>
+	</data>
+	<data name="date">
+		<value>Date</value>
+	</data>
+	<data name="please_select_file">
+		<value>Please make selection</value>
+	</data>
+	<data name="filename_absolute_invalid">
+		<value>The filename is invalid.\n\nThe filename can not be a relative path, but must specify\na filename in the currently selected folder.</value>
+	</data>
+	<data name="upload_confirm_upload">
+		<value>Do you want to upload </value>
+		<comment>Part of - Do you want to upload 'file' to 'destination'</comment>
+	</data>
+	<data name="upload_confirm_to">
+		<value>to</value>
+		<comment>Part of - Do you want to upload 'file' to 'destination'</comment>
+	</data>
+	<data name="confirm_upload_overwrite">
+		<value>File already exists on server.\n\nOverwrite with uploaded file?</value>
+	</data>
+	<data name="error_upload_savefile_failed">
+		<value>Unable to save file.</value>
+	</data>
+	<data name="confirm_save_overwritefile">
+		<value>A File with the specified name already exists in the folder.\n\nDo you want to overwrite the existing file?</value>
+	</data>
+	<data name="srctree_folder_not_found">
+		<value>The path for the [{0}] folder does not exists.</value>
+        <comment>{0} will be substituted with the folder alias</comment>
+	</data>
+	<data name="pfs_gui_confirmmasteroverwriteuser">
+	    <value>You already have a copy of the file in your local working folder.\n\nDo you want to overwrite the file in your local working folder \n\n    modified: {0}\n\nwith the file from the shared working folder \n\n    modified: {1}</value>
+		<comment>{0} is subtituted with modified date for the existing file. {1} is substituted with the modified date of the new file</comment>
+	</data>
+	<data name="pfs_gui_confirmnewoverwritemasteruser">
+		<value>You already have a copy of the file in your local working folder and in the shared working folder.\n\nDo you want to replace the file in your local working folder\n\n    modified: {0}\n\nwith a new file?</value>
+		<comment>{0} is subtituted with modified date for the existing file in the user folder.</comment>
+	</data>
+	<data name="pfs_gui_confirmnewoverwritemaster">
+		<value>There is already a copy of the file in the shared working folder.\n\nDo you want to create a new file in your local working folder \ninstead of using the one in the shared working folder\n\n    modified: {0}</value>
+		<comment>{0} is subtituted with modified date for the existing file in the master folder.</comment>
+	</data>
+	<data name="pfs_gui_confirmnewoverwriteuser">
+		<value>You already have a copy of the file in your local working folder.\n\nDo you want to replace the file in your local working folder\n\n    modified: {0}\n\nwith a new file?</value>
+		<comment>{0} is subtituted with modified date for the existing file in the user folder.</comment>
+	</data>
+	<data name="pfs_gui_confirmuploadoverwritemasteruser">
+		<value>You already have a copy of the file in your local working folder and in the shared working folder.\n\nDo you want to replace the file in your local working folder\n\n    modified: {0}\n\nwith a new file?</value>
+		<comment>{0} is subtituted with modified date for the existing file in the user folder.</comment>
+	</data>
+	<data name="pfs_gui_confirmuploadoverwritemaster">
+		<value>There is already a copy of the file in the shared working folder.\n\nDo you want to upload a file to your local working folder \ninstead of using the one in the shared working folder\n\n    modified: {0}</value>
+		<comment>{0} is subtituted with modified date for the existing file in the master folder.</comment>
+	</data>
+	<data name="pfs_gui_confirmuploadoverwriteuser">
+		<value>You already have a copy of the file in your local working folder.\n\nDo you want to replace the file in your local working folder\n\n    modified: {0}\n\nwith another file?</value>
+		<comment>{0} is subtituted with modified date for the existing file in the master folder.</comment>
+	</data>
+	<data name="pfs_dialog_title">
+		<value>Select Project File</value>
+	</data>
+	<data name="pfs_upload_no_file_uploaded">
+		<value>No file was uploaded to the server.</value>
+	</data>
+	<data name="pfs_gui_select_explanation">
+		<value>Select the location of the file, that you want to work on. The file you want to work on, will always be copied to your local working folder.</value>
+	</data>
+	<data name="pfs_action_update_userworkspace_failed">
+		<value>Update of shared working folder failed.</value>
+	</data>
+	<data name="masterworkspace">
+		<value>Existing file in shared working folder.</value>
+	</data>
+	<data name="userworkspace">
+		<value>Existing file in my working folder.</value>
+	</data>
+	<data name="newfile">
+		<value>New file in my working folder.</value>
+	</data>
+	<data name="uploadfile">
+		<value>Upload a file to my working folder...</value>
+	</data>
+	<data name="pfs_gui_filemodified">
+		<value>Last modified: </value>
+	</data>
+	<data name="pfs_checkin_dialog_title">
+		<value>Check-In</value>
+	</data>
+	<data name="pfs_checkin_action_update_masterworkspace_failed">
+		<value>Update of shared working folder failed.</value>
+	</data>
+	<data name="pfs_checkin_action_delete_in_userworkspace_failed">
+		<value>Removing the file from local working folder failed.</value>
+	</data>
+	<data name="pfs_gui_confirm_loose_changes">
+		<value>The changes you have made to the file, will be lost.\n\nAre you sure that you want this?</value>
+	</data>
+	<data name="ok">
+		<value> OK </value>
+	</data>
+	<data name="cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="upload_file_heading">
+		<value>Upload File</value>
+	</data>
+	<data name="upload_file_explain">
+		<value>Click the browse button, to select a file to upload to the server.</value>
+	</data>
+	<data name="upload_file_local_file">
+		<value>Local File:</value>
+	</data>
+	<data name="pfs_checkin_gui_apply_changes_header">
+		<value>Apply Changes:</value>
+	</data>
+	<data name="pfs_checkin_gui_apply_to_shared">
+		<value>Apply my changes to shared working folder.</value>
+	</data>
+	<data name="pfs_checkin_gui_dont_apply_to_shared">
+		<value>Don't apply changes to shared working folder.</value>
+	</data>
+	<data name="pfs_checkin_gui_keep_file_header">
+		<value>Keep File:</value>
+	</data>
+	<data name="pfs_checkin_gui_keep_my_changes">
+		<value>Keep changes in my working folder.</value>
+	</data>
+	<data name="pfs_checkin_gui_keep_my_changes_explain">
+		<value>If you don't apply changes to shared working folder or keep the changes in your local working folder, then all the changes will be lost!</value>
+	</data>
+	<data name="checkin_gui_projectlock_header">
+		<value>Project Lock:</value>
+	</data>
+	<data name="checkin_gui_projectlock">
+		<value>Keep project locked on return.</value>
+	</data>
+	<data name="mfs_dialog_title">
+		<value>Select Project Files</value>
+	</data>
+	<data name="mfs_checkin_gui_filelist_header">
+		<value>Files:</value>
+	</data>
+	<data name="mfs_select_explanation">
+		<value>Select the location of the files, that you want to work on. The files you want to work on, will always be copied to your local working folder.</value>
+	</data>
+	<data name="mfs_column_name_shared">
+		<value>Shared</value>
+	</data>
+	<data name="mfs_column_name_user">
+		<value>User</value>
+	</data>
+	<data name="mfs_row_all_files">
+		<value>All Files</value>
+	</data>
+	<data name="mfs_tooltip_show_fileinfo">
+		<value>Show information about files</value>
+	</data>
+	<data name="mfs_tooltip_upload_file_as">
+		<value>Upload a file as </value>
+	</data>
+	<data name="mfs_fileinfo_dialog_title">
+		<value>File Information</value>
+	</data>
+	<data name="mfs_fileinfo_header_master">
+		<value>Master:</value>
+	</data>
+	<data name="mfs_fileinfo_header_user">
+		<value>User:</value>
+	</data>
+	<data name="mfs_fileinfo_last_modified">
+		<value>Last modified</value>
+	</data>
+	<data name="mfs_fileinfo_file_size">
+		<value>File size</value>
+	</data>
+	<data name="mfs_required_legend">
+		<value>* Required</value>
+	</data>
+	<data name="mfs_err_copy_failed">
+		<value>Failed to copy the file '{0}' to your local working folder shared folder.</value>
+		<comment>{0} will be substituted with the name of the file, that could not be copied</comment>
+	</data>
+	<data name="mfs_err_required_files_missing_one">
+		<value>{0} required file is missing.</value>
+		<comment>{0} will be substituted with the number of files that are missing</comment>
+	</data>
+	<data name="mfs_err_required_files_missing_more">
+		<value>{0} required files are missing.</value>
+		<comment>{0} will be substituted with the number of files that are missing</comment>
+	</data>
+	<data name="mfs_confirm_overwriteuserfiles">
+		<value>The following files will be overwritten in your user workspace :{0}\n\nDo you want to overwrite these files?</value>
+		<comment>{0} will be substituted with a list of filename (one file on each line with a dash in front of the name) e.g. "- MyFile.ext"</comment>
+	</data>
+	<data name="mfs_err_check_required_files_missing_one">
+		<value>{0} required file is missing.</value>
+		<comment>{0} will be substituted with the number of files that are missing</comment>
+	</data>
+	<data name="mfs_err_check_required_files_missing_more">
+		<value>{0} required files are missing.</value>
+		<comment>{0} will be substituted with the number of files that are missing</comment>
+	</data>
+	<data name="mfs_err_required_file_selection_missing">
+		<value>One or more required files have no selection.\nYou must make a selection for the file(s).</value>
+	</data>
+	<data name="mfs_checkin_dialog_title">
+		<value>Check-In</value>
+	</data>
+	<data name="mfs_checkin_err_delete_failed">
+		<value>Failed to delete file '{0}'</value>
+		<comment>{0} will be substituted with the name of the file, that could not be deleted</comment>
+	</data>
+	<data name="mfs_checkin_err_copy_failed">
+		<value>Failed to copy the file '{0}' to the shared folder.</value>
+		<comment>{0} will be substituted with the name of the file, that could not be copied</comment>
+	</data>
+	<data name="mfs_checkin_no_files_in_user_folder">
+		<value>There are no project files in you local working folder.</value>
+	</data>
+	<data name="mfs_checkin_select_files_text">
+		<value>Select the files in the list below, that you want to update to the shared working folder. You can also select choose whether you want to keep or delete individual files in your local working folder.</value>
+	</data>
+	<data name="upload_in_progress">
+		<value>Upload in progress...</value>
+	</data>
+	<data name="error_errorlabel">
+		<value>Error : </value>
+	</data>
+	<data name="error_descriptionlevel">
+		<value>Description : </value>
+	</data>
+	<data name="error_permission_denied">
+		<value>Permission denied. The destination file was read-only, or you did not have access to the file.</value>
+	</data>
+	<data name="error_could_not_com_object">
+		<value>The application could not create a needed component used for managing files.\nThis is a configuration problem on the server.\n\nPlease contact your system administrator or SPSS support, and tell that the component '{0}' is not registered correct.</value>
+		<comment>{0} will be substituted with the name of the com component that could not be created</comment>
+	</data>
+</root>

@@ -1,0 +1,2 @@
+<%@ Page language="c#" Codebehind="ImageCache.aspx.cs" AutoEventWireup="false" Inherits="ImageCache.ImageCache" %>
+<%@ OutputCache Duration="10" VaryByParam="project;file" Location="ServerAndClient" %>

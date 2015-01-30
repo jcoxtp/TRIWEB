@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config>
+  <module_script>../modules.js</module_script>
+  <help_dir>.</help_dir>
+  <topicfile>blank.htm</topicfile>
+</config>

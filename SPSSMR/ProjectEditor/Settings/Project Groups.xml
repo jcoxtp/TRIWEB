@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<projecteditor>
+	<projectgroups allownull="true" allowcustom="false">
+		<group name="mygroup" />
+	</projectgroups>
+</projecteditor>

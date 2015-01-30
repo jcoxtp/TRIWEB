@@ -1,0 +1,57 @@
+vti_encoding:SR|utf8-nl
+trmain/include/editcustomtestprice.asp:trmain/include/editcustomtestpricebody.asp
+trmain/include/sel_priceplan_all.asp:trmain/include/mainbody.asp trmain/include/editcompanybody.asp trmain/include/sel_priceplan_all_body.asp
+trmain/include/images/repprofile1.jpg:trmain/include/repprofile1.asp
+trmain/images/page2_r01_c09.gif:trmain/editcompany.asp trmain/editpriceplan.asp trmain/purchasetest.asp trmain/teststatus.asp trmain/addpriceplan.asp trmain/delpriceplandetail.asp trmain/companysrch.asp trmain/activepdf.asp trmain/sel_priceplan_all.asp trmain/editpriceplandetail.asp trmain/entertestcode.asp trmain/addpriceplandetail.asp trmain/edituser.asp
+trmain/include/signup.asp:trmain/include/loginbody.asp trmain/include/signupbody.asp trmain/include/signup.asp
+trmain/include/contactus.asp:trmain/include/companylogo.asp
+trmain/include/faq.asp:trmain/include/menutop.asp
+trmain/include/news.asp:trmain/include/menutop.asp
+trmain/include/login.asp:trmain/include/login.asp trmain/include/loginbody.asp trmain/include/companylogo.asp
+trmain/include/usersrch.asp:trmain/include/mainbody.asp trmain/include/usersrchbody.asp
+trmain/include/teststatus.asp:trmain/include/menuleftextended.asp
+trmain/include/ins_companyalias.asp:trmain/include/ins_companyaliasbody.asp trmain/include/mainbody.asp
+trmain/include/viewtestcodeinfo.asp:trmain/include/viewtestcodeinfobody.asp trmain/include/mainbody.asp
+trmain/include/companyaddalias.asp:trmain/include/companyaddaliasbody.asp
+trmain/include/companysrch_userchangeco.asp:trmain/include/companysrch_userchangecobody.asp
+trmain/include/images/purtest.gif:trmain/include/menuleftextended.asp
+trmain/include/edituser_int.asp:trmain/include/edituserbody_int.asp
+trmain/include/acctgdailyrpt.asp:trmain/include/acctgdailyrptbody.asp trmain/include/mainbody.asp
+trmain/include/images/teststatus.gif:trmain/include/menuleftextended.asp
+trmain/include/images/pditest_r03_c01.gif:trmain/include/menuleftextended.asp
+trmain/include/companydelalias.asp:trmain/include/companydelaliasbody.asp
+trmain/include/entertestcode.asp:trmain/include/entertestcodebody.asp trmain/include/entertestcode.asp trmain/include/menuleftextended.asp
+trmain/include/addpriceplandetail.asp:trmain/include/editpriceplanbody.asp trmain/include/addpriceplandetailbody.asp
+trmain/include/images/pditest_r09_c01.gif:trmain/include/menuleftextended.asp
+trmain/include/purchasetest_resell.asp:trmain/include/purchasetest_resellbody.asp
+trmain/include/addpriceplan.asp:trmain/include/addpriceplanbody.asp
+trmain/include/images/pditest_r03_c02.gif:trmain/include/menuleftextended.asp
+trmain/include/companysnap.asp:trmain/include/editcompanybody.asp
+trmain/include/images/influence.gif:trmain/include/highfactortypei.asp
+trmain/pdfreports/<%=strpdifilename%>:trmain/activepdf.asp
+trmain/include/companysrch.asp:trmain/include/mainbody.asp trmain/include/companysrchbody.asp
+trmain/include/images/pditest_r08_c02.gif:trmain/include/menuleftextended.asp
+trmain/include/companyeditalias.asp:trmain/include/companyeditaliasbody.asp
+trmain/include/images/entcode.gif:trmain/include/menuleftextended.asp
+trmain/include/editpriceplandetail.asp:trmain/include/editpriceplandetailbody.asp
+trmain/include/images/shim.gif:trmain/include/menuleftextended.asp
+trmain/include/editcompany.asp:trmain/include/editcompanybody.asp
+trmain/include/delpriceplandetail.asp:trmain/include/delpriceplandetailbody.asp
+http\://www.adobe.com/products/acrobat/readstep2.html:trmain/activepdf.asp
+trmain/include/resellercommissions.asp:trmain/include/resellercommissionsbody.asp
+trmain/include/delcustomtestprice.asp:trmain/include/delcustomtestpricebody.asp
+trmain/include/images/compliance.gif:trmain/include/highfactortypec.asp
+trmain/include/images/steadiness.gif:trmain/include/highfactortypes.asp
+http\://www.teamresources.com:trmain/pdireport.asp
+trmain/include/acctgdailyrpt_co.asp:trmain/include/mainbody.asp trmain/include/acctgdailyrpt_cobody.asp
+trmain/include/aboutus.asp:trmain/include/companylogo.asp
+trmain/include/main.asp:trmain/include/companylogo.asp
+trmain/include/trash.asp:trmain/include/confirmcompanybody.asp trmain/include/companyusersbody.asp trmain/include/resellerconsumercobody.asp trmain/include/companysnapbody.asp trmain/include/priceplancosbody.asp trmain/include/editpriceplanbody.asp trmain/include/companyaliasbody.asp trmain/include/reselleraliaslistbody.asp
+trmain/include/assocuserwithco.asp:trmain/include/assocuserwithcobody.asp
+trmain/include/edituser.asp:trmain/include/edituser.asp trmain/include/edituserbody.asp trmain/include/menuleftextended.asp
+trmain/include/images/dominance.gif:trmain/include/highfactortyped.asp
+trmain/include/images/topleft.gif:trmain/include/companylogo.asp
+trmain/include/purchasetest.asp:trmain/include/purchasetestbody.asp trmain/include/menuleftextended.asp trmain/include/purchasetest.asp
+trmain/include/images/topright.gif:trmain/include/menutop.asp
+<%=strurl%>:trmain/disctest/web_disc.asp
+trmain/include/images/edusr.gif:trmain/include/menuleftextended.asp

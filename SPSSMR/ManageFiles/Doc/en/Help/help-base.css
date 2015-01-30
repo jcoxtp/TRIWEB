@@ -1,0 +1,211 @@
+/* This stylesheet contains default formatting information
+   for online help. Other formatting information can be found
+   in help-core.css and help-loc.css. 
+
+   This is the file to modify if you want to customize the
+   look and feel of the online help for a particular product. To
+   make a custom help stylesheet:
+
+	1. Make a copy of this file in the root directory of
+           your help project, preferably with a custom name
+           (e.g. spss-help.css).
+	2. Change style elements defined here as desired;
+	   note: *adding* elements not already present in this file
+           may cause problems, since such elements may conflict with
+           style information contained in help-core.css or
+           help-loc.css.
+	3. Add a "custom-stylesheet" attribute to your in your project
+           <build-help> element in your XML project file that
+           links to the custom version you created. For example:
+
+                <build-help target-html-dir="help"
+                            custom-stylesheet="spss-help.css"/>
+
+        4. After customizing the stylesheet, test it thoroughly
+           with both IE 5+ and Netscape 6.2+ to make sure you are
+           getting the desired results.    
+
+    Copyright (c) 2000-2004 SPSS Inc.
+
+*/
+
+<!--
+
+H1 {font-size:125%; font-weight:bold; color:#006699}
+H2 {font-size:110%; font-weight:bold; color:#006699}
+BODY {font-size:80%;}
+TABLE {font-size:80%;}
+/* TD {font-size:70%;}
+TH {font-size:70%; font-weight:bold;} */
+
+/***********************/
+/* navigation controls */
+/***********************/
+
+/* this is the color scheme for the nav controls;
+   set the background and text color here and all
+   the nav controls should inherit the properties,
+   except the bottom border on the front tab, which
+   should be set to the same background color in the
+   .fronttab style below.*/
+.tabs,
+.fronttab,
+.index-search,
+.index-search:hover,
+.index-search:active,
+.index-search:focus,
+.backtab,
+.backtab:hover,
+.backtab:active,
+.backtab:focus { background-color:#000084;
+                 color:#ffff8b;}
+
+.tabs { line-height:24px;
+        margin:0px;padding:0px;
+        top:0;left:0;
+        border:2px inset }
+
+.fronttab { display:inline;
+            padding:7px 5px 5px 5px;
+            border:2px outset; border-bottom:4px solid #000084;
+	    font-weight:bold;
+	    }
+
+.backtab { display:inline;
+           padding:5px 5px;
+           text-decoration:none;
+	   border:1px outset; border-bottom:none;
+           font-weight:normal;}
+
+.tocindex {  }
+
+.index { }
+
+.index-search { padding:5px; vertical-align:bottom; }
+
+.index-button { font-size:80%; padding: 1px 0px; margin:2px; vertical-align:bottom }
+.navtrail { font-size:80%; }
+
+.indexsubtab { line-height:2em; padding:0.4em; color:black; background-color:darkgray; border-right:1px solid gray; border-top: 1px solid white; border-left: 1px solid white; border-bottom: 1px solid white; }
+.indexsubtabselected { font-weight:bold;line-height:2em; padding:0.4em; color:black; background-color:lightgrey;border-right:1px solid gray; border-top: 1px solid white; border-left: 1px solid white; border-bottom:none; }
+.indexsubtabs { margin-top:-5px; padding-top:0px; line-height:2em; padding-bottom:10px; margin-bottom:10px; background-color:lightgrey; color:black;}
+
+.product-icon {padding-bottom:5px;}
+
+.tochighlight,
+.tocindex a:focus,
+.tocindex a:active,
+.top a:focus,
+.top a:active,
+.index a:focus,
+.index a:active { background-color:#00FFFF; }
+
+.searchhighlight { background-color:#FFFF00; }
+
+.top { }
+
+/* CH changed font size below to prevent recursive shrinking text in Netscape due to nested layers */
+.link {font-size:70%}
+
+.body {}
+
+.step {}
+
+.bullet {list-style-type: disc;}
+
+.list-contin {}
+
+.menuselection {}
+
+.codeblock {background-color: #ffffe6;}
+
+.htmlblock {background-color: #ffffe6;}
+
+.syntaxblock {background-color: #ffffe6;}
+
+.syntaxcompactblock {font-size:90%; background-color: #ffffe6;}
+
+.imageblock {}
+
+.tagblock{font-weight:bold}
+
+.mlcomment{color:#990000;font-weight:normal}
+
+.slash{font-weight:normal}
+
+.code {}
+
+.definedword {font-weight: bold}
+
+.matrixname {font-weight: bold}
+
+.html {}
+
+.input {font-weight: bold}
+
+.italic {}
+
+.label {}
+
+.name {}
+
+.runinhead {font-weight: bold;}
+
+.screen {font-weight:bold; color:#408080;}
+
+.superscript {font-size:80%;}
+
+.subscript {font-size:80%;}
+
+.symbol {}
+
+.syntax {}
+
+.parameter {}
+
+.code-highlight {font-size: larger; color:#CC0000}
+
+.code-required {font-weight: bold}
+
+.tag {color:#0000cc;font-weight:normal}
+
+.linkref {color:#990000;font-weight:bold; text-decoration:underline;}
+
+.glossary-ref {color:#990000;font-weight:bold;text-decoration:underline;}
+
+.glossary {}
+
+.glossary-term {font-weight: bold;}
+
+.glossary-definition {}
+
+.popup { width:200px; height:auto; z-index: 100; padding: 3px; background-color:#FFEEEE;
+         border: 1px solid black; }
+
+.spss-citation {}
+
+.tablecaption {font-weight:bold;}
+
+.figurecaption {font-weight:bold;}
+
+.collapsible_block { background-color: #ffffe6; border-style:outset;
+                     border-width:3px; }
+
+.collapse_trigger { text-decoration:underline; margin-top:5px; margin-bottom:5px; }
+
+.table { border-color: black; border-width:0.5pt; }
+
+.table-cell { border-color: black; border-width:0.5pt; padding:3px; }
+
+.pathitem {margin-left: 10px;}
+
+.scripthelp { border: 1px solid black; background-color:#ffffe6; text-align:center; padding:5px; margin:5px; }
+
+/* have to override the default font for step-glyph, since Veranda doesn't
+   contain the glyph */
+.step-glyph { font-family: Arial, Helvetica, sans-serif; }
+
+-->
+
+
+

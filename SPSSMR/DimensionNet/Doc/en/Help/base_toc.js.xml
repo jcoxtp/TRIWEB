@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><es>
+<N20022 u="">DimensionNet User's Guide<N20025 u="aboutdimnet.htm">Welcome to DimensionNet</N20025>
+<N200BF u="dimnet_ieoptions.htm">Recommended Browser Settings for DimensionNet</N200BF>
+<N200C4 u="dimnet_page.htm">The DimensionNet Screen</N200C4>
+<N200CB u="dimnet_password.htm">Changing Your Password</N200CB>
+<N200D0 u="dimnet_options.htm">Setting DimensionNet Options</N200D0>
+<N200D5 u="dimnet_projectlist.htm">The Project List<N200DC u="dimnet_projectlist_navigate.htm">Navigating in the Project List</N200DC>
+<N200E3 u="dimnet_projectlist_expand.htm">Expanding and Collapsing Project Folders</N200E3>
+<N200EA u="dimnet_projectlist_move.htm">Moving Existing Projects into Folders</N200EA>
+<N200F1 u="dimnet_projectlist_rename.htm">Renaming Projects and Folders</N200F1>
+<N200F8 u="dimnet_projectlist_refresh.htm">Refreshing the Project List</N200F8>
+</N200D5>
+<N200FF u="dimnet_newproj.htm">Creating a New Project<N20104 u="dimnet_newproj_mrinterview.htm">Creating a New Questionnaire Project</N20104>
+<N20109 u="dimnet_newtablesproject.htm">Creating a New Analysis Project<N20110 u="dimnet_newtablesproject_step1.htm">Preparing Your Data Files For Uploading</N20110>
+<N20122 u="dimnet_newtablesproject_step2.htm">Creating the New Project in DimensionNet</N20122>
+<N2012D u="dimnet_newtablesproject_step4.htm">Checking the Uploaded Files into the Shared Folder</N2012D>
+<N20134 u="dimnet_newtablesproject_step3.htm">Creating and Populating a Test Table</N20134>
+<N2013B u="dimnet_qvmultiprojects.htm">Setting up a Quanvert Multiproject for Use in mrTables</N2013B>
+<N20142 u="datalinkproperties_overview.htm">Data Link Properties Dialog Box<N20149 u="datalinkproperties_connection.htm">Data Link Properties Dialog Box: Connection Tab<N20169 u="datalinkproperties_mdmproperties.htm">Data Link Properties: MDM Properties</N20169>
+<N20172 u="dimnet_connectcdsc_version_expressions.htm">Version Expressions</N20172>
+<N2017D u="dimnet_connectcdsc_rdbdsc2.htm">Connecting to a Relational MR Database Using RDB DSC 2</N2017D>
+</N20149>
+<N20183 u="datalinkproperties_advanced.htm">Data Link Properties: Advanced</N20183>
+<N201A0 u="datalinkproperties_all.htm">Data Link Properties: All</N201A0>
+<N201B3 u="datalinkproperties_cdscnames.htm">DSCs Supplied with the Dimensions Data Model</N201B3>
+</N20142>
+<N201B8 u="dimnet_mrtables_namespaces.htm">Displaying Short Names for Variables that use Namespaces</N201B8>
+</N20109>
+</N200FF>
+<N201BC u="dimnet_newproj_mobile.htm">Setting Up a Mobile Interviewing Project<N201C3 u="dimnet_newproj_displayinfo.htm">Defining Display Settings for Mobile Projects</N201C3>
+<N201CA u="dimnet_newproj_web.htm">Modifying Web Service Settings</N201CA>
+<N201D0 u="dimnet_newproj_custom.htm">Custom Project Setup for Mobile Projects</N201D0>
+</N201BC>
+<N201D7 u="dimnet_delproj.htm">Deleting Projects</N201D7>
+<N201DC u="dimnet_unlockproj.htm">Locking and Unlocking Projects</N201DC>
+<N201E1 u="dimnet_unlock_others.htm">Unlocking Other People's Projects</N201E1>
+<N201E6 u="dimnet_exit.htm">Logging In as a Different User</N201E6>
+<N201EB u="mrint_webexplorer.htm">Web Explorer</N201EB>
+</N20022>
+<extras>Additional Resources<glossary u="glossary.htm">Glossary</glossary>
+</extras>
+</es>

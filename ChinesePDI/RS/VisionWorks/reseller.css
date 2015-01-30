@@ -1,0 +1,93 @@
+/* ======================================== 
+	Reseller StyleSheet
+	- this file extends the _system stylesheet and is to be used for reseller specific styles
+	- styles defined in this sheet will override those with the same name/scope in the _system stylesheet
+	- do not put global style changes in this file
+=========================================*/
+body
+{
+	/*background-color: #000000;*/
+}
+a:link, a:visited, a:active
+{
+	color:#396669; 
+	background-color:transparent; 
+	text-decoration:none
+}
+li
+{
+	padding-bottom: 2px;
+}
+.bodytext_white 
+{
+	color: #333333
+}
+#login_form
+{
+	top: 170px;
+	left: 100px;
+}
+a:link.loginform_link, a:visited.loginform_link, a:active.loginform_link
+{
+	color:#3366CC; 
+	text-decoration:underline; 
+	padding: 2px;
+}
+a:hover.loginform_link	 
+{
+	color:#3366CC; 
+	text-decoration:underline; 
+	padding: 1px; 
+	border:dotted 1px #666666;
+}
+#login_section01
+{
+	top: 225px;
+	left: 50px;
+	width: 700px;
+}
+#login_section02
+{
+	top: 445px;
+	left: 400px;
+}
+a:link.login_section02_link, a:visited.login_section02_link, a:active.login_section02_link
+{
+	color:#3366CC; 
+	text-decoration:underline; 
+	padding: 2px;
+}
+a:hover.login_section02_link	
+{
+	color:#3366CC; 
+	text-decoration:underline; 
+	padding: 1px; 
+	border:dotted 1px #666666;
+}
+.loginbody 
+{
+	background-color: #666666;
+}
+.logintext
+{
+	color: #000000;
+}
+.big_learnmore
+{
+	margin-bottom: 6px;
+	color: #3366CC;
+}
+a:link.login_learnmore_link, a:visited.login_learnmore_link, a:active.login_learnmore_link
+{
+	color:#3366CC; 
+	text-decoration:underline; 
+	padding: 2px;
+}
+a:hover.login_learnmore_link	
+{
+	color:#3366CC; 
+	text-decoration:underline; 
+	padding: 1px; 
+	border:dotted 1px #666666;
+}
+

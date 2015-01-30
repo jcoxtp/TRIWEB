@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="dialog_title">
+		<value>Data Link Properties</value>
+	</data>
+	<data name="reset">
+		<value>Reset</value>
+	</data>
+	<data name="ok">
+		<value>OK</value>
+	</data>
+	<data name="cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="init-datalink-wait">
+		<value>Initializing connection string properties. Please wait...</value>
+	</data>
+	<data name="metadata-location">
+		<value>Metadata Location:</value>
+	</data>
+	<data name="metadata-type">
+		<value>Metadata Type:</value>
+	</data>
+	<data name="open-metadata-read-write">
+		<value>Open Metadata Read/Write</value>
+	</data>
+	<data name="mdm-properties-dialog-title">
+		<value>Data Link MDM Properties</value>
+	</data>
+	<data name="versions-header-name">
+		<value>Name</value>
+	</data>
+	<data name="versions-header-createdby">
+		<value>Created By</value>
+	</data>
+	<data name="versions-header-createddate">
+		<value>Created Date</value>
+	</data>
+	<data name="versions-header-description">
+		<value>Description</value>
+	</data>
+	<data name="edit-mdm-properties">
+		<value>Edit MDM properties</value>
+	</data>
+	<data name="browse">
+		<value>Browse</value>
+	</data>
+	<data name="case-data-type">
+		<value>Case Data Type:</value>
+	</data>
+	<data name="case-data-location">
+		<value>Case Data Location:</value>
+	</data>
+	<data name="case-data-project">
+		<value>Case Data Project:</value>
+	</data>
+	<data name="tab_connection">
+		<value>Connection</value>
+	</data>
+	<data name="tab_advanced">
+		<value>Advanced</value>
+	</data>
+	<data name="tab_all">
+		<value>All</value>
+	</data>
+	<data name="metadata-source-diff-loc">
+		<value>Metadata Source when Location is different:</value>
+	</data>
+	<data name="categorical-variables">
+		<value>Categorical Variables:</value>
+	</data>
+	<data name="validation">
+		<value>Validation</value>
+	</data>
+	<data name="allow-dirty">
+		<value>Allow Dirty</value>
+	</data>
+	<data name="user-name">
+		<value>User Name:</value>
+	</data>
+	<data name="password">
+		<value>Password:</value>
+	</data>
+	<data name="property">
+		<value>Property</value>
+	</data>
+	<data name="value">
+		<value>Value</value>
+	</data>
+	<data name="opening-dialog">
+		<value>Opening dialog ...</value>
+	</data>
+	<data name="apply">
+		<value>Apply</value>
+	</data>
+	<data name="latest">
+		<value>Latest</value>
+	</data>
+	<data name="all">
+		<value>All</value>
+	</data>
+	<data name="bad-version">
+		<value>&lt;em&gt;Bad Version:&lt;/em&gt;</value>
+	</data>
+	<data name="current-version">
+		<value>Current version:</value>
+	</data>
+	<data name="languages">
+		<value>Languages:</value>
+	</data>
+	<data name="contexts">
+		<value>Contexts:</value>
+	</data>
+	<data name="label-types">
+		<value>Label Types:</value>
+	</data>
+	<data name="versions">
+		<value>Versions:</value>
+	</data>
+	<data name="mdm-properties">
+		<value>MDM Properties</value>
+	</data>
+	<data name="error-processing-doc">
+		<value>Error Processing Document</value>
+	</data>
+	<data name="unable-to-open-document">
+		<value>Unable to open document</value>
+	</data>
+	<data name="document-path">
+		<value>Document path:</value>
+	</data>
+	<data name="mdsc-not-suppported">
+		<value>MDSC metadata not supported</value>
+	</data>
+	<data name="name">
+		<value>Name</value>
+	</data>
+	<data name="created-by">
+		<value>Created  By</value>
+	</data>
+	<data name="created-date">
+		<value>Created Date</value>
+	</data>
+	<data name="description">
+		<value>Description</value>
+	</data>
+	<data name="select">
+		<value>Select</value>
+	</data>
+	<data name="read-write">
+		<value>Read/Write</value>
+	</data>
+	<data name="read-only">
+		<value>Read-Only</value>
+	</data>
+	<data name="write-only">
+		<value>Write-Only</value>
+	</data>
+	<data name="cat-values">
+		<value>Return data as category values</value>
+	</data>
+	<data name="cat-names">
+		<value>Return data as category names</value>
+	</data>
+	<data name="cat-labels">
+		<value>Return data as category labels</value>
+	</data>
+	<data name="mapped-values">
+		<value>Return MDM mapped values</value>
+	</data>
+	<data name="native-values">
+		<value>Return native values</value>
+	</data>
+	<data name="use-existing-ds-except-location">
+		<value>Use existing DataSource, except location</value>
+	</data>
+	<data name="use-existing-ds-update-location">
+		<value>Use existing DataSource, update location</value>
+	</data>
+	<data name="create-new-ds">
+		<value>Create new DataSource</value>
+	</data>
+	<data name="raise-error-so-connection-fails">
+		<value>Raise error so connection fails</value>
+	</data>
+	<data name="index_e_no_provider">
+		<value>No provider was specified in the input connection string.\nThis dialog only supports connection strings with Provider set to "mrOleDB.Provider.2".\n\nDo you want to set it to "mrOleDB.Provider.2"?</value>
+	</data>
+	<data name="index_e_unsupported_provider">
+		<value>Unsupported provider was specified in the input connection string.\nThis dialog only supports connection strings with Provider set to "mrOleDB.Provider.2".\n\nDo you want to set it to "mrOleDB.Provider.2"?</value>
+	</data>
+  <data name="Connect_Timeout" xml:space="preserve">
+    <value>Connect Timeout</value>
+  </data>
+  <data name="Data_Source" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="Initial_Catalog" xml:space="preserve">
+    <value>Initial Catalog</value>
+  </data>
+  <data name="Locale_Identifier" xml:space="preserve">
+    <value>Locale Identifier</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="MR_Init_Allow_Dirty" xml:space="preserve">
+    <value>MR Init Allow Dirty</value>
+  </data>
+  <data name="MR_Init_Category_Names" xml:space="preserve">
+    <value>MR Init Category Names</value>
+  </data>
+  <data name="MR_Init_Category_Values" xml:space="preserve">
+    <value>MR Init Category Values</value>
+  </data>
+  <data name="MR_Init_Custom" xml:space="preserve">
+    <value>MR Init Custom</value>
+  </data>
+  <data name="MR_Init_Input_Locale" xml:space="preserve">
+    <value>MR Init Input Locale</value>
+  </data>
+  <data name="MR_Init_MDM_Access" xml:space="preserve">
+    <value>MR Init MDM Access</value>
+  </data>
+  <data name="MR_Init_MDM_Context" xml:space="preserve">
+    <value>MR Init MDM Context</value>
+  </data>
+  <data name="MR_Init_MDM_DataSource_Use" xml:space="preserve">
+    <value>MR Init MDM DataSource Use</value>
+  </data>
+  <data name="MR_Init_MDM_Document" xml:space="preserve">
+    <value>MR Init MDM Document</value>
+  </data>
+  <data name="MR_Init_MDM_Label_Type" xml:space="preserve">
+    <value>MR Init MDM Label Type</value>
+  </data>
+  <data name="MR_Init_MDM_Language" xml:space="preserve">
+    <value>MR Init MDM Language</value>
+  </data>
+  <data name="MR_Init_MDM_Version" xml:space="preserve">
+    <value>MR Init MDM Version</value>
+  </data>
+  <data name="MR_Init_MDSC" xml:space="preserve">
+    <value>MR Init MDSC</value>
+  </data>
+  <data name="MR_Init_Output_Locale" xml:space="preserve">
+    <value>MR Init Output Locale</value>
+  </data>
+  <data name="MR_Init_Project" xml:space="preserve">
+    <value>MR Init Project</value>
+  </data>
+  <data name="MR_Init_Validation" xml:space="preserve">
+    <value>MR Init Validation</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="password_no_colon" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="User_ID" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+</root>

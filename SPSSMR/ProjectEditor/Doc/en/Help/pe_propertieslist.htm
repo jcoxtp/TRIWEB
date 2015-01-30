@@ -1,0 +1,389 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="PE_propertieslist">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Project Properties</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('pe_propertieslist.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N200D9')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="pe_import_props.htm">Previous<img alt="(P)revious: pe_import_props" border="none" id="backbutton" src="images/help_back.png"></a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="pe_about.htm">Edit Project</A> &gt; </DIV>
+<h1>Project Properties</h1>
+<p class="body">
+<span class="runinhead">mrInterview Project Properties</span>
+</p>
+<p class="body">The following table lists the project properties that
+apply to  mrInterview. The following properties are listed as Standard application
+properties: ClusterList, ProjectLocked, ProjectLockedBy, InterviewScriptType,
+ShowInterviewApps, ShowTableApps. All others are listed as mrInterview properties.
+For further information about these properties refer to "Project and Interview
+Properties" in the Interview Scripting Reference section of the Dimensions
+Development Library.</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col width="NaN%">
+<col width="NaN%">
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Property</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ActiveVersion</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The active metadata version to use for interviewing. If not specified,
+the latest version is used. Exists for Dimensions projects only.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AppointmentCode</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The call outcome code that prompts CATI interviewers to arrange an
+appointment with the respondent. Set when a project is activated with CATI.
+By default this corresponds to the APPOINTMENT call outcome. Set when a project
+is activated with CATI.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AuthenticatePage</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The page to be used for authentication. This can be
+in the form of a URL or the name of a template (for example, <span class="name">http://www.abc.com/interview/urls/auth.html</span> or <span class="name">authtemplate.htm</span>). However, it is recommended that
+you use a template and <span class="italic">not</span> a URL for
+this page.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AuthenticateType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The form of the <span class="syntax">AuthenticatePage</span> property;
+valid states are URL or TEMPLATE.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AuthFailedPage</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The page to be shown when authentication fails. This
+can be in the form of a URL or the name of a template.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AuthFailedType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The form of the <span class="syntax">AuthFailedPage</span> property;
+valid states are URL or TEMPLATE.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AuthRetryPage</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The page to be used when a respondent accesses authentication
+for the second and subsequent times. This can be in the form of a URL or the
+name of a template--for example, <span class="label">http://www.abc.com/interview/urls/auth.html </span> or <span class="label">authtemplate.htm</span>. However, it is recommended that
+you use a template and <span class="italic">not</span> a URL for
+this page.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AuthRetryType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The form of the <span class="syntax">AuthRetryPage</span> property;
+valid states are URL or TEMPLATE.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AutoDialTimeout</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The number of seconds that the dialer should continue trying to dial
+an number. The default is 600 seconds (10 minutes).</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">AutoUpdateDataModel</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether data is written immediately to the data model. 0=do not write
+immediately, 1=write to the data model immediately. The default is 1. For
+further information refer to "The Value Cache" in the Dimensions Development
+Library.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CallerID</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The phone number to send as the caller's identification when calls
+are made using an autodialer. If set to 0, no caller ID is sent. If set to
+1, the dialer's phone number is sent. Otherwise the contents of this field
+are sent as the ID.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CancelCode</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The call outcome code that can be used to terminate a CATI interview
+when the respondent no longer wishes to continue. By default, this corresponds
+to the ABANDONED call outcome. Set when a project is activated with CATI.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ClusterList</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Names the cluster on which the project is activated.
+Currently, all projects are activated to the same cluster which is called
+DefaultCluster.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CompletedInterviewPage</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The page to be shown at the end of a completed interview.
+This can be in the form of a URL or the name of a template.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CompletedInterviewType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The form of the <span class="syntax">CompletedInterviewPage</span> property;
+valid states are URL or TEMPLATE.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">DefaultCategoryType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">In the Build activity, the response type for categorical responses
+if none is selected.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">DefaultPresentationTemplate</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">In the Build activity, the name of the presentation template file to
+use when a question has no other template defined.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">DialingProvider</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The name of the dialing sample management provider to use, specified
+as the ProgID of the provider class. Existing names are QsampExtSM.Provider
+and QSampPowerSM.Provider. The property is empty when the project does not
+use a dialer.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">HiddenCodesList</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Call outcome codes that should not be displayed in the list that interviewers
+see. This list contains codes, such as COMPLETED, that are normally assigned
+by the interviewing program itself or by the project's sample management script.<br>
+<br>Supervisors
+can view and change this list using the Phone Surveys activity; Dimensions
+administrators can view and change it using DPM Explorer.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewRejectedPage</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The page to be shown when authentication fails and no
+retries are to be offered. This can be in the form of a URL or the name of
+a template.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewRejectedType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The form of the <span class="syntax">InterviewRejectedPage</span> property;
+valid states are URL or TEMPLATE.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewRestart</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether an interview should be restarted using the version it started
+on, or the active version. 0=Restart on initial version, 1=Restart on active
+version. The default is 0. Exists for Dimensions projects only.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewScriptType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The script type. Always Dimensions.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewStartURL</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The URL used to start an interview on the project.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewStoppedPage</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The page to be shown when a respondent selects the Stop
+button during an interview. This can be in the form of a URL or the name of
+a template.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewStoppedType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The form of the <span class="syntax">InterviewStoppedPage</span> property;
+valid states are URL or TEMPLATE.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">LastActivatedBy</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The name of the user who last activated the project.
+Exists for Dimensions projects only, and is set during activation. Not available
+for importing.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">MaxAuthRetries</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The maximum number of times a respondent may retry authentication after
+failing the initial attempt. The default is 5.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">MonitoringAllowed</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether interviewers may be monitored. Possible settings are: 0=Never
+allowed; 1=Always allowed; 2=Ask participant. The default is 2.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">mrInterview</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Properties associated with mrInterview itself.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">NoAnswerTimeout</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The number of seconds for the dialer to let a number ring before it
+is considered to be unanswered. The default is 15 seconds.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Notes</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Notes about the project. Used, for example, to explain
+the differences between different versions of the project.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">PercentCallsRecorded</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The percentage of calls to be recorded per project between 0 and 100.
+The default is 0.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectInactivePage</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The page to be shown when a respondent attempts to access
+a project that is not available for interviewing. This can be in the form
+of a URL or the name of a template.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectInactiveType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The form of the <span class="syntax">ProjectInactivePage</span> property;
+valid states are URL or TEMPLATE.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectLocked</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether the project is locked. 0=No, 1=Yes. When a project
+is locked by one user, some activities that would normally by available to
+other users of the project will no longer be available. Not available for
+importing. </td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectLockedBy</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The name of the user who has locked the project. Not
+available for importing.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">QuotaFullPage</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The page to be shown when an interview terminates because
+the quota is full. This can be in the form of a URL or the name of a template.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">QuotaFullType</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The form of the <span class="syntax">QuotaFullPage</span> property;
+valid states are URL or TEMPLATE.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">QuotaProjectName</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The name of the quota project associated with this project.
+Blank if quota is not used.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">RaisePositionError</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether to prevent interviewers logging in on positions that are not
+defined in the dialer configuration file. If this property is False, interviewers
+logging in on positions not in the dialer configuration file see a warning
+but may continue to work.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">RoutingContext</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The default routing context for the project. Set when a project is
+activated. Typical routing contexts are Paper for printed questionnaires,
+Web for inbound interviews, and CATI for outbound calling.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">RunningCodesList</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Call outcome codes that are available during interviews. Defaults to
+the codes that represent ABANDONED, APPOINTMENT, and TRANSFERTOWEB.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">RunningCodesList</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Call outcome codes that are available while interviews are running.
+Created when a project is activated with CATI.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">SampleManagementProvider</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The name of the sample management provider to use; for example, VBScriptSM.Provider.
+Used for Dimensions projects only.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ShowInterviewApps</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether to display interviewing activities in the activities list.
+0=No, 1=Yes. The default is 1 for questionnaire projects.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ShowTableApps</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether to display tabulation activities in the activities list. 0=No,
+1=Yes. The default is for 0 questionnaire projects.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">SilentCallAudioFile</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The name of a <span class="name">.wav</span> file to play
+to a participant if predictive dialing results in a silent call.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TestUseQuota</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether to use quota control for test interviews. 0=No, 1=Yes.  The
+default is 1.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TestUseSampleMgmt</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether to use sample management in test interviews. 0=No, 1=Yes. 
+The default is 1.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TestVersion</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The metadata version to use for test interviews. If not specified,
+the latest version is used. Exists for Dimensions projects only.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TimeLastActivated</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The date and time at which the project was last activated.
+Set when a project is activated. Not available for importing.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UseCATI</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether the project has been activated for CATI. 0=No, 1=Yes. The default
+is 0. Not available for importing.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UseDataModel</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether the project uses the Dimensions Data Model.
+0=No, 1=Yes. The default is 1. <br>
+<span class="italic">Note: </span>This
+property is obsolete in mrInterview 2.1 and later.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UseDefaultURLs</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether the project uses the default templates and URLs.
+0=No, 1=Yes.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UseImageCache</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether or not to use the image cache for project templates and images.
+0=No, 1=Yes.  The default is 1.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UseInMemoryCache</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether the data cache should be held in memory only. There is no automatic
+restart on fail-over when the in-memory cache is used. 0=No, 1=Yes. The default
+is 0.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UsePlayerNavigation</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Indicates whether the player can post previous questions. For example,
+in the case of a browser, the browser Back button can be used to return to
+a previous page of the interview. 0=No, 1=Yes.  The default is 1.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UseSampleMgmt</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Whether the project uses Sample Management. 0=No, 1=Yes.</td>
+</tr>
+</tbody>
+</table>
+<p class="body">
+<span class="runinhead">mrTables Project Properties</span>
+</p>
+<p class="body">The following table lists the project properties that
+apply only to mrTables.</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col width="NaN%">
+<col width="NaN%">
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Property</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CurrentTablesFilename</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The user's current tables document (.<span class="name">mtd</span>)
+file.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">DataLocation</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">The project's connection string.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">LevelsShown</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Specifies the number of levels of a variable name to display in mrTables.
+Use this property to limit the length of variable names when your variables
+use namespaces; for example, select 1 to display only the final level from
+the namespace. For projects containing grid variables, enter a value of at
+least 2 to ensure that the full grid name is displayed.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">MetadataScript</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Stores an XML document that contains details of any
+new variables and modifications to existing variables made by the user in
+mrTables.</td>
+</tr>
+</tbody>
+</table>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<a href="pe_workingwithprops.htm">Working with Project Properties</a>
+</div>
+<div class="link">
+<a href="pe_addprop.htm">Adding Project Properties</a>
+</div>
+<div class="link">
+<a href="pe_delprops.htm">Deleting Project Properties</a>
+</div>
+<div class="link">
+<a href="pe_chgprops.htm">Changing Project Properties</a>
+</div>
+<div class="link">
+<a href="pe_import_props.htm">Importing Properties from Another Project</a>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

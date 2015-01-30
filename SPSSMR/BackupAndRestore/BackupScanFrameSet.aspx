@@ -1,0 +1,14 @@
+<%@ Page language="c#" Codebehind="BackupScanFrameSet.aspx.cs" AutoEventWireup="false" Inherits="Brad.BackupScanFrameSet" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<TITLE>
+			<%=SetDocumentTitle()%>
+		</TITLE>
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+	</HEAD>
+	<frameset rows="160,*" frameborder="0" framespacing="0">
+		<frame name="top" src="Progress.htm">
+		<frame name="bottom" src="<%=GetBottomPage()%>">
+	</frameset>
+</HTML>

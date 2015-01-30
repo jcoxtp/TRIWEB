@@ -1,0 +1,1 @@
+<div id="welcome-message">Click the <b>Begin</b> button to take your online DISC assessment</div>

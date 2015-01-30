@@ -1,0 +1,1 @@
+<p class="divider"><img src="images/divider.gif" alt="" width="100%" height="9" /></p>

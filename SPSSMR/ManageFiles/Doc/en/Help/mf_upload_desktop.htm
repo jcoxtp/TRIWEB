@@ -1,0 +1,107 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="MF_upload_desktop">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Uploading Files
+Created with mrInterview Desktop Applications</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('mf_upload_desktop.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N2004F')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="mf_upload.htm">Previous<img alt="(P)revious: mf_upload" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="mf_download.htm"><img alt="(N)ext: mf_download" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutmf.htm">Files</A> &gt; </DIV>
+<h1>Uploading Files
+Created with mrInterview Desktop Applications</h1>
+<p class="body">The
+Files activity allows you to upload any project files of your choice into
+the DimensionNet project folder. If the files have different filenames to
+the DimensionNet project, you can choose to rename the files as you upload
+them.</p>
+<p class="body">In most cases, renaming files has no effect on the
+way those files can be used in DimensionNet, because the files do not normally
+contain their names or the names of other files. The exception is files to
+do with quotas: these are typically the <span class="name">.mqd</span> file
+that contains the project's quota definitions and the <span class="name">*_sm.mdd</span> file
+that is created when a project's quotas are based on variables in the sample
+records. If you are uploading files for a project that uses Quota Control,
+you must be very careful about renaming files.</p>
+<p class="body">The <span class="name">.mqd</span> file contains the name of the questionnaire definition
+(<span class="name">.mdd</span>) file that it relates to. It also
+contains the name of the <span class="name">*_sm.mdd</span> file
+if there is one. When you upload these files, the Files activity can rename
+them but it cannot change the filenames that are stored in the <span class="name">.mqd</span> file, and this name mismatch will cause activation
+in DimensionNet to fail.</p>
+<p class="body">The easiest (and recommended) way
+to avoid this problem is not to mix DimensionNet and desktop activities during
+the script creation and activation stages of a project. If you create a questionnaire
+script using a text editor, you should activate it using the scriptwriter's
+desktop program or the command-line <span class="name">activate</span> program.
+If you create a questionnaire script using the Build activity in DimensionNet,
+you should activate it in DimensionNet too. Do not create questionnaires using
+desktop programs and then activate in DimensionNet, or vice versa. This will
+ensure that all files are created with the appropriate names, and that those
+names appear correctly in files that need to store project filenames.</p>
+<p class="body">When a DimensionNet project uses Quota Control, the recommended
+procedure for creating the <span class="name">.mqd</span> file and
+making it available to DimensionNet is as follows:</p>
+<p class="step">
+<span class="step-glyph">►</span> Create
+the questionnaire script using Build or mrStudio.</p>
+<p class="step">
+<span class="step-glyph">►</span> Download
+the <span class="name">.mdd</span> file onto your local machine.</p>
+<p class="step">
+<span class="step-glyph">►</span> Run Quota Setup to create the <span class="name">.mqd</span> and,
+if appropriate, the <span class="name">*_sm.mdd</span> files using
+the downloaded <span class="name">.mdd</span> file.</p>
+<p class="step">
+<span class="step-glyph">►</span> Upload
+the <span class="name">.mqd</span> and <span class="name">*_sm.mdd</span> files
+into the DimensionNet project folder. Since the filenames already match the
+project name no renaming will be necessary.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="aboutmf.htm">Files</A>
+</div>
+<div class="link">
+<A href="mf_download.htm">Downloading Files onto your Computer</A>
+</div>
+<div class="link">
+<A href="mf_upload.htm">Uploading Files from your Computer into your User Folder</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

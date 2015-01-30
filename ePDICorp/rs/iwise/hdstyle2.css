@@ -1,0 +1,223 @@
+/**
+ *Store Locator page.
+ *@css file
+ *@id /cat_objects/hdstyle.css
+ *@name hdstyle.css
+ *@author Lalaine Loa
+ *@version $Revision:   4.32  $
+ *@file $RCSfile$
+ *@revdate $Date:   Apr 20 2004 15:13:24  $
+ */
+
+/* ////////////////////////////////////////////////////////////
+
+    New styles introduced with the October 2003 Redesign
+
+//////////////////////////////////////////////////////////// */
+
+.CSSsolidBORDER {   border-style: solid;    border-left-width: 1px; border-top-width: 1px;  border-right-width: 1px;    border-bottom-width: 1px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_Light { border-style: solid;    border-left-width: 1px; border-top-width: 1px;  border-right-width: 1px;    border-bottom-width: 1px;   border-left-color: #D7D5A5; border-right-color: #D7D5A5;    border-top-color: #D7D5A5;  border-bottom-color: #D7D5A5;   }
+.CSSsolidBORDER_Top {   border-style: solid;    border-top-width: 1px;  border-left-width: 1px; border-right-width: 1px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_Bott {  border-style: solid;    border-top-width: 0px;  border-left-width: 1px; border-right-width: 1px;    border-bottom-width: 1px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_Tp_Lft {    border-style: solid;    border-top-width: 1px;  border-left-width: 1px; border-right-width: 0px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_Tp_Rht {    border-style: solid;    border-top-width: 1px;  border-left-width: 0px; border-right-width: 1px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_Tp_Lft_Bot {    border-style: solid;    border-top-width: 1px;  border-left-width: 1px; border-right-width: 0px;    border-bottom-width: 1px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_Tp_Rt_Bot { border-style: solid;    border-top-width: 1px;  border-left-width: 0px; border-right-width: 1px;    border-bottom-width: 1px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_TopONLY {   border-style: solid;    border-top-width: 1px;  border-left-width: 0px; border-right-width: 0px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_BotONLY {   border-style: solid;    border-top-width: 0px;  border-left-width: 0px; border-right-width: 0px;    border-bottom-width: 1px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_LeftONLY {  border-style: solid;    border-top-width: 0px;  border-left-width: 1px; border-right-width: 0px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_RightONLY { border-style: solid;    border-top-width: 0px;  border-left-width: 0px; border-right-width: 1px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_Lft_Rgt {   border-style: solid;    border-top-width: 0px;  border-left-width: 1px; border-right-width: 1px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+.CSSsolidBORDER_RightONLY_plusDot { border-style: solid;    border-top-width: 0px;  border-left-width: 0px; border-right-width: 1px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   background: #E5E6C9 url(/HDUS/EN_US/cat_objects/images/v_dot.gif) repeat-y; }
+.CSSsolidBORDER_NOTHING {   border-style: solid;    border-top-width: 0px;  border-left-width: 0px; border-right-width: 0px;    border-bottom-width: 0px;   border-left-color: #ACAC9F; border-right-color: #ACAC9F;    border-top-color: #ACAC9F;  border-bottom-color: #ACAC9F;   }
+
+#mainMenu { position: absolute; z-index: 1; left: 0px;  top: -210px;    }
+#secondMenu {   position: absolute; z-index: 0; left: 0px;  top: -210px;    }
+#botcover { position: absolute; z-index: 2;     top: 0px;   left: 0px;  valign: middle; }
+#m1 {   position: absolute;     top: 60px;  left: 2px;  visibility: hidden;     valign: middle; } 
+#m2 {   position: absolute;     top: 60px;  left: 2px;  visibility: hidden;     valign: middle; } 
+#m3 {   position: absolute;     top: 60px;  left: 2px;  visibility: hidden;     valign: middle; } 
+#m4 {   position: absolute;     top: 60px;  left: 2px;  visibility: hidden;     valign: middle; } 
+#m5 {   position: absolute;     top: 60px;  left: 2px;  visibility: hidden;     valign: middle; } 
+#m6 {   position: absolute;     top: 60px;  left: 2px;  visibility: hidden;     valign: middle; } 
+span.menu { background-color: transparent;  left: 0px;  padding: 0px 1px 1px 0px;   position: absolute; top: 2px;   visibility: hidden; z-index: 101;   }
+span.menu a.menuItemSmall { background-color: #D7D5A5;  color: #000000; cursor: hand;   display: block; padding: 0px 1em;   text-decoration: none;  white-space: nowrap;    font-weight:normal;     COLOR: #666666; font-family:arial;  FONT-SIZE: 9px; text-align: left;   }
+span.menu a.menuItem {  background-color: #D7D5A5;  color: #000000; cursor: hand;   display: block; padding: 1px 1em;   text-decoration: none;  white-space: nowrap;    font-weight:normal;     COLOR: #666666; font-family:arial;  FONT-SIZE: 10px;    text-align: left;   }
+span.menu a.menuItem:hover {    background-color: #E5E6C9;  color: #CC6600; }
+span.menu a.menuItemSmall:hover {   background-color: #E5E6C9;  color: #CC6600; }
+.LightMenu {    background-color: #E5E6C9;  margin: 0px 0px;    }
+.DarkMenu { background: #D7D5A5;    margin: 0px 0px;    }
+TD.solidBORDER {background: #ACAC9F}
+.IMGborder {border-color:#666666}
+
+.Horiz_Solid {background: white url(/HDUS/EN_US/cat_objects/images/gray_dot.gif) repeat-x;}
+.Vert_Solid {background: white url(/HDUS/EN_US/cat_objects/images/gray_dot.gif) repeat-y;}
+
+.Vert_Dot {background: white url(/HDUS/EN_US/cat_objects/images/v_dot.gif) repeat-y;}
+.Vert_DotSHADED {background: #E5E6C9 url(/HDUS/EN_US/cat_objects/images/v_dot.gif) repeat-y; font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.Vert_DotSHADED2 {background: #FEFEF1 url(/HDUS/EN_US/cat_objects/images/v_dot.gif) repeat-y; font-weight:normal; COLOR: #CC6600; font-family:arial; FONT-SIZE: 10px}
+
+.Vert_graySHADED {background: #E5E6C9 url(/HDUS/EN_US/cat_objects/images/gray_dot.gif) repeat-y; font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.Vert_graySHADED2 {background: #FEFEF1 url(/HDUS/EN_US/cat_objects/images/gray_dot.gif) repeat-y; font-weight:normal; COLOR: #CC6600; font-family:arial; FONT-SIZE: 10px}
+
+.Horiz_Dot {background: white url(/HDUS/EN_US/cat_objects/images/h_dot.gif) repeat-x;}
+.Horiz_Dot_Head {background: white url(/HDUS/EN_US/cat_objects/images/h_dot_green.gif) repeat-x;}
+
+
+.LARGEblack {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 42px}
+.TABLEheader {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 24px}
+.TDheader {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAY {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAY2 {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 12px; line-height: 20px}
+.TDheaderGRAYbold {font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYbold1 {font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 14px}
+.TDheaderGRAYshadedBG {background: #E5E6C9; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAY_BOLDshadedBG {background: #E5E6C9; font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+
+.TDheaderGRAYshadedBG2 {background: #FEFEF1; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG3 {background: #FEFEF1; font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG4 {background: #B1633C; font-weight:bold; COLOR: #FFFFFF; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG5 {background: #CC6600; font-weight:bold; COLOR: #FFFFFF; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG6 {background: #422300; font-weight:bold; COLOR: #FFFFFF; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG7 {background: #8B7A70; font-weight:bold; COLOR: #FFFFFF; font-family:arial; FONT-SIZE: 13px}
+
+.LARGEblackBOLD {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 42px}
+
+.PRICEfont {FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: arial}
+.PRICEfontBOLD {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 12px}
+.PRICEfontBOLDred { FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: arial}
+.PRICEfontBOLDredsmall {    FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ff0000; FONT-FAMILY: arial}
+.PRICEfontGRAY {    FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: arial}
+.PRICEfontGRAYsmallSTRIKE { FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: arial; TEXT-DECORATION: line-through}
+.PRICEfontGRAYstrike {FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: arial; TEXT-DECORATION: line-through}
+.PRICEfontGRAYBOLDstrike {FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: arial; TEXT-DECORATION: line-through}
+.PRICEfontBOLDgray {    FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: arial}
+.PRICEfontBOLDgraySTRIKE {  FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: arial; TEXT-DECORATION: line-through}
+
+
+
+.BLACKcontent {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 11px}
+.BLACKcontentSHADEDbg {background: #FEFEF1; font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 10px}
+
+.BLACKcontentBOLD {font-weight:BOLD; COLOR: #000000; font-family:arial; FONT-SIZE: 11px}
+.BLACKcontentBOLDshadedBG {background: #FEFEF1; font-weight:BOLD; COLOR: #000000; font-family:arial; FONT-SIZE: 10px}
+.BLACKcontentBOLDshadedBG2 {background: #E5E6C9; font-weight:BOLD; COLOR: #000000; font-family:arial; FONT-SIZE: 10px}
+
+.GRAYcontent {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 11px}
+.GRAYcontentNAV {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+.GRAYcontentBOLD {font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 11px}
+.GRAYcontentBOLDshadedBG {background: #FEFEF1; font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 11px}
+
+.REDcontentTINY {font-weight:normal; COLOR: #ff0000; font-family:arial; FONT-SIZE: 9px}
+
+
+
+.BLACKcontentTINY {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 9px}
+.GRAYcontentTINY {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 9px}
+
+.GRAYcontentBOLDbig {font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 11px}
+
+
+.GRAYcontentSHADEDbg {background: #E5E6C9; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+.GRAYcontentSHADEDbg2 {background: #F0F0F0; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+
+.MENUcontent_1 {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+.MENUcontent_1SHADEDbg {background: #FEFEF1; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+.MENUcontent_2 {font-weight:normal; COLOR: #CC6600; font-family:arial; FONT-SIZE: 10px}
+.MENUcontent_2BOLD_b {font-weight:bold; COLOR: #CC6600; font-family:arial; FONT-SIZE: 11px}
+.MENUcontent_2BOLD {font-weight:bold; COLOR: #CC6600; font-family:arial; FONT-SIZE: 12px}
+.MENUcontent_2SHADEDbg {background: #FEFEF1; font-weight:normal; COLOR: #CC6600; font-family:arial; FONT-SIZE: 10px}
+.MENUcontent_2SHADEDbgII {background: #E5E6C9; font-weight:normal; COLOR: #CC6600; font-family:arial; FONT-SIZE: 10px}
+.HeaderBGColor {background: #DDD4CD; font-weight:normal; COLOR: #CC6600; font-family:arial; FONT-SIZE: 10px}
+
+.JlinkBOLD {font-weight:bold; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+
+.ORANGEcontent {font-weight:normal; COLOR: #666600; font-family:arial; FONT-SIZE: 10px}
+
+.TDsector {font-weight:normal; COLOR: #857565; font-family:arial; FONT-SIZE: 12px}
+.TDsectorbold {font-weight:bold; COLOR: #857565; font-family:arial; FONT-SIZE: 12px}
+
+.PAGEnumber {font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+
+.SEARCHfont {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 14px}
+.SEARCHfont2 {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 16px}
+.SEARCHfont3 {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 16px}
+
+.graySEARCHfont {font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 14px}
+.graySEARCHfont2 {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 14px}
+
+.THANKfont {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 20px}
+
+.ORDERfont {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 14px}
+
+.ITALICgray {font-weight:normal; COLOR: #666666; font-style:italic; font-family:arial; FONT-SIZE: 10px}
+.ITALICblack {font-weight:normal; COLOR: #000000; font-style:italic; font-family:arial; FONT-SIZE: 10px}
+.ITALICorange {font-weight:normal; COLOR: #FF0000; font-style:italic; font-family:arial; FONT-SIZE: 10px}
+.ITALICredbold {font-weight:bold; COLOR: #FF0000; font-style:italic; font-family:arial; FONT-SIZE: 11px}
+
+.ErrorBold {font-weight:bold; COLOR: #FF0000;  font-family:arial; FONT-SIZE: 12px}
+
+.ErrorBold2 {font-weight:bold; COLOR: #FF0000;  font-family:arial; FONT-SIZE: 11px}
+
+.ErrorSmall {font-weight:normal; COLOR: #FF0000;  font-family:arial; FONT-SIZE: 10px}
+
+.ErrorSmallItalic {font-weight:normal; COLOR: #FF0000;  font-family:arial; FONT-SIZE: 10px; font-style:italic;}
+
+.PRICEfont {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 10px}
+
+.breadcrumbMAIN { font-weight:normal; font-family:arial; FONT-SIZE: 10px; COLOR: #999999}
+
+.breadcrumbHERE { font-weight:bold; font-family:arial; FONT-SIZE: 10px; COLOR: #857565}
+
+
+
+/* ////////////////////////////////////////////////////////////
+
+    Original styles from styles.css (pre-October 2003 Redesign)
+
+//////////////////////////////////////////////////////////// */
+
+
+a:link {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+a:visited {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+a:active {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+a:hover {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:underline}
+
+A.Jlink {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+A.Jlink:visited {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+A.Jlink:hover {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:underline}
+
+A.JlinkItalic {font-weight:normal; COLOR: #CB6600; font-family:arial;  font-style:italic; FONT-SIZE: 11px; TEXT-DECORATION:none}
+A.JlinkItalic:visited {font-weight:normal; COLOR: #CB6600; font-family:arial; font-style:italic; FONT-SIZE: 11px; TEXT-DECORATION:none}
+A.JlinkItalic:hover {font-weight:normal; COLOR: #CB6600; font-family:arial;  font-style:italic; FONT-SIZE: 11px; TEXT-DECORATION:underline}
+
+A.JlinkNAV {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 9px; TEXT-DECORATION:none}
+A.JlinkNAV:visited {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 9px; TEXT-DECORATION:none}
+A.JlinkNAV:hover {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 9px; TEXT-DECORATION:underline}
+
+A.JlinkBOLD {font-weight:bold; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+A.JlinkBOLD:visited {font-weight:bold; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+A.JlinkBOLD:hover {font-weight:bold; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:underline}
+
+A.JlinkBOLDItalic {font-weight:bold; COLOR: #CB6600; font-family:arial; font-style:italic; FONT-SIZE: 11px; TEXT-DECORATION:none}
+A.JlinkBOLDItalic:visited {font-weight:bold; COLOR: #CB6600; font-family:arial; font-style:italic; FONT-SIZE: 11px; TEXT-DECORATION:none}
+A.JlinkBOLDItalic:hover {font-weight:bold; COLOR: #CB6600; font-family:arial; font-style:italic; FONT-SIZE: 11px; TEXT-DECORATION:underline}
+
+A.JlinkLARGE {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 12px; TEXT-DECORATION:none}
+A.JlinkLARGE:visited {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 12px; TEXT-DECORATION:none}
+A.JlinkLARGE:hover {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 12px; TEXT-DECORATION:underline}
+
+A.JlinkLARGEbold {font-weight:bold; COLOR: #CB6600; font-family:arial; FONT-SIZE: 12px; TEXT-DECORATION:none}
+A.JlinkLARGEbold:visited {font-weight:bold; COLOR: #CB6600; font-family:arial; FONT-SIZE: 12px; TEXT-DECORATION:none}
+A.JlinkLARGEbold:hover {font-weight:bold; COLOR: #CB6600; font-family:arial; FONT-SIZE: 12px; TEXT-DECORATION:underline}
+
+.greenBak {
+    FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #5e933b; COLOR: #ffffff; FONT-FAMILY: arial
+}
+.featureText {
+    FONT-WEIGHT: normal; FONT-SIZE: 16px; COLOR: #7e746a; FONT-FAMILY: arial
+}
+
+
+
+

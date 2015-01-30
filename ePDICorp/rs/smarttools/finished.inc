@@ -1,0 +1,1 @@
+<h2 style="text-align:center">Thanks you for completing the Smart Tools DISC Assessment</h2>

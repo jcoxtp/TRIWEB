@@ -1,0 +1,88 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DimNet_mrtables_namespaces">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Displaying
+Short Names for Variables that use Namespaces</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('dimnet_mrtables_namespaces.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N201B8')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="datalinkproperties_cdscnames.htm">Previous<img alt="(P)revious: datalinkproperties_cdscnames" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="dimnet_newproj_mobile.htm"><img alt="(N)ext: dimnet_newproj_mobile" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; <A HREF="dimnet_newproj.htm">Creating a New Project</A> &gt; <A HREF="dimnet_newtablesproject.htm">Creating a New Analysis Project</A> &gt; </DIV>
+<h1>Displaying
+Short Names for Variables that use Namespaces</h1>
+<p class="body">If your variable names
+use namespaces, you may want to display the variables in mrTables without
+using the full namespace, to improve the table display. For example, if your
+variables have names such as <span class="name">CompanyName.DivisionName.SurveyName.VariableName</span>,
+you may only want the <span class="name">VariableName</span> part
+to be displayed in the tables you create.</p>
+<p class="body">You can restrict the number
+of levels from the full namespace that are displayed in mrTables by editing
+the project properties in DimensionNet. The changes you make apply to all
+of the variables in a project.</p>
+<h2>To Change the Number of Namespace
+Levels Displayed in Variable Names</h2>
+<p class="step">
+<span class="step-glyph">►</span> In DimensionNet,
+select the project and click the Edit Project Properties icon.</p>
+<div class="imageblock">
+<img alt="Edit Project Properties icon" src="images/dn_editproj.gif"></div>
+<p class="body"></p>
+<p class="step">
+<span class="step-glyph">►</span> In the Edit Project window, click the Properties
+tab.</p>
+<p class="step">
+<span class="step-glyph">►</span> In the Name field, choose <span class="screen">&lt;Click
+here to add property&gt;</span>.</p>
+<p class="step">
+<span class="step-glyph">►</span> Enter <span class="input">LevelsShown</span> as the name of the property.</p>
+<p class="step">
+<span class="step-glyph">►</span> In
+the Value field, enter the number of levels from the namespace that you want
+to appear in mrTables. For example, type 1 to display only the final level
+from the namespace.</p>
+<p class="body">
+<span class="runinhead">Note:</span> For
+projects containing grid variables, enter a value of at least 2 to ensure
+that the full grid name is displayed.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click the Home button
+to return to the DimensionNet activities list.</p>
+<div class="imageblock">
+<img alt="Home button" src="images/HomeButton.gif"></div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

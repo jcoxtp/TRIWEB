@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>..::DataLink Dialog Test Page::..</title>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="spsstabs.css" />
+
+	<script type="text/javascript" src="datalinkdialog.js"></script>	
+	
+	<script type="text/javascript">	
+	
+	  function openDlg()
+	  {	
+		cs = document.getElementById("InputConnectionString").value
+
+		lang = document.getElementById("languageSelection").value
+	        return_values = doDataLinkDialog(cs, lang)
+		
+		csDiv = document.getElementById("ConnectionString")	
+		
+		// return_values.map contains the connection string as a hash
+		// there may be empty properties not included in return_values.cs
+		// if return_values.cs is empty, the user cancelled the operation, or
+		// there simply wasn't any values set (unlikely).
+		
+		if(return_values)
+		{	if(return_values.cs)	
+				// ok
+				csDiv.innerHTML = return_values.cs
+		}
+		else
+			// cancel
+			csDiv.innerHTML = ""		
+	  }
+
+	</script>
+	
+	</head>
+	<body>
+	<br>
+	This is the DataLink Dialog Test Page
+	<br><br>
+	Dialog language.
+	<select id="languageSelection">
+	<option value="en-us">en-us</option>
+	<option value="test">test</option>
+	</select>
+	<br>
+	<em>The test language should show all texts in #, like "#Connection#"</em><br>
+	<br><br>
+	Input Connection String:<br>
+	<input id="InputConnectionString" type="text" size="60" value='Mode=Read;MR Init Category Names=1' /><br><br>
+	<button onClick="openDlg()">open dialog</button><br>
+	<br>
+	<b>Output Connection String:</b><br>
+	<span id="ConnectionString" />
+	
+	</body>
+</html>

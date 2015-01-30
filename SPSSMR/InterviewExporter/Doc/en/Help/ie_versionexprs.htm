@@ -1,0 +1,151 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="IE_versionexprs">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Version Expressions</title>
+<!--Generated with Help Tools v. 4.1
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('ie_versionexprs.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N2004A')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="backbutton.src='images/help_back.png';" onMouseUp="backbutton.src='images/help_back2.png';" onMouseDown="backbutton.src='images/help_back3.png';" onMouseOver="backbutton.src='images/help_back2.png';" href="IE_advanced.htm">Previous<img alt="Previous: IE_advanced" border="none" id="backbutton" src="images/help_back.png"></a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="ie_about.htm">Export Data</A> &gt; <A HREF="ie_advanced.htm">Advanced Options</A> &gt; </DIV>
+<h1>Version Expressions</h1>
+<p class="body">When you open a metadata (<span class="name">.mdd</span>)
+file, you can specify the version or versions you want to use.  This
+topic describes the syntax that you use to specify the version or versions.  </p>
+<p class="body">You can specify a single version using its
+name. Version names are made up of a combination of  the major version and
+minor version numbers in the form  <span class="italic">Major#:Minor#</span>,
+where <span class="italic">Major#</span>  is the number of the major
+version and <span class="italic">Minor#</span> is the number of 
+the minor version. Changes in the major version number indicate that the structure
+of the case data has changed (for example, variables or categories have been
+added or deleted) whereas changes in the minor version number indicate that
+the changes affect the metadata only (for example, a question text  has been
+changed). Version names are created automatically when a version is locked.
+A version that  has not been locked is always called <span class="name">LATEST</span>. </p>
+<p class="body">You
+can open the latest minor version that belongs to a specified major version
+by entering the major version number followed by a colon. For example, if
+there are minor versions 2:1, 2:2, and  2:3, specifying<span class="input"> 2:</span> will
+open minor version 2:3.</p>
+<p class="body">You can use an expression to open a superset
+(sometimes called a  <span class="definedword">superversion</span>)
+of two or more versions. The order in which  you specify the versions determines
+the order of precedence that is used when there is a conflict  between versions.
+(The rightmost versions in the expression take precedence over the leftmost.)
+ For example, if a category label differs in the versions you select, the
+text in the version with  the highest precedence will be used. However the
+order of questions and categories is always taken  from the most recent version
+and there is special handling of changes to loop definition ranges and  the
+minimum and maximum values of variables between the versions.</p>
+<p class="body">The version expression syntax is:</p>
+<pre class="codeblock">
+<span class="code-required">{</span>&lt;version&gt; (<span class="code-required">,</span> &lt;version&gt;)*<span class="code-required">}</span>
+
+&lt;version&gt;::= <span class="parameter">VersionName</span> | [<span class="code-required">^</span>] [<span class="parameter">VersionName</span>]<span class="code-required"> .. </span>[<span class="parameter">VersionName</span>]</pre>
+<p class="body">where <span class="italic">VersionName</span> is
+the name of a major or minor version and  <span class="input">^</span> indicates
+that the following range is to be excluded. </p>
+<p class="body">You can specify the name
+of versions that do not exist in a range. MDM will then automatically  use
+the next highest or lowest name it encounters, depending on whether the name
+is specified at  the start or end of the range and whether the range is in
+ascending or descending sequence.</p>
+<p class="body">
+<span class="runinhead">Examples</span>
+</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Expression</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">{..}</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Include all versions in the MDM Document. If there are no versions,
+this selects the unversioned Document.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">{2, 3, 7}</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Include versions 2, 3, and 7 and give highest precedence to version
+7, the next highest precedence to version 3, and the lowest precedence to
+version 2.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">{5..1}</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Include versions 5 through 1, giving the highest precedence to version
+1.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">{2..7,9}</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Include versions 2 through 7 and version 9.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">{2..11,^3:1..5:4}</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Include versions 2 through 11 but exclude versions 3:1 to 5:4 inclusive.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">{}</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Include the most recent version in the MDM Document.</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">{LATEST}</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Select the most recent version in the versions collection,
+whether or not it is named LATEST. If there are no versions, this selects
+the unversioned document. </td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">{LASTLOCKED}</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; ">Include the most recent locked version in the MDM Document.</td>
+</tr>
+</tbody>
+</table>
+<p class="body">
+<span class="runinhead">EBNF Definition</span>
+</p>
+<p class="body">The
+syntax for specifying the version or versions to open can be specified using
+the  following Extended Backus-Naur Form (EBNF), which is a notation for specifying
+the syntax  of a language succinctly and precisely:</p>
+<pre class="codeblock">&lt;versionname&gt; ::= &lt;version&gt; | (&lt;vername&gt;<span class="code-required">:</span>) | &lt;range&gt;
+&lt;range&gt; ::= { &lt;range_item&gt;(<span class="code-required">, </span>&lt;range_item&gt;)* }
+&lt;range_item&gt;::= [<span class="code-required">^</span>]((&lt;version&gt;[<span class="code-required">..</span>])|([&lt;version&gt;]<span class="code-required">..</span>[&lt;version&gt;]))
+&lt;version&gt; ::= (&lt;vername&gt;[:&lt;vername&gt;]) | <span class="code-required">LATEST</span> | <span class="code-required">LASTLOCKED</span>
+&lt;vername&gt; ::= Any positive integer value</pre>  
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="ie_advanced.htm">Advanced Options</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

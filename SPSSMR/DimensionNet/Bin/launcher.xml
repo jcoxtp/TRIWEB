@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application name="launcher">
+	<ApplicationSettings>
+		<Property name="ShowInLauncher" datatype="11">0</Property>
+		<Property name="DisplayName" datatype="8">
+			<![CDATA[DimensionNet]]>
+		</Property>
+		<Property name="DPMAccessType"  datatype="string">readwrite</Property>
+		<Property name="FileAccessType" datatype="string">none</Property>	
+		<Property name="ApplicationType" datatype="string">
+			<![CDATA[general]]>
+		</Property>
+			<Property name="StartURL" datatype="8">
+				<![CDATA[../DimensionNet/default.aspx]]>
+		</Property>
+		<Property name="UnlockProjURL" datatype="8">
+			<![CDATA[/SPSSMR/DimensionNet/projapps.aspx?unlockproj=1]]>
+		</Property>
+		<Property name="PublicResourceFolder" datatype="string">
+		      <![CDATA[../DimensionNet/bin]]>
+		</Property>
+		<Property name="GenerateStartUrlFromRequest" datatype="boolean">
+		      <![CDATA[false]]>
+		</Property>
+		<Property name="PublicResourceFileName" datatype="8">
+			<![CDATA[PublicResources.resx]]>
+		</Property>
+	</ApplicationSettings>
+	<UserSettings/>
+	<Features>
+		<Property name="canUnlockProject" datatype="empty"/>
+		<Property name="canManageProjectFolders" datatype="empty"/>
+	</Features>
+	<MustMatch/>
+</Application>
+

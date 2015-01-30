@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StatusOrder>
+	<Status id="Active"/>
+	<Status id="Test"/>	
+	<Status id="Inactive"/>
+</StatusOrder>

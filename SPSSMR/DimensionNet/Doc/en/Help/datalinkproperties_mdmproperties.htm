@@ -1,0 +1,164 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DataLinkProperties_MDMProperties">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Data Link Properties: MDM Properties</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('datalinkproperties_mdmproperties.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20169')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="datalinkproperties_connection.htm">Previous<img alt="(P)revious: datalinkproperties_connection" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="dimnet_connectcdsc_version_expressions.htm"><img alt="(N)ext: dimnet_connectcdsc_version_expressions" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; <A HREF="dimnet_newproj.htm">Creating a New Project</A> &gt; <A HREF="dimnet_newtablesproject.htm">Creating a New Analysis Project</A> &gt; <A HREF="datalinkproperties_overview.htm">Data Link Properties Dialog Box</A> &gt; <A HREF="datalinkproperties_connection.htm">Data Link Properties Dialog Box: Connection Tab</A> &gt; </DIV>
+<h1>Data Link Properties: MDM Properties</h1>
+<p class="body">You use the MDM Properties dialog box to specify the version, language,
+context, and label type that you want to use when you connect to a questionnaire
+definition (<span class="name">.mdd</span>) file (also known as Dimensions
+Metadata Document file). You open this dialog box by clicking  <span class="screen">Edit MDM Properties</span> on the Connection tab in the
+Data  Link Properties dialog box.</p>
+<p class="body">Questionnaire definition (.<span class="name">mdd</span>)
+files typically contain  <script type="text/javascript">
+    var N20608_term = "Definition of Version";
+
+    var N20608_def = "Refers to changes to the content of a project. As the project changes (with new questions or categories in a tracking study, for example), each set of such changes will generate a new version. Each generated version is stored in the metadata and you can choose the version or versions you want to use.";
+</script><a href="javascript:void(0)" style="cursor:hand; cursor:pointer" class="glossary-ref" onclick="popup(N20608_term,N20608_def,event);" title="Definition of Version">versions</a>, which
+record any changes to the content of the  questionnaire. Typically, when the
+questionnaire changes (for example, a question or category is  added or deleted),
+a new version is created and when the changes are complete, the version is
+locked. </p>
+<p class="body">Using a combination of some or all of the versions is useful
+when, for example, you want to  export case data for more than one version
+and there have been changes to the variable and  category definitions that
+mean that case data collected with one version is not valid in another  version.
+Selecting all of the versions for which you want to export the case data,
+means that  generally you can export the case data collected with the different
+versions at the same time  without encountering validity errors due to the
+differences between the versions. However, depending  on the version changes,
+some validity errors may still be encountered.</p>
+<div class="imageblock">
+<img alt="" src="images/datalinkmdm.gif"></div>
+<p class="body">
+<span class="runinhead">Current version. </span> Displays an expression
+that represents the selection you have chosen. You can optionally select 
+the versions you want to use by typing an expression directly into the text
+box. </p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Syntax</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="input">..</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Specifies all versions</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="italic">v1</span><span class="input">, </span> <span class="italic">v2</span><span class="input">, </span> <span class="italic">v3</span><span class="input">, </span> <span class="name">v4</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Specifies individual versions</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="italic">v1</span><span class="input">..</span> <span class="italic">v2</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Specifies an inclusive range of versions</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left"><span class="input">^</span><span class="italic">v1</span> <span class="input">..</span><span class="italic">v2</span></td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Excludes a range of versions</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Specifies the most recent version.</td>
+</tr>
+</tbody>
+</table>
+<p class="body">You can specify a combination of individual versions, and ranges
+to include or exclude.  For example, the following specifies version 3:2 and
+all versions from 4:5 to 7:3 with the  exception of versions 7 through 7:2:</p>
+<pre class="codeblock">
+3:2, 4:5..7:3, ^7..7:2
+</pre>
+<p class="body">When there is a conflict between the versions, the order of
+precedence is taken from the order  in which versions are specified in the
+expression, with the rightmost versions taking precedence  over the leftmost.
+For example, if a category label differs in the versions you select, the text
+in  the version with the higher precedence will be used. However the order
+of questions and categories is  always taken from the most recent version
+and there is special handling of changes to loop definition  ranges and the
+minimum and maximum values of variables.</p>See <A href="dimnet_connectcdsc_version_expressions.htm">Version Expressions</A> for more information. <p class="body">
+<span class="runinhead">Latest. </span> Select this option if you want to use
+the most recent version. </p>
+<p class="body">
+<span class="runinhead">All. </span> Select
+this option if you want to use a combination (superset) of all of the available
+versions.  (This is sometimes called a <script type="text/javascript">
+    var N205BD_term = "Definition of Superversion";
+
+    var N205BD_def = "A combination of two or more versions of the metadata. The versions are combined to form a superset, although when there is a conflict between, for example, a text in one or more of the versions, the more recent versions generally take precedence over the older versions. However, you can sometimes specify the order of precedence. You typically use a superversion when you want to export or analyze response data that has been collected using more than one version of the questionnaire.";
+</script><a href="javascript:void(0)" style="cursor:hand; cursor:pointer" class="glossary-ref" onclick="popup(N205BD_term,N205BD_def,event);" title="Definition of Superversion">superversion</a>).</p>
+<p class="body">
+<span class="runinhead">Versions. </span> A list of all of the versions that
+are available. For each version, the following information  is shown:</p>
+<p class="bullet">&bull;&nbsp;  <span class="runinhead">Name. </span>   The version name. Version names are made up of a combination
+of the major version and minor  version numbers in the form <span class="italic">Major#:Minor#</span>, where  <span class="italic">Major#</span> is the number of the major version and  <span class="italic">Minor#</span> is the number of the minor version.
+Changes in the major  version number indicate that the structure of
+the case data has changed (for example, variables or  categories have
+been added or deleted) whereas changes in the minor version number
+indicate that the  changes affect the metadata only (for example,
+a question text has been changed). Version names are  created automatically
+when a version is locked. A version that has not been locked is always
+called  <span class="name">LATEST</span>.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Created by. </span> The ID of the
+user who created the version. </p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Created Date. </span> This shows the date and
+time at which the version was locked. </p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Description. </span> When present, this is a
+text that gives information about the version.</p>
+<p class="body">   
+<span class="runinhead">Languages. </span>  Select the language you want to use. You can change the
+language only if there is more than one  language defined.</p>
+<p class="body">   
+<span class="runinhead">Contexts. </span>  Select the user
+context you want to use. The user context controls which texts are
+displayed. For example, select <span class="screen">Question</span> to display question  texts, or <span class="screen">Analysis</span> to display shorter texts suitable for displaying when analyzing
+the data.</p>
+<p class="body">   
+<span class="runinhead">LabelTypes. </span>  Select the label type you want to use. You should generally
+select the <span class="screen">Label</span> option.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="datalinkproperties_connection.htm">Data Link Properties Dialog Box: Connection Tab</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<div style="text-align:center;font-family:verdana, helvetica, arial;font-size:14pt">Click the <b>Begin</b> button to take your online DISC assessment</div>

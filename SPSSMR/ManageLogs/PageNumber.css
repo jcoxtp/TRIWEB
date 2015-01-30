@@ -1,0 +1,43 @@
+.SelectedPageNumber
+{
+    padding-right: 2px;
+    padding-left: 2px;
+    color: green;
+    font-family: Arial;
+    cursor:default;
+    text-decoration:none;
+}
+
+
+.PageNumber
+{
+    padding-right: 2px;
+    padding-left: 2px;
+    color: black;
+    font-family: Arial;
+    cursor: hand;
+    text-decoration:underline;
+}
+.First
+{
+    cursor: hand;
+    width:20px;
+}
+
+.Prev
+{
+    cursor: hand;
+     width:20px;
+}
+
+.Next
+{
+    cursor: hand;
+    width:20px;
+}
+
+.Last
+{
+    cursor: hand;
+    width:20px;
+}

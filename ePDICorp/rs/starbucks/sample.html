@@ -1,0 +1,1963 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    
+      <style type="text/css">
+       
+        .findStoreTab{ position:relative; background:url('Images/tabs/tab_findStores.gif') no-repeat 0 0; height:28px; color:#404040; text-align:left; font-size: 11px; cursor: pointer;}
+        .findRouteTab{ position:relative; background:url('Images/tabs/tab_findRoute.gif') no-repeat 0 0; height:28px; color:#404040; text-align:left; font-size: 11px; cursor: pointer;}
+        .findEventTab{ position:relative; background:url('Images/tabs/tab_findEvents.gif') no-repeat 0 0; height:28px; color:#404040; text-align:left; font-size: 11px; cursor: pointer;}
+
+        #locatorTab A { color:#404040; font-size: 11px; text-decoration: none;}
+        
+        .pinStyleStore{ position:relative; background:url('images/pins/pin_store.gif') no-repeat 0 0; height:18px; width:15px; text-decoration:none; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleStore .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+        
+        .pinStyleEvent{ position:relative; background:url('images/pins/pin_event.gif') no-repeat 0 0;  height:18px; width:15px; top:-15px; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleEvent .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+        
+        .pinStyleComingSoon{ position:relative; background:url('images/pins/pin_comingsn.gif') no-repeat 0 0; height:18px; width:15px; top:-15px; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleComingSoon .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+
+        .pinStyleStoreOn{ position:relative; background:url('images/pins/pin_store_on.gif') no-repeat 0 0; text-decoration:none; height:18px; width:15px; color:#00000; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleStoreOn .text{position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none; }
+        
+        .pinStyleEventOn{ position:relative; background:url('images/pins/pin_event_on.gif') no-repeat 0 0; height:18px; width:15px; top:-15px; color:#00000; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleEventOn .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+        
+        .pinStyleComingSoonOn{ position:relative; background:url('images/pins/pin_comingsn_on.gif') no-repeat 0 0; height:18px; width:15px; top:-15px; color:#00000; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleComingSoonOn .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none; }
+        
+        
+        .pinStyleComingSoonResults{ margin-right:6px; position:relative; background:url('images/pins/pin_comingsn.gif') no-repeat 0 0; background-attachment: scroll;  height:18px; width:15px; top:0px; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleComingSoonResults .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+        .pinStyleComingSoonResultsOn{ margin-right:6px; position:relative; background:url('images/pins/pin_comingsn_on.gif'); background-attachment: scroll;  height:18px; width:15px; top:0px; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleComingSoonResultsOn .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+               
+        .pinStyleStoreResults{ margin-right:6px; position:relative; background:url('images/pins/pin_store.gif') no-repeat 0 0; background-attachment: scroll;  height:18px; width:15px; top:0px; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleStoreResults .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+                
+        .pinStyleEventResults{ margin-right:6px; position:relative; background:url('images/pins/pin_event.gif'); background-attachment: scroll;  height:18px; width:15px; top:0px; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleEventResults .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+                
+        .pinStyleStoreResultsOn{ margin-right:6px; position:relative; background:url('images/pins/pin_store_on.gif'); background-attachment: scroll;  height:18px; width:15px; top:0px; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleStoreResultsOn .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+                
+        .pinStyleEventResultsOn{ margin-right:6px; position:relative; background:url('images/pins/pin_event_on.gif'); background-attachment: scroll;  height:18px; width:15px; top:0px; color:#fffff; text-align:center; font: bold 8px Tahoma; cursor: pointer;}
+        .pinStyleEventResultsOn .text{ position: relative; top: 2px; left: 0px; color:#ffffff; text-decoration:none;}
+        
+        .comingSoonText { color:#7F7F7F; }
+        .comingSoonText A { color:#7F7F7F; }
+        
+        
+        .sliderBar { background-color: #E5E5E5; height:22px; color:#404040; font-size:11px; border-bottom:inset 1px #A9A9A9; cursor:pointer; }
+        .sliderBar .text {position:relative; top:5px; vertical-align:middle; }
+        .sliderBar .storeText {position:relative; left:8px; top:4px;  }
+        .sliderBar .eventText {position:relative; left:8px; top:4px; }
+        .sliderBar .routeText {position:relative; left:8px; top:4px; }
+        .sliderBar .sliderSpacer {position:relative; left:6px;  }
+        .sliderBarOn {background-color: #FFFFFF; height:22px; font-size:11px; border-bottom:inset 1px #A9A9A9;}
+        .sliderBarOn .text {position:relative; top:4px; vertical-align:middle;  }
+        .sliderBarOn .storeText {position:relative; left:8px; top:4px;  color:#036635; vertical-align:middle; }
+        .sliderBarOn .eventText {position:relative; left:8px; top:4px;  color:#dd6e00}
+        .sliderBarOn .routeText {position:relative; left:8px; top:4px;  color:#66a0bd}
+        .sliderBarBottomTab { background-color: #E5E5E5; height:22px; color:#404040; font-size:11px;  cursor:pointer;  }
+        .sliderBarBottomTab .text {position:relative; top:5px; vertical-align:middle; }       
+        .sliderBarBottomTab .storeText {position:relative; left:8px; top:4px; vertical-align:middle;  }
+        .sliderBarBottomTab .eventText {position:relative; left:8px; top:4px; }
+        .sliderBarBottomTab .routeText {position:relative; left:8px; top:4px; }
+        .sliderBody { border-left:solid 1px #A9A9A9; border-right:solid 1px #A9A9A9; height:300px; }
+        .sliderBoxBottom {background:url('Images/sliderbox/sliderbox_bot.gif') no-repeat 0 0; height:20px;}
+        .sliderBoxBottom .text { position:relative; left:30px; top:1px }
+        .sliderBoxBottom .text A { color:#404040; text-decoration:underline; cursor:pointer; }
+        .sliderSpacer { width:6px; }
+        
+        .controlHeader { color:#404040; font-size:11px; }
+        
+        .watermark { color:#404040; background-color:#EEEEEE; padding:0px; height:17px; font-size:10px; border:solid 1px #A9A9A9; }
+        .normalCopy { color:#262626; font-size:11px; }
+        .controlTextboxWide { width:340px; }
+        .controlTextboxNarrow { width:180px; }
+        .MaxZOrder { z-order:10001; background-color:white; border:1px; }
+        
+        .customInfoBox-with-leftBeak{border:0 solid black;color:#676767;display:block;font-size:1.2em;overflow:hidden;position:absolute;float:left; z-index:500;}
+        
+    	.printMenuOn
+        {
+	        border:1px solid #686868;
+	        background-color:White;
+	        background-image: url('Images/sendToMobile/popupBG_sendToMobile.gif');
+	        position:absolute;
+	        padding-left:10px;
+	        padding-top:2px;
+	        z-index: 300;
+	        top:260px;
+	        left:813px;
+	        display:block;
+	        width:100px;
+	        padding-right: 2px;        
+	        padding-bottom: 2px;        
+	        
+        }
+        
+     	.printMenuOn A
+        {
+	        font: 10px Tahoma;
+	        color:black;
+	        text-decoration:none;       
+        }
+
+ 
+        .printMenuOff
+        {
+            display:none;
+        }
+        
+        .modalBackground
+        {
+ 	        background-color:Black;   
+            filter:alpha(opacity=40);
+            -moz-opacity:.40;
+            opacity:.40;
+        }
+        
+        .storeSubhead
+        {
+            color:#036635;
+        }
+        
+        .storeSubhead A
+        {
+            color:#036635;
+        }
+        
+        .eventSubhead
+        {
+            color:#dd6e00;
+        }
+        
+        .eventSubhead A
+        {
+            color:#dd6e00;
+        }
+        
+        .storeInstructions
+        {
+            font-size: 10px;
+            color: #808080;
+        }
+        
+        .eventInstructions
+        {
+            font-size: 10px;
+            color: #808080;
+        }
+        
+        .storeInstructions A
+        {
+            color:#036635;
+        }
+        
+        .eventInstructions A
+        {
+            color:#dd6e00;
+        }
+        
+        .invitationTextOff
+        {
+            font-size:10px;
+            color:#036635;
+            text-decoration:none;
+        }
+        
+        .invitationTextOn
+        {
+            font-size:10px;
+            color:#036635;
+            text-decoration:underline;
+            border: solid 1px silver;
+        }
+        
+        .invitation
+        {
+            font-family: tahoma;
+            font-size: 11px;
+            line-height: 12px;
+            color: #000000;
+        }
+        
+        .invitation A
+        {
+            color: #492821;
+        }
+        
+        .invitationBold
+        {
+            font-family: tahoma;
+            font-size: 11px;
+            line-height: 12px;
+            color: #000000;
+            font-weight: 700;
+        }
+        
+        .invitationHeader
+        {
+            color: #404040;
+        }
+                
+        .searchingBox
+        {
+	        border:1px solid #686868;
+	        background-color:White;
+	        position:absolute;
+	        padding-left:0px;
+	        padding-top:0px;
+	        z-index: 10000;
+	        top:260px;
+	        left:815px;
+	        display:block;
+	        width:300px;
+	        height:100px
+        }
+        
+                
+        .invitationThankYouBox
+        {
+            filter:alpha(opacity=100);
+            -moz-opacity:.100;
+            opacity:.100;
+	        border:1px solid #686868;
+	        background-color:White;
+	        position:absolute;
+	        padding-left:0px;
+	        padding-top:0px;
+	        z-index: 10000;
+	        top:260px;
+	        left:815px;
+	        display:block;
+	        width:300px;
+	        height:100px
+        }
+        
+
+        .invitationValidationBox
+        {
+ 	        background-color:White;   
+            width:150px;
+            border:solid 1px black;
+            position:absolute;
+            display:none;
+        }
+
+                
+    	.drivingDirectionsBox
+        {
+	        border:1px solid #686868;
+	        background-color:White;
+	        position:absolute;
+	        padding-left:10px;
+	        padding-top:2px;
+	        z-index: 10000;
+	        top:280px;
+	        left:220px;
+	        display:block;
+	        height:300px;
+	        
+        }
+        
+        .mobileInstructions
+        {
+            font-size: 8px;
+            color: #808080;
+            font-style: italic;
+        }
+
+
+
+        
+    </style>
+    <title>
+	Starbucks Store Locator
+</title><link href="/retail/find/WebResource.axd?d=7XSKWoeK2TIR-EDN_kX4BWIKR5NnB2tA7ikKZ0BGn8M3E33bqaBsbLBRmo3JIz3bgImRvQC1kJJWFWIflWK29g2&amp;t=633259125620000000" type="text/css" rel="stylesheet" /></head>
+<body>
+   
+    <div>
+    		<!-- let most of the attributes for the page tracking code default -->
+	 
+<!--WEBSIDESTORY CODE HBX2.0 (Universal)-->
+<!--COPYRIGHT 1997-2005 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+
+<script language="javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0200u";hbx.gn="ehg-starbucks.hitbox.com";
+hbx.acct="DM5609199ASC27EN3";//ACCOUNT NUMBER(S)
+hbx.pn="default.aspx-";//PAGE NAME(S)
+hbx.mlc="CONTENT+CATEGORY";//MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+hbx.ci="";//CUSTOMER ID
+hbx.hc1="";//CUSTOM 1
+hbx.hc2="";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+</script><script language="javascript1.1" src="http://www.starbucks.com/javascript/hbx.js"></script>
+
+
+<!--END WEBSIDESTORY CODE-->
+
+      
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+	<HEAD>
+		<title>Starbucks Store Locator</title>
+		<link href="http://www.starbucks.com/css/starbucks.css" type=text/css rel=stylesheet>
+		<link href="http://www.starbucks.com/css/SbuxNav.css" type=text/css rel=stylesheet>
+		<meta http-equiv="lang" content="en-US">
+		<meta http-equiv="dir" content="ltr">
+		<style>.textbox {
+	WIDTH: 174px
+}
+.textboxsm {
+	WIDTH: 150px
+}
+		</style>
+		<script language="JavaScript">
+<!--
+
+        //SNIFF FOR SAFARI
+
+    var uagent = navigator.userAgent.toLowerCase();
+    var appVer = navigator.appVersion.toLowerCase();
+    var is_safari = ((uagent.indexOf('safari')!=-1)&&(uagent.indexOf('mac')!=-1))?true:false;
+
+        if(is_safari)
+            location.href = "http://www.starbucks.com/retail/locator/default.aspx";
+           
+				var win = null;
+				function makeDaughterWindow(page, intW, intH) 
+				{
+					win = window.open (page,"newWin","width=" + intW + ",height=" + intH + ",scrollbars=0");
+
+					if (win != null) 
+					{
+						if (win.opener == null) 
+						{
+							win.opener = self;
+						}
+					}
+					win.focus()
+				}
+
+				function makeImageWindow(image, intW, intH, strTitle)
+				{
+					lrgimg = window.open("","lrgimgwin","width=" + intW + ",height=" + intH + ",scrollbars=0");
+					lrgimg.moveTo(100,100)
+					lrgimg.document.write("<html><title>" + strTitle +"</title><body leftmargin='0' topmargin='0' marginheight='0' marginwidth='0' bgcolor='#ffffff'>")
+					lrgimg.document.write("<table border='0' cellpadding='0' cellspacing='0'><tr><td colspan='3'><img src='http://www.starbucks.com/images/space.gif' width='1' height='10' alt='' border='0'></td>")
+					lrgimg.document.write("</tr><tr><td rowspan='3'><img src='http://www.starbucks.com/images/space.gif' width='25' height='17' alt='' border='0'></td><td align='right'><a href='' onclick='javascript:self.close()'><img src='http://www.starbucks.com/images/btn_script_closewindow.gif' width='95' height='17' alt='' border='0'></a></td>")
+					lrgimg.document.write("<td rowspan='3'><img src='http://www.starbucks.com/images/space.gif' width='25' height='17' alt='' border='0'></td></tr>")
+					lrgimg.document.write("<tr><td><img src='http://www.starbucks.com/images/space.gif' width='1' height='8' alt='' border='0'><br><img src='" + image + "'></td></tr>")
+					lrgimg.document.write("<tr><td><img src='http://www.starbucks.com/images/space.gif' width='1' height='15' alt='' border='0'></td></tr></table></body></html>")
+					lrgimg.document.close()
+					lrgimg.focus()
+				}
+
+				function makeDaughterWindowScroll(page, intW, intH) 
+				{
+					win = window.open (page,"newWin","width=" + intW + ",height=" + intH + ",scrollbars=1");
+
+					if (win != null) 
+					{
+						if (win.opener == null) 
+						{
+							win.opener = self;
+						}
+					}
+					win.focus()
+				}
+
+				function fieldswap()
+				{
+					document.geo.countryname.value = document.geo.AD4.options[document.geo.AD4.selectedIndex].text
+					switch(document.geo.AD4.options[document.geo.AD4.selectedIndex].text)
+					{
+						case "USA":
+							document.geo.countryname.value = ""
+							break
+						case "Canada":
+							document.geo.countryname.value = ""
+							break
+						default: 
+							document.geo.countryname.value = document.geo.AD4.options[document.geo.AD4.selectedIndex].text
+					}
+				}
+
+				function clearForm()
+				{
+				
+					document.InputPrx.controlAddress_txtStreet.value = ""
+					document.InputPrx.controlAddress_txtCity.value = ""
+					document.InputPrx.controlAddress_txtState.value = ""
+					document.InputPrx.controlAddress_txtZip.value = ""
+					document.InputPrx.controlAddress_listFC.selectedIndex = 1
+					document.InputPrx.controlAddress_listRadius.selectedIndex = 1	// Default is 5 miles
+					var usval;
+					usval=findOptionByText(document.InputPrx.controlAddress_listCountry, 'United States');
+					document.InputPrx.controlAddress_listCountry.selectedIndex = usval;
+				}
+
+
+				//the following scripts are to find the United States option by name (instead of by value)
+				//and reset the country dropdown to United States.
+				function findOptionByText($objSelect, $strText) 
+				{ 
+					// Straight pass-through 
+					return findOption($objSelect, $strText, 'text' ); 
+				}; 
+				function findOption($objSelect, $strNeedle, $strSearch) 
+				{ 
+					/** 
+					* Default return value 
+					* 
+					* Returns the index of a found OPTION Item or boolean upon failure 
+					* Default value is set at FALSE 
+					* 
+					* @var mixed $_found index of a found OPTION Item or not 
+					* @access private 
+					* @static 
+					*/ 
+					var $_found = new Boolean( false ); 
+			 
+					// If $objSelect is a nothing [''], convert to a NULL 
+					if ( $objSelect == '' ) 
+						$objSelect = null; 
+			 
+					// If $objSelect is a string, convert to Object Reference 
+					// Then see if Object Reference exists 
+					else if ( ( typeof ( $objSelect ) ) == 'string' ) 
+						$objSelect = document.getElementById($objSelect); 			 
+						// If we have nothing to deal with, just bale... 
+						if ( ( $objSelect ) && ( $strNeedle ) && 
+							( ( $strSearch == 'text' ) || ( $strSearch == 'value' ) ) ) 
+						{ 
+							for (var $i = 0; $i < $objSelect.options.length; $i++) 
+							{ 
+								if ( $strSearch == 'value' ) 
+									$objHayStack = $objSelect[$i].value; 
+				 
+								else if ( $strSearch == 'text' ) 
+									$objHayStack = $objSelect[$i].text; 
+				 
+								if ( $objHayStack == $strNeedle ) 
+								{ 
+									$_found = parseInt ( $i ); // We found a match 
+									break; 
+								} 
+							} 
+						} 
+					// Send back what we have 
+					return $_found; 
+				}; 
+
+
+
+//================================================================================
+// This script contains common functions to preload and swap out images.
+//================================================================================
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function openindex()
+{
+	OpenWindow=window.open("","newwin","height=300,width=400,toolbar=no,menubar=no,scrollbars=yes,resizable=no,location=no,directories=no,status=no");
+	OpenWindow.document.write("<head>")
+	OpenWindow.document.write("<TITLE>Store Locator Icon Key</TITLE>")
+	OpenWindow.document.write("<BODY BGCOLOR=ffffff alink='#546e89' link='#546e89' vlink='#546e89'>")
+	OpenWindow.document.write("<link rel=stylesheet href='http://www.starbucks.com/ie_style.css' type='text/css'>")
+	OpenWindow.document.write("</head>")
+	OpenWindow.document.write("<table border='0' width='350'><tr><td><a name='comingsoon'></a><img border='0' src='http://www.starbucks.com/images/iconcomingsoon.gif' width='106' height='13' hspace='1' vspace='1'>&nbsp;<br><span class='copytext'>This means we plan to open a store at that location. We're sorry we cannot give exact opening dates, as construction schedules are subject to change or delay. </span><p>&nbsp;</td></tr>")
+	OpenWindow.document.write("<tr><td><a name='uco'></a><img border='0' src='http://www.starbucks.com/images/iconUCO.gif' width='106' height='30' hspace='1' vspace='1'><br><span class='copytext'>These stores were developed by Urban Coffee Opportunities LLC. The Starbucks Corporation and Earvin &quot;Magic&quot; Johnson's company, Johnson Development Corporation, formed a joint venture in 1998 (under the name of Urban Coffee Opportunities LLC or &quot;UCO&quot;) to develop and operate Starbucks stores in under-served communities. </span><p>&nbsp;</p></td></tr><tr><td></td></tr>")
+
+	OpenWindow.document.write("</BODY>")
+	OpenWindow.document.write("</HTML>")
+	OpenWindow.document.close()
+	self.name="little"
+}
+
+if (document.images) {
+
+var imgTabAllOn = new Image();
+imgTabAllOn.src = "images/Tab_All_On.jpg";
+var imgTabStarbucksComOn = new Image();
+imgTabStarbucksComOn.src = "images/Tab_StarbucksCom_On.jpg";
+var imgTabCardOn = new Image();
+imgTabCardOn.src = "images/Tab_Card_On.jpg";
+var imgTabStoreOn = new Image();
+imgTabStoreOn.src = "images/Tab_Store_On.jpg";
+var imgTabEntertainmentOn = new Image();
+imgTabEntertainmentOn.src = "images/Tab_Entertainment_On.jpg";
+
+var imgTabAllOff = new Image();
+imgTabAllOff.src = "images/Tab_All_Off.jpg";
+var imgTabStarbucksComOff = new Image();
+imgTabStarbucksComOff.src = "images/Tab_StarbucksCom_Off.jpg";
+var imgTabCardOff = new Image();
+imgTabCardOff.src = "images/Tab_Card_Off.jpg";
+var imgTabStoreOff = new Image();
+imgTabStoreOff.src = "images/Tab_Store_Off.jpg";
+var imgTabEntertainmentOff = new Image();
+imgTabEntertainmentOff.src = "images/Tab_Entertainment_Off.jpg";
+}
+
+function ImgOn(imgName)
+{
+  if (document.images) 
+    document[imgName].src = eval(imgName + "On.src");
+}
+
+function ImgOff(imgName)
+{
+  if (document.images) 
+    document[imgName].src = eval(imgName + "Off.src");
+}
+
+/*
+
+RW: place holder in case they decide to change page title image for store details and event details pages.
+var imgOurStores;
+var imgStoreDetails;
+var imgEventDetails;
+
+function LoadLocatorHeaderImages()
+{
+   if (document.images)
+   {
+        imgOurStores = new Image();
+        imgOurStores.src = "http://www.starbucks.com//images/headers/retail/locator.gif";
+        
+        imgStoreDetails = new Image();
+        imgStoreDetails.src = "http://www.starbucks.com//images/headers/retail/locator.gif";
+        
+        imgEventDetails = new Image();
+        imgEventDetails.src = "http://www.starbucks.com//images/headers/retail/locator.gif";
+   }
+
+}
+
+function SetLocatorHeaderImages(page)
+{
+}
+
+*/
+
+//-->
+
+
+
+		</script>
+		
+				
+                <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script>
+				
+				<script language="javascript" type="text/javascript">
+				//global disambiguate scripts. 
+                var globalmap = null;
+                var vetoken = "q1sWKsHhHSit9F_sVShVsxphs_ezb2wRdd_f-SJLVPO4AtggZj11vXesDr8EhE-sNjWlH06l8R5OPHio2Amy5g2";
+
+                function GlobalClearLocatorDefault()
+                {
+                    var ele = document.getElementById("GlobalStoreSearchTxt");
+                    if(ele.value == "Enter Location")
+                        ele.value = "";
+                }
+                
+                function GlobalSetLocatorDefault()
+                {
+                    var ele = document.getElementById("GlobalStoreSearchTxt");
+                    if(ele.value.replace(/^\s+|\s+$/g,"") == "")
+                        ele.value = "Enter Location";
+               }
+                
+                function GlobalValidateLocatorSearch()
+                {
+                    var ele = document.getElementById("GlobalStoreSearchTxt");
+                    var cont = true;
+                    
+                    if(ele.value.replace(/^\s+|\s+$/g,"") == "")
+                        cont = false;
+                    
+                    if(ele.value == "Enter Location")
+                        cont = false;
+                    
+                    if(!cont)
+                        alert("Please enter a city, address, or landmark before searching.");
+                    
+                    return cont;
+                }
+               
+              function GlobalSubmitLocator(e)
+              {
+                var key;
+
+                if(window.event)
+                  key = window.event.keyCode;     //IE
+                else
+                  key = e.which;     //firefox
+
+                if (key == 13)
+                {
+                    GlobalInitializeMap();
+                }
+              }
+               
+                function GlobalInitializeMap()
+                {
+                    //validate the user input
+                    if(!GlobalValidateLocatorSearch())
+                        return;
+                    
+                    //first, check to see if the regular map exists on this page. If so, use it
+                    if(document.getElementById("locatorMap") != null)
+                        globalmap = new VEMap('locatorMap');
+                    else
+                        globalmap = new VEMap('globalMap');
+                        
+                    //map.SetDashboardSize(VEDashboardSize.Small);
+                    //IE has a bug and freaks out if you load too quickly
+                    //IE has bug when using VE JS includes. Without this timeout, you cannot ensure that it won't error out.
+                    self.setTimeout('GlobalFindStores();', 1000); 
+                }
+                
+                function GlobalFindStores()
+                { 
+                   globalmap.LoadMap();
+                  //we're already on the results page, now just drive with AJAX
+                    var where = document.getElementById("GlobalStoreSearchTxt").value;
+
+                    // New geocoder to handle ambiguous results.
+                    GlobalGeocodeHandleAmbigResults(where);    
+                }
+                
+                
+                // Geocodes an address.
+                function GlobalGeocodeHandleAmbigResults(where){
+                    
+                    try{
+                       
+                        globalmap.Find(
+                            null,           // what
+                            where,          // where
+                            null,           // find type
+                            null,           // shape layer
+                            null,           // start index
+                            null,           // number of results
+                            false,          // show results (show pushpins?)
+                            false,          // create results (create pushpins?)
+                            false,          // default disambig
+                            false,          // set best map view?
+                            onFoundResultsAmbigGlobal  // callback
+                        );
+                    }
+                    catch(error){
+                        alert("There was an error processing " + address + " : " + error.message);
+                    }
+                }
+
+                // Callback for geocode, handles ambiguous matches for simple/route geocodes.
+                function onFoundResultsAmbigGlobal(layer, results, places, hasmore){
+
+                    // Results null or empty.
+                    if ((places == null) || (typeof places == 'undefined') || places.length == 0){
+                        alert("No results found");
+                        return;
+                    }
+                    
+                    geocodeResults = places;
+                    
+                    // One result, proceed with find nearby of starbucks locations.
+                    if (places.length == 1){
+                        //fill hidden field with data
+                        var hdn = document.getElementById("hdnGlobalLocation");
+                        var where = document.getElementById("GlobalStoreSearchTxt").value;
+                        
+                        var dataString = escape(where) + "|" + 
+                        geocodeResults[0].LatLong.Latitude + "|" + 
+                        geocodeResults[0].LatLong.Longitude;
+                        
+                        hdn.value = dataString;
+                        
+                        //post form to locationResults
+                         var formActionFormatString = "LocatorResults.aspx?fs=1&loc=" + dataString;
+                        document.forms[0].action = formActionFormatString;
+                        
+                        // Reset view state to avoid error.
+                        //if (window.location.pathname.toLowerCase().indexOf("locatorresults.aspx") == -1 )
+                            //document.forms[0].__VIEWSTATE.name = 'NOVIEWSTATE';
+                        
+                        // Re-set filters going to the results page.
+                        //document.forms[0].submit();
+                        window.location.href = formActionFormatString;
+                   }
+                    
+                    // Ambiguous results found, update panel.
+                    else{
+                        // fill ambigs with links to results page.
+                        var ambigHTML = "Did you mean... <br/><table>";
+                        
+                        // TODO: replace inline style with CSS styles.
+                        var formatString = "<tr><td style='vertical-align:top;'>{0}</td><td><a href='javascript: onFoundResultsHelperGlobal({1});'>{2}</a></td></tr>";
+                        for (var i = 0; i < places.length; i++){
+                            ambigHTML += formatString.replace("{0}", i+1).replace("{1}", i).replace("{2}", places[i].Name);
+                        }
+                        ambigHTML += "</table>";
+                        
+                        var ambigDiv = document.getElementById("globalAmbig");
+                        ambigDiv.innerHTML = ambigHTML;
+                        ambigDiv.style.display = "block";
+                    }
+                        
+                }
+                
+                function onFoundResultsHelperGlobal(index)
+                {
+                        //fill hidden field with data
+                        //post form to locationResults                    
+                        var hdn = document.getElementById("hdnGlobalLocation");
+                        var where = document.getElementById("GlobalStoreSearchTxt").value;
+                       
+                        var dataString = escape(where) + "|" + 
+                        geocodeResults[index].LatLong.Latitude + "|" + 
+                        geocodeResults[index].LatLong.Longitude;
+                        
+                        hdn.value = dataString;
+                          //post form to locationResults
+                         var formActionFormatString = "LocatorResults.aspx?fs=1&loc=" + dataString;
+                        document.forms[0].action = formActionFormatString;
+                        
+                        // Reset view state to avoid error.
+                       /* if (window.location.pathname.toLowerCase().indexOf("locatorresults.aspx") == -1 )
+                        {
+                            document.forms[0].__VIEWSTATE.name = 'NOVIEWSTATE';
+                        }
+                        else
+                        {
+                            //we're on the locatorResults.aspx page, which means we need to clear our the values
+                            document.getElementById("StoreDisambigHdn").value = "";
+                            document.getElementById("EventDisambigHdn").value = "";
+                            document.getElementById("RouteDisambigHdn").value = "";
+                            stores = new EntityDict();
+                            events = new EntityDict();
+                            pushPins = new EntityDict();                            
+                      }*/
+                        
+                        // Re-set filters going to the results page.
+                       // document.forms[0].submit();
+                       window.location.href = formActionFormatString;
+              }
+                </script>		
+		
+	</HEAD>
+	<body onload="MM_preloadImages('http://www.starbucks.com//images/nav_images/nav_coffees-over.gif', 'http://www.starbucks.com//images/nav_images/nav_our_stores-over.gif', &#13;&#10;'http://www.starbucks.com//images/nav_images/nav_starbucks_card-over.gif', 'http://www.starbucks.com//images/nav_images/nav_at_home-over.gif', 'http://www.starbucks.com//images/nav_images/nav_for_business-over.gif', &#13;&#10;'http://www.starbucks.com//images/nav_images/nav_about_us-over.gif')">
+		<div id="WindowDiv" name="WindowDiv">
+			<div id="PageDiv" name="PageDiv">
+				<div class="pageLeft" id="PageLeft" name="PageLeft">
+					<div><a href="http://www.starbucks.com/default.asp"><img height=162 alt="" 
+							src="http://www.starbucks.com//images/logo_top.gif" width=215 border=0></a>
+					</div>
+					<?xml version="1.0" encoding="utf-16"?><script language="JScript">
+    
+      function makeSbuxPopupWindow(page, intH, intW, intScroll) 
+      {
+        var win;  	
+	      win = window.open (page,"newWin","width=" + intW + ",height=" + intH + ",scrollbars=" + intScroll);
+	      if (win != null) 
+	      {
+		      if (win.opener == null) 
+		      {
+			      win.opener = self;
+		      }
+      		win.focus()
+	      }
+      } 
+       
+    </script><div class="SbuxNavContainer"><div class="Level1NavItem"><a href="/retail/beverages.asp" class="navLink">beverage lineup</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/hearmusic_jump.asp" class="navLink">hear music</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/books.asp" class="navLink">books</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/calendar.asp" class="navLink">local events</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/nutrition_info.asp" class="navLink">nutrition information</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/brewing.asp" class="navLink">brewing equipment</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/thewayiseeit_default.asp" class="navLink">the way I see it</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/wireless.asp" class="navLink">wireless internet</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/ethoswater.asp" class="navLink">ethos water</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="/retail/tazo.asp" class="navLink">tazo teas</a><img src="/images/space.gif" width="8px" border="0" /></div></div>
+					<!-- <div class="SbuxNavContainer"><div class="Level1NavItem"><a href="https://www.starbucks.com/customer/account.asp" class="navLink">your account</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="http://www.starbucks.com/customer/default.asp" class="navLink">customer service</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="http://www.starbucks.com/customer/privacy.asp" class="navLink">privacy statement</a><img src="/images/space.gif" width="8px" border="0" /></div><div class="Level1NavItem"><a href="http://www.starbucks.com/customer/legal.asp" class="navLink">terms of use</a><img src="/images/space.gif" width="8px" border="0" /></div></div> -->
+				</div>
+
+				
+				<div id="globalMap" style="width: 400px; height: 400px; display:none"></div>
+
+				<div class="pageCenter" id="PageCenter" name="PageCenter">
+					<div class="divHeader" id="Header" name="Header">
+						<div class="divUtilityNav" id="UtilityNav" name="UtilityNav" style="position:relative;left:50px;height:85px;text-align:left;float:left;">
+						    <a 
+							            href="http://www.starbucks.com/sitemap.asp">site map</a> . <a 
+							            href="http://www.starbucks.com/retail/nutrition_info.asp">nutrition</a> . <a 
+							            href="javascript:makeDaughterWindowScroll('http://www.starbucks.com/region.asp', 288, 350)">international</a> . <a 
+							            href="http://www.starbucks.com/customer/">customer service</a> . <a 
+							            href="http://www.starbucks.com/search/">search</a> . <a 
+							            href="http://www.starbucks.com/customer/account.asp">your account</a>
+						            
+						            
+							            <span id="GlobalSearchDiv"  style="position:absolute;left:405px;height:71px;width:205px;display:block;top:5px;">
+							                <table cellpadding="3" cellspacing="0" width="205px" style="background-image:url('http://www.starbucks.com//Images/nav_images/storeSearch_box.jpg');">
+							                    <tr>
+							                        <td align="left" valign="middle" rowspan="2">
+							                            <img height="65" alt="" src="http://www.starbucks.com//images/spacer.gif" width="1"><br/>
+							                        </td>
+							                        <td align="left" valign="bottom" width="100"><div style="position:relative;">
+							                            <span class="subheader">Store Locator</span><br />
+							                            <input class="copytext" id="GlobalStoreSearchTxt" name="GlobalStoreSearchTxt" maxlength="150" value="Enter Location" onblur="GlobalSetLocatorDefault()" onfocus="GlobalClearLocatorDefault()" onkeypress="GlobalSubmitLocator(event)" />
+							                            
+                                                        <div id="globalAmbig" class="copytext" style="border:solid 1px silver; background:white;position:absolute;top:32px;left:0px;font-family:Verdana; font-size:9px;color:#7F7F7F;height:100px;overflow-y:auto;overflow-x:hidden;width:120px;display:none;"></div>
+							                        </div></td>
+							                        <td align="left" valign="bottom">
+							                            <img src="Images/global images/storeSearch_btn_go.gif" onclick="GlobalInitializeMap()" onmouseover="this.style.cursor='pointer';" onmouseout="this.style.cursor='default';" />
+							                            <input type="hidden" name="hdnGlobalLocation" id="hdnGlobalLocation" />
+							                        </td>
+							                    </tr>
+							                    <tr>
+							                        <td valign="top" align="right">
+							                            <span class="copytext"><a style="text-decoration:none;" href="default.aspx">Advanced</a></span>
+							                        </td>
+							                        <td><br />
+							                        </td>
+							                    </tr>
+							                </table>
+							            </span>
+							           
+						</div>
+						<div class="divTopNav" id="TopNav" name="TopNav"><!-- line breaks in mid-tag prevent browser from adding space between images --><a 
+							onmouseover="MM_swapImage('Nav1','','http://www.starbucks.com//images/nav_images/nav_coffees-over.gif',1)" 
+							onmouseout="MM_swapImage('Nav1','','http://www.starbucks.com//images/nav_images/nav_coffees.gif',1)" 
+							href="http://www.starbucks.com/ourcoffees/"><img id=Nav1 height=20 
+							alt="our coffees" src="http://www.starbucks.com//images/nav_images/nav_coffees.gif" 
+							width=80 border=0 name=Nav1></a><a 
+							onmouseover="MM_swapImage('Nav2','','http://www.starbucks.com//images/nav_images/nav_our_stores-over.gif',1)" 
+							onmouseout="MM_swapImage('Nav2','','http://www.starbucks.com//images/nav_images/nav_our_stores.gif',1)" 
+							href="http://www.starbucks.com/retail/"><img id=Nav2 height=20 
+							alt="our stores" src="http://www.starbucks.com//images/nav_images/nav_our_stores-over.gif" 
+							width=79 border=0 name=Nav2></a><a 
+							onmouseover="MM_swapImage('Nav3','','http://www.starbucks.com//images/nav_images/nav_starbucks_card-over.gif',1)" 
+							onmouseout="MM_swapImage('Nav3','','http://www.starbucks.com//images/nav_images/nav_starbucks_card.gif',1)" 
+							href="http://www.starbucks.com/card/"><img id=Nav3 height=20 
+							alt="starbucks card" 
+							src="http://www.starbucks.com//images/nav_images/nav_starbucks_card.gif" width=112 border=0 
+							name=Nav3></a><a 
+							onmouseover="MM_swapImage('Nav4','','http://www.starbucks.com//images/nav_images/nav_at_home-over.gif',1)" 
+							onmouseout="MM_swapImage('Nav4','','http://www.starbucks.com//images/nav_images/nav_at_home.gif',1)" 
+							href="http://www.starbucks.com/grocery/"><img id=Nav4 height=20 
+							alt="at home" src="http://www.starbucks.com//images/nav_images/nav_at_home.gif" width=65 
+							border=0 name=Nav4></a><a 
+							onmouseover="MM_swapImage('Nav5','','http://www.starbucks.com//images/nav_images/nav_for_business-over.gif',1)" 
+							onmouseout="MM_swapImage('Nav5','','http://www.starbucks.com//images/nav_images/nav_for_business.gif',1)" 
+							href="http://www.starbucks.com/business/"><img id=Nav5 height=20 
+							alt="for business" src="http://www.starbucks.com//images/nav_images/nav_for_business.gif" 
+							width=95 border=0 name=Nav5></a><a 
+							onmouseover="MM_swapImage('Nav6','','http://www.starbucks.com//images/nav_images/nav_about_us-over.gif',1)" 
+							onmouseout="MM_swapImage('Nav6','','http://www.starbucks.com//images/nav_images/nav_about_us.gif',1)" 
+							href="http://www.starbucks.com/aboutus/"><img id=Nav6 height=20 
+							alt="about us" src="http://www.starbucks.com//images/nav_images/nav_about_us.gif" width=70 
+							border=0 name=Nav6></a>
+							<a href="/shoponline/" onMouseover="MM_swapImage('Nav7','','http://www.starbucks.com//images/nav_images/nav_shop_online-over.gif',1)" 
+							onMouseout="MM_swapImage('Nav7','','http://www.starbucks.com//images/nav_images/nav_shop_online.gif',1)">
+							<img id="Nav7" name="Nav7" src="http://www.starbucks.com//images/nav_images/nav_shop_online.gif" alt="shop online" width="95" height="20" border="0"></a>
+						</div>
+					</div>
+										<div class="divContentHeader" id="ContentHeader" name="ContentHeader"><img height=70 alt="" hspace=0 
+						src="http://www.starbucks.com//images/headers/retail/locator.gif" width=675 vspace=0></div>
+					<div id="ContentContainer" name="ContentContainer">
+        
+    <script language="javascript" type="text/javascript" src="Scripts/ToolLib.js"></script>
+    <script language="javascript" type="text/javascript" src="Scripts/Tabs.js"></script>
+    <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script>
+
+<style type="text/css">
+#hiddenMap_vemessagepanel{
+  visibility:hidden;
+  display: none;
+ }
+</style>
+
+<script type="text/javascript">
+        var map = null;
+        
+        
+        
+        function InitializeMap()
+        {
+            map = new VEMap('hiddenMap');
+            
+            //sets the info needed to track our ve usage
+            map.SetClientToken(vetoken);  //vetoken defined in the master
+            
+            //IE has a bug and freaks out if you load too quickly
+            
+            //IE has bug when using VE JS includes. Without this timeout, you cannot ensure that it won't error out.
+            self.setTimeout('map.LoadMap();', 1000); 
+        }
+</script>
+<div id="hiddenMap" style="width: 400px; height: 400px; display:none"></div>
+<form name="aspnetForm" method="post" action="default.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_MainContent_ScriptManagerDefault_HiddenField" id="ctl00_MainContent_ScriptManagerDefault_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTEyODk0MzQ5Mw9kFgJmD2QWBgIDD2QWAgIBDxYCHgRUZXh0BYUHPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+CnZhciBfaGJFQz0wLF9oYkU9bmV3IEFycmF5O2Z1bmN0aW9uIF9oYkV2ZW50KGEsYil7Yj1faGJFW19oYkVDKytdPW5ldyBPYmplY3QoKTtiLl9OPWE7Yi5fQz0wO3JldHVybiBiO30KdmFyIGhieD1faGJFdmVudCgicHYiKTtoYngudnBjPSJIQlgwMjAwdSI7aGJ4LmduPSJlaGctc3RhcmJ1Y2tzLmhpdGJveC5jb20iOwpoYnguYWNjdD0iRE01NjA5MTk5QVNDMjdFTjMiOy8vQUNDT1VOVCBOVU1CRVIoUykKaGJ4LnBuPSJkZWZhdWx0LmFzcHgtIjsvL1BBR0UgTkFNRShTKQpoYngubWxjPSJDT05URU5UK0NBVEVHT1JZIjsvL01VTFRJLUxFVkVMIENPTlRFTlQgQ0FURUdPUlkKaGJ4LnBuZGVmPSJ0aXRsZSI7Ly9ERUZBVUxUIFBBR0UgTkFNRQpoYnguY3RkZWY9ImZ1bGwiOy8vREVGQVVMVCBDT05URU5UIENBVEVHT1JZCmhieC5mdj0iIjsvL0ZPUk0gVkFMSURBVElPTiBNSU5JTVVNIEVMRU1FTlRTIE9SIFNVQk1JVCBGVU5DVElPTiBOQU1FCmhieC5sdD0iYXV0byI7Ly9MSU5LIFRSQUNLSU5HCmhieC5kbGY9Im4iOy8vRE9XTkxPQUQgRklMVEVSCmhieC5kZnQ9Im4iOy8vRE9XTkxPQUQgRklMRSBOQU1JTkcKaGJ4LmVsZj0ibiI7Ly9FWElUIExJTksgRklMVEVSCmhieC5jaT0iIjsvL0NVU1RPTUVSIElECmhieC5oYzE9IiI7Ly9DVVNUT00gMQpoYnguaGMyPSIiOy8vQ1VTVE9NIDIKaGJ4LmhjMz0iIjsvL0NVU1RPTSAzCmhieC5oYzQ9IiI7Ly9DVVNUT00gNApoYnguaHJmPSIiOy8vQ1VTVE9NIFJFRkVSUkVSCmhieC5wZWM9IiI7Ly9FUlJPUiBDT0RFUwo8L3NjcmlwdD48c2NyaXB0IGxhbmd1YWdlPSJqYXZhc2NyaXB0MS4xIiBzcmM9Imh0dHA6Ly93d3cuc3RhcmJ1Y2tzLmNvbS9qYXZhc2NyaXB0L2hieC5qcyI+PC9zY3JpcHQ+CmQCBQ9kFgRmDxYCHwAFF1N0YXJidWNrcyBTdG9yZSBMb2NhdG9yZAIBDxYCHwAF7g88P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJ1dGYtMTYiPz48c2NyaXB0IGxhbmd1YWdlPSJKU2NyaXB0Ij4NCiAgICANCiAgICAgIGZ1bmN0aW9uIG1ha2VTYnV4UG9wdXBXaW5kb3cocGFnZSwgaW50SCwgaW50VywgaW50U2Nyb2xsKSANCiAgICAgIHsNCiAgICAgICAgdmFyIHdpbjsgIAkNCgkgICAgICB3aW4gPSB3aW5kb3cub3BlbiAocGFnZSwibmV3V2luIiwid2lkdGg9IiArIGludFcgKyAiLGhlaWdodD0iICsgaW50SCArICIsc2Nyb2xsYmFycz0iICsgaW50U2Nyb2xsKTsNCgkgICAgICBpZiAod2luICE9IG51bGwpIA0KCSAgICAgIHsNCgkJICAgICAgaWYgKHdpbi5vcGVuZXIgPT0gbnVsbCkgDQoJCSAgICAgIHsNCgkJCSAgICAgIHdpbi5vcGVuZXIgPSBzZWxmOw0KCQkgICAgICB9DQogICAgICAJCXdpbi5mb2N1cygpDQoJICAgICAgfQ0KICAgICAgfSANCiAgICAgICANCiAgICA8L3NjcmlwdD48ZGl2IGNsYXNzPSJTYnV4TmF2Q29udGFpbmVyIj48ZGl2IGNsYXNzPSJMZXZlbDFOYXZJdGVtIj48YSBocmVmPSIvcmV0YWlsL2JldmVyYWdlcy5hc3AiIGNsYXNzPSJuYXZMaW5rIj5iZXZlcmFnZSBsaW5ldXA8L2E+PGltZyBzcmM9Ii9pbWFnZXMvc3BhY2UuZ2lmIiB3aWR0aD0iOHB4IiBib3JkZXI9IjAiIC8+PC9kaXY+PGRpdiBjbGFzcz0iTGV2ZWwxTmF2SXRlbSI+PGEgaHJlZj0iL3JldGFpbC9oZWFybXVzaWNfanVtcC5hc3AiIGNsYXNzPSJuYXZMaW5rIj5oZWFyIG11c2ljPC9hPjxpbWcgc3JjPSIvaW1hZ2VzL3NwYWNlLmdpZiIgd2lkdGg9IjhweCIgYm9yZGVyPSIwIiAvPjwvZGl2PjxkaXYgY2xhc3M9IkxldmVsMU5hdkl0ZW0iPjxhIGhyZWY9Ii9yZXRhaWwvYm9va3MuYXNwIiBjbGFzcz0ibmF2TGluayI+Ym9va3M8L2E+PGltZyBzcmM9Ii9pbWFnZXMvc3BhY2UuZ2lmIiB3aWR0aD0iOHB4IiBib3JkZXI9IjAiIC8+PC9kaXY+PGRpdiBjbGFzcz0iTGV2ZWwxTmF2SXRlbSI+PGEgaHJlZj0iL3JldGFpbC9jYWxlbmRhci5hc3AiIGNsYXNzPSJuYXZMaW5rIj5sb2NhbCBldmVudHM8L2E+PGltZyBzcmM9Ii9pbWFnZXMvc3BhY2UuZ2lmIiB3aWR0aD0iOHB4IiBib3JkZXI9IjAiIC8+PC9kaXY+PGRpdiBjbGFzcz0iTGV2ZWwxTmF2SXRlbSI+PGEgaHJlZj0iL3JldGFpbC9udXRyaXRpb25faW5mby5hc3AiIGNsYXNzPSJuYXZMaW5rIj5udXRyaXRpb24gaW5mb3JtYXRpb248L2E+PGltZyBzcmM9Ii9pbWFnZXMvc3BhY2UuZ2lmIiB3aWR0aD0iOHB4IiBib3JkZXI9IjAiIC8+PC9kaXY+PGRpdiBjbGFzcz0iTGV2ZWwxTmF2SXRlbSI+PGEgaHJlZj0iL3JldGFpbC9icmV3aW5nLmFzcCIgY2xhc3M9Im5hdkxpbmsiPmJyZXdpbmcgZXF1aXBtZW50PC9hPjxpbWcgc3JjPSIvaW1hZ2VzL3NwYWNlLmdpZiIgd2lkdGg9IjhweCIgYm9yZGVyPSIwIiAvPjwvZGl2PjxkaXYgY2xhc3M9IkxldmVsMU5hdkl0ZW0iPjxhIGhyZWY9Ii9yZXRhaWwvdGhld2F5aXNlZWl0X2RlZmF1bHQuYXNwIiBjbGFzcz0ibmF2TGluayI+dGhlIHdheSBJIHNlZSBpdDwvYT48aW1nIHNyYz0iL2ltYWdlcy9zcGFjZS5naWYiIHdpZHRoPSI4cHgiIGJvcmRlcj0iMCIgLz48L2Rpdj48ZGl2IGNsYXNzPSJMZXZlbDFOYXZJdGVtIj48YSBocmVmPSIvcmV0YWlsL3dpcmVsZXNzLmFzcCIgY2xhc3M9Im5hdkxpbmsiPndpcmVsZXNzIGludGVybmV0PC9hPjxpbWcgc3JjPSIvaW1hZ2VzL3NwYWNlLmdpZiIgd2lkdGg9IjhweCIgYm9yZGVyPSIwIiAvPjwvZGl2PjxkaXYgY2xhc3M9IkxldmVsMU5hdkl0ZW0iPjxhIGhyZWY9Ii9yZXRhaWwvZXRob3N3YXRlci5hc3AiIGNsYXNzPSJuYXZMaW5rIj5ldGhvcyB3YXRlcjwvYT48aW1nIHNyYz0iL2ltYWdlcy9zcGFjZS5naWYiIHdpZHRoPSI4cHgiIGJvcmRlcj0iMCIgLz48L2Rpdj48ZGl2IGNsYXNzPSJMZXZlbDFOYXZJdGVtIj48YSBocmVmPSIvcmV0YWlsL3Rhem8uYXNwIiBjbGFzcz0ibmF2TGluayI+dGF6byB0ZWFzPC9hPjxpbWcgc3JjPSIvaW1hZ2VzL3NwYWNlLmdpZiIgd2lkdGg9IjhweCIgYm9yZGVyPSIwIiAvPjwvZGl2PjwvZGl2PmQCBw9kFgJmD2QWBgIBD2QWGgIDDxAPZBYEHgh0eXBlY29kZQUIV0lSRUxFU1MeB29uY2xpY2sFJEZpbHRlclN0b3JlQ2hlY2tlZCh0aGlzLCdXSVJFTEVTUycpO2RkZAIEDw8WAh8ABRpXaXJlbGVzcyBIb3RzcG90IEF2YWlsYWJsZWRkAgUPEA9kFgQfAQUJRFJJVkVUSFJVHwIFJUZpbHRlclN0b3JlQ2hlY2tlZCh0aGlzLCdEUklWRVRIUlUnKTtkZGQCBg8PFgIfAAUURHJpdmUgVGhyb3VnaCBXaW5kb3dkZAIHDxAPZBYEHwEFA1dPUx8CBR9GaWx0ZXJTdG9yZUNoZWNrZWQodGhpcywnV09TJyk7ZGRkAggPDxYCHwAFEE92ZW4tV2FybWVkIEZvb2RkZAIJDxAPZBYEHwEFBklUVU5FUx8CBSJGaWx0ZXJTdG9yZUNoZWNrZWQodGhpcywnSVRVTkVTJyk7ZGRkAgoPDxYCHwAFGGlUdW5lcyBXaS1GaSBNdXNpYyBTdG9yZWRkAgsPEA9kFgQfAQUHQUlSUE9SVB8CBSNGaWx0ZXJTdG9yZUNoZWNrZWQodGhpcywnQUlSUE9SVCcpO2RkZAIMDw8WAh8ABQ5BaXJwb3J0IFN0b3Jlc2RkAg0PEA9kFgQfAQUGQ09NSU5HHwIFIkZpbHRlclN0b3JlQ2hlY2tlZCh0aGlzLCdDT01JTkcnKTtkZGQCDg8PFgIfAAULQ29taW5nIFNvb25kZAIPDw8WAh4ISW1hZ2VVcmwFNWh0dHA6Ly93d3cuc3RhcmJ1Y2tzLmNvbS9pbWFnZXMvYnV0dG9uX3N1Ym1pdF9ubHMuZ2lmFgIeB09uQ2xpY2sFGkZpbmRTdG9yZXMoKTtyZXR1cm4gZmFsc2U7ZAICD2QWHgIBDw9kFgIeCE9uQ2hhbmdlBRNSZXNldFZhbHVlKCdmcm9tJyk7ZAIEDw9kFgIfBQURUmVzZXRWYWx1ZSgndG8nKTtkAgYPEA9kFgQfAQUIV0lSRUxFU1MfAgUkRmlsdGVyUm91dGVDaGVja2VkKHRoaXMsJ1dJUkVMRVNTJyk7ZGRkAgcPDxYCHwAFGldpcmVsZXNzIEhvdHNwb3QgQXZhaWxhYmxlZGQCCA8QD2QWBB8BBQlEUklWRVRIUlUfAgUlRmlsdGVyUm91dGVDaGVja2VkKHRoaXMsJ0RSSVZFVEhSVScpO2RkZAIJDw8WAh8ABRREcml2ZSBUaHJvdWdoIFdpbmRvd2RkAgoPEA9kFgQfAQUDV09THwIFH0ZpbHRlclJvdXRlQ2hlY2tlZCh0aGlzLCdXT1MnKTtkZGQCCw8PFgIfAAUQT3Zlbi1XYXJtZWQgRm9vZGRkAgwPEA9kFgQfAQUGSVRVTkVTHwIFIkZpbHRlclN0b3JlQ2hlY2tlZCh0aGlzLCdJVFVORVMnKTtkZGQCDQ8PFgIfAAUYaVR1bmVzIFdpLUZpIE11c2ljIFN0b3JlZGQCDg8QD2QWBB8BBQdBSVJQT1JUHwIFI0ZpbHRlclJvdXRlQ2hlY2tlZCh0aGlzLCdBSVJQT1JUJyk7ZGRkAg8PDxYCHwAFDkFpcnBvcnQgU3RvcmVzZGQCEA8QD2QWBB8BBQZDT01JTkcfAgUiRmlsdGVyUm91dGVDaGVja2VkKHRoaXMsJ0NPTUlORycpO2RkZAIRDw8WAh8ABQtDb21pbmcgU29vbmRkAhIPDxYCHwMFNWh0dHA6Ly93d3cuc3RhcmJ1Y2tzLmNvbS9pbWFnZXMvYnV0dG9uX3N1Ym1pdF9ubHMuZ2lmFgIfBAUlRmluZFN0b3JlQWxvbmdSb3V0ZXMoKTsgcmV0dXJuIGZhbHNlO2QCAw9kFggCAw8PZBYCHgdPbkZvY3VzBRpMb2NhdG9yRXZlbnRIaWRlTGlzdGJveCgpO2QCBA8PZBYCHwYFGkxvY2F0b3JFdmVudEhpZGVMaXN0Ym94KCk7ZAILDxAPFgIeC18hRGF0YUJvdW5kZ2QQFRAKQWxsIEV2ZW50cwlBcnQvQ3JhZnQWQm9vayBSZWFkaW5nL0Jvb2sgQ2x1Yh1DaGFyaXRhYmxlIG9yIFZvbHVudGVlciBFdmVudB9Db2ZmZWUgU2VtaW5hci9GZXN0aXZhbC9UYXN0aW5nD0NvbW11bml0eSBFdmVudAtFbnZpcm9ubWVudARGaWxtB0hvbGlkYXkISm9iIEZhaXIES2lkcwVNdXNpYxFOZXcgU3RvcmUgT3BlbmluZwVPdGhlchNTcG9ydHMvRml0bmVzcyBXYWxrElN0YXJidWNrcyBTYW1wbGluZxUQAi0xAzEzMAI4MgMxNzUCODQCODUDMTcyAzE4MQMxNjQDMTM2AzE3MQMxNDECOTgCOTkDMTI3AzExNRQrAxBnZ2dnZ2dnZ2dnZ2dnZ2dnZGQCDA8PFgIfAwU1aHR0cDovL3d3dy5zdGFyYnVja3MuY29tL2ltYWdlcy9idXR0b25fc3VibWl0X25scy5naWYWAh8EBRtGaW5kRXZlbnRzKCk7IHJldHVybiBmYWxzZTtkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYQBSpjdGwwMCRNYWluQ29udGVudCRGaW5kU3RvcmVDdGwkV2lyZWxlc3NDaGsFLmN0bDAwJE1haW5Db250ZW50JEZpbmRTdG9yZUN0bCREcml2ZVRocm91Z2hDaGsFLGN0bDAwJE1haW5Db250ZW50JEZpbmRTdG9yZUN0bCRPdmVuV2FybWVkQ2hrBShjdGwwMCRNYWluQ29udGVudCRGaW5kU3RvcmVDdGwkSVR1bmVzQ2hrBSljdGwwMCRNYWluQ29udGVudCRGaW5kU3RvcmVDdGwkQWlycG9ydENoawUsY3RsMDAkTWFpbkNvbnRlbnQkRmluZFN0b3JlQ3RsJENvbWluZ1Nvb25DaGsFJGN0bDAwJE1haW5Db250ZW50JEZpbmRTdG9yZUN0bCRHb0J0bgUqY3RsMDAkTWFpbkNvbnRlbnQkRmluZFJvdXRlQ3RsJFdpcmVsZXNzQ2hrBS5jdGwwMCRNYWluQ29udGVudCRGaW5kUm91dGVDdGwkRHJpdmVUaHJvdWdoQ2hrBSxjdGwwMCRNYWluQ29udGVudCRGaW5kUm91dGVDdGwkT3Zlbldhcm1lZENoawUoY3RsMDAkTWFpbkNvbnRlbnQkRmluZFJvdXRlQ3RsJElUdW5lc0NoawUpY3RsMDAkTWFpbkNvbnRlbnQkRmluZFJvdXRlQ3RsJEFpcnBvcnRDaGsFLGN0bDAwJE1haW5Db250ZW50JEZpbmRSb3V0ZUN0bCRDb21pbmdTb29uQ2hrBSRjdGwwMCRNYWluQ29udGVudCRGaW5kUm91dGVDdGwkR29CdG4FK2N0bDAwJE1haW5Db250ZW50JEZpbmRFdmVudEN0bCRFdmVudFR5cGVMc3QFKmN0bDAwJE1haW5Db250ZW50JEZpbmRFdmVudEN0bCRHb0V2ZW50c0J0bu+QSquymmyGLSIJWl+m5v9vh+8D" />
+</div>
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script src="/retail/find/WebResource.axd?d=E16OhLjHpMGZyIDStlS1eQ2&amp;t=633059243210491162" type="text/javascript"></script>
+
+
+<script src="/retail/find/WebResource.axd?d=MvHiypUMTZrb0JwwNSH-W5tlE_Ik6-FCfy756mVPumk1&amp;t=633059243210491162" type="text/javascript"></script>
+<script src="/retail/find/ScriptResource.axd?d=QxmhUUAd5ixz1nm9K53t3u5qy0TTeOyfr5Pmoifr_uYBR8H7xiz6YCHiV5zyvsHlUuPhszmE6k-EEHD25ePiw44PDqrT-mrn-2wGBskCusE1&amp;t=633251867646735128" type="text/javascript"></script>
+<script src="/retail/find/ScriptResource.axd?d=QxmhUUAd5ixz1nm9K53t3u5qy0TTeOyfr5Pmoifr_uYBR8H7xiz6YCHiV5zyvsHlUuPhszmE6k-EEHD25ePiwxMr87bqJasPjVe-dm728f81&amp;t=633251867646735128" type="text/javascript"></script>
+<script src="Scripts/SbuxMappingFunctions.js" type="text/javascript"></script>
+<script src="/retail/find/default.aspx?_TSM_HiddenField_=ctl00_MainContent_ScriptManagerDefault_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d1.0.10920.32880%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a816bbca1-959d-46fd-928f-6347d6f2c9c3%3ae2e86ef9%3a1df13a87%3a8ccd9c1b%3aa9a7729d%3a9ea3f0e2%3a9e8e87e9%3a4c9865be%3aba594826%3a507fcf1b%3ac7a4182e" type="text/javascript"></script>
+<script src="FindLocations.asmx/js" type="text/javascript"></script>
+<script src="ErrorLog.asmx/js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function WebForm_OnSubmit() {
+null;if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+// -->
+</script>
+
+        
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ScriptManagerDefault', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+    
+<table width="100%" cellpadding="0" cellspacing="0">
+    <tr><td colspan="4"><img height="23px" alt="" src="http://www.starbucks.com//images/spacer.gif" width="1"></td></tr>
+    <tr>
+        <td style="width:11px;"><br /></td>
+        <!-- start copy cell -->
+        <td valign="top" style="width:203px"><p class="copytext"><span class="subheaderblu">Come to the coffeehouse</span><br />
+                Looking for a Starbucks? Our Store Locator will find one <a href="Javascript:ToggleSearchControls('fs');">in your neighborhood</a> or one <a href="Javascript:ToggleSearchControls('fr');">along the way</a> while you’re traveling.</p>
+            <p class="copytext"><span class="subheaderblu">Looking for some fun?</span><br />
+                Live music. Book readings. Coffee seminars. There’s a lot going on inside at Starbucks. <a href="Javascript:ToggleSearchControls('fe');">Find events</a> happening near you. And invite a friend to meet.</p>
+            <p class="copytext"><span class="subheaderblu">Magic in the air</span><br />
+                Find out more about <a href="http://www.starbucks.com/retail/hearmusic_jump.asp">what’s playing</a> in our coffeehouses and check out our <a href="http://www.starbucks.com/retail/wireless.asp">wireless locations</a>.</p>
+        </td>
+        <!-- end copy cell -->
+        <td style="width:12px;"><br /></td>
+        <td style="width:433px;">
+            <table width="100%">
+                <tr>
+                    <!-- start search criteria tab cell -->
+                    <td valign="top">
+                      
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td valign="top">
+                <table width="430px" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="tabs" valign="top" class="findStoreTab" colspan="3">
+                            <table width="100%" cellpadding="3" cellspacing="2" border="0">
+                                <tr id="locatorTab">
+                                    <td width="144px" align="center" valign="middle">
+                                        <a href="Javascript:ToggleSearchControls('fs')">Find store</a>
+                                    </td>
+                                    <td width="145px" align="center" valign="middle">
+                                        <a href="Javascript:ToggleSearchControls('fr')">Find route</a>
+                                    </td>
+                                    <td width="145px" align="center" valign="middle">
+                                        <a href="Javascript:ToggleSearchControls('fe')">Find event</a>
+                                    </td>
+                                    <td><br /></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:solid 1px #A9A9A9;width:10px"><br /></td>
+                        <td valign="middle" style="height:29px;width:412px" align="left">
+                            <div id="MainContent" style="margin-top:5px;">
+                                <div id="Store">
+                                    
+
+<script type="text/javascript" language="javascript">
+
+    function ShowNewStorePage(pageIndexIncrement)
+    {
+        storePageIndex += pageIndexIncrement;
+        
+        //hide any infoboxes that might be floating around
+        map.HideInfoBox();
+
+        //split the values in the hidden field for disambiguated results and call showstores
+        var hiddenField = document.getElementById("StoreDisambigHdn");
+        try
+        {
+            if ((typeof hiddenField != "undefined") && (hiddenField != null)){
+                var data = hiddenField.value.split("|");
+                var address = data[0];
+                var lat = data[1];
+                var lng = data[2];
+                            
+                //searchLongitude and searchLongitude are defined in sbuxmappingfunctions.js
+                if((searchLatitude != null) && (searchLongitude != null))
+                {
+                    lat = searchLatitude;
+                    lng = searchLongitude;
+                }
+                
+                CleanSlate();
+                ShowStores(address,lat,lng);
+                
+                //if eventsare toggled, show those, too
+                if(document.getElementById("showEvents").checked)
+                    ShowEvents(address,lat,lng);
+            }    
+        }
+        catch(e)
+        {
+           ErrorLog.LogError(1,1,e.message);
+        }
+        
+        
+    }
+
+    function FindStores()
+    { 
+    
+        //clear out any flags for route searches, just to keep things clean on future searches
+        routeOriginDisambiguated =  false;
+        routeDestinationDisambiguated = false;
+
+    
+        //Show Processing Div
+        if(document.getElementById("ProcessingDiv") != null)
+            document.getElementById("ProcessingDiv").style.display = "block";
+    
+        //show the Show Events checkbox
+        ToggleShowEventsFunctionality(true);
+       
+       //we're already on the results page, now just drive with AJAX
+        var where = document.getElementById('ctl00_MainContent_FindStoreCtl_StoreLocationTxt').value;
+       
+        if(where == "Enter city, address, or landmark")
+        {
+            //fire the validator. the watermark interfers with the validator so we need to do this manually
+            document.getElementById("ctl00_MainContent_FindStoreCtl_LocationRFV").style.display = "block";
+           return;
+        }
+        
+        //firstResponse are defined in SbuxMappingFunctions.js
+        firstResponse = true;
+
+        //typeOfSearch is defined in the SbuxMappingFunctions.js
+        typeOfSearch = 'fs';
+        searchType = 'fs';
+        
+        //reset everything from any previous searches
+        storePageIndex = 1;
+        eventPageIndex = 1;
+
+        stores = new EntityDict();
+        events = new EntityDict();
+        pushPins = new EntityDict();
+
+
+        latestRoute = null;
+        
+        
+                //CleanSlate(searchType);        
+
+        if(!true)
+        {
+            CleanSlate('fs');
+            ToggleSearchType('fs');
+        }
+           
+
+        // geocoder to handle ambiguous results.
+        GeocodeHandleAmbigResults(where, 'fs', true, 'ambigStoreList');   
+ 
+    }
+    
+    function SetFilters()
+{
+    //var filters = "";
+    //create string of pipe delimited values for each box checked typeCode^typeValue|
+    //these will be passed to webservice as a string and split on the pipe, then on the carrot
+    if(document.forms[0][""].checked)
+        filters += "";
+}
+
+    function CheckStoreFilters()
+    {
+        //loop through store filters hidden do-dad and recheck all the checkboxes based on the values there
+         var hiddenField = document.getElementById("StoreFilterHdn");
+         
+        document.getElementById("ctl00_MainContent_FindStoreCtl_WirelessChk").checked = false;
+        document.getElementById("ctl00_MainContent_FindStoreCtl_DriveThroughChk").checked = false;
+        document.getElementById("ctl00_MainContent_FindStoreCtl_OvenWarmedChk").checked = false;
+        document.getElementById("ctl00_MainContent_FindStoreCtl_AirportChk").checked = false;
+        document.getElementById("ctl00_MainContent_FindStoreCtl_ComingSoonChk").checked = false;
+        document.getElementById("ctl00_MainContent_FindStoreCtl_ITunesChk").checked = false;
+        
+        if ((typeof hiddenField != "undefined") && (hiddenField != null))
+        {
+            var data = hiddenField.value.split("|");
+            for(i = 0; i < data.length; i++)
+            {
+                if(data[i] == "WIRELESS")
+                    document.getElementById("ctl00_MainContent_FindStoreCtl_WirelessChk").checked = true;
+                if(data[i] == "DRIVETHRU")
+                    document.getElementById("ctl00_MainContent_FindStoreCtl_DriveThroughChk").checked = true;
+                if(data[i] == "WOS")
+                    document.getElementById("ctl00_MainContent_FindStoreCtl_OvenWarmedChk").checked = true;
+                if(data[i] == "AIRPORT")
+                    document.getElementById("ctl00_MainContent_FindStoreCtl_AirportChk").checked = true;
+                if(data[i] == "COMING")
+                    document.getElementById("ctl00_MainContent_FindStoreCtl_ComingSoonChk").checked = true;
+                if(data[i] == "ITUNES")
+                    document.getElementById("ctl00_MainContent_FindStoreCtl_ITunesChk").checked = true;
+            }
+            
+        }      
+    }
+
+
+//this is fired from the checkbox filter click event. It adds and removes the filter value to the hidden field FilterHdn
+//this hidden field is used to post the data
+function FilterStoreChecked(ele, value)
+{
+    var hidden = document.getElementById("StoreFilterHdn");
+    if(ele.checked)
+        hidden.value += value + "|";
+    else
+        hidden.value = remove(hidden.value,value + "|");
+        
+}
+
+function SetDisambiguatedStoreData(data){
+    var hiddenField = document.getElementById("StoreDisambigHdn");
+    if ((typeof hiddenField != "undefined") && (hiddenField != null)){
+        hiddenField.value = data;
+    }
+}
+
+
+</script>
+
+
+<input type="hidden" name="StoreFilterHdn" id="StoreFilterHdn" value=""/>
+<input type="hidden" name="StoreDisambigHdn" id="StoreDisambigHdn" value="" />
+<img height="11px" alt="" src="http://www.starbucks.com//images/spacer.gif" width="1"><br/>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="subheader"><div style="position:relative;width:95%;">
+            <span class="controlHeader">Find Starbucks coffeehouses near</span>
+            <br />
+            <input type="hidden" name="ctl00$MainContent$FindStoreCtl$FromAjaxWatermarkExt_ClientState" id="ctl00_MainContent_FindStoreCtl_FromAjaxWatermarkExt_ClientState" />
+            <span class="copytext"><input name="ctl00$MainContent$FindStoreCtl$StoreLocationTxt" type="text" maxlength="1000" id="ctl00_MainContent_FindStoreCtl_StoreLocationTxt" class="copytext" style="width:340px;" /></span>
+            <span id="ctl00_MainContent_FindStoreCtl_LocationRFV" class="errortext" style="color:Red;display:none;">Please enter a location.</span>
+            <div id="ambigStoreList" class="copytext" style="border:solid 1px silver; background:white;position:absolute;top:32px;left:0px;font-family:Verdana; font-size:9px;color:#7F7F7F;height:100px;overflow-y:auto;overflow-x:hidden;width:93%;display:none;"></div>
+        </div></td>
+    </tr>
+     <tr><td><br /></td></tr>
+   <tr>
+        <td class="subheader">
+            <span class="controlHeader">Limit search to coffeehouses with</span>
+            <br />
+            <table cellpadding="0" cellspacing="0" class="copytext">
+            <tr><td valign="middle" style="width:18px;"><span typecode="WIRELESS"><input id="ctl00_MainContent_FindStoreCtl_WirelessChk" type="checkbox" name="ctl00$MainContent$FindStoreCtl$WirelessChk" onclick="FilterStoreChecked(this,'WIRELESS');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindStoreCtl_WirelessLbl" class="normalCopy">Wireless Hotspot Available</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" tag="DRIVETHRU" typecode="DRIVETHRU"><input id="ctl00_MainContent_FindStoreCtl_DriveThroughChk" type="checkbox" name="ctl00$MainContent$FindStoreCtl$DriveThroughChk" onclick="FilterStoreChecked(this,'DRIVETHRU');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindStoreCtl_DriveThroughLbl" class="normalCopy">Drive Through Window</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" typecode="WOS"><input id="ctl00_MainContent_FindStoreCtl_OvenWarmedChk" type="checkbox" name="ctl00$MainContent$FindStoreCtl$OvenWarmedChk" onclick="FilterStoreChecked(this,'WOS');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindStoreCtl_OvenWarmedLbl" class="normalCopy">Oven-Warmed Food</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" typecode="ITUNES"><input id="ctl00_MainContent_FindStoreCtl_ITunesChk" type="checkbox" name="ctl00$MainContent$FindStoreCtl$ITunesChk" onclick="FilterStoreChecked(this,'ITUNES');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindStoreCtl_MusicLbl" class="normalCopy">iTunes Wi-Fi Music Store</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" typecode="AIRPORT"><input id="ctl00_MainContent_FindStoreCtl_AirportChk" type="checkbox" name="ctl00$MainContent$FindStoreCtl$AirportChk" onclick="FilterStoreChecked(this,'AIRPORT');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindStoreCtl_AirportLbl" class="normalCopy">Airport Stores</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" typecode="COMING"><input id="ctl00_MainContent_FindStoreCtl_ComingSoonChk" type="checkbox" name="ctl00$MainContent$FindStoreCtl$ComingSoonChk" onclick="FilterStoreChecked(this,'COMING');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindStoreCtl_ComingSoonLbl" class="normalCopy">Coming Soon</span></td></tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td><br /></td></tr>
+    <tr>
+        <td align="right" style="height:24px;border-top:solid 1px #A9A9A9;" valign="bottom">
+            <input type="image" name="ctl00$MainContent$FindStoreCtl$GoBtn" id="ctl00_MainContent_FindStoreCtl_GoBtn" class="errorclass" src="http://www.starbucks.com/images/button_submit_nls.gif" onclick="FindStores();return false;FindStores();return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$FindStoreCtl$GoBtn&quot;, &quot;&quot;, true, &quot;StoreGroup&quot;, &quot;locatorresults.aspx?fs=1&quot;, false, false))" style="border-width:0px;" />
+        </td>
+    </tr>
+</table>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="border-right:solid 1px #A9A9A9;width:10px"><br /></td>
+                   </tr>
+
+                  <tr>
+                    <td valign="top" colspan="3">
+                        <img src="Images/tabs/tabbox_bot.gif"/>
+                    </td>
+                </tr>
+               </table>
+           </td>
+       </tr>
+      </table>     
+      
+      <script type="text/javascript" language="javascript">
+      var currentType = 'fs';
+      var tabs = document.getElementById("tabs");
+      
+      function ToggleSearchControls(type)
+      {
+        var ctl;
+        var currentCtl;
+        var hdnContent = document.getElementById("HiddenContent");
+        var enabledContent = document.getElementById("MainContent");
+        
+        if(currentType == 'fs')
+            currentCtl = document.getElementById("Store");
+        
+        if(currentType == 'fe')
+            currentCtl = document.getElementById("Event");
+        
+        if(currentType == 'fr')
+            currentCtl = document.getElementById("Route");
+            
+        //remove active control
+        enabledContent.removeChild(currentCtl);
+           
+        //move active control to hidden div
+        hdnContent.appendChild(currentCtl);
+        
+        //now, move new active content
+        if(type == 'fs')
+        {
+            ctl = document.getElementById("Store");
+            //set tab
+            tabs.className = "findStoreTab";
+        }
+        if(type == 'fe')
+        {
+            ctl = document.getElementById("Event");
+             //set tab
+            tabs.className = "findEventTab";
+       }
+        if(type == 'fr')
+        {
+            ctl = document.getElementById("Route");
+             //set tab
+            tabs.className = "findRouteTab";
+       } 
+        //add control to active content pane    
+        enabledContent.appendChild(ctl);
+        
+        //remove control from hidden content pane
+       // hdnContent.removeChild(ctl);
+        
+        //set global variable so we know what is currently active
+        currentType = type;
+      }
+      </script>
+      
+      <div id="HiddenContent" style="display:none;">
+        <div id="Route">
+            
+
+<script type="text/javascript" language="javascript">
+
+var FromTxt = "";
+var ToTxt = "";
+
+    function FindStoreAlongRoutes()
+    { 
+    
+        ResetValue('to');
+        ResetValue('from');
+        
+        //show the Show Events checkbox
+        ToggleShowEventsFunctionality(true);
+    
+       //we're already on the results page, now just drive with AJAX
+        var from = document.getElementById('ctl00_MainContent_FindRouteCtl_FromTxt').value;
+        var to = document.getElementById('ctl00_MainContent_FindRouteCtl_ToTxt').value;
+        
+        FromTxt = document.getElementById('ctl00_MainContent_FindRouteCtl_FromTxt').value;
+        ToTxt = document.getElementById('ctl00_MainContent_FindRouteCtl_ToTxt').value;
+
+        if(FromTxt == "Enter starting city, address, or landmark")
+        {
+            //fire the validator. the watermark interfers with the validator so we need to do this manually
+            document.getElementById("ctl00_MainContent_FindRouteCtl_FromRFV").style.display = "block";
+            routeOriginDisambiguated = false;
+            return false;
+        }
+
+        if(ToTxt == "Enter destination city, address, or landmark")
+        {
+            //fire the validator. the watermark interfers with the validator so we need to do this manually
+            document.getElementById("ctl00_MainContent_FindRouteCtl_ToRFV").style.display = "block";
+            routeDestinationDisambiguated = false;
+            return false;
+        }
+
+
+        
+        //typeOfSearch is defined in the SbuxMappingFunctions.js
+        typeOfSearch = 'fr';
+        searchType = 'fr';
+        
+        //reset the index from any previous searches
+        storePageIndex = 1;
+        eventPageIndex = 1;
+        
+        latestRoute = null;
+
+        //first, set the sliders
+        if(!true)
+            ToggleSearchType("fr");
+        
+        // Old Geocode.
+        //GeocodeRoute(from,to,'fr');
+        GeocodeRouteHandleAmbig(from, to, 'fr', true, 'ambigRouteList');      
+
+    }
+    
+
+    function ShowNewStoresAlongRoutePage(pageIndexIncrement)
+    {
+        storePageIndex += pageIndexIncrement;
+        CleanSlate();
+        ShowStoresAlongRoute(latestRoute);       
+    }
+    
+    
+    function SetFilters()
+{
+    //var filters = "";
+    //create string of pipe delimited values for each box checked typeCode^typeValue|
+    //these will be passed to webservice as a string and split on the pipe, then on the carrot
+    if(document.forms[0][""].checked)
+        filters += "";
+}
+
+//this is fired from the checkbox filter click event. It adds and removes the filter value to the hidden field FilterHdn
+//this hidden field is used to post the data
+function FilterRouteChecked(ele, value)
+{
+    var hidden = document.getElementById("RouteFilterHdn");
+    if(ele.checked)
+        hidden.value += value + "|";
+    else
+        hidden.value = remove(hidden.value,value + "|");
+        
+    
+}
+
+
+function CheckRouteFilters()
+{
+    //loop through store filters hidden do-dad and recheck all the checkboxes based on the values there
+     var hiddenField = document.getElementById("RouteFilterHdn");
+     
+    document.getElementById("ctl00_MainContent_FindRouteCtl_WirelessChk").checked = false;
+    document.getElementById("ctl00_MainContent_FindRouteCtl_DriveThroughChk").checked = false;
+    document.getElementById("ctl00_MainContent_FindRouteCtl_OvenWarmedChk").checked = false;
+    document.getElementById("ctl00_MainContent_FindRouteCtl_AirportChk").checked = false;
+    document.getElementById("ctl00_MainContent_FindRouteCtl_ComingSoonChk").checked = false;
+    document.getElementById("ctl00_MainContent_FindRouteCtl_ITunesChk").checked = false;
+    
+    if ((typeof hiddenField != "undefined") && (hiddenField != null))
+    {
+        var data = hiddenField.value.split("|");
+        for(i = 0; i < data.length; i++)
+        {
+            if(data[i] == "WIRELESS")
+                document.getElementById("ctl00_MainContent_FindRouteCtl_WirelessChk").checked = true;
+            if(data[i] == "DRIVETHRU")
+                document.getElementById("ctl00_MainContent_FindRouteCtl_DriveThroughChk").checked = true;
+            if(data[i] == "WOS")
+                document.getElementById("ctl00_MainContent_FindRouteCtl_OvenWarmedChk").checked = true;
+            if(data[i] == "AIRPORT")
+                document.getElementById("ctl00_MainContent_FindRouteCtll_AirportChk").checked = true;
+            if(data[i] == "COMING")
+                document.getElementById("ctl00_MainContent_FindRouteCtl_ComingSoonChk").checked = true;
+            if(data[i] == "ITUNES")
+                document.getElementById("ctl00_MainContent_FindRouteCtl_ITunesChk").checked = true;
+        }
+        
+    }      
+}
+
+
+function SetDisambiguatedRouteData(data){
+    var hiddenField = document.getElementById("RouteDisambigHdn");
+    if ((typeof hiddenField != "undefined") && (hiddenField != null)){
+        hiddenField.value = data;
+    }
+}
+
+function ResetValue(direction)
+{
+    var ele = null;
+    
+    if(direction == "from")
+    {
+        routeOriginDisambiguated = false;
+    }
+    else
+    {
+        routeDestinationDisambiguated = false;
+    }
+
+}
+
+</script>
+
+<input type="hidden" name="RouteFilterHdn" id="RouteFilterHdn" value="" />
+<input type="hidden" name="RouteDisambigHdn" id="RouteDisambigHdn" value="" />
+<img height="11px" alt="" src="http://www.starbucks.com//images/spacer.gif" width="1"><br/>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="subheader"><div style="position:relative;">
+            <input type="hidden" name="ctl00$MainContent$FindRouteCtl$FromAjaxWatermarkExt_ClientState" id="ctl00_MainContent_FindRouteCtl_FromAjaxWatermarkExt_ClientState" />
+            <span class="controlHeader">From</span><br />
+            <input name="ctl00$MainContent$FindRouteCtl$FromTxt" type="text" maxlength="1000" id="ctl00_MainContent_FindRouteCtl_FromTxt" class="copytext" OnChange="ResetValue('from');" style="width:340px;" />
+            <span id="ctl00_MainContent_FindRouteCtl_FromRFV" style="color:Red;display:none;">Please enter a starting location.</span>            
+        </div></td>
+    </tr>
+    <tr>
+
+        <td class="subheader"><div style="position:relative;">
+            <input type="hidden" name="ctl00$MainContent$FindRouteCtl$ToAjaxWatermarkExt_ClientState" id="ctl00_MainContent_FindRouteCtl_ToAjaxWatermarkExt_ClientState" />
+            <span class="controlHeader">To</span><br />
+            <input name="ctl00$MainContent$FindRouteCtl$ToTxt" type="text" maxlength="1000" id="ctl00_MainContent_FindRouteCtl_ToTxt" class="copytext" OnChange="ResetValue('to');" style="width:340px;" />
+            <span id="ctl00_MainContent_FindRouteCtl_ToRFV" style="color:Red;display:none;">Please enter a destination.</span>            
+            <div id="ambigRouteList"  class="copytext" style="border:solid 1px silver; background:white;position:absolute;top:31px;left:0px;font-family:Verdana; font-size:9px;color:#7F7F7F;height:100px;overflow-y:auto;overflow-x:hidden;width:93%;display:none;"></div>
+            </div>
+            <br />
+        </td>
+    </tr>
+    <tr>
+        <td class="subheader">
+            <span class="controlHeader">Limit search to coffeehouses with</span>
+            <br />
+            <table cellpadding="0" cellspacing="0" class="copytext">
+            <tr><td valign="middle" style="width:18px;"><span typecode="WIRELESS"><input id="ctl00_MainContent_FindRouteCtl_WirelessChk" type="checkbox" name="ctl00$MainContent$FindRouteCtl$WirelessChk" onclick="FilterRouteChecked(this,'WIRELESS');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindRouteCtl_WirelessLbl" class="normalCopy">Wireless Hotspot Available</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" tag="DRIVETHRU" typecode="DRIVETHRU"><input id="ctl00_MainContent_FindRouteCtl_DriveThroughChk" type="checkbox" name="ctl00$MainContent$FindRouteCtl$DriveThroughChk" onclick="FilterRouteChecked(this,'DRIVETHRU');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindRouteCtl_DriveThroughLbl" class="normalCopy">Drive Through Window</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" typecode="WOS"><input id="ctl00_MainContent_FindRouteCtl_OvenWarmedChk" type="checkbox" name="ctl00$MainContent$FindRouteCtl$OvenWarmedChk" onclick="FilterRouteChecked(this,'WOS');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindRouteCtl_OvenWarmedLbl" class="normalCopy">Oven-Warmed Food</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" typecode="ITUNES"><input id="ctl00_MainContent_FindRouteCtl_ITunesChk" type="checkbox" name="ctl00$MainContent$FindRouteCtl$ITunesChk" onclick="FilterStoreChecked(this,'ITUNES');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindRouteCtl_MusicLbl" class="normalCopy">iTunes Wi-Fi Music Store</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" typecode="AIRPORT"><input id="ctl00_MainContent_FindRouteCtl_AirportChk" type="checkbox" name="ctl00$MainContent$FindRouteCtl$AirportChk" onclick="FilterRouteChecked(this,'AIRPORT');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindRouteCtl_AirportLbl" class="normalCopy">Airport Stores</span></td></tr>
+            <tr><td valign="middle"><span class="normalCopy" typecode="COMING"><input id="ctl00_MainContent_FindRouteCtl_ComingSoonChk" type="checkbox" name="ctl00$MainContent$FindRouteCtl$ComingSoonChk" onclick="FilterRouteChecked(this,'COMING');" /></span></td><td valign="middle"><span id="ctl00_MainContent_FindRouteCtl_ComingSoonLbl" class="normalCopy">Coming Soon</span></td></tr>
+            </table>
+        </td>
+    </tr>
+    <tr><td><br /></td></tr>
+    <tr>
+        <td align="right" style="height:24px;border-top:solid 1px #A9A9A9;" valign="bottom">
+            <input type="image" name="ctl00$MainContent$FindRouteCtl$GoBtn" id="ctl00_MainContent_FindRouteCtl_GoBtn" src="http://www.starbucks.com/images/button_submit_nls.gif" onclick="FindStoreAlongRoutes();return false;FindStoreAlongRoutes(); return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$FindRouteCtl$GoBtn&quot;, &quot;&quot;, true, &quot;RouteGroup&quot;, &quot;locatorresults.aspx?fr=1&quot;, false, false))" style="border-width:0px;" />
+        </td>
+    </tr>
+</table>
+
+
+        </div>
+        <div id="Event">
+            
+
+<script type="text/javascript" language="javascript">
+
+    function ShowNewEventPage(pageIndexIncrement)
+    {
+        eventPageIndex += pageIndexIncrement;
+        
+        //split the values in the hidden field for disambiguated results and call showstores
+        var hiddenField = document.getElementById("EventDisambigHdn");
+        
+        try
+        {
+            if ((typeof hiddenField != "undefined") && (hiddenField != null)){
+                var data = hiddenField.value.split("|");
+                var address = data[0];
+                var lat = data[1];
+                var lng = data[2];
+                
+                //searchLongitude and searchLongitude are defined in sbuxmappingfunctions.js
+                if((searchLatitude != null) && (searchLongitude != null))
+                {
+                    lat = searchLatitude;
+                    lng = searchLongitude;
+                }
+                
+                CleanSlate();            
+                ShowEvents(address,lat,lng);
+            }
+        }
+        catch(e)
+        {
+            ErrorLog.LogError(1,1,e.message);
+        }
+        
+        
+    }
+    
+    function FindEvents()
+    { 
+        //clear out any flags for route searches, just to keep things clean on future searches
+        routeOriginDisambiguated =  false;
+        routeDestinationDisambiguated = false;
+    
+        //hide the Show Events Checkbox
+        ToggleShowEventsFunctionality(false);
+        
+       //we're already on the results page, now just drive with AJAX
+        var where = document.getElementById('ctl00_MainContent_FindEventCtl_EventLocationTxt').value;
+        
+        if(where == "Enter city, address, or landmark")
+        {
+            //fire the validator. the watermark interfers with the validator so we need to do this manually
+            document.getElementById("ctl00_MainContent_FindEventCtl_LocationRFV").style.display = "block";
+            return;
+        }
+        
+        
+        //firstResponse are defined in SbuxMappingFunctions.js
+        firstResponse = true;
+            
+        //typeOfSearch is defined in the SbuxMappingFunctions.js
+        typeOfSearch = 'fe';
+        searchType = 'fe';
+        
+        //reset the index from any previous searches
+        storePageIndex = 1;
+        eventPageIndex = 1;
+        stores = new EntityDict();
+        events = new EntityDict();
+        pushPins = new EntityDict();
+        CleanSlate('fe');
+        latestRoute = null;
+                     
+        SetEventFilters();
+        
+        if(!true)
+            ToggleSearchType('fe');
+       
+        // New geocoder to handle ambiguous results.
+        GeocodeHandleAmbigResults(where, 'fe', true, 'ambigEventList');    
+    }
+    
+    function SetFilters()
+{
+    //var filters = "";
+    //create string of pipe delimited values for each box checked typeCode^typeValue|
+    //these will be passed to webservice as a string and split on the pipe, then on the carrot
+    if(document.forms[0][""].checked)
+        filters += "";
+}
+
+  
+  function SetEventFilters()
+  {
+    var listbox = document.getElementById("ctl00_MainContent_FindEventCtl_EventTypeLst");
+    var hidden = document.getElementById("EventFilterHdn"); 
+    var startdt = document.getElementById("ctl00_MainContent_FindEventCtl_StartDt");
+    var enddt = document.getElementById("ctl00_MainContent_FindEventCtl_EndDt");
+    var allEvents = false;
+    
+    try
+    {
+        hidden.value = "";
+        
+        for(i = 0; i < listbox.length; i++)
+        {
+            if (listbox[i].selected)
+            {
+                hidden.value += listbox[i].text + "|";
+                
+                //if all events is selected, don't send in any filters
+                if(listbox[i].text == "All Events")
+                    allEvents = true;
+            }
+                
+        }
+        
+        //if all events is selected, don't send in any filters
+        if (allEvents)
+            hidden.value = "";
+        
+        //add start and end dates, if they have data
+        if(startdt.value != "mm/dd/yyyy")
+            hidden.value += "startdate^" + startdt.value + "|";
+        if(enddt.value != "mm/dd/yyyy")
+            hidden.value += "enddate^" + enddt.value + "|";    
+     }
+    catch(e)
+    {
+       ErrorLog.LogError(1,1,e.message);
+    }
+
+   
+  }
+
+
+//this is fired from the checkbox filter click event. It adds and removes the filter value to the hidden field FilterHdn
+//this hidden field is used to post the data
+function FilterEventChecked(ele, value)
+{
+    var hidden = document.getElementById("EventFilterHdn");
+    try
+    {
+        if(ele.checked)
+            hidden.value += value + "|";
+        else
+            hidden.value = remove(hidden.value,value + "|");
+    }
+    catch(e)
+    {
+       ErrorLog.LogError(1,1,e.message);
+    }
+        
+        
+}
+
+function SetDisambiguatedEventData(data){
+    var hiddenField = document.getElementById("EventDisambigHdn");
+    try
+    {
+        if ((typeof hiddenField != "undefined") && (hiddenField != null)){
+            hiddenField.value = data;
+        }
+    }
+    catch(e)
+    {
+       ErrorLog.LogError(1,1,e.message);
+    }
+    
+}
+
+//fired from the calendar extenders during the OnClientHiding event
+//we just need to make sure the event type listbox is visible.
+function LocatorEventShowListbox(sender, args)
+{
+    var listbox = document.getElementById("ctl00_MainContent_FindEventCtl_EventTypeLst");
+    var startdt = document.getElementById("ctl00_MainContent_FindEventCtl_StartDt");
+    var enddt = document.getElementById("ctl00_MainContent_FindEventCtl_EndDt");
+    try
+    {
+        listbox.style.visibility = "visible";
+    }
+    catch(e)
+    {
+       ErrorLog.LogError(1,1,e.message);
+    }
+    
+   return;
+}
+
+//fired from the onfocus event of the startdt and enddt
+//we just need to make sure the event type listbox is NOT visible.
+function LocatorEventHideListbox()
+{
+    var listbox = document.getElementById("ctl00_MainContent_FindEventCtl_EventTypeLst");
+    var startdt = document.getElementById("ctl00_MainContent_FindEventCtl_StartDt");
+    var enddt = document.getElementById("ctl00_MainContent_FindEventCtl_EndDt");
+    try
+    {
+        listbox.style.visibility = "hidden";
+    }
+    catch(e)
+    {
+       ErrorLog.LogError(1,1,e.message);
+    }
+    
+    return;
+}
+
+function HideEventCalendar()
+{
+     //var cal = document.getElementById("ctl00_MainContent_FindEventCtl_StartDtCal");
+     //cal.style.display = "none";
+}
+
+</script>
+
+<input type="hidden" name="EventFilterHdn" id="EventFilterHdn" value="" />
+<input type="hidden" name="EventDisambigHdn" id="EventDisambigHdn" value="" />
+<img height="11px" alt="" src="http://www.starbucks.com//images/spacer.gif" width="1"><br/>
+<table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="subheader"><div style="position:relative;width:95%;">
+            <input type="hidden" name="ctl00$MainContent$FindEventCtl$AjaxWatermarkExt_ClientState" id="ctl00_MainContent_FindEventCtl_AjaxWatermarkExt_ClientState" />
+            <span class="controlHeader">Find events near</span>
+            <br />
+            <input name="ctl00$MainContent$FindEventCtl$EventLocationTxt" type="text" maxlength="1000" id="ctl00_MainContent_FindEventCtl_EventLocationTxt" class="copytext" style="width:340px;" />
+            <span id="ctl00_MainContent_FindEventCtl_LocationRFV" class="errortext" style="color:Red;display:none;">Please enter a location.</span>
+            <div id="ambigEventList" class="copytext" style="border:solid 1px silver; background:white;position:absolute;top:32px;left:0px;font-family:Verdana; font-size:9px;color:#7F7F7F;height:100px;overflow-y:auto;overflow-x:hidden;width:93%;display:none;"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle">
+            <span class="subheader"><span class="controlHeader">Between these dates</span></span>
+            <br />
+            <input name="ctl00$MainContent$FindEventCtl$StartDt" type="text" id="ctl00_MainContent_FindEventCtl_StartDt" OnFocus="LocatorEventHideListbox();" style="width:75px;" /><span class="subheader"><span class="controlHeader" style="margin-right:1px;">&nbsp;&amp;&nbsp;</span></span><input name="ctl00$MainContent$FindEventCtl$EndDt" type="text" id="ctl00_MainContent_FindEventCtl_EndDt" OnFocus="LocatorEventHideListbox();" style="width:75px;" />
+            <input type="hidden" name="ctl00$MainContent$FindEventCtl$StartDtWtrMrk_ClientState" id="ctl00_MainContent_FindEventCtl_StartDtWtrMrk_ClientState" />
+            <input type="hidden" name="ctl00$MainContent$FindEventCtl$EndDtWtrMrk_ClientState" id="ctl00_MainContent_FindEventCtl_EndDtWtrMrk_ClientState" /><br />
+            <span id="ctl00_MainContent_FindEventCtl_StartDtREV" class="errortext" style="color:Red;display:none;">Please enter a valid date: MM/DD/YYYY<br /></span>
+            <span id="ctl00_MainContent_FindEventCtl_RegularExpressionValidator1" class="errortext" style="color:Red;display:none;">Please enter a valid date: MM/DD/YYYY</span>
+            
+           
+           
+       </td>
+    </tr>
+    <tr>
+        <td>
+            <span class="subheader"><span class="controlHeader">Event type</span></span>
+            <br />
+            <div><select size="5" name="ctl00$MainContent$FindEventCtl$EventTypeLst" multiple="multiple" id="ctl00_MainContent_FindEventCtl_EventTypeLst" class="copytext" style="width:175px;z-index:1;">
+	<option value="-1">All Events</option>
+	<option value="130">Art/Craft</option>
+	<option value="82">Book Reading/Book Club</option>
+	<option value="175">Charitable or Volunteer Event</option>
+	<option value="84">Coffee Seminar/Festival/Tasting</option>
+	<option value="85">Community Event</option>
+	<option value="172">Environment</option>
+	<option value="181">Film</option>
+	<option value="164">Holiday</option>
+	<option value="136">Job Fair</option>
+	<option value="171">Kids</option>
+	<option value="141">Music</option>
+	<option value="98">New Store Opening</option>
+	<option value="99">Other</option>
+	<option value="127">Sports/Fitness Walk</option>
+	<option value="115">Starbucks Sampling</option>
+
+</select><br /></div>
+            <div class="copytext" style="font-style:italic;">Hold down CTRL while clicking to select more than one event type.</div>
+            
+        </td>
+    </tr>
+    <tr><td><br /></td></tr>
+    <tr>
+        <td align="right" style="height:24px;border-top:solid 1px #A9A9A9;" valign="bottom">
+            <input type="image" name="ctl00$MainContent$FindEventCtl$GoEventsBtn" id="ctl00_MainContent_FindEventCtl_GoEventsBtn" class="errorclass" src="http://www.starbucks.com/images/button_submit_nls.gif" onclick="FindEvents();return false;FindEvents(); return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$FindEventCtl$GoEventsBtn&quot;, &quot;&quot;, true, &quot;EventsGroup&quot;, &quot;locatorresults.aspx?fe=1&quot;, false, false))" style="border-width:0px;" />
+        </td>
+    </tr>
+</table>
+
+
+        </div>
+      </div>                   
+                        
+   
+   
+                    </td>
+                    <!-- end search criteria tab cell -->
+                </tr>
+                <tr><td style="height:30px;"><br /></td></tr>
+                <tr>
+                    <!-- start promo space cells -->
+                    <td valign="top">
+			            <table border='0' cellpadding='0' cellspacing='0'>	
+				            <tr>
+					            
+					            <td valign="top"><a href="http://www.starbucks.com//retail/mobile.asp"><img border='0' src='http://www.starbucks.com//retail/images/wap_promo_90x90.gif'></a></td>
+					            <td style="width:10px;"><br /></td>
+					            <td valign="top"><span class='subheader'>Find a Starbucks with your mobile phone</span><br><span class='copytext'>Just type <span class="copytextbold">starbucks.com</span> in your phone’s browser and access our Store Locator formatted for easy viewing.</span><br /><br /><span class='copytext' style="font-style:italic">*Carrier charges may apply.</span></td>
+				            </tr>
+			            </table>
+                   </td>
+                    <!-- end promo space cells -->
+                </tr>
+            </table>
+        </td>
+                    <td style="width:11px;"><br /></td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+<!--
+var Page_Validators =  new Array(document.getElementById("ctl00_MainContent_FindStoreCtl_LocationRFV"), document.getElementById("ctl00_MainContent_FindRouteCtl_FromRFV"), document.getElementById("ctl00_MainContent_FindRouteCtl_ToRFV"), document.getElementById("ctl00_MainContent_FindEventCtl_LocationRFV"), document.getElementById("ctl00_MainContent_FindEventCtl_StartDtREV"), document.getElementById("ctl00_MainContent_FindEventCtl_RegularExpressionValidator1"));
+// -->
+</script>
+
+<script type="text/javascript">
+<!--
+var ctl00_MainContent_FindStoreCtl_LocationRFV = document.all ? document.all["ctl00_MainContent_FindStoreCtl_LocationRFV"] : document.getElementById("ctl00_MainContent_FindStoreCtl_LocationRFV");
+ctl00_MainContent_FindStoreCtl_LocationRFV.controltovalidate = "ctl00_MainContent_FindStoreCtl_StoreLocationTxt";
+ctl00_MainContent_FindStoreCtl_LocationRFV.errormessage = "Please enter a location.";
+ctl00_MainContent_FindStoreCtl_LocationRFV.display = "Dynamic";
+ctl00_MainContent_FindStoreCtl_LocationRFV.validationGroup = "StoreGroup";
+ctl00_MainContent_FindStoreCtl_LocationRFV.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_MainContent_FindStoreCtl_LocationRFV.initialvalue = "Enter city, address, or landmark";
+var ctl00_MainContent_FindRouteCtl_FromRFV = document.all ? document.all["ctl00_MainContent_FindRouteCtl_FromRFV"] : document.getElementById("ctl00_MainContent_FindRouteCtl_FromRFV");
+ctl00_MainContent_FindRouteCtl_FromRFV.controltovalidate = "ctl00_MainContent_FindRouteCtl_FromTxt";
+ctl00_MainContent_FindRouteCtl_FromRFV.errormessage = "Please enter a starting location.";
+ctl00_MainContent_FindRouteCtl_FromRFV.display = "Dynamic";
+ctl00_MainContent_FindRouteCtl_FromRFV.validationGroup = "RouteGroup";
+ctl00_MainContent_FindRouteCtl_FromRFV.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_MainContent_FindRouteCtl_FromRFV.initialvalue = "";
+var ctl00_MainContent_FindRouteCtl_ToRFV = document.all ? document.all["ctl00_MainContent_FindRouteCtl_ToRFV"] : document.getElementById("ctl00_MainContent_FindRouteCtl_ToRFV");
+ctl00_MainContent_FindRouteCtl_ToRFV.controltovalidate = "ctl00_MainContent_FindRouteCtl_ToTxt";
+ctl00_MainContent_FindRouteCtl_ToRFV.errormessage = "Please enter a destination.";
+ctl00_MainContent_FindRouteCtl_ToRFV.display = "Dynamic";
+ctl00_MainContent_FindRouteCtl_ToRFV.validationGroup = "RouteGroup";
+ctl00_MainContent_FindRouteCtl_ToRFV.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_MainContent_FindRouteCtl_ToRFV.initialvalue = "";
+var ctl00_MainContent_FindEventCtl_LocationRFV = document.all ? document.all["ctl00_MainContent_FindEventCtl_LocationRFV"] : document.getElementById("ctl00_MainContent_FindEventCtl_LocationRFV");
+ctl00_MainContent_FindEventCtl_LocationRFV.controltovalidate = "ctl00_MainContent_FindEventCtl_EventLocationTxt";
+ctl00_MainContent_FindEventCtl_LocationRFV.errormessage = "Please enter a location.";
+ctl00_MainContent_FindEventCtl_LocationRFV.display = "Dynamic";
+ctl00_MainContent_FindEventCtl_LocationRFV.validationGroup = "EventsGroup";
+ctl00_MainContent_FindEventCtl_LocationRFV.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_MainContent_FindEventCtl_LocationRFV.initialvalue = "";
+var ctl00_MainContent_FindEventCtl_StartDtREV = document.all ? document.all["ctl00_MainContent_FindEventCtl_StartDtREV"] : document.getElementById("ctl00_MainContent_FindEventCtl_StartDtREV");
+ctl00_MainContent_FindEventCtl_StartDtREV.controltovalidate = "ctl00_MainContent_FindEventCtl_StartDt";
+ctl00_MainContent_FindEventCtl_StartDtREV.focusOnError = "t";
+ctl00_MainContent_FindEventCtl_StartDtREV.errormessage = "Please enter a valid date: MM/DD/YYYY<br />";
+ctl00_MainContent_FindEventCtl_StartDtREV.display = "Dynamic";
+ctl00_MainContent_FindEventCtl_StartDtREV.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_MainContent_FindEventCtl_StartDtREV.validationexpression = "(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\\d\\d";
+var ctl00_MainContent_FindEventCtl_RegularExpressionValidator1 = document.all ? document.all["ctl00_MainContent_FindEventCtl_RegularExpressionValidator1"] : document.getElementById("ctl00_MainContent_FindEventCtl_RegularExpressionValidator1");
+ctl00_MainContent_FindEventCtl_RegularExpressionValidator1.controltovalidate = "ctl00_MainContent_FindEventCtl_EndDt";
+ctl00_MainContent_FindEventCtl_RegularExpressionValidator1.focusOnError = "t";
+ctl00_MainContent_FindEventCtl_RegularExpressionValidator1.errormessage = "Please enter a valid date: MM/DD/YYYY";
+ctl00_MainContent_FindEventCtl_RegularExpressionValidator1.display = "Dynamic";
+ctl00_MainContent_FindEventCtl_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ctl00_MainContent_FindEventCtl_RegularExpressionValidator1.validationexpression = "(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\\d\\d";
+// -->
+</script>
+
+<div>
+
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="DOF4E-oZNIYwHvvC-HuWMHQt69CGd_ThPTstYgWcUy01" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWLAKa15cgAqqPkDMC9s703w8CvIX+7QkC4/7tvgUCsu+n4wwC0NTtnQQC8e/OtwkC7uq/gAkC6Zzp7woCwc3oxwUCn+XvwggCxqKgkAYCrKWX+A0C1uq67wgCs+aH2gUC4LWX/AsCv8rj8wUC8/qJvAIC9ZvxqA4CwIDc6w8Cz5asggMC94O/twgC8JShWAKqxIH6CwL17KXoBgLD+9G+CQKV3OKRCAK/nYXGDwKO3OaRCAKmj4LYCgKO3N6RCAKO3NKRCALJs6mYCwLSpM+zAQKD4OhyAt2WsMUMAtKki7MBAtKkn7MBAoHcjpIIAoHcgpIIAvC90rIGAqaPmtgKAt+Bod0OBR2NpsyVFIx3zqZe4kVwHLwXOgM=" />
+</div>
+
+<script type="text/javascript">
+<!--
+InitializeMap();// -->
+</script>
+
+<script type="text/javascript">
+<!--
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+// -->
+</script>
+        
+<script type="text/javascript">
+<!--
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_MainContent_FindStoreCtl_FromAjaxWatermarkExt_ClientState","WatermarkCssClass":"watermark","WatermarkText":"Enter city, address, or landmark","id":"ctl00_MainContent_FindStoreCtl_FromAjaxWatermarkExt"}, null, null, $get("ctl00_MainContent_FindStoreCtl_StoreLocationTxt"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_MainContent_FindRouteCtl_FromAjaxWatermarkExt_ClientState","WatermarkCssClass":"watermark","WatermarkText":"Enter starting city, address, or landmark","id":"ctl00_MainContent_FindRouteCtl_FromAjaxWatermarkExt"}, null, null, $get("ctl00_MainContent_FindRouteCtl_FromTxt"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_MainContent_FindRouteCtl_ToAjaxWatermarkExt_ClientState","WatermarkCssClass":"watermark","WatermarkText":"Enter destination city, address, or landmark","id":"ctl00_MainContent_FindRouteCtl_ToAjaxWatermarkExt"}, null, null, $get("ctl00_MainContent_FindRouteCtl_ToTxt"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_MainContent_FindEventCtl_AjaxWatermarkExt_ClientState","WatermarkCssClass":"watermark","WatermarkText":"Enter city, address, or landmark","id":"ctl00_MainContent_FindEventCtl_AjaxWatermarkExt"}, null, null, $get("ctl00_MainContent_FindEventCtl_EventLocationTxt"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_MainContent_FindEventCtl_StartDtWtrMrk_ClientState","WatermarkCssClass":"watermark","WatermarkText":"mm/dd/yyyy","id":"ctl00_MainContent_FindEventCtl_StartDtWtrMrk"}, null, null, $get("ctl00_MainContent_FindEventCtl_StartDt"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_MainContent_FindEventCtl_EndDtWtrMrk_ClientState","WatermarkCssClass":"watermark","WatermarkText":"mm/dd/yyyy","id":"ctl00_MainContent_FindEventCtl_EndDtWtrMrk"}, null, null, $get("ctl00_MainContent_FindEventCtl_EndDt"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"format":"MM/dd/yyyy","id":"ctl00_MainContent_FindEventCtl_StartDtCal"}, {"hiding":LocatorEventShowListbox}, null, $get("ctl00_MainContent_FindEventCtl_StartDt"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"format":"MM/dd/yyyy","id":"ctl00_MainContent_FindEventCtl_EndDtCal","popupPosition":1}, {"hiding":LocatorEventShowListbox}, null, $get("ctl00_MainContent_FindEventCtl_EndDt"));
+});
+// -->
+</script>
+</form>
+
+      
+		<div id="Footer" name="Footer" class="divFooter">
+			<span style="line-height: 1px; padding: 0; margin: 0;"><img src="../images/spacer.gif" alt="" width="675" height="1" hspace="0" vspace="0" style="display: block; background-color: #c3c3c3;"></span>
+
+			<div id="CopyrightText" name="CopyrightText" class="divCopyright">
+				&copy; 2007 Starbucks Corporation. All rights reserved.
+			</div>
+			<div id="FooterLinks" name="FooterLinks" class="divFooterLinks">
+				<a href="/customer/legal.asp">Terms of Use</a>
+				.
+				<a href="/customer/privacy.asp">Privacy</a>
+				.
+				<a href="/customer/contact.asp">Contact Us</a>
+				.
+				<a href="/aboutus/jobcenter.asp">Career Center</a>
+		        .
+		        <a href="/partners/default.asp">Partners</a>
+			</div>
+		</div>	
+				
+	</div>
+</div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Stylesheet definitions specific for Web Explorer pages */
+body
+{
+    font-family:Arial;
+    background-color:white;
+    background-color:#94BEE7;
+    font-size:10pt;
+ }
+
+a
+{
+    cursor:hand;
+    cursor:pointer;
+}
+
+.treeitem
+{
+    font-size:10pt;
+    font-family:Arial;
+}
+
+.header, .nameheader, .sizeheader, .typeheader, .datemodifiedheader
+{
+    background-color:lightgrey;
+    border-right-color:Black;
+    border-width: 1;
+    font-size: 10pt;
+}
+
+.nameheader
+{
+    text-align:left;
+}
+
+.sizeheader
+{
+    text-align:right;
+}
+
+.typeheader
+{
+    text-align:center;
+}
+
+.datemodifiedheader
+{
+    text-align:center;
+}
+
+.fileitem, .namefileitem, .sizefileitem, .typefileitem, .datemodifiedfileitem
+{
+    border:none;
+    font-size: 10pt;
+}
+
+.namefileitem
+{ 
+    text-align:left;
+}
+
+.sizefileitem
+{  
+    text-align:right;
+}
+
+.typefileitem
+{
+    text-align:center;
+}
+
+.datemodifiedfileitem
+{
+    text-align:center;
+}
+
+.hideable
+{
+    display:none;
+    visibility:hidden;
+}
+
+.selectedRow
+{
+    background-color:lightblue;
+}
+
+.headerbutton
+{
+    font-family:Arial;
+    font-size:10;
+    font-weight:bold;
+    width:100%
+}
+
+.cmdstatusbody
+{
+    background-color:Silver;
+}
+
+.dirfile_selection
+{
+    font-family:Arial;
+    font-size:8pt;
+    color:Black;
+}
+
+.imagebuttons
+{
+    border:SOLID 1px;
+    border-bottom-color:BLACK;
+    border-left-color:WHITE;
+    border-top-color:WHITE;
+    border-right-color:Black;
+}
+
+.PopupMessageTable
+{
+    background-color: Silver;
+    border: inset 3px Silver;
+    margin: 10px;
+    font: normal normal bold 14pt Arial;
+}
+
+.tool_icon, .dimmed
+{
+    width:20px;
+    height:20px;
+    cursor:hand;
+}
+
+.dimmed
+{
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+    -moz-opacity: .25;
+}
+
+.buttonbase
+{
+    width:75px;
+}
+
+.buttonOK
+

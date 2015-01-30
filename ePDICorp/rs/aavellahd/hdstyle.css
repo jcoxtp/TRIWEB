@@ -1,0 +1,64 @@
+/**
+ *Store Locator page.
+ *@css file
+ *@id /cat_objects/hdstyle.css
+ *@name hdstyle.css
+ *@author Lalaine Loa
+ *@version $Revision:   4.32  $
+ *@file $RCSfile$
+ *@revdate $Date:   Apr 20 2004 15:13:24  $
+ */
+
+/* ////////////////////////////////////////////////////////////
+
+    New styles introduced with the October 2003 Redesign
+
+//////////////////////////////////////////////////////////// */
+
+.LARGEblack {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 42px}
+.TABLEheader {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 24px}
+.TDheader {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAY {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAY2 {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 12px; line-height: 20px}
+.TDheaderGRAYbold {font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYbold1 {font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 14px}
+.TDheaderGRAYshadedBG {background: #E5E6C9; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAY_BOLDshadedBG {background: #E5E6C9; font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+
+.TDheaderGRAYshadedBG2 {background: #FEFEF1; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG3 {background: #FEFEF1; font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG4 {background: #B1633C; font-weight:bold; COLOR: #FFFFFF; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG5 {background: #CC6600; font-weight:bold; COLOR: #FFFFFF; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG6 {background: #422300; font-weight:bold; COLOR: #FFFFFF; font-family:arial; FONT-SIZE: 12px}
+.TDheaderGRAYshadedBG7 {background: #8B7A70; font-weight:bold; COLOR: #FFFFFF; font-family:arial; FONT-SIZE: 13px}
+
+.LARGEblackBOLD {font-weight:bold; COLOR: #000000; font-family:arial; FONT-SIZE: 42px}
+.GRAYcontent {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 11px}
+.GRAYcontentNAV {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+.GRAYcontentBOLD {font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 11px}
+.GRAYcontentBOLDshadedBG {background: #FEFEF1; font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 11px}
+
+.REDcontentTINY {font-weight:normal; COLOR: #ff0000; font-family:arial; FONT-SIZE: 9px}
+
+
+
+.BLACKcontentTINY {font-weight:normal; COLOR: #000000; font-family:arial; FONT-SIZE: 9px}
+.GRAYcontentTINY {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 9px}
+
+.GRAYcontentBOLDbig {font-weight:BOLD; COLOR: #666666; font-family:arial; FONT-SIZE: 11px}
+
+
+.GRAYcontentSHADEDbg {background: #E5E6C9; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+.GRAYcontentSHADEDbg2 {background: #F0F0F0; font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 10px}
+
+.graySEARCHfont {font-weight:bold; COLOR: #666666; font-family:arial; FONT-SIZE: 14px}
+.graySEARCHfont2 {font-weight:normal; COLOR: #666666; font-family:arial; FONT-SIZE: 14px}
+
+a:link {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+a:visited {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+a:active {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:none}
+a:hover {font-weight:normal; COLOR: #CB6600; font-family:arial; FONT-SIZE: 11px; TEXT-DECORATION:underline}
+
+
+
+

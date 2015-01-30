@@ -1,0 +1,27 @@
+/* ======================================== 
+	Reseller StyleSheet
+	- this file extends the _system stylesheet and is to be used for reseller specific styles
+	- styles defined in this sheet will override those with the same name/scope in the _system stylesheet
+	- do not put global style changes in this file
+=========================================*//* Set default font and size */
+#login_form
+{
+	top: 90px;
+	left: 85px;
+}
+#login_section01 {display: none;}
+#login_section02 {display: none;}
+a:link.loginform_link, a:visited.loginform_link, a:active.loginform_link, a:hover.loginform_link
+{
+	font-family: 'Times Roman', Serif;
+	font-size: 14px;
+	color:#FFCC33;
+	text-decoration:underline;
+}
+.logintext
+{
+	font-family: 'Times Roman', Serif;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: normal;
+}

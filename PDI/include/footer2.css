@@ -1,0 +1,119 @@
+#footer {
+  color: #4d4d4d;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  position: relative;
+  background-color: #d9d9d9;
+  border-top: thin solid #999999;
+  width: 100%;
+}
+.footer-wrapper {
+  min-width: 790px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#footer,
+#footer * {
+  box-sizing: border-box;
+}
+.footer-column {
+  width: 30%;
+  margin: 1em .5em;
+  padding: 0 .5em 0 .75em;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-copyright {
+  font-size: .8em;
+  padding: 0 2em;
+}
+#footer-column-1 {
+  text-align: left;
+  border-right: thin solid #999999;
+}
+#footer-column-1 .triaxia-product {
+  font-family: Open Sans;
+  font-size: 13px;
+  margin: 0.25em auto 0;
+  padding-bottom: 0;
+  text-align: center;
+  width: 80%;
+}
+#footer-column-1 .footer-logo {
+  text-align: center;
+}
+#footer-column-1 .privacy-statement {
+  text-align: center;
+}
+#footer-column-1 .privacy-statement a {
+  color: #19305C;
+  font-size: 12px;
+}
+#footer-column-3 {
+  border-right: none;
+  background-color: #8a8a8a;
+  color: white;
+  padding-left: 1em;
+  margin-left: 0;
+  border-radius: 3px;
+  padding-bottom: 1em;
+}
+#footer-column-3 h3 {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  padding-bottom: .25em;
+  margin-right: .5em;
+  border-bottom: thin solid white;
+}
+.phone-intro,
+.email-intro {
+  text-align: center;
+  margin-bottom: .5em;
+}
+.phone-number,
+.email-intro a {
+  font-size: 1.25em;
+  text-align: center;
+  margin: .25em 0;
+  line-height: 1.25em;
+  color: #293A6E;
+  font-weight: bolder;
+}
+.email-intro a {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.reg {
+  vertical-align: text-top;
+  font-size: .7em;
+  margin-left: .25em;
+}
+.copyright {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 0.25em;
+}
+#privacy {
+  width: 60%;
+  background-color: white;
+  border-radius: 2px;
+  border: thin solid #b3b3b3;
+  padding: 1em;
+  font-size: 12px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+}
+#privacy a {
+  display: inline-block;
+  background-color: #F00;
+  padding: .5em 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  float: right;
+  color: white;
+  text-decoration: none;
+  border-radius: 1px;
+}

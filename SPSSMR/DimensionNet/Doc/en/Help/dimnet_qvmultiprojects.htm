@@ -1,0 +1,102 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DimNet_QVMultiprojects">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Setting up a Quanvert Multiproject for Use in mrTables</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('dimnet_qvmultiprojects.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N2013B')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="dimnet_newtablesproject_step3.htm">Previous<img alt="(P)revious: dimnet_newtablesproject_step3" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="datalinkproperties_overview.htm"><img alt="(N)ext: datalinkproperties_overview" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; <A HREF="dimnet_newproj.htm">Creating a New Project</A> &gt; <A HREF="dimnet_newtablesproject.htm">Creating a New Analysis Project</A> &gt; </DIV>
+<h1>Setting up a Quanvert Multiproject for Use in mrTables</h1>
+<p class="body">
+<span class="runinhead">Setting Up the Multiproject in Quanvert</span>
+</p>
+<p class="body">If you want to use a Quanvert multiproject in mrTables, you need
+to make sure that the subprojects are in subfolders of the main folder
+you specify when you create the multiproject and that this folder
+is given the name you want to use for the project in DimensionNet.
+This means that you must make sure that the folder name you specify
+when you create the multiproject in Quanvert meets the requirements
+for a valid DimensionNet project name. See <A href="dimnet_newtablesproject_step2.htm">Creating the New Project in DimensionNet</A> for more information. </p>
+<p class="body">For example, suppose you create the multiproject in the following
+folder:</p>
+<pre class="codeblock">C:\QVTW\<span class="parameter">MYPROJECT</span>
+</pre>
+<p class="body">The subprojects would need to be located in:</p>
+<pre class="codeblock">C:\QVTW\MYPROJECT\<span class="parameter">MySubproject1</span>
+C:\QVTW\MYPROJECT\<span class="parameter">MySubproject2</span>
+C:\QVTW\MYPROJECT\<span class="parameter">MySubproject3</span>
+</pre>
+<p class="body">where <span class="name">MYPROJECT</span> is the name
+you are going to use for the DimensionNet project and <span class="name">MySubproject1</span>, <span class="name">MySubproject2</span>, and <span class="name">MySubproject3</span> are the names
+of the subproject folders.</p>
+<p class="body">Note that this folder structure is not recommended for use in Quanvert,
+because it makes it easy to delete the subprojects accidentally. However,
+this folder structure is a requirement for using a Quanvert multiproject
+in mrTables.</p>
+<p class="body">
+<span class="runinhead">Setting Up the Project in DimensionNet</span>
+</p>
+<p class="body">Rather than uploading the files in DimensionNet, you need to ask
+your system administrator to copy the files manually to the shared
+folder for this project on the DimensionNet server so that the relative
+folder structure is maintained. The folder structure on DimensionNet
+should then look like this:  </p>
+<pre class="codeblock">\\fmroot\Shared\Projects\MYPROJECT
+\\FMRoot\Shared\Projects\MYPROJECT\MySubproject1
+\\FMRoot\Shared\Projects\MYPROJECT\MySubproject2
+\\FMRoot\Shared\Projects\MYPROJECT\MySubproject3</pre>
+<p class="body">You can now follow the normal steps for setting up your mrTables
+project in DimensionNet, but skipping the  steps for uploading files
+and checking the uploaded files into the shared folder. </p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<a href="dimnet_newtablesproject_step1.htm">Preparing Your Data Files For Uploading</a>
+</div>
+<div class="link">
+<a href="dimnet_newtablesproject_step2.htm">Creating the New Project in DimensionNet</a>
+</div>
+<div class="link">
+<a href="dimnet_newtablesproject_step4.htm">Checking the Uploaded Files into the Shared Folder</a>
+</div>
+<div class="link">
+<a href="dimnet_newtablesproject_step3.htm">Creating and Populating a Test Table</a>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

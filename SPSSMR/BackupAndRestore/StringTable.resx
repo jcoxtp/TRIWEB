@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IDS_PROJECT_NOT_CLOSED_TILE" xml:space="preserve">
+    <value>Set project state to Inactive?</value>
+  </data>
+  <data name="IDS_CONFIRM_TITLE" xml:space="preserve">
+    <value>Confirm?</value>
+  </data>
+  <data name="IDS_BTN_YES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="IDS_BTN_NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="IDS_BTN_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="IDS_BTN_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="IDS_BTN_CLOSE_WINDOW" xml:space="preserve">
+    <value>Close window</value>
+  </data>
+  <data name="IDS_BTN_ADVANCED" xml:space="preserve">
+    <value>Advanced...</value>
+  </data>
+  <data name="IDS_BTN_OVERWRITE" xml:space="preserve">
+    <value>Overwrite</value>
+  </data>
+  <data name="IDS_BTN_CONTINUE_ANYWAY" xml:space="preserve">
+    <value>Continue anyway</value>
+  </data>
+  <data name="IDS_BTN_VIEW_LOG" xml:space="preserve">
+    <value>View log...</value>
+  </data>
+  <data name="IDS_BTN_DELETE_PARTIAL_BACKUP" xml:space="preserve">
+    <value>Delete partial backup</value>
+  </data>
+  <data name="IDS_BTN_DOWNLOAD_BACKUP" xml:space="preserve">
+    <value>Download backup...</value>
+  </data>
+  <data name="IDS_PROJECT_NOT_CLOSED_MESSAGE_BACKUP" xml:space="preserve">
+    <value>It is recommended that the project is in the Inactive state before backing up. Would you like to set the state to Inactive before backing up?</value>
+  </data>
+  <data name="IDS_CONFIRM_MESSAGE" xml:space="preserve">
+    <value>Backing up a project can take some time. Do you wish to continue?</value>
+  </data>
+  <data name="IDS_BACKUP_FILE_EXIST_TITLE" xml:space="preserve">
+    <value>Backup file exists</value>
+  </data>
+  <data name="IDS_BACKUP_FILE_EXIST_MESSAGE" xml:space="preserve">
+    <value>Backup file {0} already exists.</value>
+  </data>
+  <data name="IDS_NO_SPACE_TITLE" xml:space="preserve">
+    <value>Not enough space</value>
+  </data>
+  <data name="IDS_NO_SPACE_MESSAGE" xml:space="preserve">
+    <value>Approximately {0} MB of disk space are required for a backup. There may not be enough space available. Please contact your Approximately {0} MB of disk space are required for a backup. There may not be enough space available. Please change the backup location or ask you DimensionNet administrator to create some free space.</value>
+  </data>
+  <data name="IDS_ERROR_TITLE" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="IDS_ERROR_BACKUP_FAILED" xml:space="preserve">
+    <value>Backup failed.</value>
+  </data>
+  <data name="IDS_BACKUP_SUCCESS_TITLE" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="IDS_BACKUP_SUCCESS_MESSAGE" xml:space="preserve">
+    <value>Backup succeeded.</value>
+  </data>
+  <data name="IDS_BACKUP_SUCCESS_FILE_AVAILABLE" xml:space="preserve">
+    <value>Backup file available at {0}</value>
+  </data>
+  <data name="IDS_BACKUP_SUCCESS_BACKUP_SIZE" xml:space="preserve">
+    <value>The backup file is {0} MB.</value>
+  </data>
+  <data name="IDS_SCAN_IN_PROGRESS" xml:space="preserve">
+    <value>Please wait while scanning the system...</value>
+  </data>
+  <data name="IDS_BACKUP_IN_PROGRESS" xml:space="preserve">
+    <value>Please wait while backing up your project...</value>
+  </data>
+  <data name="IDS_ADVANCED_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="IDS_ADVANCED_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="IDS_ADVANCED_LBL_DPM" xml:space="preserve">
+    <value>DPM Proprties</value>
+  </data>
+  <data name="IDS_ADVANCED_LBL_FILES" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="IDS_ADVANCED_LBL_DB" xml:space="preserve">
+    <value>Database Tables</value>
+  </data>
+  <data name="IDS_ADVANCED_LBL_NOTES" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DPM_PROJECT" xml:space="preserve">
+    <value>Project properties</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DPM_SAMPLE" xml:space="preserve">
+    <value>Sample management properties including sample script</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DPM_QUOTA" xml:space="preserve">
+    <value>Quota properties</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DPM_USERPROPS" xml:space="preserve">
+    <value>Project specific user proeprties under Application</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_FILES_DATAFILES" xml:space="preserve">
+    <value>Data files</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_FILES_USERS" xml:space="preserve">
+    <value>Authoring, data files, and DimensionNet application files from all User directories</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_FILES_SHARED" xml:space="preserve">
+    <value>Authoring, data files, and DimensionNet application files from Shared directory</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_FILES_FMROOTMASTER" xml:space="preserve">
+    <value>Master interviewing files from FMRoot\Master directory</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_FILES_PROJECTDIR" xml:space="preserve">
+    <value>Interviewing files from project directory</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_FILES_ADDITIONAL" xml:space="preserve">
+    <value>Additional project files located in specified directory (full path to directory, must be accessible from server):</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_FILES_SCRIPTDIR" xml:space="preserve">
+    <value>Script files from specified directory (full path to directory, must be accessible from server):</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DB_SAMPLE" xml:space="preserve">
+    <value>Sample table</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DB_QUOTA" xml:space="preserve">
+    <value>Quota table</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DB_DATA" xml:space="preserve">
+    <value>Data table</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DB_TABLEONLY" xml:space="preserve">
+    <value>Restore table definition only</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_NOTES_NOTES" xml:space="preserve">
+    <value>Generated backup notes</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_NOTES_MORE_NOTES" xml:space="preserve">
+    <value>Additional notes:</value>
+  </data>
+  <data name="IDS_ADVANCED_LBL_BACKUP" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="IDS_ADVANCED_DOCUMENT_TITLE" xml:space="preserve">
+    <value>Advanced Properties</value>
+  </data>
+  <data name="IDS_CANT_ACCESS_FOLDER_ERROR" xml:space="preserve">
+    <value>Cannot access the folder.</value>
+  </data>
+  <data name="IDS_ADVANCED_LBL_MISC" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="IDS_ADVANCED_LBL_BACKUP_LOCATION" xml:space="preserve">
+    <value>Backup name:</value>
+  </data>
+  <data name="IDS_ADVANCED_CHK_DELETE_LAST_BACKUP" xml:space="preserve">
+    <value>Delete last backup after successful backup.</value>
+  </data>
+  <data name="IDS_ADVANCED_LOCATION_ERROR" xml:space="preserve">
+    <value>Can't be an empty string.</value>
+  </data>
+  <data name="IDS_BTN_CLOSE" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="IDS_SHOW_LOG_TITLE" xml:space="preserve">
+    <value>Log file</value>
+  </data>
+  <data name="IDS_DELETE_DELETE_PROJECT" xml:space="preserve">
+    <value>Delete project?</value>
+  </data>
+  <data name="IDS_DELETE_NOT_BACKEDUP_BEFORE" xml:space="preserve">
+    <value>This project has not been backed up. Continue to delete project?</value>
+  </data>
+  <data name="IDS_DELETE_LAST_BACKUP_TIME" xml:space="preserve">
+    <value>This project was last backed up at {0}. Continue to delete project?</value>
+  </data>
+  <data name="IDS_DELETING_PROJECT_TITLE" xml:space="preserve">
+    <value>Deleting project</value>
+  </data>
+  <data name="IDS_DELETE_PLEASE_WAIT_WHILE_DELETING" xml:space="preserve">
+    <value>Please wait while deleting the project...</value>
+  </data>
+  <data name="IDS_DELETE_SUCCESS_TITLE" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="IDS_DELETE_SUCCEEDED" xml:space="preserve">
+    <value>Delete succeeded.</value>
+  </data>
+  <data name="IDS_DELETE_OPTION_DPM_ONLY" xml:space="preserve">
+    <value>Delete will NOT remove any existing files or the case data database.</value>
+  </data>
+  <data name="IDS_DELETE_OPTION_DELETE_ALL" xml:space="preserve">
+    <value>Delete will remove existing files and the case data database.</value>
+  </data>
+  <data name="IDS_DELETE_FAILED_TO_DELETE_PROJECT_FROM_DPM" xml:space="preserve">
+    <value>The application could not delete the project "{0}" from DPM.</value>
+  </data>
+  <data name="IDS_PROJECT_NOT_CLOSED_MESSAGE_DELETE" xml:space="preserve">
+    <value>It is recommended that the project is in the Inactive state before deleting. Would you like to set the state to Inactive before delete?</value>
+  </data>
+  <data name="IDS_ERROR_DELETE_FAILED" xml:space="preserve">
+    <value>Delete failed.</value>
+  </data>
+  <data name="IDS_DELETE_CONFIRM_DELETE" xml:space="preserve">
+    <value>How would you like to delete the project?</value>
+  </data>
+  <data name="IDS_BTN_CONTINUE" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="IDS_DELETE_OPTION_DELETE_ALL_QUOTA" xml:space="preserve">
+    <value>Delete quota</value>
+  </data>
+  <data name="IDS_DELETE_OPTION_DELETE_ALL_SAMPLE" xml:space="preserve">
+    <value>Delete sample</value>
+  </data>
+  <data name="IDS_REFRESH_OPENER_PROBLEM" xml:space="preserve">
+    <value>An error occurred when the project list was updated. This error might be caused by Microsoft Internet Explorer 6.0. Please make sure that you have Microsoft Internet Explorer 6.0 Service Pack 1 installed on your computer. To read more about this problem go to: http://support.microsoft.com/default.aspx?scid=kb;en-us;314209.</value>
+  </data>
+  <data name="UnsupportedBrowser_description" xml:space="preserve">
+    <value>The DimensionNet only supports Internet Explorer version 6.0 or higher.</value>
+    <comment>{0} will be replaced with the users browser name and {1} will be replaced with the users browser version</comment>
+  </data>
+  <data name="UnsupportedBrowser_heading" xml:space="preserve">
+    <value>Your browser is not supported by this application.</value>
+  </data>
+  <data name="UnsupportedBrowser_title" xml:space="preserve">
+    <value>Unsupported Browser</value>
+  </data>
+  <data name="StopErrorPage_finishbutton" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="IDS_PRJ_NOT_EXIST" xml:space="preserve">
+    <value>Cannot delete project '{0}'. It may no longer exist.</value>
+  </data>
+</root>

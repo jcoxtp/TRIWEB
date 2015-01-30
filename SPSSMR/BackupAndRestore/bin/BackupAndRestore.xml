@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application name="BackupAndRestore">
+	<ApplicationSettings>
+		<Property name="DisplayName" datatype="string">
+			<![CDATA[BackupAndRestore]]> 
+		</Property>
+		<Property name="ShowInLauncher" datatype="boolean">False</Property>		
+		<Property name="DPMAccessType"  datatype="string">ReadWrite</Property>
+		<Property name="FileAccessType" datatype="string">ReadWrite</Property>	
+		<Property name="WriteAccessForProject" datatype="boolean">True</Property>
+		<Property name="ApplicationType" datatype="string"><![CDATA[general]]></Property>
+		<Property name="ShowAsTool" datatype="boolean">False</Property>
+		<Property name="ShowForProject" datatype="boolean">False</Property>		
+		<Property name="StartURL" datatype="string">
+			<![CDATA[../Brad/MyApplicationInit.aspx]]> 
+		</Property>
+		<Property name="PublicResourceFolder" datatype="string">
+		      <![CDATA[../BackupAndRestore/bin]]>
+		</Property>
+		<Property name="PublicResourceFileName" datatype="8">
+			<![CDATA[PublicResources.resx]]>
+		</Property>
+	</ApplicationSettings>
+	<UserSettings>
+		<Default/>
+	</UserSettings>
+	<Features>
+		<Property name="canDeleteProjects" datatype="empty" />
+	</Features>
+	<MustMatch/>
+</Application>

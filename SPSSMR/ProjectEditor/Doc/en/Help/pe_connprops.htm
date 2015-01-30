@@ -1,0 +1,104 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="PE_connprops">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Changing Connection Properties</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('pe_connprops.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20038')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="pe_chgperms.htm">Previous<img alt="(P)revious: pe_chgperms" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="datalinkproperties_overview.htm"><img alt="(N)ext: datalinkproperties_overview" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="pe_about.htm">Edit Project</A> &gt; </DIV>
+<h1>Changing Connection Properties</h1>
+<p class="body">You can use the Connection tab in Edit Project to view
+and, if necessary, change the project's connection properties. Generally,
+you should not change the connection properties for an mrInterview project.
+For an mrTables project, you might want to change the connection properties
+during the initial stages of setting up the project, but should not normally
+do so afterwards.</p>
+<p class="body">
+<span class="runinhead">To Change the Connection Properties:</span>
+</p>
+<p class="step">
+<span class="step-glyph">►</span> Select the Connection tab.</p>
+<p class="step">
+<span class="step-glyph">►</span> In the top right corner, click <span class="screen">Edit</span>. </p>
+<p class="body">This opens the Connection tab in the Data Link Properties dialog box. See <A href="datalinkproperties_connection.htm">Data Link Properties Dialog Box: Connection Tab</A> for more information. </p>
+<p class="body"></p>
+<p class="step">
+<span class="step-glyph">►</span> From the Metadata Type drop-down list, select the type of metadata
+you want to use for the project.</p>
+<p class="step">
+<span class="step-glyph">►</span> Enter the Metadata Location by clicking <span class="screen">Browse</span> and
+selecting the metadata file in the Select dialog box. (If you cannot see the
+file you want to use, you may need to upload it first. You can do this using
+the <span class="screen">Upload</span> button in the top left corner.)
+ </p>
+<p class="step">
+<span class="step-glyph">►</span> If you are using an .<span class="name">mdd</span> file
+and want to change the default language or user context, click <span class="screen">Edit MDM Properties</span> and then select the required
+options. See <A href="datalinkproperties_mdmproperties.htm">Data Link Properties: MDM Properties</A> for more information. </p>
+<p class="body">Note that the MDM Properties dialog box enables you to select
+the version or versions to use. However, if there is more than one version,
+mrTables always uses a combination of all of the available versions (this
+is sometimes called the <span class="definedword">superversion</span>),
+regardless what you select in this dialog box.  </p>
+<p class="step">
+<span class="step-glyph">►</span> From the Case Data Type drop-down list, select the type of
+case data you are using for the project. If the case data is stored in a relational
+MR (RDB) database, make sure you select <span class="screen">SPSS MR Relational
+MR database 2</span>.</p>
+<p class="step">
+<span class="step-glyph">►</span> Enter the Case Data Location. How you enter the location depends
+on the case data type. When the case data format is file based, you can click <span class="screen">Browse</span> and then select the file in the Select dialog
+box. If necessary, use the <span class="screen">Upload</span> button
+to upload the files. If the case data is stored in a relational MR database,
+see <A href="dimnet_connectcdsc_rdbdsc2.htm">Connecting
+to a Relational MR Database Using RDB DSC 2</A> for
+more information. </p>
+<p class="step">
+<span class="step-glyph">►</span> If the case data is stored in a relational MR database, enter
+the <span class="screen">Case Data Project</span>. For all other
+case data types, clear this text box.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">OK</span>.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="pe_about.htm">Edit Project</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

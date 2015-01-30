@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="ResMimeType">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="Version">
+        <value>1.0.0.0</value>
+    </resheader>
+    <resheader name="Reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="Writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="application_title">
+        <value>Interview Exporter</value>
+    </data>
+    <data name="menu_export">
+        <value>Download now</value>
+    </data>
+    <data name="menu_exit">
+        <value>Back to DimensionNet</value>
+    </data>
+    <data name="menu_help">
+        <value>Help</value>
+    </data>
+    <data name="projectinfo_projectid">
+        <value>Project Id:</value>
+    </data>
+    <data name="projectinfo_projectname">
+        <value>Project Name:</value>
+    </data>
+    <data name="projectinfo_description">
+        <value>Description:</value>
+    </data>
+    <data name="projectinfo_advice">
+        <value>Download data file to your desktop by pressing the button on the left</value>
+    </data>
+    <data name="export_button">
+        <value>Download now</value>
+    </data>
+    <data name="access_error_heading">
+        <value>You do not have sufficent rights to launch this application.</value>
+    </data>
+    <data name="access_error_returninfo">
+        <value>Returning to start page in 30 seconds.</value>
+    </data>
+    <data name="access_error_returnlink">
+        <value>Click here to return now</value>
+    </data>
+    <data name="invalid_date">
+        <value>Invalid date. Example : </value>
+    </data>
+    <data name="main_export_to">
+        <value>Export to</value>
+    </data>
+    <data name="main_system_variables">
+        <value>System variables</value>
+    </data>
+    <data name="main_system_variables_all">
+        <value>All</value>
+    </data>
+    <data name="main_system_variables_common">
+        <value>Common</value>
+    </data>
+    <data name="main_system_variables_none">
+        <value>None</value>
+    </data>
+    <data name="main_variable_types">
+        <value>Variable types</value>
+    </data>
+    <data name="main_variable_types_all">
+        <value>All</value>
+    </data>
+    <data name="main_variable_types_select">
+        <value>Select below</value>
+    </data>
+    <data name="main_use_sav_short_names">
+        <value>Use SAV short names</value>
+    </data>
+    <data name="main_maximum_name_length">
+        <value>Maximum name length</value>
+    </data>
+    <data name="main_variable_types_options_text">
+        <value>Text</value>
+    </data>
+    <data name="main_variable_types_options_categorical">
+        <value>Categorical</value>
+    </data>
+    <data name="main_variable_types_options_numeric_long">
+        <value>Numeric - Long</value>
+    </data>
+    <data name="main_variable_types_options_numeric_float">
+        <value>Numeric - Float</value>
+    </data>
+    <data name="main_variable_types_options_boolean">
+        <value>Boolean</value>
+    </data>
+    <data name="main_variable_types_options_date">
+        <value>Date</value>
+    </data>
+    <data name="main_variable_types_options_cate_other">
+        <value>Categorical with other specify</value>
+    </data>
+    <data name="main_select_card_column_options">
+        <value>Select card column options</value>
+    </data>
+    <data name="main_keep_current_card_columns">
+        <value>Keep current card columns</value>
+    </data>
+    <data name="main_width_of_serial_number">
+        <value>Width of serial number (# of columns)</value>
+    </data>
+    <data name="main_width_of_card_number">
+        <value>Width of card number (# of columns)</value>
+    </data>
+    <data name="main_max_card_length">
+        <value>Max card length (leave blank if infinite)</value>
+    </data>
+    <data name="main_status_filter">
+        <value>Select filtering based on data collection status</value>
+    </data>
+    <data name="main_status_filter_select">
+        <value>Select</value>
+    </data>
+    <data name="main_status_filer_respondents_only">
+        <value>Respondent data only</value>
+    </data>
+    <data name="main_status_filer_testdata_only">
+        <value>Test data only</value>
+    </data>
+    <data name="main_status_filer_alldate">
+        <value>All data</value>
+    </data>
+    <data name="main_where">
+        <value>Where interviews</value>
+    </data>
+    <data name="main_where_completed_successfully">
+        <value>Completed successfully</value>
+    </data>
+    <data name="main_where_active">
+        <value>Active / in progress</value>
+    </data>
+    <data name="main_where_timed_out">
+        <value>Timed out</value>
+    </data>
+    <data name="main_where_stopped_script">
+        <value>Stopped by script</value>
+    </data>
+    <data name="main_where_stopped_respondent">
+        <value>Stopped by respondent</value>
+    </data>
+    <data name="main_where_system_shutdown">
+        <value>Interview system shutdown</value>
+    </data>
+    <data name="main_where_reviewed">
+        <value>Reviewed</value>
+    </data>
+    <data name="main_where_signal">
+        <value>Signal</value>
+    </data>
+    <data name="main_select_filter_date">
+        <value>Select filtering based on data collection finish time</value>
+    </data>
+    <data name="main_select_filter_date_start">
+        <value>Start date</value>
+    </data>
+    <data name="main_select_filter_date_end">
+        <value>End date</value>
+    </data>
+    <data name="main_end_before_start_date">
+        <value>Start date should be before end date.</value>
+    </data>
+    <data name="run_transfered_cases">
+        <value>Transfered cases: </value>
+    </data>
+    <data name="run_download">
+        <value>Download</value>
+    </data>
+    <data name="run_cancel">
+        <value>Cancel</value>
+    </data>
+    <data name="wait">
+        <value>Please wait... </value>
+    </data>
+    <data name="exporting_wait">
+        <value>Exporting data, please wait...</value>
+    </data>
+    <data name="exporting_error">
+        <value>An error occured during export</value>
+    </data>
+    <data name="exporting_viewlog">
+        <value>View log</value>
+    </data>
+    <data name="main_advanced">
+        <value>Advanced</value>
+    </data>
+    <data name="main_language">
+        <value>Language</value>
+    </data>
+    <data name="main_serial_variables">
+        <value>Serial variables</value>
+    </data>
+</root>

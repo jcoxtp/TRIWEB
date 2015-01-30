@@ -1,0 +1,107 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DimNet_delproj">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Deleting Projects</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('dimnet_delproj.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N201D7')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="dimnet_newproj_custom.htm">Previous<img alt="(P)revious: dimnet_newproj_custom" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="dimnet_unlockproj.htm"><img alt="(N)ext: dimnet_unlockproj" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; </DIV>
+<h1>Deleting Projects</h1>
+<div class="imageblock">
+<img alt="" src="images/delete.gif"></div>
+<p class="body"></p>
+<p class="body">Deleting a project removes it from DimensionNet
+and DimensionNet's  distributed property management system (DPM).
+You can also delete the project's files and its case data, sample
+management and quota databases.</p>
+<p class="body">
+<span class="italic">Note</span>: The Firefox
+browser does not support project deletion. Contact your Dimensions
+administrator to find out how to do this.</p>
+<p class="body">If the project uses sample management, the sample management
+object is also deleted. If you have projects that share sample management
+objects, you should ask your DimensionNet administrator to change
+this behavior so that deleting a project does not delete the sample
+management object. </p>
+<p class="body">It is recommended that projects to be deleted are in
+the Inactive state. If you try to delete a project that is not in
+this state, the deletion procedure will ask whether you want to change
+the project's state before deleting it.</p>
+<p class="body">When you activate a project, the activation process
+creates a project folder in the Projects subfolder of the mrInterview
+installation folder, and places a copy of the project's <span class="name">.mdd</span> file in this folder. This folder exists
+on every machine running the interviewing server and is updated automatically
+by the activation process. For example, if you activate the tea project
+every interviewing server will contain the file [INSTALL_FOLDER]\SPSS
+Dimensions\mrInterview\Projects\tea\tea.mdd. These
+folders and files are not deleted when you delete a project in DimensionNet,
+but you may delete them manually afterwards.</p>
+<p class="body">If your company uses a hierarchical project list, deleting
+the last project from a folder automatically deletes the folder too.
+If you delete the last project and the folder is not deleted, this
+is because the folder contains other projects that are invisible to
+you because you do not have permission to use them.</p>
+<p class="body">
+<span class="runinhead">To Delete a Project</span>
+</p>
+<p class="step">
+<span class="step-glyph">►</span> Select the project in the DimensionNet project list.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click the Delete icon.</p>
+<p class="step">
+<span class="step-glyph">►</span> If the project is not Inactive, DimensionNet displays
+a reminder that this is  recommended and asks whether you want to
+change the project's status now. Click <span class="screen">Yes</span> to change the status and then delete the project, <span class="screen">No</span> to leave the project's state as it is
+and then delete the project, or <span class="screen">Cancel</span> to cancel the deletion request.</p>
+<p class="step">
+<span class="step-glyph">►</span> Next, you are asked whether you want to delete the
+case data and other files associated with the project. The default
+is to delete the project from DimensionNet and DPM but not to delete
+any files. To delete the case data, sample management, and quota files,
+select <span class="screen">Delete will remove existing files
+and the case data database</span>. If you do not want to delete
+sample management or quota files, cancel the checkboxes that this
+option has selected for you. Click <span class="screen">Continue</span>. If you have any doubts about deleting the project, click <span class="screen">Cancel</span> as this is your last opportunity
+to cancel the deletion request.</p>
+<p class="body">DimensionNet processes your deletion request and displays
+a message box when the  project has been deleted.</p>
+<p class="step">
+<span class="step-glyph">►</span> Click <span class="screen">Close</span> to
+close the message box.</p>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

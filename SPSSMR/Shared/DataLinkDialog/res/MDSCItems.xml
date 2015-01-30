@@ -1,0 +1,27 @@
+<MDSCItems>
+	<!--
+	These will be added before DSC's loaded from DSC Reg
+	Add DSC's manually here if DSC's are not registered on server
+	  
+	<item>
+		<text>SPSS MR XML MDSC</text>
+		<value>mrXmlDSC</value>
+		<IsWritable>true</IsWritable>		true, false
+		<IsReadable>true</IsReadable>		true, false
+		<SourceType>-1</SourceType>			drUnknown:-1, drFile:0, drFolder:1, drDSN:2, drUDL:3
+	</item>
+	
+	"(none)" and "SPSS MR Metadata Document" are required!
+	-->
+	<item>
+		<text>(none)</text>
+		<value/>
+	</item>
+	<item>
+		<text>SPSS MR Metadata Document</text>
+		<value/>
+		<IsWritable>true</IsWritable>
+		<IsReadable>true</IsReadable>
+		<SourceType>0</SourceType>
+	</item>
+</MDSCItems>

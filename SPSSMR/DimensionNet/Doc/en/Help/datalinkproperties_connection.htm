@@ -1,0 +1,251 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DataLinkProperties_connection">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Data Link Properties Dialog Box: Connection Tab</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('datalinkproperties_connection.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20149')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="datalinkproperties_overview.htm">Previous<img alt="(P)revious: datalinkproperties_overview" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="datalinkproperties_mdmproperties.htm"><img alt="(N)ext: datalinkproperties_mdmproperties" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; <A HREF="dimnet_newproj.htm">Creating a New Project</A> &gt; <A HREF="dimnet_newtablesproject.htm">Creating a New Analysis Project</A> &gt; <A HREF="datalinkproperties_overview.htm">Data Link Properties Dialog Box</A> &gt; </DIV>
+<h1>Data Link Properties Dialog Box: Connection Tab</h1>
+<p class="body">You use the Connection tab to define the name, location,
+and type of the data to which you want to connect.</p>
+<div class="imageblock">
+<img alt="" src="images/datalink1.gif"></div>
+<p class="body">
+<span class="runinhead">Metadata Type. </span> Defines the type of metadata. The drop-down list shows the types
+of metadata for which you have a metadata source component (MDSC).
+The default options are:</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">None. </span> Choose this option if you want to connect to case
+data only.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">SPSS MR Metadata Document. </span> Selects metadata that is in the standard Dimensions Data
+Model format, which is a questionnaire definition (<span class="name">.mdd</span>) file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">ADO Database. </span> Selects metadata that is in an ActiveX
+Data Objects (ADO) data source.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions Log File. </span> Selects metadata
+in a standard Dimensions log file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions Participation Database. </span> Selects
+metadata that is in a DimensionNet project's Sample and HistoryTable
+tables.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions
+Scripting File. </span> Selects metadata that is in a mrScriptMetadata
+file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">In2data Database. </span> Selects metadata that is in an In2data database (.<span class="name">i2d</span>) file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quancept Definitions File (QDI). </span> Selects
+metadata in a Quancept .<span class="name">qdi</span> file
+using the QDI/DRS DSC.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quancept Script File. </span> Writes the metadata in an MDM document to a Quancept script (<span class="name">.qqc</span>) file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quantum
+Specification. </span> Writes the metadata in an MDM document
+to a Quantum specification.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quanvert Database. </span> Selects metadata
+that is in a Quanvert database.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Routing Script File. </span> Writes the routing section of an MDM document to a script that defines
+the routing required for interviewing.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">SPSS File (SAV). </span> Selects
+metadata that is in an SPSS <span class="name">.sav</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Surveycraft
+File. </span> Selects metadata that is in a Surveycraft Validated
+Questionnaire (<span class="name">.vq</span>) file.</p>
+<p class="body">
+<span class="runinhead">Metadata Location. </span> The name and location of the metadata. The way you specify this
+depends on the type of metadata that you selected in the previous
+drop-down list:</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions
+Metadata Document. </span> The name and location of the <span class="name">.mdd</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">ADO Database. </span> The name and location
+of a .<span class="name">adoinfo</span> file, which is an
+XML file that specifies the connection string for the target data
+source and the name of the target table in that data source.  </p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions Log File. </span> The name and location
+of the log file. Typically log files have a <span class="name">.tmp</span> filename extension. However, some log files may
+have another filename extension. If necessary, you can  rename the
+file so that it has a .<span class="name">tmp</span> filename
+extension.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions
+Participation Database. </span> The name and location of a Participants
+Report Document (.<span class="name">prd</span>) file, which
+is an XML file that specifies the connection string and the names
+of the table and columns to be used.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions Scripting File. </span> The name
+and location of the mrScriptMetadata file. Typically these files have
+an  <span class="name">.mdd</span> or .<span class="name">dms</span>  filename extension.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">In2data Database. </span> The name and location
+of the .<span class="name">i2d</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quancept Definitions File (QDI). </span> The name and location of the <span class="name">.qdi</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quancept Script File. </span> The name and location
+of the <span class="name">.qqc</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quantum Specification. </span> The location of the Quantum specification
+files.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quanvert
+Database. </span> The name and location of the <span class="name">qvinfo</span> or <span class="name">.pkd</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Routing Script File. </span> The name and location
+of the routing script file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">SPSS File (SAV). </span> The name and location
+of the <span class="name">.sav</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Surveycraft File. </span> The name
+and location of the <span class="name">.vq</span> file.</p>
+<p class="body">Click <span class="screen">Browse</span> to select the
+file in the Open dialog box.</p>
+<p class="body">
+<span class="runinhead">Open Metadata Read/Write. </span> By default,
+the metadata is opened in read-only mode. Select this option if you
+want to be able to write to it. When you open some types of data (for
+example, a Quanvert database) the metadata is always opened in read-only
+mode.</p>
+<p class="body"> 
+<span class="runinhead">Edit
+MDM Properties. </span>Click this button to open the  MDM Properties dialog box, in which you
+can specify the versions, language, <script type="text/javascript">
+    var N20455_term = "Definition of Context";
+
+    var N20455_def = "Defines the environment in which a text is to be used. You can keep several variations of each text in the metadata for use in different circumstances, as defined by the context--for example, analysis, interviewing, and publishing.";
+</script><a href="javascript:void(0)" style="cursor:hand; cursor:pointer" class="glossary-ref" onclick="popup(N20455_term,N20455_def,event);" title="Definition of Context">context</a>, and  <script type="text/javascript">
+    var N204E1_term = "Definition of Label type";
+
+    var N204E1_def = "Enable different types of labels to be created for different types of information. For example, the default label type of Label is used for question and category texts and variable descriptions, and the Instruction label type is used for interviewer instructions.";
+</script><a href="javascript:void(0)" style="cursor:hand; cursor:pointer" class="glossary-ref" onclick="popup(N204E1_term,N204E1_def,event);" title="Definition of Label type">label type</a> to use. See <A href="datalinkproperties_mdmproperties.htm">Data Link Properties: MDM Properties</A> for more information. </p>
+<p class="body">
+<span class="runinhead">Case Data Type. </span> Defines the type of case data. The drop-down list shows all of the
+types of case data for which you have a case data source component
+(CDSC). The default options are:</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">ADO Database. </span> Reads case data from an
+ActiveX Data Objects (ADO) data source.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Delimited Text File (Excel). </span> Writes
+case data in tab-delimited format to a .<span class="name">csv</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions
+Database (MS SQL Server). </span> Reads and writes case data
+in a Dimensions relational database in SQL Server. This option can
+be used to read data collected using mrInterview.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions Log File. </span> Selects
+the Log DSC, which enables you to read Dimensions log files.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions XML Data File. </span> Reads and writes case data in an XML file. Typically, you use this
+option when you want to transfer case data to another location.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">In2data Database. </span> Reads case data from an In2data Database (.<span class="name">i2d</span> ) file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quancept Data File (DRS). </span> Reads case data in a Quancept <span class="name">.drs</span>,  <span class="name">.drz</span>, or <span class="name">.dru</span> file  using the QDI/DRS
+DSC.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quantum Data
+File (DAT). </span> Selects the Quantum DSC, which reads and
+writes case data in a Quantum-format ASCII file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quanvert Database. </span> Selects
+the Quanvert DSC, which reads data in a Quanvert database.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">SPSS File (SAV). </span> Reads and writes case data in an SPSS <span class="name">.sav</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Surveycraft
+File. </span> Reads case data from a Surveycraft data file.</p>
+<p class="body">
+<span class="italic">Tip</span>: If you have specified
+a Metadata Type and a Metadata Location, and the default data source
+in your metadata refers to the case data that you want to connect
+to, you don't need to specify a Case Data Type or a Case Data Location.</p>
+<p class="body">
+<span class="runinhead">Case Data Location. </span> The name and location of the case data. The way you specify this
+depends on the type of case data that you selected in the previous
+drop-down list:</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">ADO
+Database. </span> The OLE DB connection string for the ADO data
+source. To build this string, click <span class="screen">Browse</span>, which opens a second Data Link Properties dialog box in which you
+can choose the options for your data source. For example, to connect
+to a Microsoft Access database or a Microsoft Excel file, select <span class="screen">Microsoft OLE DB Provider for ODBC Drivers</span> in the Provider tab and click the <span class="screen">Build</span> button in the Connection tab to build a connection string that uses
+the Machine Data Source called &ldquo;MS Access Database&rdquo;
+or &ldquo;Excel Files&rdquo; as appropriate. If your data source
+is a Microsoft SQL Server database that is not a Dimensions relational
+database, select <span class="screen">Microsoft OLE DB Provider
+for SQL Server</span> in the Provider tab and enter the server
+name and database name in the Connection tab. Then click <span class="screen">OK</span> to close the second Data Link Properties
+dialog box and return to the Connection tab of the first Data Link
+Properties dialog box.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Delimited Text File (Excel). </span> The name and location of
+the .<span class="name">csv</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions Database (MS SQL Server). </span> This must be an OLE DB connection string. See <A href="dimnet_connectcdsc_rdbdsc2.htm">Connecting
+to a Relational MR Database Using RDB DSC 2</A> for more information.  </p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions Log File. </span> The name and location of the log file. Typically log files have
+a  <span class="name">.tmp</span> filename extension. However,
+some log files may have  another filename extension. If necessary,
+you can rename the file so that it has a  <span class="name">.tmp</span> filename extension.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions XML Data File. </span> The name and location of the <span class="name">.xml</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">In2data Database. </span> The name and location
+of the .<span class="name">i2d</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quancept Data File (DRS). </span> The name and location of the <span class="name">.drs</span>,  <span class="name">.drz</span>, or <span class="name">.dru</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quantum Data File (DAT). </span> The name and location of the <span class="name">.dat</span> file. If a <span class="name">.dau</span> file is created, it will have the same name, but with the file name
+extension of <span class="name">.dau</span>.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Quanvert Database. </span> The name
+and location of the <span class="name">qvinfo</span> or <span class="name">.pkd</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">SPSS File (SAV). </span> The name and location
+of the <span class="name">.sav</span> file.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Surveycraft File. </span> The name
+and location of the Surveycraft Validated Questionnaire (.<span class="name">vq</span>) file. The Surveycraft .<span class="name">qdt</span> file, which contains the actual case data, must be
+in the same folder as the .<span class="name">vq</span> file.</p>
+<p class="body">Click <span class="screen">Browse</span> if you want to browse to the location of the case data in a dialog
+box.</p>
+<p class="body">
+<span class="runinhead">Case Data
+Project. </span> This text box should be blank, unless you are
+connecting to one of the following case data types:</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">ADO Database. </span> If you are
+connecting to a Microsoft SQL Server database (that is not a Dimensions
+relational database) or a Microsoft Access database, enter the name
+of the database table that you want to use. If you are connecting
+to a Microsoft Excel file, enter the name of the worksheet that you
+want to use, for example, <span class="input">Sheet1</span>. Depending on the version of Excel installed, you may have to add
+a dollar sign ($) after the worksheet name for the connection to be
+successful, for example, <span class="input">Sheet1$</span>.</p>
+<p class="bullet">&bull;&nbsp;<span class="runinhead">Dimensions Database
+(MS SQL Server). </span> Enter the name of the project that you
+want to use.</p>
+<p class="body">For detailed information about the <script type="text/javascript">
+    var N20496_term = "Definition of Data source component (DSC)";
+
+    var N20496_def = "A component used to expose data to the Data Model. Case data is exposed by a case data source component (CDSC), and metadata is exposed by a metadata source component (MDSC).";
+</script><a href="javascript:void(0)" style="cursor:hand; cursor:pointer" class="glossary-ref" onclick="popup(N20496_term,N20496_def,event);" title="Definition of Data source component (DSC)">DSCs</a> that
+come with the Data Model and how they interpret the underlying data, see the Dimensions Development Library.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<a href="datalinkproperties_overview.htm">Data Link Properties Dialog Box</a>
+</div>
+<div class="link">
+<a href="datalinkproperties_advanced.htm">Data Link Properties: Advanced</a>
+</div>
+<div class="link">
+<a href="datalinkproperties_all.htm">Data Link Properties: All</a>
+</div>
+<div class="link">
+<A href="datalinkproperties_cdscnames.htm">DSCs Supplied with the Dimensions Data Model</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

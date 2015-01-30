@@ -1,0 +1,110 @@
+/* admin area styles */
+
+/* ===================
+	General Styles
+=====================*/
+h1, h2, h3, h4
+{
+	font-family: Verdana;
+	margin-bottom:5px;
+}
+HR
+{
+	color: #000000;
+	height: 1px;
+}
+.leftnav
+{
+	width:20%;
+	border-right: solid 2px #cccccc;
+}
+.maincontent
+{
+	padding:10px;
+}
+textarea, select, input:text 
+{
+	font-family: Verdana;
+	font-size: 11px;
+}
+/* ===================
+	DataGrid Related 
+=====================*/
+TABLE.dgDataGrid
+{
+	padding: 2px;
+	border: solid 1px #cccccc;
+	font-size: 11px;	
+}
+TR.dgHeaderRow
+{
+	font-weight: bolder;
+}
+TD.dgHeaderCell
+{
+	border: solid 1px #cccccc;	
+	text-align: center;
+	vertical-align: top;
+	text-transform:capitalize; 
+}
+TR.dgItemRow
+{
+}
+TR.dgAltItemRow
+{
+	background: #eeeeee;
+}
+TR.dgItemRowHover
+{
+	background: #ffff66;
+}
+TD.dgItemCell
+{
+	font-size: 11px;	
+}
+a:link.dgItem, a:active.dgItem, a:visited.dgItem
+{
+	font-size: 11px;	
+	font-weight: normal;
+	color: #000066;
+	text-decoration: none;
+}
+a:hover.dgItem
+{
+	font-size: 11px;	
+	font-weight: normal;
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+
+/* ===================
+
+=====================*/
+.TopNav
+{
+	font-family: verdana;
+	font-size: 11px;
+	color: #000000;
+	padding: 2px;
+	text-align:right;
+}
+a:link, a:active, a:visited
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bolder;
+	text-decoration: none;
+}
+a:hover
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #777777;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+
+

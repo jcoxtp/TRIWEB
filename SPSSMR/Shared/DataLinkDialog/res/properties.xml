@@ -1,0 +1,69 @@
+
+<!--
+  type attr. in { "bool", "long", "text" (default), "password", "single" }  
+  value attr. bool is "true" => true, anything else => false, case sensitive
+  
+  value attr. of property is the default value
+  it does currently not work with stype='single' so default should be
+  first category listed.
+  
+  
+  Translation:
+  The res-name attribute is used to look up texts in a resx file instead
+  of directly in this file. The texts here serves primarily as documentation.
+-->
+
+<properties>
+
+  <property name="Connect Timeout" value="0" type="int" />
+  <property name="Data Source" />
+  <hidden-property name="Extended Properties" /> 
+  <property name="Initial Catalog" />
+  <property name="Locale Identifier" />
+  <property name="Location" />
+  <property name="Password" type="password"/>
+  <hidden-property name="Persist Security Info" value="false" type="bool" />
+  <property name="User ID" />
+  
+  <property name="Mode" value="ReadWrite" type="single">
+    <category value="ReadWrite" res-name="read-write">Read/Write</category>
+    <category value="Read" res-name="read-only">Read-Only</category>
+    <category value="Write" res-name="write-only">Write-Only</category>
+  </property>
+
+  <property name="MR Init Allow Dirty" value="false" type="bool" />
+  
+  <property name="MR Init Category Names" value="0" type="single">
+    <category value="0" res-name="cat-values">Return data as category values</category>
+    <category value="1" res-name="cat-names">Return data as category names</category>    
+    <category value="2" res-name="cat-labels">Return data as category labels</category>    
+  </property>
+  
+  <property name="MR Init Category Values" value="0" type="single">
+    <category value="0" res-name="mapped-values">Return MDM mapped values</category>
+    <category value="1" res-name="native-values">Return native values</category>    
+  </property>
+  
+  <property name="MR Init Custom" />
+  <property name="MR Init Input Locale" value="0" />
+  <property name="MR Init MDM Access" value="0" type="single" >
+    <category value="0" res-name="read-only">Read-Only</category>
+    <category value="1" res-name="read-write">Read/Write</category>
+  </property>
+  <property name="MR Init MDM Context" />
+  <property name="MR Init MDM DataSource Use" type="single" >
+    <category value="0" res-name="use-existing-ds-except-location">Use existing DataSource, except location</category>
+    <category value="1" res-name="use-existing-ds-update-location">Use existing DataSource, update location</category>
+    <category value="2" res-name="create-new-ds">Create new DataSource</category>
+    <category value="3" res-name="raise-error-so-connection-fails">Raise error so connection fails</category>
+  </property>
+  <hidden-property name="MR Init MDM Document" type="ptr-string" />
+  <property name="MR Init MDM Label Type" />
+  <property name="MR Init MDM Language" />
+  <property name="MR Init MDM Version" />
+  <property name="MR Init MDSC" />
+  <property name="MR Init Output Locale" />
+  <property name="MR Init Project" />
+  <property name="MR Init Validation" value="true" type="bool" />
+  
+</properties>

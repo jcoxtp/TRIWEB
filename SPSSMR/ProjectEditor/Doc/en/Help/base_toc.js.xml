@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><es>
+<N2001F u="pe_about.htm">Edit Project<N2002E u="pe_chgproj.htm">Changing Project Details</N2002E>
+<N20033 u="pe_chgperms.htm">Changing Permissions</N20033>
+<N20038 u="pe_connprops.htm">Changing Connection Properties<N20040 u="datalinkproperties_overview.htm">Data Link Properties Dialog Box<N20047 u="datalinkproperties_connection.htm">Data Link Properties Dialog Box: Connection Tab<N20067 u="datalinkproperties_mdmproperties.htm">Data Link Properties: MDM Properties</N20067>
+<N20070 u="dimnet_connectcdsc_version_expressions.htm">Version Expressions</N20070>
+<N2007B u="dimnet_connectcdsc_rdbdsc2.htm">Connecting to a Relational MR Database Using RDB DSC 2</N2007B>
+</N20047>
+<N20081 u="datalinkproperties_advanced.htm">Data Link Properties: Advanced</N20081>
+<N2009E u="datalinkproperties_all.htm">Data Link Properties: All</N2009E>
+<N200B1 u="datalinkproperties_cdscnames.htm">DSCs Supplied with the Dimensions Data Model</N200B1>
+</N20040>
+</N20038>
+<N200B6 u="pe_workingwithprops.htm">Working with Project Properties</N200B6>
+<N200BD u="pe_addprop.htm">Adding Project Properties</N200BD>
+<N200C4 u="pe_delprops.htm">Deleting Project Properties</N200C4>
+<N200CB u="pe_chgprops.htm">Changing Project Properties</N200CB>
+<N200D2 u="pe_import_props.htm">Importing Properties from Another Project</N200D2>
+<N200D9 u="pe_propertieslist.htm">Project Properties</N200D9>
+</N2001F>
+<extras>Additional Resources<glossary u="glossary.htm">Glossary</glossary>
+</extras>
+</es>

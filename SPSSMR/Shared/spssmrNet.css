@@ -1,0 +1,694 @@
+BODY
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000066;
+    FONT-FAMILY: verdana;
+    BACKGROUND-COLOR: #94BEE7;
+}
+
+BODY.menu
+{
+    FONT-SIZE: 8pt;
+    COLOR: #DDEBF6;
+    FONT-FAMILY: verdana;
+    BACKGROUND-COLOR: #31569C
+}
+
+FORM
+{
+	margin: 0px;
+}
+
+A.lightlinks:visited
+{
+	font-weight: normal;
+    FONT-SIZE: 10pt;
+    COLOR: #C0C0C0;
+    FONT-FAMILY: arial;
+}
+A.lightlinks:link
+{
+	font-weight: normal;
+    FONT-SIZE: 10pt;
+    COLOR: #C0C0C0; 
+    FONT-FAMILY: arial;
+}
+A.lightlinks:active
+{
+	FONT-SIZE: 10pt;
+    COLOR: #31569C;
+    BACKGROUND-COLOR: #DDEBF6;
+    FONT-FAMILY: arial;
+    
+}
+A.lightlinks:hover
+{
+	FONT-SIZE: 10pt;
+    COLOR: White;
+    FONT-FAMILY: arial;
+    BACKGROUND-COLOR: #DDEBF6;
+    
+}
+
+A.ultralightlinks:visited
+{
+	font-weight: bold;
+    FONT-SIZE: 10pt;
+    COLOR: White;
+    FONT-FAMILY: arial;
+}
+A.ultralightlinks:link
+{
+	font-weight: bold;
+    FONT-SIZE: 10pt;
+    COLOR: White; 
+    FONT-FAMILY: arial;
+}
+A.ultralightlinks:active
+{
+	FONT-SIZE: 10pt;
+    COLOR: #31569C;
+    BACKGROUND-COLOR: #DDEBF6;
+    FONT-FAMILY: arial;
+    
+}
+A.ultralightlinks:hover
+{
+	FONT-SIZE: 10pt;
+    COLOR: White;
+    FONT-FAMILY: arial;
+    BACKGROUND-COLOR: #DDEBF6;
+    
+}
+
+A.darklinks:hover
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: verdana;
+	COLOR: #31569C;
+	BACKGROUND-COLOR: #DDEBF6;
+}
+A.darklinks:active
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: verdana;
+	COLOR: #31569C;
+    BACKGROUND-COLOR: #DDEBF6;
+    
+}
+A.darklinks:link
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: verdana;
+    COLOR: #31569C;
+}
+A.darklinks:visited
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: verdana;
+    COLOR: #31569C;
+}
+
+A.staticdark, A.staticdark:hover, A.staticdark:active, A.staticdark:link, A.staticdark:visited
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: verdana;
+    COLOR: #000066;
+}
+
+/* new style classes used by login page*/
+.HeaderText
+{
+	font-family:	Verdana;
+	font-size:		12pt;
+	font-weight:	bolder;
+	color:			#31569C;
+}
+
+.LabelText
+{
+	font-weight:	bold;
+	font-family:	Verdana;
+	font-size:		9pt;
+	color:			black;
+}
+
+.DarkBlueBackground
+{
+	background-color: #31569C;
+}
+
+.LightBlueBackground
+{
+	background-color: #94BEE7;
+}
+
+.LighterBlueBackground
+{
+	background-color: #DDEBF6;
+}
+
+.PaleBlueBackground
+{
+	background-color: #EFF7FF;
+}
+
+TABLE.Table
+{
+	border: solid 1px #31569C;
+}
+
+TABLE TD
+{
+	font-size: 8pt;
+	font-family: Verdana;
+}
+
+TR.logo
+{
+	height: 78px;
+	BACKGROUND-COLOR: #31569C;
+}
+
+TABLE.style1
+{
+    BORDER-RIGHT: #336699 1pt solid;
+    BORDER-TOP: #336699 1pt solid;
+    BORDER-LEFT: #336699 1pt solid;
+    BORDER-BOTTOM: #336699 1pt solid;
+    BACKGROUND-COLOR: #eff7ff;
+    COLOR: #000066;
+    TEXT-ALIGN: left;
+	border-collapse: collapse;	
+	border-spacing:	0; 
+	width: 100%;
+}
+
+TABLE.style1 TD
+{
+    BORDER-RIGHT: #eff7ff thin solid;
+    BORDER-TOP: #eff7ff thin solid;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: #eff7ff thin solid;
+    BORDER-BOTTOM: #eff7ff thin solid;
+    BACKGROUND-COLOR: #eff7ff;
+}
+TABLE.style1 TH
+{
+    COLOR: white;
+    HEIGHT: 30px;
+    BACKGROUND-COLOR: #31569c;
+}
+
+DIV.helptext
+{
+	font-size:10px; 
+	color:gray; 
+	layer-color:gray;
+}
+
+DIV.errortext
+{
+	font-size:10px; 
+	color:red; 
+	layer-color:red;
+}
+
+/*  */
+TABLE.OuterTable
+{
+	background-color: #EFF7FF;
+	border: 3px solid #31569C;
+
+	border-collapse: collapse;
+	border-spacing: 0px;
+	cell-spacing: 0px;
+}
+
+TD.OuterTableHeading
+{
+	background-color: #31569C;
+	border: 2px solid #31569C;
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: left;
+}
+
+TD.OuterTableFooting
+{
+	background-color: #31569C;
+	border: 2px solid #31569C;
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+TABLE.InnerTable
+{
+	width: 100%;
+	background-color: #EFF7FF;
+}
+
+TD.InnerTableHeading
+{
+	background-color: #EFF7FF;
+	color: #000066; 
+	font-family: Arial;
+	font-size:10pt; 
+	font-weight: bold;
+}
+
+TD.InnerTableSubHeading
+{
+	background-color: #EFF7FF;
+	color: #000066; 
+	font: italic normal 10pt Arial;
+}
+
+TD.InnerTableMainDataDark
+{
+	background-color: #DDEBF6;
+	color: #000066;
+	font-family: Arial;
+	font-size:8pt;
+	font-weight: normal;
+	vertical-align: middle;
+	padding: 0px 5px 0px 5px;
+}
+
+TD.InnerTableMainData
+{
+	color: #000066;
+	font-family: Arial;
+	font-size:8pt;
+	font-weight: normal;
+	vertical-align: middle;
+	padding: 0px 5px 0px 5px;
+}
+
+TD.InnerTableExplanatory
+{
+	background-color: #EFF7FF;
+	color: #808080;
+	font-family: Arial;
+	font-size:8pt;
+	font-weight: normal;
+}
+
+/* Used for all kind of controls (input / select )*/
+.InnerTableMainDataCtrl
+{
+	font-family: Arial;
+	font-size:8pt;
+	font-weight: normal;
+
+	scrollbar-arrow-color	:#FFFFFF; 
+	scrollbar-base-color	:#94BEE7;
+	scrollbar-face-color	:#31569C;
+}
+
+/*  */
+TD.ApplicationLogoField
+{
+	
+	background-color:#31569C;
+	
+	border-bottom:3px solid #AACCE8;
+	
+	color:#31569C;
+
+}
+
+INPUT.stdbutton
+{
+	width:75px;
+}
+
+.errorText
+{
+	font-family: Arial;
+	font-size:10pt;
+	color:Red;
+	font-weight: bold;
+}
+
+/* RoundedTableControl classes */
+.RoundedTable
+{
+	border-collapse: collapse;	
+	width: 100%;
+	background: #94bee7;
+	border: 0px none;
+}
+
+.RoundedTableOuterBorder
+{
+	background: #31569c; 
+}
+
+.RoundedTableText
+{
+	font-family:	Verdana;
+	font-size:		8pt;
+}
+
+.RoundedTableLabel
+{
+	font-family:	Verdana;
+	font-size:		8pt;
+	font-weight:	bold;
+}
+
+.RoundedTableLabel10
+{
+	font-family:	Verdana;
+	font-size:		10pt;
+	font-weight:	bold;
+}
+
+.RoundedTableLightInfo, .RoundedTableLightInfoL, .RoundedTableLightInfoR, .RoundedTableLightInfoB, .RoundedTableLightInfoBL, .RoundedTableLightInfoBR
+{
+	background: #ffffff; 
+}
+
+.RoundedTableDarkFooterB, .RoundedTableDarkInfo, .RoundedTableDarkInfoL, .RoundedTableDarkInfoR, .RoundedTableDarkInfoB, .RoundedTableDarkInfoBL, .RoundedTableDarkInfoBR
+{
+	background: #eff7ff; 
+}
+
+
+.RoundedTableLightHeaderTL, .RoundedTableLightHeaderTR, .RoundedTableDarkHeaderTL, .RoundedTableDarkHeaderTR
+{
+	padding: 0px; 
+	height: 30px; 
+	width: 10px; 
+}
+
+.RoundedTableLightHeader, .RoundedTableLightHeaderT, .RoundedTableLightHeaderL, .RoundedTableLightHeaderR
+{
+	font-family:	Verdana;
+	font-size:		12pt;
+	font-weight:	bold;
+	color: black;
+	height: 29;
+	background-image: url('images/RoundedTableControl/light_shading.gif');
+}
+
+.RoundedTableDarkHeader, .RoundedTableDarkHeaderT, .RoundedTableDarkHeaderL, .RoundedTableDarkHeaderR
+{
+	font-family:	Verdana;
+	font-size:		10pt;
+	font-weight:	bold;
+	color: white;
+	height: 29;
+	background-image: url('images/RoundedTableControl/dark_shading.gif');
+}
+
+.RoundedTableDarkHeaderText
+{
+	font-family:	Verdana;
+	font-size:		10pt;
+	font-weight:	bold;
+	color: white;
+}
+
+.RoundedTableLightHeaderText
+{
+	font-family:	Verdana;
+	font-size:		10pt;
+	font-weight:	bold;
+	color: black;
+}
+
+.RoundedTableLightHeaderTL
+{
+	background-image: url('images/RoundedTableControl/light_topleft.gif');
+}
+
+.RoundedTableLightHeaderTR
+{
+	background-image: url('images/RoundedTableControl/light_topright.gif');
+}
+
+.RoundedTableDarkHeaderTL
+{
+	background-image: url('images/RoundedTableControl/dark_topleft.gif');
+}
+
+.RoundedTableDarkHeaderTR
+{
+	background-image: url('images/RoundedTableControl/dark_topright.gif');
+}
+
+
+.RoundedTableDarkFooterB, .RoundedTableDarkFooterBL, .RoundedTableDarkFooterBR
+{
+	font-family:	Verdana;
+	font-size:		1pt;
+	padding:		0px;
+}
+
+.RoundedTableDarkFooterB
+{
+	height: 9px;
+}
+
+.RoundedTableDarkFooterBL, .RoundedTableDarkFooterBR
+{
+	height: 10px;
+	width: 10px;
+}
+
+.RoundedTableDarkFooterBL
+{
+	background-image: url('images/RoundedTableControl/light_bottomleft.gif');
+}
+
+.RoundedTableDarkFooterBR
+{
+	background-image: url('images/RoundedTableControl/light_bottomright.gif');
+}
+
+
+/*
+ * RoundedTable borders. Not the rounded corners - they are defined in:
+ *   .RoundedTable[Light/Dark]Header[TL/TR/TL/TR] or
+ *   .RoundedTableDarkFooter[BL/BR/BL/BR]
+ */
+.RoundedTableLightHeaderT, .RoundedTableDarkHeaderT, .RoundedTableLightInfoT, .RoundedTableLightInfoTR, .RoundedTableLightInfoTL, .RoundedTableDarkInfoT, .RoundedTableDarkInfoTR, .RoundedTableDarkInfoTL
+{
+	border-top: solid 1px #31569c;
+}
+
+.RoundedTableLightHeaderL, .RoundedTableDarkHeaderL, .RoundedTableLightInfoL, .RoundedTableLightInfoBL, .RoundedTableDarkInfoL, .RoundedTableDarkInfoBL
+{
+	border-left: solid 1px #31569c;
+}
+
+.RoundedTableLightHeaderR, .RoundedTableDarkHeaderR, .RoundedTableLightInfoR, .RoundedTableLightInfoBR, .RoundedTableDarkInfoR, .RoundedTableDarkInfoBR
+{
+	border-right: solid 1px #31569c;
+}
+
+.RoundedTableDarkFooterB, .RoundedTableLightInfoB, .RoundedTableLightInfoBR, .RoundedTableLightInfoBL, .RoundedTableDarkInfoB, .RoundedTableDarkInfoBR, .RoundedTableDarkInfoBL
+{
+	border-bottom: solid 1px #31569c;
+}
+
+.RoundedTableText:visited
+{
+	text-decoration: underline;
+	color: black;
+}
+.RoundedTableText:hover
+{
+	background-color: #31569C;
+	text-decoration: underline;
+	color: white;
+}
+.RoundedTableText:active
+{
+	background-color: #31569C;
+	text-decoration: underline;
+	color: white;
+}
+.RoundedTableText:link
+{
+	text-decoration: underline;
+	color: black;
+}
+
+.ProjectInfoControlDarkHeader
+{
+	font-family:	Verdana;
+	font-size:		12pt;
+	font-weight:	bold;
+	color: white;
+}
+
+.DG_HEADER, .DG_VIEW_HEADER
+{
+    font-weight: bold;
+    font-size: 8pt;
+    color: black;
+    font-family: Verdana;
+    text-indent : 8;
+    padding-right : 10;
+    background-image: url('Images/RoundedTableControl/light_shading.gif');
+ 
+}
+.DG_VIEW_HEADER
+{
+	position:relative;
+	top:expression(this.offsetParent.scrollTop);
+}
+
+.DG_Normal
+{
+    background-color : White;
+    color : #000066;
+    text-indent : 8;   
+}
+
+.DG_Alternative
+{
+    background-color : #EFF7FF;
+    color : #000066;
+    text-indent : 8;
+}
+
+/* SPSS homepage link on splash screens */
+.spsshomepagelink
+{
+	font-family: Verdana;
+	color: #c41e3a;
+	text-decoration: none;
+	font-weight: bold;
+	FONT-SIZE: 8pt;
+}
+
+.disabled
+{
+	position:absolute;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    background-color:transparent !important;
+	background-color: #e0dfe3 !important;
+    background-image:url('none');
+    background-repeat: repeat
+}
+
+#waitlayer
+{
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    z-index: 10000 !important;
+    width: 200px;
+    height: 100px;
+    cursor: wait;
+    font-family: Verdana, Arial;
+    font-size:10px;
+    position: absolute;
+    background-color: #ccccff !important;   
+}
+
+.waitlayertext
+{
+    width:100%;
+    height:100%;
+    text-align:center;
+    vertical-align:middle;
+    background-color:#ccccff !important;
+    font-family:Verdana;
+    font-size:12px;
+    color: #000066;
+}
+
+#modalContainer {
+    background-color:transparent;
+    position:absolute;
+    width:200%;
+    height:1000%;
+    top:0px;
+    left:0px;
+    z-index:10000;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    background-color:transparent !important;
+    background-color: #76899A;
+    background-image:none;
+    background-repeat: repeat;
+    cursor:wait;
+}
+
+#modalContainerFirefox {
+    background-color:transparent;
+    position:absolute;
+    width:200%;
+    height:1000%;
+    top:0px;
+    left:0px;
+    z-index:10000;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    background-color:transparent !important;
+    background-color: #76899A;
+	background-image: url("images/maskBackground.png") !important;
+     background-repeat: repeat;
+    cursor:wait;
+}
+
+/* TreeViewText - formats the node text in the TreeView control */
+.TreeViewText
+{
+	font-family:	Verdana;
+	font-size:		8pt;
+	color:			#000066;
+	cursor:			default;
+}
+
+/* formnats the node in project tree*/
+/*Folder node*/
+.FolderNode
+{
+	font-family:	Verdana;
+	font-size:		8pt;
+	color: black;
+	padding: 2px 0px 2px 0px;
+}
+/*Project Node*/
+.ProjectNode
+{
+	font-family:	Verdana;
+	font-size:		8pt;
+	color: black;
+	text-decoration: underline;
+	padding: 2px 0px 2px 0px;
+	cursor: hand;
+}
+
+.EditNode
+{
+	font-family:	Verdana;
+	font-size:		8Pt;
+	color: black;
+	padding: 4px 0px 0px 0px;
+	vertical-align: middle;
+}
+.HoverNode
+{
+	background-color: #31569C;	
+	color: white;
+	padding: 2px 0px 2px 0px;
+}
+.SelectedNode
+{
+	background-color: #31569C;	
+	color: white;
+	padding: 2px 0px 2px 0px;
+}

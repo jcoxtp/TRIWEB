@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="typename_string" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="typename_int32" xml:space="preserve">
+    <value>Int32</value>
+  </data>
+  <data name="typename_bool" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="standard_error_browser_title" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="standard_error_head_permission_denied" xml:space="preserve">
+    <value>Permission denied</value>
+  </data>
+  <data name="standard_error_head_permissioncheck_failed" xml:space="preserve">
+    <value>Failed to check permissions</value>
+  </data>
+  <data name="standard_error_permissioncheck_failed" xml:space="preserve">
+    <value>An unexpected error occurred while checking permissions.\n\nMore information about this error is available in the log files for the application.\nYou must have access to the server or contact an administrator to get this information.</value>
+  </data>
+  <data name="standard_error_permission_to_application_denied" xml:space="preserve">
+    <value>You do not have permission to use the ProjectEditor.</value>
+  </data>
+  <data name="standard_button_ok" xml:space="preserve">
+    <value>OK</value>
+    <comment>Standard label for OK button in dialogs</comment>
+  </data>
+  <data name="standard_button_cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Standard label for Cancel button in dialogs</comment>
+  </data>
+  <data name="standard_button_close" xml:space="preserve">
+    <value>Close</value>
+    <comment>Standard label for Close button in dialogs</comment>
+  </data>
+  <data name="CommonProjectInfo_ProjectId" xml:space="preserve">
+    <value>Project Id:</value>
+  </data>
+  <data name="CommonProjectInfo_ProjectName" xml:space="preserve">
+    <value>Project Name:</value>
+  </data>
+  <data name="CommonProjectInfo_Description" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="CommonProjectInfo_Advice" xml:space="preserve">
+    <value>To edit the properties for the current project fill in the form below.</value>
+  </data>
+  <data name="ReadWrite" xml:space="preserve">
+    <value>ReadWrite</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>ReadOnly</value>
+  </data>
+  <data name="menu_help_tooltip" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="menu_exit_tooltip" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="menu_tabtext_projectinfo" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="menu_tabtext_permissions" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="menu_tabtext_connection" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="menu_tabtext_properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="projectinfo_wait_infotext" xml:space="preserve">
+    <value>Reading project properties. Please wait...</value>
+  </data>
+  <data name="projectinfo_application" xml:space="preserve">
+    <value>Application:</value>
+  </data>
+  <data name="projectinfo_label" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="projectinfo_description" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="projectinfo_status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="projectinfo_groupname" xml:space="preserve">
+    <value>Project Folder:</value>
+  </data>
+  <data name="projectinfo_roles_label" xml:space="preserve">
+    <value>Groups / Roles:</value>
+  </data>
+  <data name="projectinfo_edit_link" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="projectinfo_metadata_type" xml:space="preserve">
+    <value>Meta Data Type:</value>
+  </data>
+  <data name="projectinfo_metadata_location" xml:space="preserve">
+    <value>Meta Data Location:</value>
+  </data>
+  <data name="projectinfo_metadata_readwrite" xml:space="preserve">
+    <value>Meta Data Read/Write:</value>
+  </data>
+  <data name="projectinfo_casedata_type" xml:space="preserve">
+    <value>Case Data Type:</value>
+  </data>
+  <data name="projectinfo_casedata_location" xml:space="preserve">
+    <value>Case Data Location:</value>
+  </data>
+  <data name="projectinfo_casedata_project" xml:space="preserve">
+    <value>Case Data Project:</value>
+  </data>
+  <data name="projectinfo_properties_click_to_insert" xml:space="preserve">
+    <value>&lt; Click here to add property &gt;</value>
+  </data>
+  <data name="projectinfo_properties_header_property_name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="projectinfo_properties_header_property_value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="projectinfo_properties_header_property_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="projectinfo_new_property_basename" xml:space="preserve">
+    <value>NewProperty</value>
+  </data>
+  <data name="projectinfo_new_property_default_string" xml:space="preserve">
+    <value>Some Value</value>
+  </data>
+  <data name="projectinfo_properties_header" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="projectinfo_link_add_tooltip" xml:space="preserve">
+    <value>Click here to add a new property</value>
+  </data>
+  <data name="projectinfo_link_delete_tooltip" xml:space="preserve">
+    <value>Click here to delete the selected property</value>
+  </data>
+  <data name="projectinfo_link_import_tooltip" xml:space="preserve">
+    <value>Click here to import properties from another project</value>
+  </data>
+  <data name="projectinfo_err_delete_propertyname_not_found" xml:space="preserve">
+    <value>The property "{0}" could not be found in DPM</value>
+    <comment>{0} will be replaced with the name of the property that the user is trying to delete</comment>
+  </data>
+  <data name="projectinfo_err_project_not_found" xml:space="preserve">
+    <value>The project "{0}" could not be found.\nEither you don't have access to the project or it doesn't exist.</value>
+    <comment>{0} will be replaced with the name of the project</comment>
+  </data>
+  <data name="projectinfo_link_addapp_tooltip" xml:space="preserve">
+    <value>Click here to add an application to the list</value>
+  </data>
+  <data name="projectinfo_link_addapp" xml:space="preserve">
+    <value>Add Application</value>
+  </data>
+  <data name="projectinfo_confirm_overwrite_app_settings" xml:space="preserve">
+    <value>Application settings already exist for the selected application in this project.\n\nDo you want to overwrite existing application properties with the default properties?</value>
+  </data>
+  <data name="projectinfo_err_delete_no_property_was_selected" xml:space="preserve">
+    <value>No property was selected for deletion.\n\nSelect a property in the property list and try again.</value>
+  </data>
+  <data name="projectinfo_err_must_select_groupname" xml:space="preserve">
+    <value>A project folder must be selected. &lt;All&gt; and &lt;Common Folder&gt; folders are not real project folders.</value>
+  </data>
+  <data name="projectinfo_err_set_app_properties" xml:space="preserve">
+    <value>Failed to get properties for the application selected for the project.</value>
+  </data>
+  <data name="projectinfo_err_setadd_property_failed" xml:space="preserve">
+    <value>Setting or adding the property in DPM failed.</value>
+  </data>
+  <data name="projectinfo_err_get_property_failed" xml:space="preserve">
+    <value>Failed to find the property in DPM.</value>
+  </data>
+  <data name="projectinfo_err_propertyname_already_exists" xml:space="preserve">
+    <value>A property with the specified name already exists in DPM for this project.</value>
+  </data>
+  <data name="projectinfo_err_set_propertyname_failed" xml:space="preserve">
+    <value>An error occurred while setting the name of the property.</value>
+  </data>
+  <data name="projectinfo_err_permission_cant_set_project_state" xml:space="preserve">
+    <value>You do not have permission to change the project state for projects.</value>
+  </data>
+  <data name="projectinfo_err_permission_cant_alter_properties" xml:space="preserve">
+    <value>You do not have permission to change properties for projects.</value>
+  </data>
+  <data name="projectinfo_err_datalocation_empty" xml:space="preserve">
+    <value>The "DataLocation" property is empty, so none of the meta- or case data properties can be displayed.</value>
+  </data>
+  <data name="projectinfo_err_role_row_not_found" xml:space="preserve">
+    <value>The application could not find the role "{0}" that you just gave access to the project.</value>
+    <comment>{0} will be replaced with role name for which access was being changed</comment>
+  </data>
+  <data name="projectinfo_err_authorize_role_failed" xml:space="preserve">
+    <value>The application failed to give the role "{0}" access to the project.</value>
+    <comment>{0} will be replaced with role name for which access was being changed</comment>
+  </data>
+  <data name="projectinfo_err_unauthorize_role_failed" xml:space="preserve">
+    <value>The application failed to remove access to the project for role "{0}".</value>
+    <comment>{0} will be replaced with role name for which access was being changed</comment>
+  </data>
+  <data name="dlgUploadExistingData_title" xml:space="preserve">
+    <value>Upload Existing Data</value>
+  </data>
+  <data name="dlgUploadExistingData_filelist_none" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="dlgUploadExistingData_lblDataType" xml:space="preserve">
+    <value>Data Type:</value>
+  </data>
+  <data name="dlgUploadExistingData_PromptSelectDataType" xml:space="preserve">
+    <value>Select data type...</value>
+  </data>
+  <data name="dlgUploadExistingData_OtherDataType" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="dlgUploadExistingData_lblFileToUpload" xml:space="preserve">
+    <value>File to upload:</value>
+  </data>
+  <data name="dlgUploadExistingData_lblFilesUploaded" xml:space="preserve">
+    <value>File(s) uploaded:</value>
+  </data>
+  <data name="dlgUploadExistingData_btnTestConnection" xml:space="preserve">
+    <value>Test Connection</value>
+  </data>
+  <data name="dlgUploadExistingData_btnFinish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="dlgUploadExistingData_popup_uploading" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="dlgUploadExistingData_popup_file_saved" xml:space="preserve">
+    <value>Saved.</value>
+  </data>
+  <data name="dlgUploadExistingData_popup_waiting" xml:space="preserve">
+    <value>Waiting...</value>
+  </data>
+  <data name="dlgUploadExistingData_test_connection_succeeded" xml:space="preserve">
+    <value>Test connection succeeded.</value>
+  </data>
+  <data name="dlgUploadExistingData_other_use_edit_project" xml:space="preserve">
+    <value>You have selected "Other" as the data type.
+
+Please edit the project properties to manually set the connection string.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_dsc_not_found" xml:space="preserve">
+    <value>Could not find component "{0}" in internal DSC component list.</value>
+    <comment>{0} is replaced with the name of the dsc that could not be found internally by the application</comment>
+  </data>
+  <data name="dlgUploadExistingData_err_initial_catalog_no_access_to_userfolder" xml:space="preserve">
+    <value>Failed to generate "Initial Catalog" value.
+No access to the user folder.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_initial_catalog_no_user_folder" xml:space="preserve">
+    <value>Failed to generate "Initial Catalog" value.
+User folder does not exist.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_initial_catalog" xml:space="preserve">
+    <value>Failed to generate "Initial Catalog" value.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_initial_catalog_no_mdsc_no_mdd" xml:space="preserve">
+    <value>Failed to generate "Initial Catalog" value. "{0}" has no meta data dsc and no mdd file is in the user folder</value>
+    <comment>{0} is replaced with the name of the dsc that could not be found internally by the application</comment>
+  </data>
+  <data name="dlgUploadExistingData_err_initial_catalog_defaultext_failed" xml:space="preserve">
+    <value>Failed to generate "Initial Catalog" value using the default extension for the dsc.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_initial_catalog_filemask_failed" xml:space="preserve">
+    <value>Failed to generate "Initial Catalog" value using the registered file masks for the dsc.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_initial_catalog_no_dsc_files" xml:space="preserve">
+    <value>Failed to generate "Initial Catalog" value. No files for the selected Dsc "{0}" was found in the user folder.</value>
+    <comment>{0} is replaced with the name of the selected dsc</comment>
+  </data>
+  <data name="dlgUploadExistingData_err_location_no_access_to_userfolder" xml:space="preserve">
+    <value>Failed to generate "Location" value.
+No access to the user folder.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_location_no_user_folder" xml:space="preserve">
+    <value>Failed to generate "Location" value.
+User folder does not exist.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_location_defaultext_failed" xml:space="preserve">
+    <value>Failed to generate "Location" value using the default extension for the dsc.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_location_filemask_failed" xml:space="preserve">
+    <value>Failed to generate "Location" value using the registered file masks for the dsc.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_location_no_dsc_files" xml:space="preserve">
+    <value>Failed to generate "Location" value. No files for the selected Dsc "{0}" was found in the user folder.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_SelectDataType" xml:space="preserve">
+    <value>Please select a data type.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_permission_cant_edit_properties" xml:space="preserve">
+    <value>You do not have permission to change properties for projects.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_project_not_found" xml:space="preserve">
+    <value>The project "{0}" could not be found.\nEither you don't have access to the project or it doesn't exist.</value>
+    <comment>{0} will be replaced with the ID of the project</comment>
+  </data>
+  <data name="dlgUploadExistingData_err_set_app_properties" xml:space="preserve">
+    <value>The settings could not be saved.\nFailed to get the properties for the project from DPM.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_could_not_get_project_folder" xml:space="preserve">
+    <value>The application could not get the path to your project folder.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_open_upload_zip_failed" xml:space="preserve">
+    <value>Could not open the uploaded zip file for reading.</value>
+  </data>
+  <data name="dlgUploadExistingData_confirm_upload_rename" xml:space="preserve">
+    <value>All files belonging to a project must have a name whose root matches the project name; that is, they must be called ProjectName.xxx. When you start an activity, it will locate the project files by using the project name with an appropriate extension. There are exceptions, such as template and sample files.
+When you upload a file that has an extension that DimensionNet recognizes as a project file extension, and its name does not match the project name, Files asks you whether you want it to rename the file. You should normally answer Yes to this question.
+
+Do you want to rename the uploaded file "{0}" to a project file called "{1}"?</value>
+    <comment>{0} is replaced with the filename of the uploaded file. {1} is replaced with the name the ManageFiles would like to rename the file to</comment>
+  </data>
+  <data name="dlgUploadExistingData_confirm_upload_unzip_overwrite" xml:space="preserve">
+    <value>The file "{0}" already exists on server.\n\nOverwrite with the file in the uploaded zip file?</value>
+    <comment>{0} is replaced with the filename</comment>
+  </data>
+  <data name="dlgUploadExistingData_err_upload_unzip_get_existing_fileinfo_failed" xml:space="preserve">
+    <value>An error occurred while trying to overwrite the destination file.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_could_not_save_zip" xml:space="preserve">
+    <value>The uploaded file could not be saved on the server.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_upload_unzip_get_delete_existing_failed" xml:space="preserve">
+    <value>An error occurred while trying to overwrite the destination file.</value>
+  </data>
+  <data name="dlgUploadExistingData_err_unzip_error_occurred" xml:space="preserve">
+    <value>An error occurred while extracting the uploaded zip file.</value>
+  </data>
+  <data name="dlgUploadExistingData_confirm_upload_overwrite" xml:space="preserve">
+    <value>The file "{0}" already exists on server.\n\nOverwrite with uploaded file?</value>
+    <comment>{0} is replaced with the filename</comment>
+  </data>
+  <data name="dlgUploadExistingData_err_upload_savefile_failed" xml:space="preserve">
+    <value>The uploaded file could not be saved on the server.</value>
+  </data>
+  <data name="dlgNewProject_title" xml:space="preserve">
+    <value>New Project</value>
+  </data>
+  <data name="dlgNewProject_application" xml:space="preserve">
+    <value>Project Type:</value>
+  </data>
+  <data name="dlgNewProject_label" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="dlgNewProject_description" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="dlgNewProject_button_advanced" xml:space="preserve">
+    <value>Advanced...</value>
+  </data>
+  <data name="dlgNewProject_invalid_generated_projectname" xml:space="preserve">
+    <value>The auto-generated project ID is not valid.\n\n{0}</value>
+    <comment>{0} will be replaced with additional information about the invalid ID</comment>
+  </data>
+  <data name="dlgNewProject_validate_projectname_empty" xml:space="preserve">
+    <value>The project ID is empty</value>
+  </data>
+  <data name="dlgNewProject_validate_projectname_too_long" xml:space="preserve">
+    <value>ID has more than 16 characters [{0}]</value>
+    <comment>{0} will be replaced with the invalid project ID</comment>
+  </data>
+  <data name="dlgNewProject_validate_projectname_first_char_invalid" xml:space="preserve">
+    <value>The project ID begins with an invalid character [{0}]</value>
+    <comment>{0} will be replaced with the invalid project ID</comment>
+  </data>
+  <data name="dlgNewProject_validate_projectname_invalid_char" xml:space="preserve">
+    <value>The project ID contains an invalid character [{0}]</value>
+    <comment>{0} will be replaced with the invalid project ID</comment>
+  </data>
+  <data name="dlgNewProject_err_tolong" xml:space="preserve">
+    <value>The ID you specified is too long.\n\nThe maximum length for a project ID is 16 characters.</value>
+  </data>
+  <data name="dlgNewProject_err_permission_cant_create_projects" xml:space="preserve">
+    <value>You do not have permission to create new projects.</value>
+  </data>
+  <data name="dlgNewProject_err_name_empty" xml:space="preserve">
+    <value>A project ID must be specified.</value>
+  </data>
+  <data name="dlgNewProject_err_invalid" xml:space="preserve">
+    <value>The project ID contains invalid characters.\n\nA Project ID must start with a letter\nfollowed by up to 15 of these characters:\n "a-z", "A-Z", "0-9".</value>
+  </data>
+  <data name="dlgNewProject_err_reserved" xml:space="preserve">
+    <value>The project ID is invalid, because it is reserved.\n\nThe following project IDs are reserved:</value>
+  </data>
+  <data name="dlgNewProject_err_label_invalid" xml:space="preserve">
+    <value>You must specify a name for the project.</value>
+  </data>
+  <data name="dlgNewProject_err_already_exists" xml:space="preserve">
+    <value>Unable to create project. A project with the selected ID already exists.</value>
+  </data>
+  <data name="dlgNewProject_err_createproject_failed" xml:space="preserve">
+    <value>Unable to create project.</value>
+  </data>
+  <data name="dlgNewProject_err_set_app_properties" xml:space="preserve">
+    <value>Failed to set properties to selected application for the new project.</value>
+  </data>
+  <data name="dlgNewProject_err_initialize_property" xml:space="preserve">
+    <value>Failed to initialize the value of the property "{0}" for the new project.\n\nThe project was created, but not all properties was properly initialized.</value>
+    <comment>{0} is substituted with the name of the property that was not properly initialized.</comment>
+  </data>
+  <data name="dlgNewProject_work_in_progress_popup" xml:space="preserve">
+    <value>Please wait while the project is created...</value>
+  </data>
+  <data name="dlgNewProject_err_no_generateprojectname_script" xml:space="preserve">
+    <value>Could not get the script for generating new project ID.</value>
+  </data>
+  <data name="dlgSelectProjectGroup_label_projectgroup" xml:space="preserve">
+    <value>Project Folder:</value>
+  </data>
+  <data name="dlgSelectApplication_title" xml:space="preserve">
+    <value>Select Application</value>
+  </data>
+  <data name="dlgSelectApplication_label_application" xml:space="preserve">
+    <value>Application:</value>
+  </data>
+  <data name="dlgImportProperties_title" xml:space="preserve">
+    <value>Import Properties</value>
+  </data>
+  <data name="dlgImportProperties_header" xml:space="preserve">
+    <value>Import Properties</value>
+  </data>
+  <data name="dlgImportProperties_project_name" xml:space="preserve">
+    <value>Project ID:</value>
+  </data>
+  <data name="dlgImportProperties_application" xml:space="preserve">
+    <value>Application:</value>
+  </data>
+  <data name="dlgImportProperties_header_property_select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="dlgImportProperties_header_property_name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="dlgImportProperties_header_property_value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="dlgImportProperties_header_property_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="dlgImportProperties_err_could_not_find_source_project" xml:space="preserve">
+    <value>Could not select the project to copy properties from in DPM</value>
+  </data>
+  <data name="dlgImportProperties_err_no_such_application_for_project" xml:space="preserve">
+    <value>Properties for the selected application were not found for the currently opened project</value>
+  </data>
+  <data name="dlgImportProperties_err_permission_cant_alter_properties" xml:space="preserve">
+    <value>You do not have permission to change properties for projects.</value>
+  </data>
+  <data name="default_err_init_chaininfo_failed" xml:space="preserve">
+    <value>The page could not initialize chain information.</value>
+  </data>
+  <data name="default_err_no_projectname" xml:space="preserve">
+    <value>The application did not receive a project ID for the project to edit.</value>
+  </data>
+  <data name="default_err_cant_alter_properties" xml:space="preserve">
+    <value>You do not have permission to edit properties for projects.</value>
+  </data>
+  <data name="default_err_project_doesnt_exist" xml:space="preserve">
+    <value>The project "{0}" doesn't exist.</value>
+    <comment>{0} will be replaced with the ID of the project</comment>
+  </data>
+  <data name="default_err_no_access_to_project" xml:space="preserve">
+    <value>You do not have permission to work on the project "{0}"</value>
+    <comment>{0} will be replaced with the ID of the project</comment>
+  </data>
+  <data name="Chain_NewProject_err_permission_cant_create_projects" xml:space="preserve">
+    <value>You do not have permission to create new projects.</value>
+  </data>
+  <data name="Chain_NewProject_err_no_chain_specified" xml:space="preserve">
+    <value>This application is running in a chain, but no chain name was specified.</value>
+  </data>
+  <data name="Chain_NewProject_err_init_chaininfo_failed" xml:space="preserve">
+    <value>The page could not initialize chain information.</value>
+  </data>
+  <data name="err_project_not_found" xml:space="preserve">
+    <value>The project "{0}" could not be found.\nEither you don't have access to the project or it doesn't exist.</value>
+    <comment>{0} will be replaced with the ID of the project</comment>
+  </data>
+  <data name="err_invalid_application" xml:space="preserve">
+    <value>The application specified was not a known application name. Application name: </value>
+  </data>
+  <data name="err_unable_to_connect_to_dpm" xml:space="preserve">
+    <value>The application could not log on to the DPM system.</value>
+  </data>
+  <data name="dlgNewProjectConfigure_title" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_tolong" xml:space="preserve">
+    <value>The ID you specified is too long.\n\nThe maximum length for a project ID is 16 characters.</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_invalid" xml:space="preserve">
+    <value>The project ID contains invalid characters.\n\nA Project ID must start with a letter\nfollowed by up to 15 of these characters:\n "a-z", "A-Z", "0-9".</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_reserved" xml:space="preserve">
+    <value>The project ID is invalid, because it is reserved.\n\nThe following project IDs are reserved:</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_groupname_invalid_required" xml:space="preserve">
+    <value>The selected project folder is not valid.\n\nThe project folder name cannot be empty or any of the following reserved names:\n - &lt;All&gt;\n - &lt;Common Folder&gt;</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_groupname_invalid" xml:space="preserve">
+    <value>The selected project folder name is not valid.\n\nThe project folder name cannot be any of the following reserved names:\n - &lt;All&gt;\n - &lt;Common Folder&gt;</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_name_empty" xml:space="preserve">
+    <value>A project ID must be specified.</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_check_name_exists" xml:space="preserve">
+    <value>A project with the ID that you have specified already exists in DPM.</value>
+  </data>
+  <data name="dlgNewProjectConfigure_check_name_ok" xml:space="preserve">
+    <value>The project ID is valid.</value>
+  </data>
+  <data name="dlgNewProjectConfigure_project_name" xml:space="preserve">
+    <value>Project ID:</value>
+  </data>
+  <data name="dlgNewProjectConfigure_checklink" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="dlgNewProjectConfigure_groupname" xml:space="preserve">
+    <value>Project Folder:</value>
+  </data>
+  <data name="dlgNewProjectConfigure_roles_label" xml:space="preserve">
+    <value>Groups / Roles:</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_permission_cant_edit_properties" xml:space="preserve">
+    <value>You do not have permission to change properties for projects.</value>
+  </data>
+  <data name="dlgNewProjectConfigure_err_project_not_found" xml:space="preserve">
+    <value>The project "{0}" could not be found.\nEither you don't have access to the project or it doesn't exist.</value>
+    <comment>{0} will be replaced with the ID of the project</comment>
+  </data>
+  <data name="dlgNewProjectConfigure_err_set_app_properties" xml:space="preserve">
+    <value>The settings could not be saved.\nFailed to get the properties for the project from DPM.</value>
+  </data>
+  <data name="StopErrorPage_finishbutton" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="UnsupportedBrowser_title" xml:space="preserve">
+    <value>Unsupported Browser</value>
+  </data>
+  <data name="UnsupportedBrowser_heading" xml:space="preserve">
+    <value>The selected activity is not supported in this browser.</value>
+  </data>
+  <data name="UnsupportedBrowser_description" xml:space="preserve">
+    <value>The activity requires Microsoft Internet Explorer version 6.0 or higher.</value>
+  </data>
+  <data name="UnsupportedBrowser_unknownbrowser" xml:space="preserve">
+    <value>&lt;Unknown&gt;</value>
+  </data>
+  <data name="help_dialog_title" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="help_files_not_found" xml:space="preserve">
+    <value>Could not find the help files on the server.</value>
+  </data>
+  <data name="dlgNewProjectConfigure_project_link" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="dlgNewProjectConfigure_permissions_link" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="mainframe_checkout_failed_prompt" xml:space="preserve">
+    <value>Failed to check out the project metadata document to your project folder.\n\nWhen editing the connection string properties the mdd file should be in your project folder on the\nserver, but the file could not be checked out to your project folder on the server.\n\nMore information about the error is available in the log files on the server.</value>
+  </data>
+  <data name="mainframe_checkout_failed_title" xml:space="preserve">
+    <value>Metadata file not checked out</value>
+  </data>
+  <data name="project_status_inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="project_status_active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="project_status_test" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="waitlayerstring" xml:space="preserve">
+    <value>Please Wait...</value>
+  </data>
+  <data name="top_level" xml:space="preserve">
+    <value>&lt;Top level&gt;</value>
+  </data>
+  <data name="create_new_folder" xml:space="preserve">
+    <value>&lt;Create new folder&gt;</value>
+  </data>
+  <data name="dialognew_title" xml:space="preserve">
+    <value>New folder</value>
+  </data>
+  <data name="dialognew_label" xml:space="preserve">
+    <value>Enter new folder name:</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="err_gropuname_isnull" xml:space="preserve">
+    <value>Folder name cannot be blank.</value>
+  </data>
+  <data name="err_gropuname_existed" xml:space="preserve">
+    <value>Folder name already exists. Choose Cancel to select the folder from the drop down or type in a new folder name</value>
+  </data>
+  <data name="err_gropuname_invalid" xml:space="preserve">
+    <value>Invalid folder name. Names may contain letters, numbers, and certain punctuation characters.\nNames must not start with a space and may not contain ~ ` | &lt; or &gt;.</value>
+  </data>
+  <data name="err_projectname_invalid" xml:space="preserve">
+    <value>Invalid project name. Please try again...</value>
+  </data>
+  <data name="xss_project_description" xml:space="preserve">
+    <value>Invalid project description. The project description cannot contain HTML tags.</value>
+  </data>
+  <data name="xss_project_name" xml:space="preserve">
+    <value>Invalid project name. The project name cannot contain HTML tags.</value>
+  </data>
+  <data name="activity_name" xml:space="preserve">
+    <value>Edit Project</value>
+  </data>
+  <data name="QuestionYesNo_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="QuestionYesNo_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+</root>

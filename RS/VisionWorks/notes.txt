@@ -1,0 +1,27 @@
+Normal Site Colors
+============================================
+#666666 : gray page background
+
+Navigation Styles
+============================================
+.nav {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #FFFFFF;
+	background-color: #3366CC;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #CCCCCC;
+	width: 20%;
+	height: 20px;
+	vertical-align: middle;
+}
+.nav a:link, .nav a:visited, .nav a:active {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #FFFFFF;
+	}
+.nav a:hover {
+	text-decoration:underline;
+}

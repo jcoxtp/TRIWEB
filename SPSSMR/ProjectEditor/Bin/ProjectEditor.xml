@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application name="ProjectEditor">
+	<ApplicationSettings>
+		<Property name="ShowInLauncher" datatype="boolean">False</Property>
+		<Property name="DisplayName" datatype="string">
+			<![CDATA[ProjectEditor]]>
+		</Property>
+		<Property name="DPMAccessType"  datatype="string">ReadWrite</Property>
+		<Property name="FileAccessType" datatype="string">ReadWrite</Property>
+		<Property name="WriteAccessForProject" datatype="boolean">True</Property>
+		<Property name="ApplicationType" datatype="string">
+			<![CDATA[authoring]]>
+		</Property>
+		<Property name="StartURL" datatype="string">
+			<![CDATA[../ProjectEditor/ApplicationInit.aspx]]>
+		</Property>
+		<Property name="NewProjectURL" datatype="string">
+			<![CDATA[../ProjectEditor/dlgNewProject.aspx?lang={LANGUAGE}]]>
+		</Property>
+		<Property name="EditURL" datatype="string">
+			<![CDATA[../ProjectEditor/ApplicationInit.aspx]]>
+		</Property>
+		<Property name="ConnectionStringTemplate" datatype="string">
+			<![CDATA[Provider=mrOleDB.Provider.2;Data Source=mrRdbDsc2;Location="Provider=SQLOLEDB.1;Persist Security Info=False;Integrated Security=SSPI;Initial Catalog={PROJECTNAME};Data Source={SQLSERVERNAME}";MR Init Project={PROJECTNAME};MR Init MDM Access=1;Initial Catalog=<UserFolder>\Projects\{PROJECTNAME}\{PROJECTNAME}.mdd;]]>
+		</Property>
+		<Property name="ScriptCreateUniqueProjectName" datatype="string">
+			<![CDATA[
+			Function CreateUniqueProjectName (UserName, LoginTicket, Label, ProjectType)
+				Dim MaxProjectNameLength
+				Dim MaxAttempts
+				Dim sInvalidCharsExp
+				Dim sFirstCharValidExp
+				Dim sReplacementFirstChar
+				
+				' For now, Dimensions projects use the Quancept rules
+				ProjectType = "Quancept"
+				
+				Select Case ProjectType
+				
+				Case "Quancept"
+					MaxProjectNameLength = 16
+					MaxAttempts = 999
+					sInvalidCharsExp = "[^a-zA-Z0-9]"
+					sFirstCharValidExp = "[a-zA-Z]"
+					sReplacementFirstChar = "A"
+					
+				Case "Dimensions"
+					MaxProjectNameLength = 128
+					MaxAttempts = 999
+					' Avoid using characters in regular expressions
+					' There may be issues evaluating the characters in some locales
+					' Use character codes instead
+					' sInvalidCharsExp using characters = "[^\w\$@À-ÖØ-Þà-öø-þŸÿŠšŒœŽž]"
+					sInvalidCharsExp = "[^\w\$@\u00C0-\u00D6\u00D8-\u00DE\u00E0-\u00F6\u00F8-\u00FE\u0178\u00FF\u0160\u0161\u0152\u0153\u017D\u017E]"
+					' sFirstCharValidExp using characters = "[a-zA-ZÀ-ÖØ-Þà-öø-þŸÿŠšŒœŽž]"
+					sFirstCharValidExp = "[a-zA-Z\u00C0-\u00D6\u00D8-\u00DE\u00E0-\u00F6\u00F8-\u00FE\u0178\u00FF\u0160\u0161\u0152\u0153\u017D\u017E]"
+					sReplacementFirstChar = "_"
+					
+				End Select
+				
+				Dim sBaseLabel, sTryLabel
+				Dim i
+				Dim bUnique
+				
+				sBaseLabel = RemoveInvalidCharacters(Label, sInvalidCharsExp)
+				
+				If Len(sBaseLabel) = 0 Then
+					' Fall back to original method
+					sTryLabel = CreateNameFromUserNameAndDate(UserName, MaxProjectNameLength, sInvalidCharsExp)					
+				Else
+					' Check that first character is valid
+					If (Not TestForMatch(Left(sBaseLabel, 1), sFirstCharValidExp)) Then
+						sBaseLabel = MakeString(sReplacementFirstChar, sBaseLabel)
+					End If
+					
+					sTryLabel = Left(sBaseLabel, MaxProjectNameLength)
+					' If the original name is not unique,
+					' then try to create the Name from the Label MaxAttempts times
+					' by adding the value of i to the end of the Label
+					' So for Label Test, we will try Test1, Test2, ... Test999
+					For i = 1 To MaxAttempts + 1
+						bUnique = IsUniqueProjectName(LoginTicket, UserName, sTryLabel)
+						If (bUnique) Then
+							Exit For
+						End If
+						sTryLabel = Left(sBaseLabel, MaxProjectNameLength - Len(CText(i)))
+						sTryLabel = MakeString(sTryLabel, i)
+					Next
+					
+					' If cannot create Name from Label, then fall back to
+	 				' using UserName and Date
+					If (Not bUnique) Then
+						sTryLabel = CreateNameFromUserNameAndDate(UserName, MaxProjectNameLength, sInvalidCharsExp)
+					End If			
+				End If
+				
+				CreateUniqueProjectName = sTryLabel
+			End Function
+			
+			Function IsUniqueProjectName(Ticket, UserName, ProjectName)
+				Dim oAgent, bLogin, oProject
+				
+				Set oAgent = CreateObject("SPSSMR.DPM.Security.Login.Agent2")
+				bLogin = oAgent.TicketLogin(UserName, Ticket)
+				If (Not bLogin) Then
+					' Cannot Login so cannot check if unique
+					' Return True and let Project Editor check
+					IsUniqueProjectName = True
+					Exit
+				End If
+				
+				On Error Resume Next
+				Set oProject = oAgent.Server.Projects[ProjectName]
+				On Error GoTo 0
+				If (oProject Is Null) Then
+				    ' Check Err.Number
+				    ' ProjectName may be in use but this user may not have permission to access it
+				    If (Err.Number = &H80070005) Then
+				        IsUniqueProjectName = False
+				    Else
+					IsUniqueProjectName = True
+				    End If
+				Else
+				    IsUniqueProjectName = False
+				End If
+			End Function
+			
+			Function CreateNameFromUserNameAndDate(UserName, MaxProjectNameLength, InvalidCharsExp)			
+				Dim sDatePart
+				Dim YY, MM, DD, hh, nn
+				Dim dNow
+				
+				dNow = Now()
+				
+				YY = Format2Digit(DatePart(dNow, "yyyy"))
+				MM = Format2Digit(DatePart(dNow, "m"))
+				DD = Format2Digit(DatePart(dNow, "d"))
+				hh = Format2Digit(DatePart(dNow, "h"))
+				nn = Format2Digit(DatePart(dNow, "n"))
+				
+				sDatePart = MakeString( YY, MM, DD, hh, nn )
+				
+				Dim aUsernameParts
+				Dim sUsernamePart
+				aUsernameParts = Split(UserName, "\", -1)
+				sUsernamePart = aUsernameParts[UBound(aUsernameParts)]
+				
+				sUsernamePart = RemoveInvalidCharacters(sUsernamePart, InvalidCharsExp)
+				
+				If Len(sUsernamePart) = 0 Then
+					sUsernamePart = "A"
+				End If
+				
+				sUsernamePart = Left(sUsernamePart, MaxProjectNameLength - Len(sDatePart) )
+				
+				CreateNameFromUserNameAndDate = MakeString( sUsernamePart, sDatePart )
+			End Function
+			
+			Function TestForMatch(s, expMatch)
+				Dim oRE
+				
+				Set oRE = CreateObject("VBScript.RegExp")
+				oRE.Pattern = expMatch
+				oRE.IgnoreCase = True
+				oRE.Global = True
+				TestForMatch = oRE.Test(s)
+			End Function
+			
+			Function RemoveInvalidCharacters(s, expInvalidChars)
+				Dim oRE
+				
+				RemoveInvalidCharacters = ""
+				
+				Set oRE = CreateObject("VBScript.RegExp")
+				oRE.Pattern = expInvalidChars
+				oRE.IgnoreCase = True
+				oRE.Global = True
+				RemoveInvalidCharacters = oRE.Replace(s, "")
+			End Function
+			
+			Function Format2Digit(n)
+				If n < 10 Then
+					Format2Digit = MakeString("0", n)
+				ElseIf n > 99 Then
+					Format2Digit = Format2Digit(n Mod 100)
+				Else
+					Format2Digit = CText(n)
+				End If
+			End Function
+			]]>
+		</Property>
+		<Property name="ScriptCreateUniqueProjectName_Old" datatype="string">
+			<![CDATA[
+			Function CreateUniqueProjectName(UserName, LoginTicket, Label, ProjectType)
+				Dim MaxProjectnameLength
+				MaxProjectnameLength = 16
+				
+				Dim sDatePart
+				Dim YY, MM, DD, hh, nn
+				Dim dNow
+				
+				dNow = Now()
+				
+				YY = Format2Digit(DatePart(dNow, "yyyy"))
+				MM = Format2Digit(DatePart(dNow, "m"))
+				DD = Format2Digit(DatePart(dNow, "d"))
+				hh = Format2Digit(DatePart(dNow, "h"))
+				nn = Format2Digit(DatePart(dNow, "n"))
+				
+				sDatePart = MakeString( YY, MM, DD, hh, nn )
+				
+				Dim aUsernameParts
+				Dim sUsernamePart
+				aUsernameParts = Split(UserName, "\", -1)
+				sUsernamePart = aUsernameParts[UBound(aUsernameParts)]
+				
+				sUsernamePart = RemoveInvalidCharacters(sUsernamePart)
+				
+				If Len(sUsernamePart) = 0 Then
+					sUsernamePart = "A"
+				End If
+				
+				sUsernamePart = Left(sUsernamePart, MaxProjectnameLength-Len(sDatePart) )
+				
+				CreateUniqueProjectName = MakeString( sUsernamePart, sDatePart )
+			End Function
+			
+			Function RemoveInvalidCharacters(s)
+				Dim oRE
+				
+				RemoveInvalidCharacters = ""
+				
+				Set oRE = CreateObject("VBScript.RegExp")
+				oRE.Pattern = "[^a-z|0-9]"
+				oRE.IgnoreCase = True
+				oRE.Global = True
+				RemoveInvalidCharacters = oRE.Replace(s, "")
+			End Function
+			
+			Function Format2Digit(n)
+				If n < 10 Then
+					Format2Digit = MakeString("0", n)
+				ElseIf n > 99 Then
+					Format2Digit = Format2Digit(n Mod 100)
+				Else
+					Format2Digit = CText(n)
+				End If
+			End Function
+			]]>
+		</Property>
+		<Property name="ShowAsTool" datatype="boolean">True</Property>
+		<Property name="ShowForProject" datatype="boolean">True</Property>
+		<Property name="RenameUploadExtensionList" datatype="string">
+			<![CDATA[.mdd;.sif;.qqc;.mqd]]>
+		</Property>
+		<Property name="PublicResourceFolder" datatype="string">
+		      <![CDATA[../ProjectEditor/bin]]>
+		</Property>
+		<Property name="PublicResourceFileName" datatype="8">
+			<![CDATA[PublicResources.resx]]>
+		</Property>
+		<Property name="DefaultProjectType" datatype="string">
+			<![CDATA[mrInterview (Dimensions)]]>
+		</Property>
+	</ApplicationSettings>
+	<UserSettings>
+		<Default/>
+	</UserSettings>
+	<Features>
+		<Property name="canCreateProjects" datatype="empty"/>
+		<Property name="canSetProjectState" datatype="empty"/>
+		<Property name="canAlterProperties" datatype="empty"/>
+	</Features>
+	<MustMatch/>
+</Application>

@@ -1,0 +1,160 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="DimNet_newtablesproject_step1">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Preparing Your Data Files For Uploading</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('dimnet_newtablesproject_step1.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20110')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="dimnet_newtablesproject.htm">Previous<img alt="(P)revious: dimnet_newtablesproject" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="dimnet_newtablesproject_step2.htm"><img alt="(N)ext: dimnet_newtablesproject_step2" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutdimnet.htm">DimensionNet User's Guide</A> &gt; <A HREF="dimnet_newproj.htm">Creating a New Project</A> &gt; <A HREF="dimnet_newtablesproject.htm">Creating a New Analysis Project</A> &gt; </DIV>
+<h1>Preparing Your Data Files For Uploading</h1>
+<p class="body">Before you create your (non-mrInterview) data analysis project
+in DimensionNet, you need to make sure that any data files that are
+required are ready for <script type="text/javascript">
+    var N205EF_term = "Definition of Uploading";
+
+    var N205EF_def = "Transferring files from a user's computer or other network location to the DimensionNet server.";
+</script><a href="javascript:void(0)" style="cursor:hand; cursor:pointer" class="glossary-ref" onclick="popup(N205EF_term,N205EF_def,event);" title="Definition of Uploading">uploading</a>. You can upload files individually or in a .<span class="name">zip</span> file. Using a .<span class="name">zip</span> file is recommended when you upload large files. If you use a .<span class="name">zip</span> file, DimensionNet will automatically
+unzip the .<span class="name">zip</span> file and delete
+it, after the upload is finished. You can upload files from your own
+machine or from any other suitable network location. </p>
+<p class="body">mrTables uses the Dimensions Data Model to access the underlying
+data, which can be, for example, an SPSS .<span class="name">sav</span> file, a Quanvert database, a relational MR (RDB) database, Quancept
+data stored in .<span class="name">qdi</span> and .<span class="name">drs</span> files, etc. The Data Model handles <span class="definedword">case data</span> (which stores the actual
+responses) and <span class="definedword">metadata</span> (which
+describes the case data and stores the question and category texts,
+etc.) separately. mrTables requires a metadata source as well as a
+case data source. The metadata source can be an Dimensions Metadata
+Document (.<span class="name">mdd</span>) file or any other
+metadata format for which a suitable read-enabled Metadata Source
+Component (MDSC) is available. The case data can be in any format
+for which a suitable read-enabled Case Data Source Component (CDSC)
+is available. </p>
+<p class="body">Although mrTables can read metadata in any format for which a suitable
+read-enabled MDSC is available, there are performance advantages 
+in using metadata in an .<span class="name">mdd</span> file.
+This is because when the metadata for the project is stored in an
+.<span class="name">mdd</span> file,  mrTables caches the
+metadata and this leads to significantly improved performance. The
+caching persists between sessions and is updated when you  create
+and edit variables.</p>
+<p class="body">mrTables does not cache the metadata when it is stored in a proprietary
+format (such as Quanvert, Quancept .<span class="name">qdi</span>, or SPSS .<span class="name">sav</span>). However, you
+can use MDM Explorer to create an .<span class="name">mdd</span> from the proprietary metadata for use in the mrTables project. You
+would then need to upload the .<span class="name">mdd</span> file you create with the other data files for the project, and configure
+the project to use the .<span class="name">mdd</span> file.  MDM Explorer is a tool that comes with the
+Dimensions Development Library, which is available on the mrInterview
+and mrTables CD-ROM and also as a free download from Dimensions Development
+Library. </p>
+<p class="body">Here are some notes to help you prepare data files of the main
+data formats that are suitable for use with mrTables:</p>
+<p class="body">
+<span class="runinhead">Quanvert database. </span>Quanvert
+databases come in two formats--<span class="definedword">packed</span> and <span class="definedword">unpacked</span>. You can
+tell the difference between a packed and unpacked Quanvert database
+because a packed database consists of a single file with a .<span class="name">pkd</span> filename extension whereas an unpacked
+database consists of many files including a header file called <span class="name">qvinfo</span>. mrTables can support both formats.
+When using the unpacked format it is advisable to pack the files before
+uploading, but note that the packed format is not supported for Quanvert
+multiprojects.  </p>
+<p class="body">There are some additional manual steps for setting up Quanvert
+multiprojects for use in mrTables. See <A href="dimnet_qvmultiprojects.htm">Setting up a Quanvert Multiproject for Use in mrTables</A> for more information. </p>
+<p class="body">
+<span class="runinhead">SPSS .sav file. </span>When you
+are using a .<span class="name">sav</span> file that you
+created using the Data Model (for example, using mrScan Transfer or
+exporting mrInterview data), it is <span class="definedword">always</span> preferable to read it using the .<span class="name">mdd</span> file that was used when creating it (that is the output metadata
+file if you created the .<span class="name">sav</span> file
+using a DMS file). This means that the variables (and their names)
+will match those in the .<span class="name">mdd</span> file
+and will therefore be easier to understand. For example, several variables
+may be created in the .<span class="name">sav</span> file
+from a single text variable in the .<span class="name">mdd</span> file. When you access the .<span class="name">sav</span> file in mrTables using the .<span class="name">mdd</span> file, these variables will be recombined and presented as one variable. </p>
+<p class="body">
+<span class="italic">Note: </span>For some languages you
+will also need to upload a <span class="name">.sav.ini</span> file specifying the language of the .<span class="name">sav</span> file so that mrTables can read it, for example:</p>
+<pre class="codeblock">[mrSavDsc]
+SavLanguage=JPN</pre>
+<p class="body">The name of this file must be <span class="name">&lt;savfilename&gt;.sav.ini</span>, for example, myproject.sav.ini.</p>
+<p class="body">For further
+details, see the <span class="name">Language Handling by SPSS
+SAV DSC</span> section in the Dimensions Development Library.</p>
+<p class="body">
+<span class="runinhead">Quancept QDI/DRS file. </span>When you are using Quancept data, generally the metadata is in the
+form of a .<span class="name">qdi</span> file and the case
+data is in a .<span class="name">drs</span>, .<span class="name">drz</span> or .<span class="name">dru</span> file. </p>
+<p class="body">
+<span class="runinhead">Dimensions XML format. </span>By default, mrTables uses the hierarchical view when you work with
+ case data in the XML format. However, when you export data to XML,
+the data is generally written in the flat (<span class="name">VDATA</span>) format. The Dimensions Development Library comes
+with a sample mrScriptBasic file (called <span class="name">CdscHdataTransfer.mrs</span>) that you can use to export hierarchical data to an XML file in
+the hierarchical (<span class="name">HDATA</span>) format. Alternatively, you can
+select the flat view within mrTables. When you use case data in the
+XML format, the metadata is generally in the form of an .<span class="name">mdd</span> file.</p>
+<p class="body">
+<span class="runinhead">Relational MR database. </span>When the case data is stored in a relational MR database, the metadata
+is generally stored in an .<span class="name">mdd</span> file
+and is generally the only file you need to upload. If the database
+is in the form of an SQL Server backup, you need to restore it.</p>
+<p class="body">
+<span class="runinhead">SurveyCraft QDT/VQ files. </span>When you upload SurveyCraft data, you must upload both the <span class="name">.qdt</span> and <span class="name">.vq</span> files. You may also want to create a metadata (<span class="name">.mdd</span>) file and upload that as well.  This does not increase
+the initial speed of mrTables, but can improve performance when you
+next open the project in mrTables. You must have write access to the <span class="name">.qdt</span> and <span class="name">.vq</span> files that you want to upload.</p>
+<p class="body">For detailed information about the <script type="text/javascript">
+    var N20496_term = "Definition of Data source component (DSC)";
+
+    var N20496_def = "A component used to expose data to the Data Model. Case data is exposed by a case data source component (CDSC), and metadata is exposed by a metadata source component (MDSC).";
+</script><a href="javascript:void(0)" style="cursor:hand; cursor:pointer" class="glossary-ref" onclick="popup(N20496_term,N20496_def,event);" title="Definition of Data source component (DSC)">DSCs</a> that come with the Data Model and how they interpret the underlying
+data, see the Dimensions
+Development Library.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<a href="dimnet_newtablesproject_step2.htm">Creating the New Project in DimensionNet</a>
+</div>
+<div class="link">
+<a href="dimnet_newtablesproject_step4.htm">Checking the Uploaded Files into the Shared Folder</a>
+</div>
+<div class="link">
+<a href="dimnet_newtablesproject_step3.htm">Creating and Populating a Test Table</a>
+</div>
+<div class="link">
+<a href="dimnet_qvmultiprojects.htm">Setting up a Quanvert Multiproject for Use in mrTables</a>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

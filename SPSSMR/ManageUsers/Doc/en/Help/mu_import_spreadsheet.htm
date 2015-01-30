@@ -1,0 +1,556 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="mu_import_spreadsheet">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Setting Up the Spreadsheet</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('mu_import_spreadsheet.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N20069')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="mu_import.htm">Previous<img alt="(P)revious: mu_import" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="mu_export.htm"><img alt="(N)ext: mu_export" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutmu.htm">Manage Users</A> &gt; <A HREF="mu_import.htm">Importing Users and Roles</A> &gt; </DIV>
+<h1>Setting Up the Spreadsheet</h1>
+<p class="body">Dimensions Development Library comes with a sample
+spreadsheet you can modify to suit your needs. It contains basic documentation
+about how the spreadsheet is set up and which columns you must create.
+The file is called <span class="name">UsersAndRoles.xls</span> and it is normally installed in [INSTALL_FOLDER]\SPSS Dimensions\DDL\Administration
+Tools.</p>
+<p class="body">The Excel spreadsheet can have any or all of the following
+worksheets: Roles, Users, Projects, Activities, UserProperties, and
+GlobalFilters. If a worksheet does not exist then that part of the
+import process is not run. The worksheets must be set up as follows:</p>
+<p class="body">
+<span class="runinhead">Roles</span>
+</p>
+<p class="body">Names the roles to be added to DimensionNet.
+It must contain a column called RoleName that names the roles you
+want to add. It is also a good idea to include a Description column
+that describes the roles. Descriptions of up to 250 characters are
+valid. For example:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">RoleName</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Project Managers</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Scriptwriter</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Scriptwriters</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Analysis</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Data export and analysis</td>
+</tr>
+</tbody>
+</table>
+<p class="body">If you import an existing role, the description
+in the spreadsheet overwrites the existing one in the DimensionNet
+database.</p>
+<p class="body">
+<span class="runinhead">Users</span>
+</p>
+<p class="body">Names the users to be added to DimensionNet.
+The worksheet must contain a column called UserName that names the
+users you want to add. It may also contain Description, Password,
+and Roles columns. Descriptions may be up to 250 characters long.
+The Roles column lists the roles of which each user is a member. If
+the user is a member of more than one role, the names must be separated
+by semicolons. For example:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UserName</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Description</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Password</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Roles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">benjamin</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Benjamin Brown</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Rabb1ts</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan;Scriptwriter;Analysis</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">jose</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Jose Mendoza</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">J6KTSY</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Scriptwriter</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">davinder</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Davinder Patel</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Pandora99</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Analysis</td>
+</tr>
+</tbody>
+</table>
+<p class="body">If you import an existing user, the description
+in the spreadsheet overwrites the existing one in the DimensionNet
+database. If roles are specified, the user is added to these roles
+if hew/she is not already a member; for example, specifying the Manager2
+role for a user who is already a member of the Manager1 role makes
+that user a member of both roles. Leaving the role column blank does
+not remove the user from the roles to which he/she currently belongs:
+you must do this manually.</p>
+<p class="body">Password definitions apply only to new accounts that
+are created by the import process. Passwords are never changed or
+removed for existing users even if the password column contains a
+value.</p>
+<p class="body">
+<span class="runinhead">Projects</span>
+</p>
+<p class="body">Assigns roles to projects. The worksheet must
+contain two columns called ProjectID and Roles listing the project
+names and the roles to be assigned to each project. Role names in
+a list must be separated by semicolons. The ProjectID field must contain
+the project's uppercase ID, not it's name. By default, DimensionNet
+creates projects with the same name and ID, except that the ID is
+in upper case. For example:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectID</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Roles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">SOFTDRINKS</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan;Scriptwriter;CATIsupervisor;CATIinterviewer;Analysis</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TRAVEL</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan;Scriptwriter;Analysis</td>
+</tr>
+</tbody>
+</table>
+<p class="body">Role assignments for existing projects are
+added to the current settings. The only way to delete roles from projects
+is to remove the roles manually using Manage Access.</p>
+<p class="body">
+<span class="runinhead">Activities</span>
+</p>
+<p class="body">Activities and activity features available
+to each role. The worksheet must contain two columns called Activity
+and Roles, but may also contain a Features column. Each line defines
+one activity or activity and feature combination, and the roles that
+may use that activity or feature. Roles in a list must be separated
+by semicolons. For example:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Activity</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Feature</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Roles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">launcher</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan;Scriptwriter;Analysis</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">launcher</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">canUnlockProject</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan;Scriptwriter</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectEditor</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan;Scriptwriter;Analysis</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectEditor</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">canCreateProjects</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan;Scriptwriter;Analysis</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectEditor</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">canSetProjectState</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan;Scriptwriter;Analysis</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectEditor</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">canAlterProperties</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan</td>
+</tr>
+</tbody>
+</table>
+<p class="body">Activities and activity features have two names:
+an internal one that DimensionNet uses, and an external one that is
+more descriptive and that you see on the DimensionNet screens. You
+must use DimensionNet's internal names in the spreadsheet.</p>
+<div class="collapse_trigger">
+<a id="N30774_opener" name="N30774_opener" href="javascript:top.topic.expando('N30774');">Click here to see a table that matches
+internal names to the names that you know.</a><a style="display:none" id="N30774_closer" name="N30774_closer" href="javascript:top.topic.expando('N30774');"><img border="0" alt="Collapse" src="images/menu_minus.gif"> Hide details</a>
+</div>
+<div id="N30774">
+<div style="display:none;" class="collapsible_block">
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col width="33.33333333333333%">
+<col width="33.33333333333333%">
+<col width="33.33333333333333%">
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Display name</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Internal name</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Roles assigned to this activity or feature by default<span class="superscript">1</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Build</td><td class="table-cell" style="border-right-style: solid; " align="left">InterviewBuilder</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Allow activating from activity</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canActivate</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Delete</td><td class="table-cell" style="border-right-style: solid; " align="left">BackupAndRestore</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess </td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Allow delete project</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canDeleteProjects</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess </td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Dialer Administration</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">DialerAdmin</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">DimensionNet</td><td class="table-cell" style="border-right-style: solid; " align="left">Launcher</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor<br>CATIInterviewer<br>TabulationFullAccess<br>TabulationMediumAccess<br>TabulationMinimumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Allow unlock project</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canUnlockProject</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Allow user to manage project folders</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canManageProjectFolders</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Email</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">SampleEmailManager</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Export Data</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewExporter</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Files</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ManageFiles</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Interviewer Monitoring</td><td class="table-cell" style="border-right-style: solid; " align="left">CatiMonitoring</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Can set up supervisor stations</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canSetupSupervisorStations</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Interviewing Activity Report</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">SessionEngineReports</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Launch</td><td class="table-cell" style="border-right-style: solid; " align="left">WebActivate</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Allow access via DimensionNet</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canViewInLauncher</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Allow upload/edit sample script</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canEditSampleScript</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Manage Access</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ManageAccess</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Manage Users</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ManageUsers</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Participant Rules</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">SampleManEditor</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Participants</td><td class="table-cell" style="border-right-style: solid; " align="left">SampleUpload</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can create databases</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canCreateDatabase</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can upload participants</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canUpload</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can download participants</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canDownload</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can view participants</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canViewSample</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can edit participants</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canEditSample</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can advanced edit participants</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canAdvancedEditSample</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can delete participants<span class="superscript">2</span></td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canDeleteSample</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Can view summary</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canViewSummary</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Phone</td><td class="table-cell" style="border-right-style: solid; " align="left">CatiReports</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can display charts</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canDisplayCharts</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Can view all interviewers' data</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canViewAllInterviewersData</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Phone Participants</td><td class="table-cell" style="border-right-style: solid; " align="left">CatiInterview</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor<br>CATIInterviewer</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Can set up interviewer stations</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canSetUpInterviewerStations</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Phone Surveys</td><td class="table-cell" style="border-right-style: solid; " align="left">CatiSupervisor</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can view fields</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canViewFields</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can view parameters</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canViewParameters</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can view call outcomes</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canViewCallOutcomes</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can view interview settings</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canViewInterviewerSettings</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can view dialer settings</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canViewOtherSettings</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can edit fields</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canEditFields</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can edit parameters</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canEditParameters</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can edit call outcomes</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canEditCallOutcomes</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can edit interview settings</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canEditInterviewerSettings</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can edit dialer settings</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canEditOtherSettings</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Can delete call outcomes</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canDeleteCallOutcomes</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Project Editor</td><td class="table-cell" style="border-right-style: solid; " align="left">ProjectEditor</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Allow modifying properties</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canAlterProperties</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Allow creating new projects</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canCreateProjects</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Allow changing the project state</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canSetProjectState</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Promote Project</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">WebSiteToSiteActivate</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Quotas</td><td class="table-cell" style="border-right-style: solid; " align="left">ReviewQuotas</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Allow editing quota targets</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canEditTargets</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Allow editing quota prioritization</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canEditPrioritization</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Allow editing quota targets, completes, and prioritization</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canEditAll</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Reporter</td><td class="table-cell" style="border-right-style: solid; " align="left">Reporter</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess<br>TabulationMinimumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can display charts</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canDisplayCharts</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can manage shared</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canManageShared</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Has full access</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; FullAccess</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Has medium access</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; MediumAccess</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Has minimum access</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; MinimumAccess</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TabulationMinimumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Review Interviews</td><td class="table-cell" style="border-right-style: solid; " align="left">ReviewInterview</td><td class="table-cell" style="border-right-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; Can set up supervisor stations</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canSetupSupervisorStations</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Status</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ReviewProject</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Survey Results</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">InterviewReporter</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Tabulation</td><td class="table-cell" style="border-right-style: solid; " align="left">mrTables</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess<br>TabulationMinimumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can display charts</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canDisplayCharts</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; Can manage shared</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; canManageShared</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess<br>TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; FullAccess</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; FullAccess</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationFullAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">&mdash; MediumAccess</td><td class="table-cell" style="border-right-style: solid; " align="left">&mdash; MediumAccess</td><td class="table-cell" style="border-right-style: solid; " align="left">TabulationMediumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; MinimumAccess</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; MinimumAccess</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TabulationMinimumAccess</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; " align="left">Usage Report</td><td class="table-cell" style="border-right-style: solid; " align="left">Monitoring</td><td class="table-cell" style="border-right-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; View usage report</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&mdash; canViewUsageReports</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">View Survey Link</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TestInterview</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">CATISupervisor</td>
+</tr>
+</tbody>
+</table>
+<p class="body"></p>
+<p class="body">
+<span class="superscript">1</span> By default, the DPMAdmins role is assigned to all activities
+and features.</p>
+<p class="body">
+<span class="superscript">2</span> Deleting participants from telephone interviewing projects
+can cause phone reports to show unexpected results. If a user or role
+is assigned to telephone interviewing projects, do not assign that
+user or role to the "Can Delete Participants" feature.</p>
+</div>
+</div>
+<p class="body">Entering a blank role specification for an existing
+activity or feature does not remove the role's permission to use those
+activities or features. This must be done manually using Manage Users
+or Manage Access.</p>
+<p class="body">
+<span class="runinhead">UserProperties</span>
+</p>
+<p class="body">Property settings for each user. The worksheet
+should contain one column listing user names and then as many columns
+as there are role and property combinations to set. Each property
+column for a role refers to one property in one property group and
+contains an appropriate value for that property (for example, true/false
+for a boolean property or a list of categorical values for a categorical
+property). The first column contains values for Role1:PropertyGroup1:Property1;
+the second column contains values for Role1:PropertyGroup1:Property2,
+and so on. If a property does not apply to a user, leave that cell
+of the worksheet blank. For example:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col width="100%">
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UserName</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan:PGroup1: Prop1</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjMan:PGroup1:Prop2</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Scriptwriter:PGroup1:Prop1</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Scriptwriter:PGroup1:Prop2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">benjamin</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">english;french;german</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">true</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">jose</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">english;spanish</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">value1;value2</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="body">If a user already has user properties set,
+the settings in the spreadsheet are added to the existing settings.
+If you want to change or delete settings you must do so manually.</p>
+<p class="body">
+<span class="runinhead">GlobalFilters</span>
+</p>
+<p class="body">Defines global filters for a user or role for
+a particular project. The worksheet must contain three columns called
+ProjectID, RoleOrUserNames, and Filter listing the filter to be applied
+for each user or role when working on a project. The ProjectID field
+must contain the project's uppercase ID, not it's name. By default,
+DimensionNet creates projects with the same name and ID, except that
+the ID is in upper case. User and role names in a list must be separated
+by semicolons. For example:</p>
+<table class="table" cellspacing="0" border="0" style="border-collapse: collapse;border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-style: solid; ">
+<colgroup>
+<col>
+<col>
+<col width="100%">
+</colgroup>
+<thead>
+<tr>
+<th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjectID</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">UserOrRoleNames</th><th class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Filter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TRAVEL</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjManEast;AnalysisEast</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Region.ContainsAny({East})</td>
+</tr>
+<tr>
+<td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">TRAVEL</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">ProjManWest;AnalysisWest</td><td class="table-cell" style="border-right-style: solid; border-bottom-style: solid; " align="left">Region.ContainsAny({West})</td>
+</tr>
+</tbody>
+</table>
+<p class="body">If a user who has a global filter is also a
+member of a role that has a different global filter, the filter at
+the user level overrides the role-level filter. The two filters are
+not combined.</p>
+<p class="body">The columns mentioned for each worksheet are the ones
+that the import process requires. You can include other columns for
+your own purposes if you wish, and the import process will ignore
+them. Note, also, that you must create any properties and property
+groups before you import users and roles as the import process cannot
+create any that do not exist.</p>
+<p class="body">Refer to "Global Filters" in
+the Manage Access chapter of the <span class="italic">DimensionNet
+User's Guide</span> for details on how to set up global filters.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<A href="mu_import.htm">Importing Users and Roles</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

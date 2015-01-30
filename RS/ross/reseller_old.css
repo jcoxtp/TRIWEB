@@ -1,0 +1,81 @@
+/* ======================================== 
+	Reseller StyleSheet - CFPN
+	- this file extends the _system stylesheet and is to be used for reseller specific styles
+	- styles defined in this sheet will override those with the same name/scope in the _system stylesheet
+	- do not put global style changes in this file
+=========================================*/
+#leftnavbar {
+	position: absolute;
+	top: 80px;
+	left: 5px;
+	width: 90px;
+}
+
+body {
+	font-family: Arial, Helvetica;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	margin: 5px 5px 5px 5px;
+	padding: 0px;
+	text-decoration: none;
+	background-color: #ffffff;
+}
+a:link, a:visited, a:active
+{
+	color:#396669; 
+	background-color:transparent; 
+	text-decoration:none
+}
+.logintext
+{
+	font-family: Arial, Helvetica;
+	font-size: 11px;
+	color: #000066;
+}
+.big_learnmore
+{
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	color: #344493;
+}
+.textsmallgap
+{
+	font-family: Arial, Helvetica;
+	font-size: 2px;
+}
+#login_form
+{
+	top: 120px;
+	left: 75px;
+}
+a:link.loginform_link, a:visited.loginform_link, a:active.loginform_link, a:hover.loginform_link
+{
+	color:#344493; 
+	text-decoration:underline
+}
+#login_section01
+{
+	top: 175px;
+	left: 50px;
+	width: 700px;
+}
+a:link.loginform_link, a:visited.loginform_link, a:active.loginform_link, a:hover.loginform_link
+{
+	color:#344493; 
+	text-decoration:underline
+}
+#login_section02
+{
+	top: 420px;
+	left: 440px;
+}
+a:link.login_section02_link, a:visited.login_section02_link, a:active.login_section02_link, a:hover.login_section02_link	 	
+{
+	color:#344493; 
+	text-decoration:underline
+}

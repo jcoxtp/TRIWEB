@@ -1,0 +1,85 @@
+<html xmlns:java="http://xml.apache.org/xslt/java">
+<head id="MF_mrInterview">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>File Management: mrInterview</title>
+<!--Generated with Help Tools v. 4.3x
+-->
+<script src="help.js" type="text/javascript"></script><script src="help-screen-reader.js" type="text/javascript"></script><script src="helploc.js" type="text/javascript"></script>
+<link href="help-core.css" rel="stylesheet">
+<link href="help-loc.css" rel="stylesheet">
+<link href="help-base.css" rel="stylesheet">
+<script type="text/javascript">if (typeof top.modulesLocation == "undefined") { top.modulesLocation = "../modules.js"; }
+    </script><script type="text/javascript">document.write("<SCRIPT type='text/javascript' src='" + top.modulesLocation + "'><" + "/SCRIPT" + ">");
+</script>
+</head>
+<script type="text/javascript">
+<!--
+              if (parent == self) { //no parent, so need to create frameset
+                loadFrames('mf_mrinterview.htm');
+              }
+              //--></script>
+<body onload="javascript:sync_toc('N2001B')">
+<noscript>
+<div class="scripthelp">
+<table border="0" frame="0">
+<tr>
+<td style="vertical-align:top"><img src="images/warning.gif"></td><td>
+<p style="font-size:larger;">Note: your browser is configured to prevent scripts from running. This online documentation
+                  relies on scripts for navigation, table of contents, search, and other features. To make full
+                  use of the documentation, adjust your browser settings to allow scripts to run. See
+                  <a href="_script_help.htm" target="scripthelp">Adjusting browser settings</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</noscript>
+<div class="navbuttons" id="navbuttons">
+<a accesskey="p" class="backbutton" id="backlayer" onMouseOut="document.getElementById('backbutton').src='images/help_back.png';" onMouseUp="document.getElementById('backbutton').src='images/help_back2.png';" onMouseDown="document.getElementById('backbutton').src='images/help_back3.png';" onMouseOver="document.getElementById('backbutton').src='images/help_back2.png';" href="aboutmf.htm">Previous<img alt="(P)revious: aboutmf" border="none" id="backbutton" src="images/help_back.png"></a><a accesskey="n" class="nextbutton" id="nextlayer" onMouseOut="document.getElementById('nextbutton').src='images/help_next.png';" onMouseUp="document.getElementById('nextbutton').src='images/help_next2.png';" onMouseDown="document.getElementById('nextbutton').src='images/help_next3.png';" onMouseOver="document.getElementById('nextbutton').src='images/help_next2.png';" href="mf_mrtables.htm"><img alt="(N)ext: mf_mrtables" border="none" id="nextbutton" src="images/help_next.png">Next</a>
+</div>
+<DIV id="navtrail" class="navtrail">
+<A HREF="aboutmf.htm">Files</A> &gt; </DIV>
+<h1>File Management: mrInterview</h1>
+<p class="body">The default file management behavior for  mrInterview
+ is as follows:</p>
+<p class="bullet">&bull;&nbsp;When an activity starts, it checks the user's folder for
+ the files it needs. If the files exist these are the ones that the activity
+ uses.</p>
+<p class="bullet">&bull;&nbsp;If the files do not exist in the user's folder, the activity
+ checks for them in the shared folder. Any files that exist here but not in
+ the user's folder are copied into the user's folder.</p>
+<p class="bullet">&bull;&nbsp;If a required file does not exist in either location, the
+ activity either creates it or issues an error message. (Normally you should
+ not see error messages for missing files because the activity should not
+be  available if the required files do not exist.)</p>
+<p class="body">If the activity uses optional files such as templates,
+ it follows these same  rules to copy any optional files that exist. For example,
+ the Launch activity requires a  <span class="name">.mdd</span> file
+ and a <span class="name">.sif</span> file, but can also use template
+ files (<span class="name">.htm</span>, <span class="name">.html</span>,
+ and <span class="name">.xml</span>), image files (<span class="name">.jpg</span>,
+  <span class="name">.jpeg</span>, <span class="name">.png</span>,
+ and <span class="name">.mov</span>) and quota files (<span class="name">.mqd</span>, <span class="name">.mdd</span>), and
+copies any of these files that do not exist  in the user's folder from the
+shared folder.</p>
+<p class="body">When an activity closes it leaves all files in the user's folder. If you
+ want to make any changes or new files available to other users, you must
+check  those files in to the shared folder.</p>
+<p class="body">
+<span class="italic">Note: </span>When you are working on a project,
+ the project is locked so that other users can read files but not change them.
+ When you have finished working on a project, you should not only check in
+ the new or revised files but also unlock the project.</p>
+<div id="related_topics">
+<h2>Related Topics</h2>
+<div class="link">
+<a href="mf_mrtables.htm">File Management: mrTables</a>
+</div>
+<div class="link">
+<A href="aboutmf.htm">Files</A>
+</div>
+</div>
+<script type="text/javascript">
+              filter_modules_topic();
+            </script>
+</body>
+</html>

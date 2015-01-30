@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="DpmService.asmx.cs" Class="SPSS.Dimensions.Web.Services.DpmWebService" %>

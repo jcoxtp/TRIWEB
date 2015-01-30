@@ -1,0 +1,1 @@
+<h1 style="text-align:left">Thank you for completing this assessment</h1>
